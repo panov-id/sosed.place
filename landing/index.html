@@ -469,7 +469,9 @@
           })
         });
 
-        if (!res.ok) throw new Error("request failed");
+        // 409 = unique violation: the email is already on the list. A
+        // returning visitor, not a failure — show the same success state.
+        if (!res.ok && res.status !== 409) throw new Error("request failed");
 
         status.textContent = dict.statusOk;
         status.className = "status ok";
