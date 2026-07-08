@@ -86,8 +86,17 @@
         <button data-doc="rules">Rules</button>
       </div>
       <div class="seg" id="langSeg">
-        <button data-lang="en" class="on">EN</button>
         <button data-lang="ru">RU</button>
+        <button data-lang="uk">UK</button>
+        <button data-lang="be">BE</button>
+        <button data-lang="kk">KK</button>
+        <button data-lang="ka">KA</button>
+        <button data-lang="pl">PL</button>
+        <button data-lang="en" class="on">EN</button>
+        <button data-lang="fr">FR</button>
+        <button data-lang="de">DE</button>
+        <button data-lang="es">ES</button>
+        <button data-lang="el">EL</button>
       </div>
     </div>
   </header>
@@ -157,9 +166,11 @@
   const FILES = { terms: "terms", privacy: "privacy", rules: "community-guidelines" };
   const params = new URLSearchParams(location.search);
   let DOC = Object.keys(FILES).includes(params.get("doc")) ? params.get("doc") : "terms";
-  const stored = localStorage.getItem("lang");
-  let LANG = ["en", "ru"].includes(params.get("lang")) ? params.get("lang")
-    : (["en", "ru"].includes(stored) ? stored : ((navigator.language || "en").slice(0, 2).toLowerCase() === "ru" ? "ru" : "en"));
+  const LANGS = ["ru", "uk", "be", "kk", "ka", "pl", "en", "fr", "de", "es", "el"];
+  const stored = localStorage.getItem("ss-lang");
+  const nav = (navigator.language || "en").slice(0, 2).toLowerCase();
+  let LANG = LANGS.includes(params.get("lang")) ? params.get("lang")
+    : (LANGS.includes(stored) ? stored : (LANGS.includes(nav) ? nav : "en"));
 
   const docEl = document.getElementById("doc");
   // Fetch one doc with a timeout so a hung request can't spin forever.
