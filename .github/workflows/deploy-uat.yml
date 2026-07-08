@@ -20,10 +20,11 @@ jobs:
         name: Create release tag
         run: |
           TAG="v$(date +%Y.%m.%d)-${GITHUB_SHA::7}"
-          git tag "$TAG"
-          git push origin "$TAG"
+          # Idempotent: a re-run of the same commit must not fail on an existing tag.
+          git tag "$TAG" 2>/dev/null || echo "tag $TAG already exists locally"
+          git push origin "$TAG" 2>/dev/null || echo "tag $TAG already on remote"
           echo "tag=$TAG" >> "$GITHUB_OUTPUT"
-          echo "Created release $TAG"
+          echo "Release $TAG"
 
   deploy:
     needs: release
