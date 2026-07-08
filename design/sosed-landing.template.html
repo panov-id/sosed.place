@@ -1,0 +1,414 @@
+<style>
+  :root{
+    --img-splash:url("{{SPLASH}}");
+    --img-hero:url("{{HERO}}");
+    --img-say:url("{{CARD_SAY}}");
+    --img-match:url("{{CARD_MATCH}}");
+    --img-fade:url("{{CARD_FADE}}");
+    --img-texture:url("{{TEXTURE}}");
+    /* warm brick / terracotta signature, warm-brown neutrals */
+    --bg:#0d0b0a; --panel:#17130f; --panel-2:#241c14; --border:#3a2e20;
+    --fg:#f0e7dc; --muted:#9a8d7c; --muted-2:#ab9d88;
+    --accent:#d6552f; --accent-ink:#1c0e07;
+    --sans:"Golos Text",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#ece4d8; --panel:#f5efe4; --panel-2:#ddd0bd; --border:#221a12;
+           --fg:#1c140d; --muted:#6b5f4c; --muted-2:#655847; --accent:#c24a26; --accent-ink:#fff6f0; }
+  }
+  :root[data-theme="light"]{ --bg:#ece4d8; --panel:#f5efe4; --panel-2:#ddd0bd; --border:#221a12;
+           --fg:#1c140d; --muted:#6b5f4c; --muted-2:#655847; --accent:#c24a26; --accent-ink:#fff6f0; }
+  :root[data-theme="dark"]{ --bg:#0d0b0a; --panel:#17130f; --panel-2:#241c14; --border:#3a2e20;
+           --fg:#f0e7dc; --muted:#9a8d7c; --muted-2:#ab9d88; --accent:#d6552f; --accent-ink:#1c0e07; }
+
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--fg);font-family:var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  .mono{font-family:var(--mono);text-transform:uppercase;letter-spacing:.22em;font-size:.7rem}
+  .accent{color:var(--accent)}
+  a{color:inherit}
+
+  /* ---------- Splash ---------- */
+  .splash{position:fixed;inset:0;z-index:90;display:grid;place-items:center;background:var(--accent);overflow:hidden}
+  .splash::before{content:"";position:absolute;inset:0;background:var(--img-splash) center/cover;opacity:.24;mix-blend-mode:luminosity}
+  .splash.done{animation:sout .6s cubic-bezier(.4,0,.2,1) forwards;pointer-events:none}
+  @keyframes sout{to{opacity:0;visibility:hidden;transform:scale(1.04)}}
+  .disc{position:absolute;width:170vmax;height:170vmax;border-radius:50%;background:var(--bg);transform:scale(0);animation:disc .9s cubic-bezier(.66,0,.24,1) .15s forwards}
+  @keyframes disc{to{transform:scale(1)}}
+  .brand{position:relative;text-align:center;opacity:0;animation:bin .6s ease .55s forwards}
+  @keyframes bin{from{opacity:0;transform:translateY(14px) scale(.96)}to{opacity:1;transform:none}}
+  .hoy{font-weight:800;font-size:clamp(4.8rem,21vw,12rem);line-height:.8;letter-spacing:-.05em;color:var(--accent);animation:breathe 3s ease-in-out infinite}
+  @keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.035)}}
+  .brand .sub{margin-top:.5rem;font-weight:800;font-size:clamp(1.15rem,4vw,1.8rem);letter-spacing:.14em;text-transform:lowercase;color:var(--fg)}
+  .brand .by{margin-top:1.15rem;color:var(--muted)}
+  .brand .by b{color:var(--accent);font-weight:700}
+
+  /* ---------- Header ---------- */
+  header{position:sticky;top:0;z-index:40;backdrop-filter:blur(10px);background:color-mix(in srgb,var(--bg) 82%,transparent);border-bottom:1px solid var(--border)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:62px}
+  .logo{display:flex;align-items:baseline;gap:.5rem;font-weight:800;font-size:1.15rem;letter-spacing:-.01em;cursor:pointer;user-select:none}
+  .logo .dot{width:.5rem;height:.5rem;border-radius:50%;background:var(--accent);display:inline-block}
+  .htools{display:flex;align-items:center;gap:.4rem}
+  .tag{color:var(--muted)}
+  .icon-btn{width:38px;height:38px;border:1px solid var(--border);background:transparent;color:var(--fg);border-radius:9px;cursor:pointer;display:grid;place-items:center;font-size:1rem}
+  .icon-btn:hover{border-color:var(--accent);color:var(--accent)}
+  [data-theme="light"] .moon,:root:not([data-theme="dark"]) .moon{display:none}
+  .sun{display:none}
+  [data-theme="light"] .sun{display:inline}
+  @media(prefers-color-scheme:light){:root:not([data-theme]) .sun{display:inline}:root:not([data-theme]) .moon{display:none}}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;padding:clamp(56px,10vw,120px) 0 clamp(48px,8vw,90px);overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;z-index:0;background:var(--img-hero) center/cover;opacity:.45}
+  .hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,color-mix(in srgb,var(--bg) 58%,transparent) 0%,color-mix(in srgb,var(--bg) 80%,transparent) 48%,var(--bg) 96%)}
+  .hero .wrap{position:relative;z-index:2}
+  .eyebrow{color:var(--accent)}
+  h1{font-weight:800;font-size:clamp(2.6rem,8.5vw,5.6rem);line-height:.94;letter-spacing:-.035em;text-wrap:balance;margin:.7rem 0 0;text-transform:uppercase}
+  h1 .l2{display:block;color:var(--muted-2)}
+  .lead{max-width:33ch;margin:1.4rem 0 0;font-size:clamp(1.05rem,2.4vw,1.3rem);line-height:1.5;color:var(--fg)}
+  form.wl{display:flex;gap:.5rem;margin-top:2rem;max-width:460px;flex-wrap:wrap}
+  form.wl input{flex:1 1 200px;min-width:0;padding:0 18px;height:54px;background:var(--panel);border:1px solid var(--border);border-radius:12px;color:var(--fg);font-size:1rem;font-family:var(--sans)}
+  form.wl input::placeholder{color:var(--muted)}
+  form.wl:focus-within{outline:2px solid var(--accent);outline-offset:2px;border-radius:14px}
+  form.wl input:focus-visible{outline:none}
+  form.wl button{height:54px;padding:0 26px;background:var(--accent);color:var(--accent-ink);border:0;border-radius:12px;font-weight:800;font-size:1rem;cursor:pointer;font-family:var(--sans);text-transform:uppercase;letter-spacing:.02em}
+  form.wl button:hover{filter:brightness(1.07)}
+  .note{margin-top:.9rem;color:var(--muted)}
+  .microcat{margin-top:1.1rem;color:var(--muted-2);letter-spacing:.13em;line-height:1.7}
+  .status{margin-top:.8rem;min-height:1.2em;font-weight:600}
+  .status.ok{color:var(--accent)}
+
+  /* ---------- Section frame ---------- */
+  section.blk{padding:clamp(58px,9vw,112px) 0;border-top:1px solid var(--border)}
+  .kick{color:var(--accent);margin-bottom:.7rem}
+  .h2{font-weight:800;font-size:clamp(1.8rem,5vw,3rem);line-height:1;letter-spacing:-.03em;text-transform:uppercase;text-wrap:balance}
+  .h2+.sub2{margin-top:.9rem;color:var(--muted-2);max-width:46ch;font-size:1.05rem;line-height:1.5}
+
+  /* feed */
+  .feed{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px;margin-top:2.2rem}
+  .msg{position:relative;background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:20px 22px;transition:transform .18s ease,border-color .18s ease}
+  .msg:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--accent) 50%,var(--border))}
+  .msg .who{color:var(--muted)}
+  .msg p{margin-top:.55rem;font-size:1.05rem;line-height:1.42;padding-right:30px}
+  .msg .plus{position:absolute;top:15px;right:15px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,var(--accent) 15%,transparent);color:var(--accent);font-weight:800;font-size:1.1rem;line-height:1;transition:background .18s ease,color .18s ease}
+  .msg:hover .plus{background:var(--accent);color:var(--accent-ink)}
+
+  /* steps with images */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:2.4rem}
+  @media(max-width:820px){.steps{grid-template-columns:1fr}}
+  .step{background:var(--panel);border:1px solid var(--border);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s ease,border-color .2s ease}
+  .step:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--accent) 45%,var(--border))}
+  .step .pic{aspect-ratio:16/11;background-size:cover;background-position:center;position:relative}
+  .step .pic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,var(--panel))}
+  .step.s1 .pic{background-image:var(--img-say)}
+  .step.s2 .pic{background-image:var(--img-match)}
+  .step.s3 .pic{background-image:var(--img-fade)}
+  .step .body{padding:20px 22px 26px}
+  .step .idx{color:var(--accent)}
+  .step h3{margin:.5rem 0 .5rem;font-size:1.3rem;font-weight:800;letter-spacing:-.01em}
+  .step p{color:var(--muted-2);line-height:1.5}
+
+  /* features */
+  .feats{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:2.4rem}
+  @media(max-width:700px){.feats{grid-template-columns:1fr}}
+  .feat{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:26px 24px;transition:transform .2s ease,border-color .2s ease}
+  .feat:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--accent) 45%,var(--border))}
+  .feat .fi{width:44px;height:44px;border-radius:12px;background:color-mix(in srgb,var(--accent) 15%,transparent);color:var(--accent);display:grid;place-items:center;font-family:var(--mono);font-size:1.15rem;font-weight:700;line-height:1}
+  .feat h3{margin:1rem 0 .5rem;font-size:1.22rem;font-weight:800}
+  .feat p{color:var(--muted-2);line-height:1.5}
+
+  /* closing */
+  .closing{position:relative;text-align:center;overflow:hidden}
+  .closing::before{content:"";position:absolute;inset:0;background:var(--img-texture) center/cover;opacity:.12}
+  .closing .wrap{position:relative}
+  .closing .big{font-weight:800;font-size:clamp(2.4rem,9vw,5.2rem);line-height:.92;letter-spacing:-.035em;text-transform:uppercase}
+  .closing .big span{color:var(--accent)}
+
+  /* footer */
+  footer{border-top:1px solid var(--border);padding:44px 0 60px}
+  .foot{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+  .foot .links{display:flex;gap:20px;flex-wrap:wrap}
+  .foot a{color:var(--muted);text-decoration:none}
+  .foot a:hover{color:var(--accent)}
+  .foot .cr{color:var(--muted)}
+  .foot .cr b{color:var(--accent)}
+
+  /* ---------- Phone mockups ---------- */
+  .devices{display:flex;gap:40px;justify-content:center;align-items:flex-start;flex-wrap:wrap;margin-top:2.8rem}
+  .dev{display:flex;flex-direction:column;align-items:center;gap:14px}
+  .dev .cap{color:var(--muted);text-align:center;max-width:300px}
+  .phone{width:300px;max-width:80vw;aspect-ratio:9/19.3;background:#0a0908;border-radius:46px;padding:11px;position:relative;box-shadow:0 36px 74px rgba(0,0,0,.5),0 0 0 1px var(--border)}
+  .phone .notch{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:126px;height:24px;background:#0a0908;border-radius:0 0 16px 16px;z-index:6}
+  .scr{width:100%;height:100%;border-radius:35px;overflow:hidden;background:var(--bg);display:flex;flex-direction:column;position:relative}
+  .atop{padding:30px 14px 11px;display:flex;align-items:center;gap:9px;border-bottom:1px solid var(--border);background:var(--panel)}
+  .back{color:var(--muted);font-size:1.25rem;flex:none;line-height:1}
+  .av{width:34px;height:34px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-weight:800;font-size:.92rem;flex:none}
+  .atop .nm{font-weight:700;font-size:.92rem;line-height:1.15}
+  .atop .st{color:var(--accent);font-size:.58rem;letter-spacing:.13em;text-transform:uppercase;font-family:var(--mono);margin-top:1px}
+  .atop .tmr{margin-left:auto;color:var(--muted);font-family:var(--mono);font-size:.58rem;white-space:nowrap}
+  /* chat */
+  .chat{flex:1;padding:12px;display:flex;flex-direction:column;gap:8px;overflow:hidden;font-size:.85rem}
+  .why{border:1px dashed var(--accent);border-radius:13px;padding:9px 11px;line-height:1.4}
+  .why b{color:var(--accent);font-family:var(--mono);font-size:.55rem;letter-spacing:.15em;display:block;margin-bottom:5px;text-transform:uppercase}
+  .why .ln{color:var(--fg);font-size:.78rem;display:block}
+  .why .ln+.ln{margin-top:3px;color:var(--muted-2)}
+  .bub{max-width:82%;padding:8px 12px;border-radius:16px;line-height:1.34}
+  .bub.in{align-self:flex-start;background:var(--panel-2);border-bottom-left-radius:5px}
+  .bub.out{align-self:flex-end;background:var(--accent);color:var(--accent-ink);border-bottom-right-radius:5px}
+  .tstamp{align-self:center;color:var(--muted);font-family:var(--mono);font-size:.54rem;letter-spacing:.1em;margin:2px 0}
+  .compose{margin-top:auto;border-top:1px solid var(--border);padding:9px 12px;display:flex;gap:8px;align-items:center;background:var(--panel)}
+  .compose .fld{flex:1;color:var(--muted);font-size:.8rem}
+  .compose .snd{width:30px;height:30px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-weight:800;flex:none}
+  /* feed card */
+  .fcard{flex:1;display:flex;flex-direction:column;padding:14px 14px 18px}
+  .fcard .card{flex:1;background:var(--panel);border:1px solid var(--border);border-radius:20px;padding:22px 20px;display:flex;flex-direction:column;justify-content:center}
+  .fcard .zone{color:var(--accent);font-family:var(--mono);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase}
+  .fcard .txt{margin-top:10px;font-size:1.14rem;line-height:1.34;font-weight:600}
+  .fcard .swipehint{margin-top:12px;color:var(--muted);font-family:var(--mono);font-size:.55rem;text-align:center;letter-spacing:.08em}
+  .acts{display:flex;gap:16px;justify-content:center;margin-top:14px}
+  .acts .b{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:1.5rem;font-weight:800;border:1px solid var(--border);background:var(--panel)}
+  .acts .minus{color:var(--muted)}
+  .acts .plus2{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+
+  /* landscape (horizontal) device */
+  .orient{margin-top:2.4rem;color:var(--muted);text-align:center}
+  .landrow{display:flex;justify-content:center;margin-top:1.2rem}
+  .dev.wide{width:100%;max-width:660px}
+  .phone.land{width:100%;aspect-ratio:19.5/9;border-radius:40px}
+  .phone.land .notch{top:50%;left:11px;transform:translateY(-50%);width:22px;height:104px;border-radius:0 14px 14px 0}
+  .phone.land .scr{border-radius:30px;flex-direction:row}
+  .lpane{width:42%;min-width:150px;border-right:1px solid var(--border);background:var(--panel);display:flex;flex-direction:column;overflow:hidden}
+  .lhead{padding:14px 13px 9px;color:var(--muted);border-bottom:1px solid var(--border)}
+  .thread{display:flex;gap:8px;align-items:center;padding:9px 12px;border-bottom:1px solid var(--border)}
+  .thread.active{background:color-mix(in srgb,var(--accent) 12%,transparent)}
+  .thread .av{width:28px;height:28px;font-size:.72rem}
+  .thread .tn{font-weight:700;font-size:.78rem;line-height:1.15}
+  .thread .tp{color:var(--muted);font-size:.66rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:15ch}
+  .thread .tt{margin-left:auto;color:var(--muted);font-family:var(--mono);font-size:.5rem}
+  .rpane{flex:1;display:flex;flex-direction:column;min-width:0}
+  .rpane .atop{padding:13px 13px 10px}
+  @media(max-width:520px){.phone.land .scr{flex-direction:column}.lpane{width:100%;max-height:42%}.thread .tp{max-width:24ch}}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    .disc,.brand,.hoy,.reveal{animation:none!important;opacity:1!important;transform:none!important;transition:none!important}
+    .splash{display:none}
+  }
+  @media(max-width:560px){
+    .wrap{padding:0 18px}
+    .tag{display:none}
+    form.wl{gap:.45rem}
+    form.wl input,form.wl button{flex:1 1 100%;height:52px}
+    .foot{flex-direction:column;align-items:flex-start;gap:14px}
+    .devices{gap:28px}
+  }
+</style>
+
+<div class="splash" id="splash" aria-hidden="true">
+  <div class="disc"></div>
+  <div class="brand">
+    <div class="hoy">ХОЙ</div>
+    <div class="sub">сосед<span class="accent">.</span></div>
+    <div class="by mono">by <b>PSYTICAN</b></div>
+  </div>
+</div>
+
+<header>
+  <div class="wrap bar">
+    <div class="logo" id="logo" title="сменить акцент">сосед<span class="dot"></span></div>
+    <div class="htools">
+      <span class="tag mono">по приглашению · скоро</span>
+      <button class="icon-btn" id="theme" title="светло / тёмно" aria-label="переключить тему">
+        <span class="moon">☾</span><span class="sun">☀</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow mono">искусство быть рядом</div>
+      <h1>Хорошие соседи.<span class="l2">Живые моменты.</span></h1>
+      <p class="lead">Твой район полон своих людей. Скажи слово, совпади, поговори — и отпусти. Без профиля, без ленты, без понтов.</p>
+      <div class="microcat mono">локальная соседская сеть · анонимно · сообщения тают за пару часов</div>
+      <form class="wl" id="wl">
+        <input type="email" placeholder="твоя почта" aria-label="почта" required>
+        <button type="submit">Запросить доступ</button>
+      </form>
+      <div class="status mono" id="st"></div>
+      <div class="note mono">Первые соседи получают статус основателя двора 🌻</div>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="wrap">
+      <div class="kick mono reveal">лента района</div>
+      <div class="h2 reveal">Что происходит на районе</div>
+      <div class="feed">
+        <div class="msg reveal"><span class="plus">+</span><div class="who mono">двор</div><p>Семки есть, компании нет. Кто на лавку? 🌻</p></div>
+        <div class="msg reveal"><span class="plus">+</span><div class="who mono">корты</div><p>Домино в 8 под пивко, нужен четвёртый. Го 🎲</p></div>
+        <div class="msg reveal"><span class="plus">+</span><div class="who mono">4-й этаж</div><p>Кто на утренний эспрессо перед работой?</p></div>
+        <div class="msg reveal"><span class="plus">+</span><div class="who mono">подъезд 2</div><p>Мужики, кто шарит за роутер? Провайдер опять лёг 😤</p></div>
+        <div class="msg reveal"><span class="plus">+</span><div class="who mono">парковка</div><p>Ласточку чиню, нужен второй домкрат по-соседски 🔧</p></div>
+        <div class="msg reveal"><span class="plus">+</span><div class="who mono">терраса</div><p>Вино на террасе сегодня, нас двое — поднимайся?</p></div>
+        <div class="msg reveal"><span class="plus">+</span><div class="who mono">5-й этаж</div><p>Кто до Пятёры? Возьми пивандрий, на кассе скинемся 🍺</p></div>
+        <div class="msg reveal"><span class="plus">+</span><div class="who mono">детская</div><p>Выгуливаю кабыздоха в 8, кто со своим — го вместе 🐕</p></div>
+        <div class="msg reveal"><span class="plus">+</span><div class="who mono">подъезд 1</div><p>Напекли лишку — заберите пол-шарлотки, по-братски 🥧</p></div>
+        <div class="msg reveal"><span class="plus">+</span><div class="who mono">двор</div><p>Опять лифт умер. 9-й этаж пешком — познакомимся по пути 😅</p></div>
+        <div class="msg reveal"><span class="plus">+</span><div class="who mono">гаражи</div><p>Гантели отдам, качаться лень. Забирай, сосед 🏋️</p></div>
+        <div class="msg reveal"><span class="plus">+</span><div class="who mono">за домом</div><p>Шашлыки в выхи, мясо с меня, места во дворе хватит 🔥</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="wrap">
+      <div class="kick mono reveal">как это работает</div>
+      <div class="h2 reveal">Скажи. Совпади. Отпусти.</div>
+      <div class="steps">
+        <div class="step s1 reveal"><div class="pic"></div><div class="body"><div class="idx mono">I — скажи</div><h3>Кинь пару строк в район</h3><p>Пишешь коротко — видят соседи рядом, анонимно. Никаких анкет, фоток и «расскажите о себе».</p></div></div>
+        <div class="step s2 reveal"><div class="pic"></div><div class="body"><div class="idx mono">II — совпало</div><h3>Взаимный плюс — и вы в личке</h3><p>Ставишь плюс тому, кто зашёл. Совпало у обоих — открывается чат. В одну сторону — тишина, никто не узнает.</p></div></div>
+        <div class="step s3 reveal"><div class="pic"></div><div class="body"><div class="idx mono">III — исчезло</div><h3>Поговорили — и растворилось</h3><p>Через пару часов переписка тает сама. Остаются не скрины, а живые встречи во дворе.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="wrap">
+      <div class="kick mono reveal">в кармане</div>
+      <div class="h2 reveal">Как это выглядит</div>
+      <p class="sub2 reveal">Лента района и личка, которая тает через пару часов — всё в телефоне, ничего лишнего.</p>
+      <div class="devices">
+        <div class="dev reveal">
+          <div class="phone"><div class="notch"></div><div class="scr">
+            <div class="atop">
+              <div class="av" style="background:var(--panel-2);color:var(--accent)">с</div>
+              <div><div class="nm">твой район</div><div class="st">3 соседа рядом сейчас</div></div>
+              <div class="tmr">◱ дом</div>
+            </div>
+            <div class="fcard">
+              <div class="card">
+                <div class="zone">корты · 2 мин назад</div>
+                <div class="txt">Домино в 8 под пивко, нужен четвёртый. Го 🎲</div>
+                <div class="swipehint">← пропустить · плюс →</div>
+              </div>
+              <div class="acts"><div class="b minus">–</div><div class="b plus2">+</div></div>
+            </div>
+          </div></div>
+          <div class="cap mono">лента района · листай колоду, плюсуй своих</div>
+        </div>
+
+        <div class="dev reveal">
+          <div class="phone"><div class="notch"></div><div class="scr">
+            <div class="atop">
+              <span class="back">‹</span>
+              <div class="av">Т</div>
+              <div><div class="nm">Толян</div><div class="st">подъезд 2 · онлайн</div></div>
+              <div class="tmr">✦ 2:14</div>
+            </div>
+            <div class="chat">
+              <div class="why"><b>почему совпало</b>
+                <span class="ln">«Домино в 8 под пивко, го»</span>
+                <span class="ln">«о, я как раз с колодой ✦»</span>
+              </div>
+              <div class="tstamp">начало чата · растворится через 2:14</div>
+              <div class="bub in">здарова, сосед) ты с 5-го?</div>
+              <div class="bub out">ага, спускаюсь. пиво брать?</div>
+              <div class="bub in">бери, я семки уже держу 🌻</div>
+              <div class="bub out">красава, го 🎲</div>
+            </div>
+            <div class="compose"><div class="fld">написать…</div><div class="snd">↑</div></div>
+          </div></div>
+          <div class="cap mono">личка открылась · сверху видно, на чём совпали</div>
+        </div>
+      </div>
+      <div class="orient mono reveal">↕ вертикально — как в кармане &nbsp;·&nbsp; ↔ горизонтально — ниже</div>
+      <div class="landrow reveal">
+        <div class="dev wide">
+          <div class="phone land"><div class="notch"></div><div class="scr">
+            <div class="lpane">
+              <div class="lhead mono">личка · тает</div>
+              <div class="thread active"><div class="av">Т</div><div><div class="tn">Толян</div><div class="tp">красава, го 🎲</div></div><span class="tt">2:14</span></div>
+              <div class="thread"><div class="av" style="background:var(--panel-2);color:var(--accent)">А</div><div><div class="tn">Аня</div><div class="tp">поднимайся, открыто</div></div><span class="tt">0:48</span></div>
+              <div class="thread"><div class="av" style="background:var(--panel-2);color:var(--accent)">Г</div><div><div class="tn">Дядь Гена</div><div class="tp">дрель верну с пивом 🍺</div></div><span class="tt">1:30</span></div>
+            </div>
+            <div class="rpane">
+              <div class="atop"><span class="back">‹</span><div class="av">Т</div><div><div class="nm">Толян</div><div class="st">подъезд 2 · онлайн</div></div><div class="tmr">✦ 2:14</div></div>
+              <div class="chat">
+                <div class="why"><b>почему совпало</b><span class="ln">«Домино в 8 под пивко, го»</span></div>
+                <div class="bub in">здарова, сосед) ты с 5-го?</div>
+                <div class="bub out">ага, спускаюсь. пиво брать?</div>
+                <div class="bub in">бери, я семки уже держу 🌻</div>
+                <div class="bub out">красава, го 🎲</div>
+              </div>
+              <div class="compose"><div class="fld">написать…</div><div class="snd">↑</div></div>
+            </div>
+          </div></div>
+          <div class="cap mono">горизонтально · слева личка, справа открытый чат</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="wrap">
+      <div class="kick mono reveal">почему это иначе</div>
+      <div class="h2 reveal">Сделано, чтобы быть рядом</div>
+      <p class="sub2 reveal">Ничего лишнего — только то, что помогает встретиться вживую, а не залипнуть в ленте.</p>
+      <div class="feats">
+        <div class="feat reveal"><div class="fi">◱</div><h3>По району, не по метрам</h3><p>Сводим по двору и району, что ты выбрал. Точное место не показываем никогда.</p></div>
+        <div class="feat reveal"><div class="fi">±</div><h3>Плюс или пропуск</h3><p>Листаешь как колоду: плюс — заходишь, минус — пропал навсегда. Без бесконечной ленты.</p></div>
+        <div class="feat reveal"><div class="fi">✦</div><h3>Видно, за что зацепились</h3><p>Совпало — и в чате видны те самые строки, что вас свели. Сразу есть с чего начать.</p></div>
+        <div class="feat reveal"><div class="fi">⧗</div><h3>Ничего не хранится</h3><p>Сообщения тают за пару часов. Ни архива, ни скринов на память — только вживую.</p></div>
+        <div class="feat reveal"><div class="fi">◈</div><h3>Игры без правил</h3><p>Домино, шашки, шахматы прямо в чате. Правил нет — придумываете на ходу.</p></div>
+        <div class="feat reveal"><div class="fi">✷</div><h3>Стикеры и свои соседи</h3><p>Дворовые стикеры и зови соседей по ссылке — чем больше своих, тем живее район.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk closing">
+    <div class="wrap">
+      <div class="big reveal">Район <span>ждёт</span></div>
+      <form class="wl reveal" id="wl2" style="margin:2rem auto 0;justify-content:center">
+        <input type="email" placeholder="твоя почта" aria-label="почта" required>
+        <button type="submit">Запросить доступ</button>
+      </form>
+      <div class="status mono" id="st2" style="text-align:center"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div class="cr mono">© 2026 sosed.place · <b>хой</b>, by <b>PSYTICAN</b></div>
+    <div class="links mono">
+      <a href="#">Условия</a><a href="#">Приватность</a><a href="#">Правила</a>
+      <a href="https://neighbro.place" title="глобальная версия">neighbro.place ↗</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    // theme toggle
+    var root=document.documentElement, tb=document.getElementById("theme");
+    function cur(){return root.getAttribute("data-theme")|| (matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");}
+    tb.addEventListener("click",function(){root.setAttribute("data-theme",cur()==="light"?"dark":"light");});
+    // accent cycle on logo (silent) — a few warm siblings of the brick signature
+    var ACC=["#d6552f","#c8443a","#b7683a","#a84f2b","#cf6a2b"], ai=0;
+    document.getElementById("logo").addEventListener("click",function(){ai=(ai+1)%ACC.length;root.style.setProperty("--accent",ACC[ai]);});
+    // splash dismiss
+    setTimeout(function(){var s=document.getElementById("splash");if(s){s.classList.add("done");setTimeout(function(){s.remove();},520);}},1900);
+    // reveal on scroll
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:.12});
+    document.querySelectorAll(".reveal").forEach(function(el){io.observe(el);});
+    // waitlist (demo)
+    function wire(fid,sid){var f=document.getElementById(fid);if(!f)return;f.addEventListener("submit",function(e){e.preventDefault();var s=document.getElementById(sid);s.textContent="хой! ты в списке ✦";s.className="status mono ok";f.reset();});}
+    wire("wl","st");wire("wl2","st2");
+  })();
+</script>
