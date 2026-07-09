@@ -20,7 +20,7 @@
   (function(){ var d=document.documentElement;
     var t=localStorage.getItem("ss-theme"); if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark";
     d.setAttribute("data-theme",t);
-    var a=localStorage.getItem("ss-accent"); var ACC=["#d6552f","#c8443a","#b7683a","#a84f2b","#cf6a2b"];
+    var a=localStorage.getItem("ss-accent"); var ACC=["#cb4f2a","#b35f1c","#626f2c","#2f8078","#5561b0","#9c4d7c"];
     if(!a){ var prev=parseInt(localStorage.getItem("ss-accent-prev"),10); var i; do{i=Math.floor(Math.random()*ACC.length);}while(ACC.length>1&&i===prev); a=ACC[i]; localStorage.setItem("ss-accent-prev",String(i)); sessionStorage.setItem("ss-acc",String(i)); }
     d.style.setProperty("--accent",a);
     var tc=document.querySelector('meta[name=theme-color]'); if(tc)tc.setAttribute("content",t==="light"?"#ece4d8":"#0d0b0a");
@@ -39,7 +39,7 @@
     /* warm brick / terracotta signature, warm-brown neutrals */
     --bg:#0d0b0a; --panel:#17130f; --panel-2:#241c14; --border:#3a2e20;
     --fg:#f0e7dc; --muted:#9a8d7c; --muted-2:#ab9d88;
-    --accent:#d6552f; --accent-ink:#1c0e07;
+    --accent:#d6552f; --accent-ink:#fff6f0;
     --sans:"Golos Text",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
   }
@@ -50,7 +50,7 @@
   :root[data-theme="light"]{ --bg:#ece4d8; --panel:#f5efe4; --panel-2:#ddd0bd; --border:#221a12;
            --fg:#1c140d; --muted:#6b5f4c; --muted-2:#655847; --accent:#c24a26; --accent-ink:#fff6f0; }
   :root[data-theme="dark"]{ --bg:#0d0b0a; --panel:#17130f; --panel-2:#241c14; --border:#3a2e20;
-           --fg:#f0e7dc; --muted:#9a8d7c; --muted-2:#ab9d88; --accent:#d6552f; --accent-ink:#1c0e07; }
+           --fg:#f0e7dc; --muted:#9a8d7c; --muted-2:#ab9d88; --accent:#d6552f; --accent-ink:#fff6f0; }
 
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -251,7 +251,7 @@
 
 <header>
   <div class="wrap bar">
-    <div class="logo" id="logoBtn" title="сменить акцент"><img class="logo-ic" src="icons/icon.svg" alt=""><span data-i18n="brand">сосед</span></div>
+    <div class="logo" id="logoBtn" title="сменить акцент"><svg class="logo-ic" viewBox="0 0 96 96" width="27" height="27" aria-hidden="true"><circle cx="48" cy="48" r="46" fill="var(--accent)"></circle><g transform="translate(17,18) scale(0.86)"><path d="M48 6 V18 M42 8 L54 4" fill="none" stroke="#0d0b0a" stroke-width="3" stroke-linecap="round"></path><path d="M10 18 H62 V56 H30 L18 66 V56 H10 Z" fill="#0d0b0a" stroke="#0d0b0a" stroke-width="4" stroke-linejoin="round"></path><rect x="17" y="25" width="8" height="8" fill="var(--accent)"></rect><rect x="32" y="25" width="8" height="8" fill="var(--accent)"></rect><rect x="47" y="25" width="8" height="8" fill="var(--accent)"></rect><rect x="17" y="40" width="8" height="8" fill="var(--accent)"></rect><rect x="32" y="40" width="8" height="8" fill="var(--accent)"></rect><rect x="47" y="40" width="8" height="8" fill="var(--accent)"></rect></g></svg><span data-i18n="brand">сосед</span></div>
     <div class="htools">
       <span class="tag mono" data-i18n="headerStatus">по приглашению · скоро</span>
       <div class="lang-pop"><button class="icon-btn lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-label="язык"><span id="langCur">RU</span></button><div class="lang-menu" id="langMenu" hidden role="menu"><button data-lang="en">English</button><button data-lang="fr">Français</button><button data-lang="de">Deutsch</button><button data-lang="es">Español</button><button data-lang="el">Ελληνικά</button><button data-lang="pl">Polski</button><button data-lang="uk">Українська</button><button data-lang="be">Беларуская</button><button data-lang="kk">Қазақша</button><button data-lang="ka">ქართული</button><button data-lang="ru">Русский</button></div></div><button class="icon-btn" id="modeBtn" title="светло / тёмно" aria-label="переключить тему">
@@ -453,6 +453,7 @@
   function applyLang(lang,persist){ LANG=SUPPORTED.indexOf(lang)>=0?lang:"ru"; var d=T[LANG]; document.documentElement.lang=LANG;
     document.querySelectorAll("[data-i18n]").forEach(function(el){ var v=d[el.getAttribute("data-i18n")]; if(v!=null)el.textContent=v; });
     document.querySelectorAll("[data-i18n-ph]").forEach(function(el){ var v=d[el.getAttribute("data-i18n-ph")]; if(v!=null){el.setAttribute("placeholder",v);el.setAttribute("aria-label",v);} });
+    document.title=(d.brand||"сосед")+" — "+(d.h1a||"")+" "+(d.h1b||"");
     var lc=document.getElementById("langCur"); if(lc)lc.textContent=LANG.toUpperCase();
     document.querySelectorAll("#langMenu button").forEach(function(bn){bn.classList.toggle("on",bn.dataset.lang===LANG);});
     if(persist)localStorage.setItem("ss-lang",LANG); }
@@ -464,7 +465,7 @@
   function curTheme(){ return root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"); }
   document.getElementById("modeBtn").addEventListener("click",function(){ var t=curTheme()==="light"?"dark":"light"; root.setAttribute("data-theme",t); localStorage.setItem("ss-theme",t); var tc=document.querySelector('meta[name=theme-color]'); if(tc)tc.setAttribute("content",t==="light"?"#ece4d8":"#0d0b0a"); });
   // accent cycle (silent) on logo
-  var ACC=["#d6552f","#c8443a","#b7683a","#a84f2b","#cf6a2b"], ai=parseInt(sessionStorage.getItem("ss-acc")||"0",10)||0;
+  var ACC=["#cb4f2a","#b35f1c","#626f2c","#2f8078","#5561b0","#9c4d7c"], ai=parseInt(sessionStorage.getItem("ss-acc")||"0",10)||0;
   document.getElementById("logoBtn").addEventListener("click",function(){ ai=(ai+1)%ACC.length; root.style.setProperty("--accent",ACC[ai]); sessionStorage.setItem("ss-acc",String(ai)); localStorage.setItem("ss-accent",ACC[ai]); });
 
   // splash — hold once per session
