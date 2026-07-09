@@ -237,7 +237,7 @@
     .foot{flex-direction:column;align-items:flex-start;gap:14px}
     .devices{gap:28px}
   }
-.lang-sel{background:transparent;border:1px solid var(--border);color:var(--fg);border-radius:9px;height:38px;padding:0 8px;font-family:var(--mono);font-size:.72rem;text-transform:uppercase;cursor:pointer}.lang-sel:hover{border-color:var(--accent)}</style>
+.lang-pop{position:relative}.lang-btn{width:auto;min-width:44px;padding:0 10px;font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}.lang-menu{position:absolute;right:0;top:calc(100% + 8px);z-index:60;background:var(--panel);border:1px solid var(--border);min-width:162px;box-shadow:6px 6px 0 rgba(0,0,0,.4);padding:5px;border-radius:11px}.lang-menu[hidden]{display:none}.lang-menu button{display:block;width:100%;text-align:left;background:transparent;border:0;color:var(--fg);padding:10px 12px;font-family:var(--sans);font-size:.92rem;cursor:pointer;border-radius:7px}.lang-menu button:hover,.lang-menu button.on{background:var(--accent);color:var(--accent-ink)}</style>
 
 <div class="splash" id="splash" aria-hidden="true">
   <div class="disc"></div>
@@ -254,7 +254,7 @@
     <div class="logo" id="logoBtn" title="сменить акцент"><img class="logo-ic" src="icons/icon.svg" alt=""><span data-i18n="brand">сосед</span></div>
     <div class="htools">
       <span class="tag mono" data-i18n="headerStatus">по приглашению · скоро</span>
-      <select id="lang-select" class="lang-sel" aria-label="язык"><option value="ru">Рус</option><option value="uk">Укр</option><option value="be">Бел</option><option value="kk">Қаз</option><option value="ka">ქარ</option><option value="pl">Pol</option><option value="en">Eng</option><option value="fr">Fra</option><option value="de">Deu</option><option value="es">Esp</option><option value="el">Ελλ</option></select><button class="icon-btn" id="modeBtn" title="светло / тёмно" aria-label="переключить тему">
+      <div class="lang-pop"><button class="icon-btn lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-label="язык"><span id="langCur">RU</span></button><div class="lang-menu" id="langMenu" hidden role="menu"><button data-lang="en">English</button><button data-lang="fr">Français</button><button data-lang="de">Deutsch</button><button data-lang="es">Español</button><button data-lang="el">Ελληνικά</button><button data-lang="pl">Polski</button><button data-lang="uk">Українська</button><button data-lang="be">Беларуская</button><button data-lang="kk">Қазақша</button><button data-lang="ka">ქართული</button><button data-lang="ru">Русский</button></div></div><button class="icon-btn" id="modeBtn" title="светло / тёмно" aria-label="переключить тему">
         <span class="moon">☾</span><span class="sun">☀</span>
       </button>
     </div>
@@ -420,7 +420,6 @@
     <div class="cr mono"><span data-i18n="footerCopy">© 2026 sosed.place · хой</span>, by <b>PSYTICAN</b></div>
     <div class="links mono">
       <a href="legal.html?doc=terms" data-i18n="footerTerms">Условия</a><a href="legal.html?doc=privacy" data-i18n="footerPrivacy">Приватность</a><a href="rules.html" data-i18n="footerRules">Правила</a><a href="mailto:support@sosed.place">support@sosed.place</a>
-      <a href="https://neighbro.place" title="глобальная версия">neighbro.place ↗</a>
     </div>
   </div>
 </footer>
@@ -454,9 +453,11 @@
   function applyLang(lang,persist){ LANG=SUPPORTED.indexOf(lang)>=0?lang:"ru"; var d=T[LANG]; document.documentElement.lang=LANG;
     document.querySelectorAll("[data-i18n]").forEach(function(el){ var v=d[el.getAttribute("data-i18n")]; if(v!=null)el.textContent=v; });
     document.querySelectorAll("[data-i18n-ph]").forEach(function(el){ var v=d[el.getAttribute("data-i18n-ph")]; if(v!=null){el.setAttribute("placeholder",v);el.setAttribute("aria-label",v);} });
-    var sel=document.getElementById("lang-select"); if(sel)sel.value=LANG; if(persist)localStorage.setItem("ss-lang",LANG); }
+    var lc=document.getElementById("langCur"); if(lc)lc.textContent=LANG.toUpperCase();
+    document.querySelectorAll("#langMenu button").forEach(function(bn){bn.classList.toggle("on",bn.dataset.lang===LANG);});
+    if(persist)localStorage.setItem("ss-lang",LANG); }
   applyLang(detectLang(),false);
-  var _sel=document.getElementById("lang-select"); if(_sel)_sel.addEventListener("change",function(e){applyLang(e.target.value,true);});
+  (function(){var btn=document.getElementById("langBtn"),menu=document.getElementById("langMenu");function close(){menu.hidden=true;btn.setAttribute("aria-expanded","false");}btn.addEventListener("click",function(e){e.stopPropagation();var willOpen=menu.hidden;menu.hidden=!willOpen;btn.setAttribute("aria-expanded",String(willOpen));});menu.querySelectorAll("button").forEach(function(bn){bn.addEventListener("click",function(){applyLang(bn.dataset.lang,true);close();});});document.addEventListener("click",function(e){if(!menu.hidden&&!menu.contains(e.target)&&e.target!==btn)close();});document.addEventListener("keydown",function(e){if(e.key==="Escape")close();});})();
 
   // theme (light/dark via data-theme) — pre-resolved in head; wire toggle
   var root=document.documentElement;
@@ -468,7 +469,7 @@
 
   // splash — hold once per session
   var splash=document.getElementById("splash");
-  if(splash){ var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches; var seen=sessionStorage.getItem("ss-splash"); sessionStorage.setItem("ss-splash","1"); var hold=reduce||seen?0:1700; setTimeout(function(){ splash.classList.add("done"); setTimeout(function(){splash.remove();},reduce?0:600); },hold); }
+  if(splash){ var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches; var seen=sessionStorage.getItem("ss-splash"); sessionStorage.setItem("ss-splash","1"); var hold=reduce?0:2000; setTimeout(function(){ splash.classList.add("done"); setTimeout(function(){splash.remove();},reduce?0:600); },hold); }
 
   // reveal on scroll
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:.12});
