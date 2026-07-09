@@ -20,9 +20,11 @@
   (function(){ var d=document.documentElement;
     var t=localStorage.getItem("ss-theme"); if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark";
     d.setAttribute("data-theme",t);
-    var a=localStorage.getItem("ss-accent"); var ACC=["#cb4f2a","#b35f1c","#626f2c","#2f8078","#5561b0","#9c4d7c"];
-    if(!a){ var prev=parseInt(localStorage.getItem("ss-accent-prev"),10); var i; do{i=Math.floor(Math.random()*ACC.length);}while(ACC.length>1&&i===prev); a=ACC[i]; localStorage.setItem("ss-accent-prev",String(i)); sessionStorage.setItem("ss-acc",String(i)); }
-    d.style.setProperty("--accent",a);
+    var ACC=["terra","amber","teal","azure","violet","crimson"];
+    var pick=localStorage.getItem("ss-accent-pick"), ai;
+    if(pick!==null&&ACC.indexOf(pick)>=0){ ai=ACC.indexOf(pick); }
+    else{ var prev=parseInt(localStorage.getItem("ss-accent-prev"),10); do{ai=Math.floor(Math.random()*ACC.length);}while(ACC.length>1&&ai===prev); localStorage.setItem("ss-accent-prev",String(ai)); }
+    d.setAttribute("data-accent",ACC[ai]); sessionStorage.setItem("ss-acc",String(ai));
     var tc=document.querySelector('meta[name=theme-color]'); if(tc)tc.setAttribute("content",t==="light"?"#ece4d8":"#0d0b0a");
   })();
 </script>
@@ -45,12 +47,19 @@
   }
   @media (prefers-color-scheme: light){
     :root{ --bg:#ece4d8; --panel:#f5efe4; --panel-2:#ddd0bd; --border:#221a12;
-           --fg:#1c140d; --muted:#6b5f4c; --muted-2:#655847; --accent:#c24a26; --accent-ink:#fff6f0; }
+           --fg:#1c140d; --muted:#6b5f4c; --muted-2:#655847; }
   }
   :root[data-theme="light"]{ --bg:#ece4d8; --panel:#f5efe4; --panel-2:#ddd0bd; --border:#221a12;
-           --fg:#1c140d; --muted:#6b5f4c; --muted-2:#655847; --accent:#c24a26; --accent-ink:#fff6f0; }
+           --fg:#1c140d; --muted:#6b5f4c; --muted-2:#655847; }
   :root[data-theme="dark"]{ --bg:#0d0b0a; --panel:#17130f; --panel-2:#241c14; --border:#3a2e20;
-           --fg:#f0e7dc; --muted:#9a8d7c; --muted-2:#ab9d88; --accent:#d6552f; --accent-ink:#fff6f0; }
+           --fg:#f0e7dc; --muted:#9a8d7c; --muted-2:#ab9d88; }
+  /* named accent themes — picked at random per load, cycle on logo click; each pairs accent + legible ink */
+  :root[data-accent="terra"]  { --accent:#d6552f; --accent-ink:#fff6f0; }
+  :root[data-accent="amber"]  { --accent:#d68a1f; --accent-ink:#241206; }
+  :root[data-accent="teal"]   { --accent:#1fa99a; --accent-ink:#04231f; }
+  :root[data-accent="azure"]  { --accent:#3d84d6; --accent-ink:#eaf2ff; }
+  :root[data-accent="violet"] { --accent:#9b5de5; --accent-ink:#f3ecfd; }
+  :root[data-accent="crimson"]{ --accent:#e0342b; --accent-ink:#fdeceb; }
 
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -465,8 +474,8 @@
   function curTheme(){ return root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"); }
   document.getElementById("modeBtn").addEventListener("click",function(){ var t=curTheme()==="light"?"dark":"light"; root.setAttribute("data-theme",t); localStorage.setItem("ss-theme",t); var tc=document.querySelector('meta[name=theme-color]'); if(tc)tc.setAttribute("content",t==="light"?"#ece4d8":"#0d0b0a"); });
   // accent cycle (silent) on logo
-  var ACC=["#cb4f2a","#b35f1c","#626f2c","#2f8078","#5561b0","#9c4d7c"], ai=parseInt(sessionStorage.getItem("ss-acc")||"0",10)||0;
-  document.getElementById("logoBtn").addEventListener("click",function(){ ai=(ai+1)%ACC.length; root.style.setProperty("--accent",ACC[ai]); sessionStorage.setItem("ss-acc",String(ai)); localStorage.setItem("ss-accent",ACC[ai]); });
+  var ACC=["terra","amber","teal","azure","violet","crimson"], ai=parseInt(sessionStorage.getItem("ss-acc")||"0",10)||0;
+  document.getElementById("logoBtn").addEventListener("click",function(){ ai=(ai+1)%ACC.length; root.setAttribute("data-accent",ACC[ai]); sessionStorage.setItem("ss-acc",String(ai)); localStorage.setItem("ss-accent-pick",ACC[ai]); });
 
   // splash — hold once per session
   var splash=document.getElementById("splash");
