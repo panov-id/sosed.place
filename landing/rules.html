@@ -91,6 +91,12 @@
         <button data-lang="be">BE</button>
         <button data-lang="kk">KK</button>
         <button data-lang="ka">KA</button>
+        <button data-lang="hy">HY</button>
+        <button data-lang="az">AZ</button>
+        <button data-lang="uz">UZ</button>
+        <button data-lang="ky">KY</button>
+        <button data-lang="tg">TG</button>
+        <button data-lang="ro">RO</button>
         <button data-lang="ru">RU</button>
       </div>
     </div>
@@ -162,7 +168,7 @@
   const params = new URLSearchParams(location.search);
   let DOC = "rules";
   // Community guidelines follow the site language (with EN fallback).
-  const LANGS = ["ru","uk","be","kk","ka","pl","en","fr","de","es","el"];
+  const LANGS = ["ru","uk","be","kk","ka","hy","az","uz","ky","tg","ro","pl","en","fr","de","es","el"];
   const _stored = localStorage.getItem("ss-lang");
   const _nav = (navigator.language || "en").slice(0,2).toLowerCase();
   let LANG = LANGS.includes(params.get("lang")) ? params.get("lang") : (LANGS.includes(_stored) ? _stored : (LANGS.includes(_nav) ? _nav : "en"));
