@@ -5,8 +5,7 @@
 # Required env:
 #   BUNNY_STORAGE_ZONE       Storage Zone name
 #   BUNNY_STORAGE_API_KEY    Storage Zone password
-#   SUPABASE_URL             Supabase project URL for this environment
-#   SUPABASE_ANON_KEY        Supabase anon key for this environment
+#   RELAY_API_URL            relay backend base for this environment (waitlist + client-error)
 # Optional env:
 #   BUNNY_PULL_ZONE_ID       numeric Pull Zone ID (for cache purge)
 #   BUNNY_API_KEY            account API key (purge; falls back to storage key)
@@ -18,8 +17,7 @@ SRC="$ROOT_DIR/landing"
 
 : "${BUNNY_STORAGE_ZONE:?}"
 : "${BUNNY_STORAGE_API_KEY:?}"
-: "${SUPABASE_URL:?}"
-: "${SUPABASE_ANON_KEY:?}"
+: "${RELAY_API_URL:?}"
 SOURCE_TAG="${SOURCE_TAG:-sosed.place-landing}"
 
 BASE_URL="https://storage.bunnycdn.com/${BUNNY_STORAGE_ZONE}"
@@ -40,15 +38,14 @@ mime_type() {
 }
 
 # Stage a copy and inject the environment's config.js (the committed one is
-# local same-origin; this points the form at the environment's Supabase).
+# local same-origin; this points the form at the environment's relay backend).
 STAGE="$(mktemp -d)"
 trap 'rm -rf "$STAGE"' EXIT
 cp -R "$SRC/." "$STAGE/"
 cat > "$STAGE/config.js" <<EOF
-// Generated at deploy time — ${SOURCE_TAG} → ${SUPABASE_URL}
+// Generated at deploy time — ${SOURCE_TAG} → ${RELAY_API_URL}
 window.__XOR_CONFIG__ = {
-  supabaseUrl: "${SUPABASE_URL}",
-  supabaseAnonKey: "${SUPABASE_ANON_KEY}",
+  apiUrl: "${RELAY_API_URL}",
   alphaUrl: "${ALPHA_URL:-}",
   vapidPublicKey: "${VAPID_PUBLIC_KEY:-}",
 };

@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self' https://api.dev.sosed.panov.id https://api.uat.sosed.panov.id https://api.sosed.place https://*.supabase.co; worker-src 'self'; manifest-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self' https://n1-dev.relay.panov.id https://n1-staging.relay.panov.id https://api.relay.panov.id; worker-src 'self'; manifest-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'">
 <title>sosed.place — хой, сосед. Хорошие соседи, живые моменты.</title>
 <meta name="description" content="Локальная соседская сеть: скажи слово людям рядом, совпади, поговори — и отпусти. Без профиля, без ленты. Сообщения тают за пару часов.">
 <link rel="canonical" href="https://sosed.place/">
@@ -444,12 +444,12 @@
 <script src="config.js"></script>
 <script>
   var CFG = window.__XOR_CONFIG__ || {};
-  var SUPABASE_URL = CFG.supabaseUrl || "";
-  var SUPABASE_ANON_KEY = CFG.supabaseAnonKey || "";
+  var API_URL = CFG.apiUrl || "";
   var SOURCE = "sosed.place-landing";
-  var ERR_ENDPOINT = (function(){ try { return "https://"+JSON.parse(atob(SUPABASE_ANON_KEY.split(".")[1])).ref+".supabase.co/rest/v1/client_errors"; } catch(e){ return ""; } })();
+  var BRAND = "sosed";
+  var ERR_ENDPOINT = API_URL + "/client-error";
   function currentEnv(){ var h=location.hostname; if(h.indexOf("dev.")===0||h.indexOf("-dev")>=0)return"dev"; if(h.indexOf("uat.")===0||h.indexOf("-uat")>=0)return"uat"; if(h==="sosed.place"||h.indexOf(".sosed.place")>=0)return"prod"; return"local"; }
-  function logClientError(kind,err,extra){ if(!ERR_ENDPOINT||!SUPABASE_ANON_KEY)return; try{ fetch(ERR_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json",apikey:SUPABASE_ANON_KEY,Authorization:"Bearer "+SUPABASE_ANON_KEY,Prefer:"return=minimal"},body:JSON.stringify({kind:kind,message:(err&&(err.message||String(err)))||null,stack:err&&err.stack?String(err.stack).slice(0,2000):null,page_url:location.href,user_agent:navigator.userAgent,source:SOURCE,extra:Object.assign({env:currentEnv()},extra||{})}),keepalive:true}).catch(function(){}); }catch(e){} }
+  function logClientError(kind,err,extra){ if(!ERR_ENDPOINT)return; try{ fetch(ERR_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({kind:kind,message:(err&&(err.message||String(err)))||null,stack:err&&err.stack?String(err.stack).slice(0,2000):null,page_url:location.href,user_agent:navigator.userAgent,source:SOURCE,extra:Object.assign({env:currentEnv()},extra||{})}),keepalive:true}).catch(function(){}); }catch(e){} }
   window.__logClientError=logClientError;
   addEventListener("error",function(e){logClientError("window.onerror",e.error||{message:e.message},{filename:e.filename,lineno:e.lineno});});
   addEventListener("unhandledrejection",function(e){logClientError("unhandledrejection",e.reason,null);});
@@ -493,9 +493,9 @@
     form.addEventListener("submit",function(e){ e.preventDefault();
       var email=form.querySelector('input[type=email]').value.trim(); if(!email)return;
       btn.disabled=true; if(st){st.textContent="";st.className="status mono";}
-      fetch(SUPABASE_URL+"/rest/v1/waitlist",{method:"POST",headers:{"Content-Type":"application/json",apikey:SUPABASE_ANON_KEY,Authorization:"Bearer "+SUPABASE_ANON_KEY,Prefer:"return=minimal"},
-        body:JSON.stringify({email:email,source:SOURCE,early_access:true,lang:LANG,mode:curTheme()})})
-      .then(function(res){ if(!res.ok&&res.status!==409)throw new Error("HTTP "+res.status);
+      fetch(API_URL+"/waitlist",{method:"POST",headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({email:email,source:SOURCE,brand:BRAND,early_access:true,lang:LANG,mode:curTheme()})})
+      .then(function(res){ if(!res.ok)throw new Error("HTTP "+res.status);
         if(st){st.textContent=T[LANG].statusOk;st.className="status mono ok";} form.reset(); btn.disabled=false; })
       .catch(function(err){ logClientError("waitlist-submit",err,{}); if(st){st.textContent=T[LANG].statusErr;st.className="status mono";} btn.disabled=false; });
     });
