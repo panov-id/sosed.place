@@ -486,17 +486,20 @@
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:.12});
   document.querySelectorAll(".reveal").forEach(function(el){io.observe(el);});
 
-  // waitlist
+  // waitlist — remember a successful signup so revisits show the "done" state
+  function markJoined(form,st){ form.style.display="none"; if(st){st.textContent=T[LANG].statusOk;st.className="status mono ok";} }
   document.querySelectorAll("form.wl").forEach(function(form){
     var st=form.parentNode.querySelector(".status")||document.getElementById(form.id==="wl2"?"st2":"st");
     var btn=form.querySelector("button");
+    if(localStorage.getItem("ss-wl-done")){ markJoined(form,st); return; }
     form.addEventListener("submit",function(e){ e.preventDefault();
       var email=form.querySelector('input[type=email]').value.trim(); if(!email)return;
       btn.disabled=true; if(st){st.textContent="";st.className="status mono";}
       fetch(API_URL+"/waitlist",{method:"POST",headers:{"Content-Type":"application/json"},
-        body:JSON.stringify({email:email,source:SOURCE,brand:BRAND,early_access:true,lang:LANG,mode:curTheme()})})
+        body:JSON.stringify({email:email,source:SOURCE,brand:BRAND,early_access:true,lang:LANG,accent:root.getAttribute("data-accent")||ACC[ai]||"terra",mode:curTheme()})})
       .then(function(res){ if(!res.ok)throw new Error("HTTP "+res.status);
-        if(st){st.textContent=T[LANG].statusOk;st.className="status mono ok";} form.reset(); btn.disabled=false; })
+        localStorage.setItem("ss-wl-done","1");
+        document.querySelectorAll("form.wl").forEach(function(f){ var s=f.parentNode.querySelector(".status")||document.getElementById(f.id==="wl2"?"st2":"st"); markJoined(f,s); }); })
       .catch(function(err){ logClientError("waitlist-submit",err,{}); if(st){st.textContent=T[LANG].statusErr;st.className="status mono";} btn.disabled=false; });
     });
   });
