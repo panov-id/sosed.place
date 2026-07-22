@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>sosed — OG image template</title>
+<link rel="stylesheet" href="../landing/fonts.css">
+<style>
+  html, body { margin: 0; padding: 0; }
+  body { width: 1200px; height: 630px; overflow: hidden; font-family: 'Golos Text', sans-serif; }
+  #stage { position: relative; width: 1200px; height: 630px; }
+  #stage svg { position: absolute; inset: 0; display: block; }
+  #brand {
+    position: absolute; inset: 0; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center; gap: 18px;
+  }
+  #logo { font-weight: 800; font-size: 118px; letter-spacing: -0.035em; line-height: 1; }
+  #logo .dot { color: var(--accent); }
+  #caption {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 16px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 500;
+    padding-left: 0.22em; /* optically re-center letterspaced text */
+    line-height: 1.9;
+  }
+  #caption .site { color: var(--accent); font-weight: 700; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <svg id="art" width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"></svg>
+  <div id="brand">
+    <div id="logo">sosed<span class="dot">●</span></div>
+    <div id="caption"></div>
+  </div>
+</div>
+
+<script>
+// Generative "soviet abstractionism" OG background: geometric neighbor figures
+// (Malevich peasant-series style) grouped at the left and right edges, leaning
+// toward a calm center that holds the logo and caption. Deterministic per seed.
+
+const PALETTES = {
+  light: {
+    ground: "#ece4d8",
+    ink: "#1c140d",
+    accent: "#c24a26",
+    figure: ["#c24a26", "#b7683a", "#221a12", "#a84f2b", "#6b5f4c"],
+    paper: "#f5efe4",
+    muted: "#9a8d7c",
+  },
+  dark: {
+    ground: "#0d0b0a",
+    ink: "#f0e7dc",
+    accent: "#d6552f",
+    figure: ["#d6552f", "#b7683a", "#ece4d8", "#cf6a2b", "#9a8d7c"],
+    paper: "#241c14",
+    muted: "#655847",
+  },
+};
+
+// Mulberry32 — small deterministic PRNG so every seed is reproducible.
+function rng(seed) {
+  let a = seed >>> 0;
+  return function () {
+    a |= 0; a = (a + 0x6D2B79F5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+const SVG = "http://www.w3.org/2000/svg";
+function el(name, attrs, parent) {
+  const node = document.createElementNS(SVG, name);
+  for (const [k, v] of Object.entries(attrs)) node.setAttribute(k, v);
+  if (parent) parent.appendChild(node);
+  return node;
+}
+
+// One stylized neighbor: segmented cylinder body, oval head, no face.
+// Built in local coords (feet at y=0, looking along +x), then placed.
+function drawFigure(parent, rand, pal, opts) {
+  const { x, y, height: h, lean, wave, item } = opts;
+  const g = el("g", { transform: `translate(${x} ${y}) rotate(${lean})` }, parent);
+  const bodyW = h * (0.34 + rand() * 0.1);
+  const headR = h * (0.115 + rand() * 0.02);
+  const bodyH = h - headR * 2.4;
+
+  // Body: vertical halves in two colors (Malevich peasant segmentation).
+  const c1 = pal.figure[Math.floor(rand() * pal.figure.length)];
+  let c2 = pal.figure[Math.floor(rand() * pal.figure.length)];
+  if (c2 === c1) c2 = pal.figure[(pal.figure.indexOf(c1) + 1) % pal.figure.length];
+  const half = bodyW / 2;
+  // slight trapezoid: narrower shoulders
+  const sh = half * (0.72 + rand() * 0.18);
+  el("path", { d: `M ${-half} 0 L ${-sh} ${-bodyH} L 0 ${-bodyH} L 0 0 Z`, fill: c1 }, g);
+  el("path", { d: `M 0 0 L 0 ${-bodyH} L ${sh} ${-bodyH} L ${half} 0 Z`, fill: c2 }, g);
+  // waist band
+  if (rand() < 0.6) {
+    const bandY = -bodyH * (0.45 + rand() * 0.2);
+    el("rect", { x: -half * 0.92, y: bandY, width: half * 1.84, height: h * 0.045, fill: pal.ground }, g);
+  }
+
+  // Head: oval, single color, sometimes split.
+  const headC = pal.figure[Math.floor(rand() * pal.figure.length)];
+  const headY = -bodyH - headR * 1.1;
+  el("ellipse", { cx: 0, cy: headY, rx: headR * 0.82, ry: headR, fill: headC }, g);
+  if (rand() < 0.4) {
+    const clip = el("clipPath", { id: `hc${x.toFixed(0)}${y.toFixed(0)}` }, g);
+    el("ellipse", { cx: 0, cy: headY, rx: headR * 0.82, ry: headR }, clip);
+    el("rect", {
+      x: 0, y: headY - headR, width: headR, height: headR * 2,
+      fill: pal.figure[(pal.figure.indexOf(headC) + 2) % pal.figure.length],
+      "clip-path": `url(#hc${x.toFixed(0)}${y.toFixed(0)})`,
+    }, g);
+  }
+
+  // Waving arm: thin bar raised toward the center.
+  if (wave) {
+    const armC = pal.figure[Math.floor(rand() * pal.figure.length)];
+    const dir = wave; // +1 waves right, -1 waves left
+    const armW = h * 0.045;
+    const armL = h * (0.32 + rand() * 0.08);
+    const shoulderY = -bodyH * 0.95;
+    const ang = dir > 0 ? -(48 + rand() * 14) : (48 + rand() * 14) + 180;
+    el("rect", {
+      x: 0, y: -armW / 2, width: armL, height: armW, rx: armW / 2, fill: armC,
+      transform: `translate(${dir * half * 0.7} ${shoulderY}) rotate(${ang})`,
+    }, g);
+    // small "palm" circle at arm end
+    const rad = (ang * Math.PI) / 180;
+    el("circle", {
+      cx: dir * half * 0.7 + Math.cos(rad) * armL,
+      cy: shoulderY + Math.sin(rad) * armL,
+      r: armW * 0.9, fill: armC,
+    }, g);
+  }
+
+  // Held item: teapot / loaf / cat — a tiny geometric hint beside the figure.
+  if (item === "teapot") {
+    const tx = -half - h * 0.09, ty = -bodyH * 0.35;
+    el("circle", { cx: tx, cy: ty, r: h * 0.07, fill: pal.accent }, g);
+    el("rect", { x: tx - h * 0.02, y: ty - h * 0.13, width: h * 0.04, height: h * 0.05, fill: pal.accent }, g);
+  } else if (item === "cat") {
+    const tx = half + h * 0.12, ty = -h * 0.06;
+    el("ellipse", { cx: tx, cy: ty, rx: h * 0.09, ry: h * 0.055, fill: pal.ink }, g);
+    el("circle", { cx: tx + h * 0.08, cy: ty - h * 0.05, r: h * 0.035, fill: pal.ink }, g);
+    el("path", { d: `M ${tx + h * 0.06} ${ty - h * 0.075} l ${h * 0.012} ${-h * 0.025} l ${h * 0.014} ${h * 0.02} Z`, fill: pal.ink }, g);
+    el("path", { d: `M ${tx + h * 0.09} ${ty - h * 0.08} l ${h * 0.012} ${-h * 0.025} l ${h * 0.014} ${h * 0.02} Z`, fill: pal.ink }, g);
+  }
+  return g;
+}
+
+// Alternative background: two abstract building masses of suprematist windows,
+// a few of them glowing with tiny resident silhouettes, an arc of voice between.
+function drawFacades(svg, defs, rand, pal) {
+  const W = 1200, H = 630;
+
+  // Two building masses hugging the left and right edges.
+  const buildings = [
+    { x0: -30, x1: 330, dir: 1 },
+    { x0: 870, x1: 1230, dir: -1 },
+  ];
+  for (const b of buildings) {
+    // Building silhouette: a slab slightly darker/lighter than ground.
+    const topY = 40 + rand() * 60;
+    el("rect", {
+      x: b.x0, y: topY, width: b.x1 - b.x0, height: H - topY,
+      fill: pal.paper, opacity: 0.9,
+      transform: `rotate(${b.dir * (rand() * 1.2)} ${(b.x0 + b.x1) / 2} ${H})`,
+    }, svg);
+
+    // Window grid with irregular gaps.
+    const cols = 4 + Math.floor(rand() * 2), rows = 5 + Math.floor(rand() * 2);
+    const padX = 34, padTop = topY + 36, padBottom = 40;
+    const cw = (b.x1 - b.x0 - padX * 2) / cols;
+    const rh = (H - padTop - padBottom) / rows;
+    const litCandidates = [];
+    for (let c = 0; c < cols; c++) for (let r = 0; r < rows; r++) {
+      if (rand() < 0.22) continue; // gaps keep it abstract
+      const w = cw * (0.5 + rand() * 0.16), h = rh * (0.52 + rand() * 0.2);
+      const x = b.x0 + padX + c * cw + (cw - w) / 2 + (rand() - 0.5) * 6;
+      const y = padTop + r * rh + (rh - h) / 2 + (rand() - 0.5) * 6;
+      litCandidates.push({ x, y, w, h });
+      el("rect", { x, y, width: w, height: h, fill: pal.ink, opacity: 0.16 + rand() * 0.1 }, svg);
+    }
+    // Light up a few windows; put a tiny resident silhouette in some.
+    const lit = 3 + Math.floor(rand() * 3);
+    for (let i = 0; i < lit && litCandidates.length; i++) {
+      const wdw = litCandidates.splice(Math.floor(rand() * litCandidates.length), 1)[0];
+      const warm = [pal.accent, "#cf6a2b", "#b7683a"][Math.floor(rand() * 3)];
+      el("rect", { x: wdw.x, y: wdw.y, width: wdw.w, height: wdw.h, fill: warm }, svg);
+      if (rand() < 0.75) {
+        // resident: head + shoulders silhouette inside the window
+        const cx = wdw.x + wdw.w * (0.35 + rand() * 0.3);
+        const headR = Math.min(wdw.w, wdw.h) * 0.16;
+        const shoulderY = wdw.y + wdw.h;
+        el("circle", { cx, cy: shoulderY - wdw.h * 0.42, r: headR, fill: pal.ground }, svg);
+        el("rect", {
+          x: cx - headR * 1.6, y: shoulderY - wdw.h * 0.3,
+          width: headR * 3.2, height: wdw.h * 0.3, rx: headR, fill: pal.ground,
+        }, svg);
+        // waving micro-arm from a couple of residents
+        if (rand() < 0.5) el("rect", {
+          x: cx + headR * 1.2, y: shoulderY - wdw.h * 0.52, width: headR * 2.2, height: headR * 0.7,
+          rx: headR * 0.35, fill: pal.ground, transform: `rotate(-35 ${cx + headR * 1.2} ${shoulderY - wdw.h * 0.5})`,
+        }, svg);
+      }
+    }
+  }
+
+  // Dotted voice arc between the two nearest lit facades, above the logo.
+  const arcY = 130 + rand() * 40;
+  el("path", {
+    d: `M 310 ${arcY + 70} Q 600 ${arcY - 80} 890 ${arcY + 70}`,
+    fill: "none", stroke: pal.accent, "stroke-width": 5, "stroke-linecap": "round",
+    "stroke-dasharray": "1 16", opacity: 0.95,
+  }, svg);
+  // Suprematist moon/sun disc offset from center.
+  el("circle", {
+    cx: 600 + (rand() - 0.5) * 320, cy: 64 + rand() * 36,
+    r: 15 + rand() * 16, fill: pal.accent,
+  }, svg);
+}
+
+// Aerial courtyard: corner building slabs, warm footpaths converging on a
+// central plaza (where the logo sits), neighbor-dots walking toward the middle.
+function drawCourtyard(svg, defs, rand, pal) {
+  const W = 1200, H = 630, CX = 600, CY = 315;
+
+  // Corner building slabs (aerial rooftops) with faint window-dot grids.
+  // Soft warm glow under the plaza so the center breathes.
+  const glow = el("radialGradient", { id: "plazaGlow" }, defs);
+  el("stop", { offset: "0", "stop-color": pal.accent, "stop-opacity": 0.14 }, glow);
+  el("stop", { offset: "0.7", "stop-color": pal.accent, "stop-opacity": 0.05 }, glow);
+  el("stop", { offset: "1", "stop-color": pal.accent, "stop-opacity": 0 }, glow);
+  el("ellipse", { cx: CX, cy: CY, rx: 430, ry: 300, fill: "url(#plazaGlow)" }, svg);
+
+  const corners = [
+    { x: -40, y: -40, w: 330 + rand() * 60, h: 200 + rand() * 40 },
+    { x: W - 290 - rand() * 60, y: -40, w: 340 + rand() * 60, h: 190 + rand() * 50 },
+    { x: -40, y: H - 160 - rand() * 40, w: 300 + rand() * 60, h: 210 },
+    { x: W - 280 - rand() * 70, y: H - 150 - rand() * 40, w: 330, h: 200 },
+  ];
+  for (const c of corners) {
+    el("rect", {
+      x: c.x, y: c.y, width: c.w, height: c.h, fill: "#332818",
+      stroke: "#4a3a26", "stroke-width": 2,
+      transform: `rotate(${(rand() - 0.5) * 3} ${c.x + c.w / 2} ${c.y + c.h / 2})`,
+    }, svg);
+    // rooftop seam lines
+    const seams = 2 + Math.floor(rand() * 2);
+    for (let i = 1; i <= seams; i++) el("rect", {
+      x: c.x + (c.w / (seams + 1)) * i, y: c.y, width: 2, height: c.h,
+      fill: pal.ink, opacity: 0.12,
+    }, svg);
+    // a few lit skylights
+    const lit = 2 + Math.floor(rand() * 3);
+    for (let i = 0; i < lit; i++) el("rect", {
+      x: c.x + 20 + rand() * (c.w - 60), y: c.y + 16 + rand() * (c.h - 50),
+      width: 12 + rand() * 14, height: 12 + rand() * 14,
+      fill: [pal.accent, "#cf6a2b", "#b7683a"][Math.floor(rand() * 3)],
+      opacity: 0.9,
+    }, svg);
+  }
+
+  // Footpaths: gentle curves from the edges converging on the central plaza.
+  const paths = [];
+  const anchors = [
+    [130, 210], [W - 140, 200], [120, H - 190], [W - 130, H - 180],
+    [CX + (rand() - 0.5) * 200, -20], [CX + (rand() - 0.5) * 200, H + 20],
+  ];
+  for (const [ax, ay] of anchors) {
+    // stop at the plaza rim, not the exact center
+    const dx = CX - ax, dy = CY - ay, d = Math.hypot(dx, dy);
+    const rim = 215 + rand() * 20;
+    const ex = CX - (dx / d) * rim, ey = CY - (dy / d) * rim;
+    const mx = (ax + ex) / 2 + (rand() - 0.5) * 90, my = (ay + ey) / 2 + (rand() - 0.5) * 90;
+    const path = el("path", {
+      d: `M ${ax} ${ay} Q ${mx} ${my} ${ex} ${ey}`,
+      fill: "none", stroke: "#8a7a66", "stroke-width": 11 + rand() * 5,
+      "stroke-linecap": "round", opacity: 0.55,
+    }, svg);
+    paths.push(path);
+  }
+
+  // Plaza rim: a dashed accent circle framing the logo area.
+  el("circle", {
+    cx: CX, cy: CY, r: 235, fill: "none", stroke: pal.accent,
+    "stroke-width": 4, "stroke-dasharray": "2 20", "stroke-linecap": "round", opacity: 0.8,
+  }, svg);
+
+  // Trees: muted organic circles scattered between paths (never in the plaza).
+  for (let i = 0; i < 14; i++) {
+    const ang = rand() * Math.PI * 2, dist = 265 + rand() * 130;
+    const x = CX + Math.cos(ang) * dist * 1.35, y = CY + Math.sin(ang) * dist * 0.8;
+    if (x < -10 || x > W + 10 || y < -10 || y > H + 10) continue;
+    const r = 12 + rand() * 22;
+    el("circle", { cx: x, cy: y, r, fill: "#5a6b4a", opacity: 0.5 + rand() * 0.25 }, svg);
+    if (rand() < 0.5) el("circle", { cx: x - r * 0.3, cy: y - r * 0.25, r: r * 0.5, fill: "#6f8257", opacity: 0.5 }, svg);
+  }
+
+  // Sandbox: a small tilted square with a warm inner square, off to one side.
+  if (rand() < 0.85) {
+    const sx = CX + (rand() < 0.5 ? -1 : 1) * (300 + rand() * 120);
+    const sy = CY + (rand() < 0.5 ? -1 : 1) * (120 + rand() * 60);
+    const s = 46 + rand() * 16, rot = (rand() - 0.5) * 30;
+    el("rect", { x: sx - s / 2, y: sy - s / 2, width: s, height: s, fill: pal.paper, transform: `rotate(${rot} ${sx} ${sy})` }, svg);
+    el("rect", { x: sx - s / 2 + 7, y: sy - s / 2 + 7, width: s - 14, height: s - 14, fill: "#b7683a", opacity: 0.8, transform: `rotate(${rot} ${sx} ${sy})` }, svg);
+  }
+
+  // Neighbors: pairs of dots walking the paths toward the plaza; a couple of
+  // pairs already met at the rim (two dots touching, tiny accent spark above).
+  for (const path of paths) {
+    const len = path.getTotalLength();
+    const n = 1 + Math.floor(rand() * 2);
+    for (let i = 0; i < n; i++) {
+      const p = path.getPointAtLength(len * (0.35 + rand() * 0.55));
+      el("circle", { cx: p.x, cy: p.y, r: 7 + rand() * 2, fill: rand() < 0.5 ? pal.accent : pal.ink }, svg);
+    }
+  }
+  const met = 2 + Math.floor(rand() * 2);
+  for (let i = 0; i < met; i++) {
+    const ang = rand() * Math.PI * 2;
+    const x = CX + Math.cos(ang) * 235, y = CY + Math.sin(ang) * 235 * 0.98;
+    if (y < 60 || y > H - 40) continue;
+    el("circle", { cx: x - 7, cy: y, r: 8, fill: pal.accent }, svg);
+    el("circle", { cx: x + 7, cy: y, r: 8, fill: pal.ink }, svg);
+    // spark of the match above the pair
+    el("path", {
+      d: `M ${x} ${y - 22} l 4 7 l -8 0 Z`, fill: pal.accent, opacity: 0.95,
+      transform: `rotate(${rand() * 360} ${x} ${y - 18})`,
+    }, svg);
+  }
+}
+
+function draw(spec) {
+  const {
+    seed = 1, mode = "light", style = "figures",
+    caption = "GOOD NEIGHBORS · LIVE MOMENTS",
+  } = spec;
+  const pal = PALETTES[mode];
+  const rand = rng(seed * 2654435761 + 7);
+  const svg = document.getElementById("art");
+  svg.innerHTML = "";
+  const W = 1200, H = 630;
+
+  document.documentElement.style.setProperty("--accent", pal.accent);
+  document.getElementById("logo").style.color = pal.ink;
+  document.getElementById("caption").style.color = pal.muted;
+  // Caption splits into two centered lines: tagline, then the full site address.
+  const cap = document.getElementById("caption");
+  cap.innerHTML = "";
+  const [tagline, site] = Array.isArray(caption) ? caption : [caption, null];
+  cap.appendChild(Object.assign(document.createElement("div"), { textContent: tagline }));
+  if (site) {
+    const s = document.createElement("div");
+    s.className = "site"; s.textContent = site;
+    cap.appendChild(s);
+  }
+
+  // Ground + subtle aged-paper wash.
+  el("rect", { x: 0, y: 0, width: W, height: H, fill: pal.ground }, svg);
+  const defs = el("defs", {}, svg);
+
+  if (style === "photo") {
+    // Evening-courtyard photo, cover-cropped, with a scrim for text legibility.
+    el("image", {
+      href: "../landing/img/splash.jpg", x: 0, y: 0, width: W, height: H,
+      preserveAspectRatio: "xMidYMid slice",
+    }, svg);
+    // Radial vignette centered on the text block…
+    const vg = el("radialGradient", { id: "scrim", cx: "0.5", cy: "0.52", r: "0.75" }, defs);
+    el("stop", { offset: "0", "stop-color": "#0d0b0a", "stop-opacity": 0.62 }, vg);
+    el("stop", { offset: "0.55", "stop-color": "#0d0b0a", "stop-opacity": 0.38 }, vg);
+    el("stop", { offset: "1", "stop-color": "#0d0b0a", "stop-opacity": 0.15 }, vg);
+    el("rect", { x: 0, y: 0, width: W, height: H, fill: "url(#scrim)" }, svg);
+    // …plus a gentle bottom-up gradient so the caption zone is calm.
+    const bg = el("linearGradient", { id: "scrimB", x1: 0, y1: 0, x2: 0, y2: 1 }, defs);
+    el("stop", { offset: "0", "stop-color": "#0d0b0a", "stop-opacity": 0 }, bg);
+    el("stop", { offset: "0.6", "stop-color": "#0d0b0a", "stop-opacity": 0.1 }, bg);
+    el("stop", { offset: "1", "stop-color": "#0d0b0a", "stop-opacity": 0.55 }, bg);
+    el("rect", { x: 0, y: 0, width: W, height: H, fill: "url(#scrimB)" }, svg);
+    // Force light ink over the photo regardless of mode.
+    document.getElementById("logo").style.color = PALETTES.dark.ink;
+    document.getElementById("caption").style.color = "#cfc2b2";
+    return;
+  }
+
+  if (style === "facades" || style === "courtyard") {
+    (style === "facades" ? drawFacades : drawCourtyard)(svg, defs, rand, pal);
+    // Grain over everything, then done.
+    const filt2 = el("filter", { id: "grain" }, defs);
+    el("feTurbulence", { type: "fractalNoise", baseFrequency: "0.9", numOctaves: 2, stitchTiles: "stitch" }, filt2);
+    el("feColorMatrix", { type: "matrix", values: "0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0.5 0.5 0.5 0 0" }, filt2);
+    el("rect", { x: 0, y: 0, width: W, height: H, filter: "url(#grain)", opacity: 0.05 }, svg);
+    return;
+  }
+  const grad = el("linearGradient", { id: "wash", x1: 0, y1: 0, x2: 0, y2: 1 }, defs);
+  el("stop", { offset: "0", "stop-color": pal.paper, "stop-opacity": 0.5 }, grad);
+  el("stop", { offset: "1", "stop-color": pal.paper, "stop-opacity": 0 }, grad);
+  el("rect", { x: 0, y: 0, width: W, height: H, fill: "url(#wash)" }, svg);
+
+  // Baseline: a thin ink line the figures stand on.
+  const baseY = H - 92 - rand() * 30;
+  el("rect", { x: 0, y: baseY + 2, width: W, height: 3, fill: pal.ink, opacity: 0.55 }, svg);
+
+  // Floating suprematist windows along the top edges (never over the center).
+  const winZones = [[40, 320], [880, 1160]];
+  for (const [zx0, zx1] of winZones) {
+    const n = 3 + Math.floor(rand() * 3);
+    for (let i = 0; i < n; i++) {
+      const w = 22 + rand() * 46, h2 = 26 + rand() * 50;
+      const x = zx0 + rand() * (zx1 - zx0 - w);
+      const y = 36 + rand() * 130;
+      const c = pal.figure[Math.floor(rand() * pal.figure.length)];
+      el("rect", {
+        x, y, width: w, height: h2, fill: c,
+        opacity: 0.85, transform: `rotate(${(rand() - 0.5) * 10} ${x + w / 2} ${y + h2 / 2})`,
+      }, svg);
+    }
+  }
+
+  // Two groups of neighbors at the edges, leaning/waving toward the center.
+  const groups = [
+    { x0: 70, x1: 290, wave: 1 },    // left group waves right
+    { x0: 910, x1: 1130, wave: -1 }  // right group waves left
+  ];
+  for (const gr of groups) {
+    const n = 2 + (rand() < 0.5 ? 1 : 0); // 2–3 adults
+    const slot = (gr.x1 - gr.x0) / n;
+    for (let i = 0; i < n; i++) {
+      const h = 210 + rand() * 70;
+      const x = gr.x0 + slot * (i + 0.5) + (rand() - 0.5) * slot * 0.2;
+      const lean = gr.wave * (3 + rand() * 4); // lean toward center
+      // only the innermost figure waves — one clear gesture per group
+      const inner = gr.wave > 0 ? i === n - 1 : i === 0;
+      const wave = inner ? gr.wave : 0;
+      const item = !inner && rand() < 0.4 ? (rand() < 0.5 ? "teapot" : "cat") : null;
+      drawFigure(svg, rand, pal, { x, y: baseY, height: h, lean, wave, item });
+    }
+    // one child figure at the outer edge of the group
+    if (rand() < 0.8) {
+      const h = 95 + rand() * 35;
+      const x = gr.wave > 0 ? gr.x0 - 20 + rand() * 30 : gr.x1 - 10 + rand() * 30;
+      drawFigure(svg, rand, pal, { x, y: baseY, height: h, lean: gr.wave * 6, wave: gr.wave, item: null });
+    }
+  }
+
+  // A thin accent arc — the "voice" traveling between the groups, above the logo.
+  const arcY = 150 + rand() * 40;
+  el("path", {
+    d: `M 320 ${arcY + 60} Q 600 ${arcY - 90} 880 ${arcY + 60}`,
+    fill: "none", stroke: pal.accent, "stroke-width": 5, "stroke-linecap": "round",
+    "stroke-dasharray": rand() < 0.5 ? "1 18" : "none", opacity: 0.9,
+  }, svg);
+  // small suprematist sun/circle near the arc apex, offset from center
+  if (rand() < 0.7) {
+    el("circle", {
+      cx: 600 + (rand() - 0.5) * 380, cy: 70 + rand() * 40,
+      r: 16 + rand() * 18, fill: pal.accent, opacity: 0.9,
+    }, svg);
+  }
+
+  // Grain: subtle turbulence over everything.
+  const filt = el("filter", { id: "grain" }, defs);
+  el("feTurbulence", { type: "fractalNoise", baseFrequency: "0.9", numOctaves: 2, stitchTiles: "stitch" }, filt);
+  el("feColorMatrix", { type: "matrix", values: "0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0.5 0.5 0.5 0 0" }, filt);
+  el("rect", { x: 0, y: 0, width: W, height: H, filter: "url(#grain)", opacity: 0.05 }, svg);
+}
+
+window.__render = (spec) => draw(spec || {});
+// Preview default when opened directly in a browser.
+draw({ seed: 1, mode: "light" });
+</script>
+</body>
+</html>
