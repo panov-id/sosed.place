@@ -11,6 +11,9 @@ jobs:
     environment: dev
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - name: Deploy landing
         env:
           BUNNY_STORAGE_ZONE: ${{ secrets.BUNNY_STORAGE_ZONE }}
@@ -18,4 +21,7 @@ jobs:
           BUNNY_PULL_ZONE_ID: ${{ secrets.BUNNY_PULL_ZONE_ID }}
           BUNNY_API_KEY: ${{ secrets.BUNNY_API_KEY }}
           RELAY_API_URL: ${{ secrets.RELAY_API_URL }}
+          LANDING_ENV: dev
+          RUN_NODE_NATIVE: '1'
+          SITE_ORIGIN: https://dev.sosed.panov.id
         run: bash deploy/deploy-landing.sh

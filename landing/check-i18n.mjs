@@ -6,25 +6,12 @@
 //   3. flags empty values and values identical to English (likely untranslated)
 // Usage: node check-i18n.mjs [path/to/index.html]   (default: ./index.html)
 import { readFileSync } from "node:fs";
+import { readDictionary } from "./i18n-dictionary.mjs";
 
 const file = process.argv[2] || new URL("./index.html", import.meta.url).pathname;
 const html = readFileSync(file, "utf8");
 
-// --- extract the i18n object literal (`T = { ... }`) by brace balancing ---
-function extractDict(src) {
-  const m = src.match(/\b(?:const|let|var)\s+T\s*=\s*\{/);
-  if (!m) throw new Error("could not find the T dictionary");
-  let i = m.index + m[0].length - 1, depth = 0, inStr = null;
-  for (let j = i; j < src.length; j++) {
-    const ch = src[j], prev = src[j - 1];
-    if (inStr) { if (ch === inStr && prev !== "\\") inStr = null; continue; }
-    if (ch === '"' || ch === "'" || ch === "`") inStr = ch;
-    else if (ch === "{") depth++;
-    else if (ch === "}") { depth--; if (depth === 0) return src.slice(i, j + 1); }
-  }
-  throw new Error("unbalanced braces in T");
-}
-const T = Function("return (" + extractDict(html) + ")")();
+const T = readDictionary(html);
 const langs = Object.keys(T);
 
 // --- keys actually used in the markup ---
