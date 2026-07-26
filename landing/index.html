@@ -505,11 +505,16 @@
 <script>
   var CFG = window.__XOR_CONFIG__ || {};
   var API_URL = CFG.apiUrl || "";
+  // Names this landing's tenant to the relay. Public by design — it lives in
+  // this file. Empty until the environment injects one, and the relay then falls
+  // back to resolving the brand from the host.
+  var PUBLISHABLE_KEY = CFG.publishableKey || "";
+  function apiHeaders(){ var h={"Content-Type":"application/json"}; if(PUBLISHABLE_KEY)h["x-api-key"]=PUBLISHABLE_KEY; return h; }
   var SOURCE = "sosed.place-landing";
   var BRAND = "sosed";
   var ERR_ENDPOINT = API_URL + "/client-error";
   function currentEnv(){ var h=location.hostname; if(h.indexOf("dev.")===0||h.indexOf("-dev")>=0)return"dev"; if(h.indexOf("uat.")===0||h.indexOf("-uat")>=0)return"uat"; if(h==="sosed.place"||h.indexOf(".sosed.place")>=0)return"prod"; return"local"; }
-  function logClientError(kind,err,extra){ if(!ERR_ENDPOINT)return; try{ fetch(ERR_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({kind:kind,message:(err&&(err.message||String(err)))||null,stack:err&&err.stack?String(err.stack).slice(0,2000):null,page_url:location.href,user_agent:navigator.userAgent,source:SOURCE,extra:Object.assign({env:currentEnv()},extra||{})}),keepalive:true}).catch(function(){}); }catch(e){} }
+  function logClientError(kind,err,extra){ if(!ERR_ENDPOINT)return; try{ fetch(ERR_ENDPOINT,{method:"POST",headers:apiHeaders(),body:JSON.stringify({kind:kind,message:(err&&(err.message||String(err)))||null,stack:err&&err.stack?String(err.stack).slice(0,2000):null,page_url:location.href,user_agent:navigator.userAgent,source:SOURCE,extra:Object.assign({env:currentEnv()},extra||{})}),keepalive:true}).catch(function(){}); }catch(e){} }
   window.__logClientError=logClientError;
   addEventListener("error",function(e){logClientError("window.onerror",e.error||{message:e.message},{filename:e.filename,lineno:e.lineno});});
   addEventListener("unhandledrejection",function(e){logClientError("unhandledrejection",e.reason,null);});
@@ -573,7 +578,7 @@
     form.addEventListener("submit",function(e){ e.preventDefault();
       var email=form.querySelector('input[type=email]').value.trim(); if(!email)return;
       btn.disabled=true; if(st){st.textContent="";st.className="status mono";}
-      fetch(API_URL+"/waitlist",{method:"POST",headers:{"Content-Type":"application/json"},
+      fetch(API_URL+"/waitlist",{method:"POST",headers:apiHeaders(),
         body:JSON.stringify({email:email,source:SOURCE,brand:BRAND,early_access:true,lang:LANG,accent:root.getAttribute("data-accent")||ACC[ai]||"terra",mode:curTheme()})})
       .then(function(res){ if(!res.ok)throw new Error("HTTP "+res.status);
         localStorage.setItem("ss-wl-done","1");
