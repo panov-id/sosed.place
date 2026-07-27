@@ -38,8 +38,13 @@ Repositories:
 - [x] **A2. `landing/sitemap.xml`** — static for now: the root, `rules.html` and the two
       legal pages. Section B replaces it with a generated one covering 17 languages and
       reciprocal `hreflang`.
-- [x] **A3. Google Search Console verification** — meta tag injected at deploy from
-      `SEARCH_CONSOLE_TOKEN`, production only; the token never lands in the repository.
+- [x] **A3. Google Search Console verification** — done 2026-07-27 **via DNS**
+      rather than the meta tag: the apex TXT record was placed by
+      `xor.ad/deploy/add-search-console-txt.sh` (which keeps every existing
+      record), and the owner confirmed both domains in the console. The
+      `SEARCH_CONSOLE_TOKEN` path stays in the code as a fallback, but the secret
+      is unset — verifying twice buys nothing. DNS covers the whole domain,
+      subdomains included, and does not wait for a deploy.
 - [ ] **A4. Submit the sitemap** to Search Console after the first production deploy.
 
 ### B. Per-language pages
@@ -202,6 +207,18 @@ Ordered by impact. Items G1–G3 are, in my view, worth doing in the same pass.
       nothing either; dev was restored afterwards. The status code is correct regardless
       (a real 404, not a soft one), so this is cosmetic for indexing. The remaining option
       is a real origin instead of storage — excessive for an error page.
+
+- [x] **G11. `config.js` was cached for 30 days, not 5 minutes** (found
+      2026-07-27 from `relay_keyless_requests_total`, which kept climbing after the
+      production deploy). Served as a `.js` file, it inherited the month-long asset
+      cache — while its whole purpose is the opposite: switching the backend, the
+      publishable key and the GA4 id without a rebuild. A returning visitor would
+      have kept a keyless config for a month, and a revoked key would have stayed
+      usable just as long. Fixed by `deploy/bunny-config-cache-rule.sh`, which adds
+      `/config.js` to the short-TTL rule (as a second condition — the first already
+      held the maximum five patterns) and purges it. Verified: `config.js` at 300s,
+      fonts and styles still at 30 days. This unblocks A8: `REQUIRE_API_KEY` no
+      longer has to wait a month.
 
 ## Open decisions
 
