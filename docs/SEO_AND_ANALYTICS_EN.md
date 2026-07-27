@@ -45,7 +45,9 @@ Repositories:
       `SEARCH_CONSOLE_TOKEN` path stays in the code as a fallback, but the secret
       is unset — verifying twice buys nothing. DNS covers the whole domain,
       subdomains included, and does not wait for a deploy.
-- [ ] **A4. Submit the sitemap** to Search Console after the first production deploy.
+- [x] **A4. Sitemap submitted** to Search Console — 2026-07-27, after the
+      production deploy, as the full URL `https://sosed.place/sitemap.xml`
+      (a Domain property).
 
 ### B. Per-language pages
 
