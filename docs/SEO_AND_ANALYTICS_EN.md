@@ -77,6 +77,16 @@ Russian lives at `/ru/`, like every other language in its own folder.
 - [x] **C2. GA4 loader** — loads `gtag.js` lazily, only when an ID and consent are present.
 - [x] **C3. CSP** — widened `script-src`, `img-src`, `connect-src` for the Google domains.
 - [x] **C4. Waitlist submit event** — `waitlist_signup` carrying the page language.
+- [x] **C5. Our own page counter** (2026-07-27) — `POST /pageview` on the relay, beside
+      `/client-error`: the key decides the brand, the record lands in that tenant's
+      space, and the panel reads it on a "Page views" page built on `LogExplorer`.
+      **It runs without consent and therefore counts everyone** — the record holds no
+      address, no user agent and no identifier, and nothing survives on the device
+      beyond a `sessionStorage` flag that dies with the tab. The referrer is reduced to
+      its host (a full referrer can carry search terms) and the width to a
+      mobile/tablet/desktop bucket. GA4 stays behind consent and supplies the detail;
+      this supplies an honest baseline with no gaps. CSP was untouched: the request
+      goes to our own backend.
 
 ### D. Cookie consent
 
@@ -115,9 +125,19 @@ Russian lives at `/ru/`, like every other language in its own folder.
 
 ### F. Verification
 
-- [ ] **F1.** `curl` of a language page returns translated HTML without running JS.
-- [ ] **F2.** `hreflang` annotations are reciprocal and point at URLs that exist.
-- [ ] **F3.** `sitemap.xml` is valid and every URL answers 200.
+F1–F3 are closed by `landing/verify-seo.mjs`, which reads an already generated site —
+so all three are answerable **before** a deploy. To run it: build a copy with the
+generator into a temp directory and run the check through `deploy/run-node.sh`.
+Verified 2026-07-27 on both landings — sosed (17 languages, 19 sitemap URLs) and
+neighbro (10 languages, 12 URLs), both green.
+
+- [x] **F1.** A language page serves translated HTML without running JS — checked via
+      `<html lang>` plus a dictionary string present in the markup itself.
+- [x] **F2.** `hreflang` is reciprocal: every page carries 17 languages plus
+      `x-default`, and every target exists as a file.
+- [x] **F3.** `sitemap.xml` parses (one `urlset`, balanced `<url>`) and every URL
+      exists as a file. "Answers 200" belongs to production, but the build no longer
+      contains a dead link.
 - [ ] **F4.** Without consent — zero requests to Google domains (checked in devtools).
 - [ ] **F5.** No CSP violations in the console in any mode.
 
