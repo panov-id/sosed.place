@@ -56,7 +56,7 @@
     /* warm brick / terracotta signature, warm-brown neutrals */
     --bg:#0d0b0a; --panel:#17130f; --panel-2:#241c14; --border:#3a2e20;
     --fg:#f0e7dc; --muted:#9a8d7c; --muted-2:#ab9d88;
-    --accent:#d6552f; --accent-ink:#fff6f0;
+    --accent:#bd4b2a; --accent-ink:#fff6f0;
     --sans:"Golos Text",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
   }
@@ -69,12 +69,12 @@
   :root[data-theme="dark"]{ --bg:#0d0b0a; --panel:#17130f; --panel-2:#241c14; --border:#3a2e20;
            --fg:#f0e7dc; --muted:#9a8d7c; --muted-2:#ab9d88; }
   /* named accent themes — picked at random per load, cycle on logo click; each pairs accent + legible ink */
-  :root[data-accent="terra"]  { --accent:#d6552f; --accent-ink:#fff6f0; }
+  :root[data-accent="terra"]  { --accent:#bd4b2a; --accent-ink:#fff6f0; }
   :root[data-accent="amber"]  { --accent:#d68a1f; --accent-ink:#241206; }
   :root[data-accent="teal"]   { --accent:#1fa99a; --accent-ink:#04231f; }
-  :root[data-accent="azure"]  { --accent:#3d84d6; --accent-ink:#eaf2ff; }
-  :root[data-accent="violet"] { --accent:#9b5de5; --accent-ink:#f3ecfd; }
-  :root[data-accent="crimson"]{ --accent:#e0342b; --accent-ink:#fdeceb; }
+  :root[data-accent="azure"]  { --accent:#336eb2; --accent-ink:#eaf2ff; }
+  :root[data-accent="violet"] { --accent:#8550c5; --accent-ink:#f3ecfd; }
+  :root[data-accent="crimson"]{ --accent:#cc2f27; --accent-ink:#fdeceb; }
 
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -313,7 +313,7 @@
         <input type="email" data-i18n-ph="emailPh" placeholder="твоя почта" aria-label="почта" required>
         <button type="submit" data-i18n="cta">Запросить доступ</button>
       </form>
-      <div class="status mono" id="st"></div>
+      <div class="status mono" id="st" role="status" aria-live="polite"></div>
       <div class="note mono" data-i18n="note">Напишем, как только запустимся 🌻</div>
     </div>
   </section>
@@ -469,7 +469,7 @@
         <input type="email" data-i18n-ph="emailPh" placeholder="твоя почта" aria-label="почта" required>
         <button type="submit" data-i18n="cta">Запросить доступ</button>
       </form>
-      <div class="status mono" id="st2" style="text-align:center"></div>
+      <div class="status mono" id="st2" role="status" aria-live="polite" style="text-align:center"></div>
     </div>
   </section>
 </main>
@@ -587,10 +587,14 @@
   var ACC=["terra","amber","teal","azure","violet","crimson"], ai=parseInt(sessionStorage.getItem("ss-acc")||"0",10)||0;
   document.getElementById("logoBtn").addEventListener("click",function(){ ai=(ai+1)%ACC.length; root.setAttribute("data-accent",ACC[ai]); sessionStorage.setItem("ss-acc",String(ai)); localStorage.setItem("ss-accent-pick",ACC[ai]); });
 
-  // splash — hold for 2s on every load, then wipe. Reduced-motion still holds
-  // (the CSS lands it on a static final state, no disc-grow motion), so the
-  // brand shows for everyone; only the fade-out is skipped for reduced-motion.
+  // splash — held for two seconds the first time a tab sees it, and skipped on
+  // every navigation after that. Two seconds is a fair price for the brand once;
+  // paying it again on the way back from the rules page is just a wall between
+  // someone and what they came for. Reduced-motion holds too (the CSS lands on a
+  // static final state) but skips the fade.
   var splash=document.getElementById("splash");
+  var splashSeen=false; try{ splashSeen=!!sessionStorage.getItem("ss-splash"); sessionStorage.setItem("ss-splash","1"); }catch(e){}
+  if(splash&&splashSeen){ splash.remove(); splash=null; }
   if(splash){ var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches; setTimeout(function(){ splash.classList.add("done"); setTimeout(function(){splash.remove();},reduce?0:600); },2000); }
 
   // reveal on scroll
