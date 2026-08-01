@@ -70,12 +70,26 @@
   :root[data-theme="dark"]{ --bg:#0d0b0a; --panel:#17130f; --panel-2:#241c14; --border:#3a2e20;
            --fg:#f0e7dc; --muted:#9a8d7c; --muted-2:#ab9d88; --err:#ef7a6a; }
   /* named accent themes — picked at random per load, cycle on logo click; each pairs accent + legible ink */
-  :root[data-accent="terra"]  { --accent:#bd4b2a; --accent-ink:#fff6f0; }
-  :root[data-accent="amber"]  { --accent:#d68a1f; --accent-ink:#241206; }
-  :root[data-accent="teal"]   { --accent:#1fa99a; --accent-ink:#04231f; }
-  :root[data-accent="azure"]  { --accent:#336eb2; --accent-ink:#eaf2ff; }
-  :root[data-accent="violet"] { --accent:#8550c5; --accent-ink:#f3ecfd; }
-  :root[data-accent="crimson"]{ --accent:#cc2f27; --accent-ink:#fdeceb; }
+  :root[data-accent="terra"]  { --accent:#bd4b2a; --accent-ink:#fff6f0; --accent-text:var(--accent); }
+  :root[data-accent="amber"]  { --accent:#d68a1f; --accent-ink:#241206; --accent-text:var(--accent); }
+  :root[data-accent="teal"]   { --accent:#1fa99a; --accent-ink:#04231f; --accent-text:var(--accent); }
+  :root[data-accent="azure"]  { --accent:#336eb2; --accent-ink:#eaf2ff; --accent-text:var(--accent); }
+  :root[data-accent="violet"] { --accent:#8550c5; --accent-ink:#f3ecfd; --accent-text:var(--accent); }
+  :root[data-accent="crimson"]{ --accent:#cc2f27; --accent-ink:#fdeceb; --accent-text:var(--accent); }
+  /* The accent as a word, not as a fill. As a fill it passes in both themes;
+     as small text it does not — 2.22 to 4.37:1 on the light ground and 3.16 to
+     3.36 on the dark. Same hue and saturation, the lightness moved until the
+     worst of the three grounds clears. Only the accents that fail are here. */
+  :root[data-theme="dark"][data-accent="terra"]  { --accent-text:#d56343; }
+  :root[data-theme="dark"][data-accent="azure"]  { --accent-text:#4c88cc; }
+  :root[data-theme="dark"][data-accent="violet"]  { --accent-text:#9c72d0; }
+  :root[data-theme="dark"][data-accent="crimson"]  { --accent-text:#de5a53; }
+  :root[data-theme="light"][data-accent="terra"] { --accent-text:#983c22; }
+  :root[data-theme="light"][data-accent="amber"] { --accent-text:#7d5012; }
+  :root[data-theme="light"][data-accent="teal"] { --accent-text:#12645c; }
+  :root[data-theme="light"][data-accent="azure"] { --accent-text:#2a5b94; }
+  :root[data-theme="light"][data-accent="violet"] { --accent-text:#723cb4; }
+  :root[data-theme="light"][data-accent="crimson"] { --accent-text:#aa2721; }
 
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -121,7 +135,7 @@
   .hero::before{content:"";position:absolute;inset:0;z-index:0;background:var(--img-hero) center/cover;opacity:.45}
   .hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,color-mix(in srgb,var(--bg) 58%,transparent) 0%,color-mix(in srgb,var(--bg) 80%,transparent) 48%,var(--bg) 96%)}
   .hero .wrap{position:relative;z-index:2}
-  .eyebrow{color:var(--accent)}
+  .eyebrow{color:var(--accent-text)}
   h1{font-weight:800;font-size:clamp(2.6rem,8.5vw,5.6rem);line-height:.94;letter-spacing:-.035em;text-wrap:balance;margin:.7rem 0 0;text-transform:uppercase}
   h1 .l2{display:block;color:var(--muted-2)}
   .lead{max-width:33ch;margin:1.4rem 0 0;font-size:clamp(1.05rem,2.4vw,1.3rem);line-height:1.5;color:var(--fg)}
@@ -135,14 +149,14 @@
   .note{margin-top:.9rem;color:var(--muted)}
   .microcat{margin-top:1.1rem;color:var(--muted-2);letter-spacing:.13em;line-height:1.7}
   .status{margin-top:.8rem;min-height:1.2em;font-weight:600}
-  .status.ok{color:var(--accent)}
+  .status.ok{color:var(--accent-text)}
   /* Not the accent: it is random per load and terracotta on some themes, so a
      failure drawn in it would read as decoration. */
   .status.err{color:var(--err)}
 
   /* ---------- Section frame ---------- */
   section.blk{padding:clamp(58px,9vw,112px) 0;border-top:1px solid var(--border)}
-  .kick{color:var(--accent);margin-bottom:.7rem}
+  .kick{color:var(--accent-text);margin-bottom:.7rem}
   .h2{font-weight:800;font-size:clamp(1.8rem,5vw,3rem);line-height:1;letter-spacing:-.03em;text-transform:uppercase;text-wrap:balance}
   .h2+.sub2{margin-top:.9rem;color:var(--muted-2);max-width:46ch;font-size:1.05rem;line-height:1.5}
 
@@ -166,7 +180,7 @@
   .step.s2 .pic{background-image:var(--img-match)}
   .step.s3 .pic{background-image:var(--img-fade)}
   .step .body{padding:20px 22px 26px}
-  .step .idx{color:var(--accent)}
+  .step .idx{color:var(--accent-text)}
   .step h3{margin:.5rem 0 .5rem;font-size:1.3rem;font-weight:800;letter-spacing:-.01em}
   .step p{color:var(--muted-2);line-height:1.5}
 
@@ -184,7 +198,7 @@
   .closing::before{content:"";position:absolute;inset:0;background:var(--img-texture) center/cover;opacity:.12}
   .closing .wrap{position:relative}
   .closing .big{font-weight:800;font-size:clamp(2.4rem,9vw,5.2rem);line-height:.92;letter-spacing:-.035em;text-transform:uppercase}
-  .closing .big span{color:var(--accent)}
+  .closing .big span{color:var(--accent-text)}
 
   /* footer */
   footer{border-top:1px solid var(--border);padding:44px 0 60px}
@@ -206,12 +220,12 @@
   .back{color:var(--muted);font-size:1.25rem;flex:none;line-height:1}
   .av{width:34px;height:34px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-weight:800;font-size:.92rem;flex:none}
   .atop .nm{font-weight:700;font-size:.92rem;line-height:1.15}
-  .atop .st{color:var(--accent);font-size:.58rem;letter-spacing:.13em;text-transform:uppercase;font-family:var(--mono);margin-top:1px}
+  .atop .st{color:var(--accent-text);font-size:.58rem;letter-spacing:.13em;text-transform:uppercase;font-family:var(--mono);margin-top:1px}
   .atop .tmr{margin-left:auto;color:var(--muted);font-family:var(--mono);font-size:.58rem;white-space:nowrap}
   /* chat */
   .chat{flex:1;padding:12px;display:flex;flex-direction:column;gap:8px;overflow:hidden;font-size:.85rem}
   .why{border:1px dashed var(--accent);border-radius:13px;padding:9px 11px;line-height:1.4}
-  .why b{color:var(--accent);font-family:var(--mono);font-size:.55rem;letter-spacing:.15em;display:block;margin-bottom:5px;text-transform:uppercase}
+  .why b{color:var(--accent-text);font-family:var(--mono);font-size:.55rem;letter-spacing:.15em;display:block;margin-bottom:5px;text-transform:uppercase}
   .why .ln{color:var(--fg);font-size:.78rem;display:block}
   .why .ln+.ln{margin-top:3px;color:var(--muted-2)}
   .bub{max-width:82%;padding:8px 12px;border-radius:16px;line-height:1.34}
@@ -224,7 +238,7 @@
   /* feed card */
   .fcard{flex:1;display:flex;flex-direction:column;padding:14px 14px 18px}
   .fcard .card{flex:1;background:var(--panel);border:1px solid var(--border);border-radius:20px;padding:22px 20px;display:flex;flex-direction:column;justify-content:center}
-  .fcard .zone{color:var(--accent);font-family:var(--mono);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase}
+  .fcard .zone{color:var(--accent-text);font-family:var(--mono);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase}
   .fcard .txt{margin-top:10px;font-size:1.14rem;line-height:1.34;font-weight:600}
   .fcard .swipehint{margin-top:12px;color:var(--muted);font-family:var(--mono);font-size:.55rem;text-align:center;letter-spacing:.08em}
   .acts{display:flex;gap:16px;justify-content:center;margin-top:14px}
@@ -245,8 +259,8 @@
   .thread.active{background:color-mix(in srgb,var(--accent) 12%,transparent)}
   .thread .av{width:28px;height:28px;font-size:.72rem}
   .thread .tn{font-weight:700;font-size:.78rem;line-height:1.15}
-  .thread .tp{color:var(--muted);font-size:.66rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:15ch}
-  .thread .tt{margin-left:auto;color:var(--muted);font-family:var(--mono);font-size:.5rem}
+  .thread .tp{color:var(--muted-2);font-size:.66rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:15ch}
+  .thread .tt{margin-left:auto;color:var(--muted-2);font-family:var(--mono);font-size:.5rem}
   .rpane{flex:1;display:flex;flex-direction:column;min-width:0}
   .rpane .atop{padding:13px 13px 10px}
   @media(max-width:520px){.phone.land .scr{flex-direction:column}.lpane{width:100%;max-height:42%}.thread .tp{max-width:24ch}}
@@ -364,7 +378,7 @@
         <div class="dev reveal">
           <div class="phone"><div class="notch"></div><div class="scr">
             <div class="atop">
-              <div class="av" style="background:var(--panel-2);color:var(--accent)">с</div>
+              <div class="av" style="background:var(--panel-2);color:var(--accent-text)">с</div>
               <div><div class="nm" data-i18n="mYard">твой район</div><div class="st" data-i18n="mNear">3 соседа рядом сейчас</div></div>
               <div class="tmr" data-i18n="zHome">◱ дом</div>
             </div>
@@ -411,8 +425,8 @@
             <div class="lpane">
               <div class="lhead mono" data-i18n="inbox">личка · тает</div>
               <div class="thread active"><div class="av" data-i18n="avTolyan">Т</div><div><div class="tn" data-i18n="nmTolyan">Толян</div><div class="tp" data-i18n="cb4">красава, го 🎲</div></div><span class="tt">2:14</span></div>
-              <div class="thread"><div class="av" style="background:var(--panel-2);color:var(--accent)" data-i18n="avAnya">А</div><div><div class="tn" data-i18n="nmAnya">Аня</div><div class="tp" data-i18n="tpAnya">поднимайся, открыто</div></div><span class="tt">0:48</span></div>
-              <div class="thread"><div class="av" style="background:var(--panel-2);color:var(--accent)" data-i18n="avGena">Г</div><div><div class="tn" data-i18n="nmGena">Дядь Гена</div><div class="tp" data-i18n="tpGena">дрель верну с пивом 🍺</div></div><span class="tt">1:30</span></div>
+              <div class="thread"><div class="av" style="background:var(--panel-2);color:var(--accent-text)" data-i18n="avAnya">А</div><div><div class="tn" data-i18n="nmAnya">Аня</div><div class="tp" data-i18n="tpAnya">поднимайся, открыто</div></div><span class="tt">0:48</span></div>
+              <div class="thread"><div class="av" style="background:var(--panel-2);color:var(--accent-text)" data-i18n="avGena">Г</div><div><div class="tn" data-i18n="nmGena">Дядь Гена</div><div class="tp" data-i18n="tpGena">дрель верну с пивом 🍺</div></div><span class="tt">1:30</span></div>
             </div>
             <div class="rpane">
               <div class="atop"><span class="back">‹</span><div class="av" data-i18n="avTolyan">Т</div><div><div class="nm" data-i18n="nmTolyan">Толян</div><div class="st" data-i18n="stTolyan">подъезд 2 · онлайн</div></div><div class="tmr">✦ 2:14</div></div>
