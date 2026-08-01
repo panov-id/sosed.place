@@ -1,0 +1,331 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1960" viewBox="0 0 1440 1960" font-family="Golos Text, system-ui, sans-serif">
+  <title>сосед.place — основа интерфейса</title>
+  <desc>
+    Палитра обеих тем с посчитанным контрастом, шесть акцентов, типографическая
+    шкала, контролы, карточка ленты и пузыри чата. Цвета сняты с landing/index.html.
+  </desc>
+
+  <style>
+    /* The landing's own font file, imported rather than copied — so this sheet
+       cannot be set in a face the product does not use. */
+    @import url("../../landing/fonts.css");
+
+    .disp  { font-weight: 800; letter-spacing: -0.03em; fill: #f0e7dc; }
+    .body  { font-size: 13px; font-weight: 500; fill: #f0e7dc; }
+    .small { font-size: 11px; font-weight: 500; fill: #f0e7dc; }
+    .muted { font-size: 12px; font-weight: 500; fill: #ab9d88; }
+    .mono  { font-family: ui-monospace, SF Mono, Menlo, Consolas, monospace;
+             font-size: 10px; fill: #9a8d7c; }
+    /* The eyebrow, exactly as the landing sets it: uppercase, wide, in the accent. */
+    .brow  { font-family: ui-monospace, SF Mono, Menlo, Consolas, monospace;
+             font-size: 10px; letter-spacing: 2.2px; fill: #bd4b2a; font-weight: 600; }
+    /* The sheet's own labels. They used to be .brow — set in the accent, at 10px,
+       which is the exact failure the sheet reports at the bottom. A drawing that
+       breaks its own finding argues with itself, and the eye believes the
+       drawing. Product content below keeps the accent, because that is what the
+       product does. */
+    .brow-sheet { font-family: ui-monospace, SF Mono, Menlo, Consolas, monospace;
+                  font-size: 10px; letter-spacing: 2.2px; fill: #ab9d88; font-weight: 600; }
+    .warn  { font-size: 11px; font-weight: 600; fill: #e0973a; }
+    .fail  { font-size: 11px; font-weight: 700; fill: #ff8a80; }
+    .on-light       { fill: #1c140d; }
+    .on-light-muted { fill: #655847; }
+  </style>
+
+  <rect width="1440" height="1960" fill="#0d0b0a"/>
+
+  <!-- ============================================================ MASTHEAD == -->
+  <g transform="translate(48,40)">
+    <rect x="0" y="0" width="1344" height="104" rx="16" fill="#bd4b2a"/>
+    <text x="28" y="46" class="disp" font-size="30" style="fill:#fff6f0">сосед<tspan fill="#1c0e07">.</tspan> интерфейс</text>
+    <text x="28" y="74" class="body" style="fill:#fff6f0;opacity:0.85">
+      Основа: палитра, шрифт, контролы. Снято с landing/index.html — не с памяти и не со спеки.
+    </text>
+    <text x="1316" y="46" class="mono" text-anchor="end" style="fill:#fff6f0">design/interface/foundations.svg</text>
+    <text x="1316" y="74" class="mono" text-anchor="end" style="fill:#fff6f0">экраны 01–17 — в ../../docs/</text>
+  </g>
+
+  <!-- ============================================================= ПАЛИТРА == -->
+  <g transform="translate(48,184)">
+    <text x="0" y="16" class="disp" font-size="19">Палитра</text>
+    <line x1="0" y1="26" x2="1344" y2="26" stroke="#3a2e20" stroke-width="1"/>
+    <text x="0" y="48" class="muted">Тёмная — по умолчанию. Светлая приходит из системы и перебивается атрибутом. Числа — контраст, посчитанный по этим значениям.</text>
+  </g>
+
+  <!-- тёмная -->
+  <g transform="translate(48,252)">
+    <text x="0" y="12" class="brow-sheet">ТЁМНАЯ · ПО УМОЛЧАНИЮ</text>
+    <g transform="translate(0,24)">
+      <rect x="0" y="0" width="656" height="236" rx="16" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
+
+      <g transform="translate(20,20)">
+        <rect x="0" y="0" width="44" height="44" rx="8" fill="#0d0b0a" stroke="#3a2e20" stroke-width="1"/>
+        <text x="58" y="18" class="small">--bg</text>
+        <text x="58" y="34" class="mono">#0d0b0a · тёплый уголь</text>
+      </g>
+      <g transform="translate(216,20)">
+        <rect x="0" y="0" width="44" height="44" rx="8" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
+        <text x="58" y="18" class="small">--panel</text>
+        <text x="58" y="34" class="mono">#17130f · карточки</text>
+      </g>
+      <g transform="translate(412,20)">
+        <rect x="0" y="0" width="44" height="44" rx="8" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+        <text x="58" y="18" class="small">--panel-2</text>
+        <text x="58" y="34" class="mono">#241c14 · вложенное</text>
+      </g>
+
+      <g transform="translate(20,88)">
+        <rect x="0" y="0" width="44" height="44" rx="8" fill="#f0e7dc"/>
+        <text x="58" y="18" class="small">--fg</text>
+        <text x="58" y="34" class="mono">16.06:1 на фоне</text>
+      </g>
+      <g transform="translate(216,88)">
+        <rect x="0" y="0" width="44" height="44" rx="8" fill="#9a8d7c"/>
+        <text x="58" y="18" class="small">--muted</text>
+        <text x="58" y="34" class="mono">6.05 · 5.70 · 5.17</text>
+      </g>
+      <g transform="translate(412,88)">
+        <rect x="0" y="0" width="44" height="44" rx="8" fill="#ab9d88"/>
+        <text x="58" y="18" class="small">--muted-2</text>
+        <text x="58" y="34" class="mono">7.40 · 6.96 · 6.32</text>
+      </g>
+
+      <g transform="translate(20,156)">
+        <rect x="0" y="0" width="44" height="44" rx="8" fill="#3a2e20"/>
+        <text x="58" y="18" class="small">--border</text>
+        <text x="58" y="34" class="mono">#3a2e20 · 1px</text>
+      </g>
+      <g transform="translate(216,156)">
+        <rect x="0" y="0" width="44" height="44" rx="8" fill="#bd4b2a"/>
+        <text x="58" y="18" class="small">--accent</text>
+        <text x="58" y="34" class="mono">terra · 3.93:1 на фоне</text>
+      </g>
+      <g transform="translate(412,156)">
+        <rect x="0" y="0" width="44" height="44" rx="8" fill="#fff6f0" stroke="#3a2e20" stroke-width="1"/>
+        <text x="58" y="18" class="small">--accent-ink</text>
+        <text x="58" y="34" class="mono">4.68:1 на акценте</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- светлая -->
+  <g transform="translate(736,252)">
+    <text x="0" y="12" class="brow-sheet">СВЕТЛАЯ</text>
+    <g transform="translate(0,24)">
+      <rect x="0" y="0" width="656" height="236" rx="16" fill="#f5efe4" stroke="#221a12" stroke-width="1"/>
+
+      <g transform="translate(20,20)">
+        <rect x="0" y="0" width="44" height="44" rx="8" fill="#ece4d8" stroke="#221a12" stroke-width="1"/>
+        <text x="58" y="18" class="small on-light">--bg</text>
+        <text x="58" y="34" class="mono on-light-muted">#ece4d8 · тёплый клэй</text>
+      </g>
+      <g transform="translate(216,20)">
+        <rect x="0" y="0" width="44" height="44" rx="8" fill="#f5efe4" stroke="#221a12" stroke-width="1"/>
+        <text x="58" y="18" class="small on-light">--panel</text>
+        <text x="58" y="34" class="mono on-light-muted">#f5efe4 · карточки</text>
+      </g>
+      <g transform="translate(412,20)">
+        <rect x="0" y="0" width="44" height="44" rx="8" fill="#ddd0bd" stroke="#221a12" stroke-width="1"/>
+        <text x="58" y="18" class="small on-light">--panel-2</text>
+        <text x="58" y="34" class="mono on-light-muted">#ddd0bd · вложенное</text>
+      </g>
+
+      <g transform="translate(20,88)">
+        <rect x="0" y="0" width="44" height="44" rx="8" fill="#1c140d"/>
+        <text x="58" y="18" class="small on-light">--fg</text>
+        <text x="58" y="34" class="mono on-light-muted">14.42:1 на фоне</text>
+      </g>
+      <g transform="translate(216,88)">
+        <rect x="0" y="0" width="44" height="44" rx="8" fill="#6b5f4c"/>
+        <text x="58" y="18" class="small on-light">--muted</text>
+        <text x="58" y="34" class="mono on-light-muted">4.95 · 5.45 · <tspan class="fail">4.11</tspan></text>
+      </g>
+      <g transform="translate(412,88)">
+        <rect x="0" y="0" width="44" height="44" rx="8" fill="#655847"/>
+        <text x="58" y="18" class="small on-light">--muted-2</text>
+        <text x="58" y="34" class="mono on-light-muted">5.48 · 6.04 · 4.55</text>
+      </g>
+
+      <g transform="translate(20,156)">
+        <rect x="0" y="0" width="44" height="44" rx="8" fill="#221a12"/>
+        <text x="58" y="18" class="small on-light">--border</text>
+        <text x="58" y="34" class="mono on-light-muted">#221a12 · 1px</text>
+      </g>
+      <g transform="translate(216,156)">
+        <rect x="0" y="0" width="44" height="44" rx="8" fill="#c24a26"/>
+        <text x="58" y="18" class="small on-light">--accent</text>
+        <text x="58" y="34" class="mono on-light-muted">3.96:1 на фоне</text>
+      </g>
+      <g transform="translate(412,156)">
+        <rect x="0" y="0" width="44" height="44" rx="8" fill="#fff6f0" stroke="#221a12" stroke-width="1"/>
+        <text x="58" y="18" class="small on-light">--accent-ink</text>
+        <text x="58" y="34" class="mono on-light-muted">4.68:1 на акценте</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============================================================== АКЦЕНТЫ == -->
+  <g transform="translate(48,548)">
+    <text x="0" y="16" class="disp" font-size="19">Шесть акцентов</text>
+    <line x1="0" y1="26" x2="1344" y2="26" stroke="#3a2e20" stroke-width="1"/>
+    <text x="0" y="48" class="muted">Акцент — своя ось, data-accent. Выбирается случайно при каждой загрузке, никогда не повторяя прошлый; клик по логотипу закрепляет.</text>
+  </g>
+
+  <g transform="translate(48,616)">
+    <rect x="0" y="0" width="1344" height="168" rx="16" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
+
+    <g transform="translate(24,24)">
+      <rect x="0" y="0" width="196" height="56" rx="12" fill="#bd4b2a"/>
+      <text x="14" y="24" class="small" font-weight="700" style="fill:#fff6f0">terra</text>
+      <text x="14" y="42" class="mono" style="fill:#fff6f0">#bd4b2a · по умолчанию</text>
+    </g>
+    <g transform="translate(236,24)">
+      <rect x="0" y="0" width="196" height="56" rx="12" fill="#d68a1f"/>
+      <text x="14" y="24" class="small" font-weight="700" style="fill:#241206">amber</text>
+      <text x="14" y="42" class="mono" style="fill:#241206">#d68a1f</text>
+    </g>
+    <g transform="translate(448,24)">
+      <rect x="0" y="0" width="196" height="56" rx="12" fill="#1fa99a"/>
+      <text x="14" y="24" class="small" font-weight="700" style="fill:#04231f">teal</text>
+      <text x="14" y="42" class="mono" style="fill:#04231f">#1fa99a</text>
+    </g>
+    <g transform="translate(660,24)">
+      <rect x="0" y="0" width="196" height="56" rx="12" fill="#336eb2"/>
+      <text x="14" y="24" class="small" font-weight="700" style="fill:#eaf2ff">azure</text>
+      <text x="14" y="42" class="mono" style="fill:#eaf2ff">#336eb2</text>
+    </g>
+    <g transform="translate(872,24)">
+      <rect x="0" y="0" width="196" height="56" rx="12" fill="#8550c5"/>
+      <text x="14" y="24" class="small" font-weight="700" style="fill:#f3ecfd">violet</text>
+      <text x="14" y="42" class="mono" style="fill:#f3ecfd">#8550c5</text>
+    </g>
+    <g transform="translate(1084,24)">
+      <rect x="0" y="0" width="196" height="56" rx="12" fill="#cc2f27"/>
+      <text x="14" y="24" class="small" font-weight="700" style="fill:#fdeceb">crimson</text>
+      <text x="14" y="42" class="mono" style="fill:#fdeceb">#cc2f27</text>
+    </g>
+
+    <text x="24" y="112" class="body">Акцент меняет ровно два токена — сам цвет и чернила поверх него. Больше он не трогает ничего, поэтому седьмой добавляется двумя строками.</text>
+    <text x="24" y="136" class="warn">Как заливка под своими чернилами каждый проходит: 4.59–6.45:1. Как текст на фоне — 3.7–4.2:1, чего эйбрау в 0.7rem не хватает.</text>
+  </g>
+
+  <!-- ============================================================ ТИПОГРАФИКА -->
+  <g transform="translate(48,824)">
+    <text x="0" y="16" class="disp" font-size="19">Шрифт</text>
+    <line x1="0" y1="26" x2="1344" y2="26" stroke="#3a2e20" stroke-width="1"/>
+    <text x="0" y="48" class="muted">Golos Text, кириллица. Дисплей — 800, прописные, отрицательный трекинг. Моноширинный — эйбрау, метки, таймеры.</text>
+  </g>
+
+  <g transform="translate(48,892)">
+    <rect x="0" y="0" width="656" height="268" rx="16" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
+    <text x="24" y="34" class="brow">ЛЕНТА РАЙОНА</text>
+    <text x="24" y="86" class="disp" font-size="44">ХОЙ</text>
+    <text x="24" y="128" class="disp" font-size="28">Заголовок экрана</text>
+    <text x="24" y="160" class="body" font-size="15">Основной текст — 15px, высота строки 1.45. Столько читают подряд.</text>
+    <text x="24" y="186" class="muted">Вторичный — им подписывают, а не рассказывают.</text>
+    <text x="24" y="216" class="mono">14:32 · 2 МИНУТЫ НАЗАД · МОНОШИРИННЫЙ</text>
+    <text x="24" y="246" class="muted" font-size="11">Дисплей 800 · текст 500 · моно 400</text>
+  </g>
+
+  <!-- =============================================================== КОНТРОЛЫ -->
+  <g transform="translate(736,892)">
+    <rect x="0" y="0" width="656" height="268" rx="16" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
+    <text x="24" y="30" class="brow-sheet">КОНТРОЛЫ</text>
+
+    <g transform="translate(24,50)">
+      <rect x="0" y="0" width="150" height="44" rx="12" fill="#bd4b2a"/>
+      <text x="75" y="27" class="small" font-weight="700" text-anchor="middle" style="fill:#fff6f0">Написать</text>
+      <text x="0" y="60" class="mono">главное действие</text>
+    </g>
+    <g transform="translate(198,50)">
+      <rect x="0" y="0" width="150" height="44" rx="12" fill="none" stroke="#3a2e20" stroke-width="1"/>
+      <text x="75" y="27" class="small" text-anchor="middle">Отмена</text>
+      <text x="0" y="60" class="mono">второе действие</text>
+    </g>
+    <g transform="translate(372,50)">
+      <rect x="0" y="0" width="260" height="44" rx="12" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+      <text x="14" y="27" class="small" style="fill:#9a8d7c">о чём подумалось…</text>
+      <text x="0" y="60" class="mono">поле ввода</text>
+    </g>
+
+    <g transform="translate(24,140)">
+      <rect x="0" y="0" width="112" height="30" rx="15" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+      <text x="56" y="20" class="small" text-anchor="middle">рядом</text>
+    </g>
+    <g transform="translate(148,140)">
+      <rect x="0" y="0" width="112" height="30" rx="15" fill="#bd4b2a"/>
+      <text x="56" y="20" class="small" font-weight="700" text-anchor="middle" style="fill:#fff6f0">выбрано</text>
+    </g>
+    <text x="24" y="192" class="mono">чипы: выбранный заливается акцентом, остальные — вложенной плашкой</text>
+
+    <circle cx="42" cy="228" r="18" fill="none" stroke="#3a2e20" stroke-width="1"/>
+    <text x="42" y="234" class="disp" font-size="18" text-anchor="middle" style="fill:#bd4b2a">+</text>
+    <text x="72" y="226" class="small">круглая «плюс» на карточке</text>
+    <text x="72" y="242" class="mono">при наведении заливается акцентом</text>
+  </g>
+
+  <!-- ========================================================= КАРТОЧКА ЛЕНТЫ -->
+  <g transform="translate(48,1200)">
+    <text x="0" y="16" class="disp" font-size="19">Карточка ленты и пузыри чата</text>
+    <line x1="0" y1="26" x2="1344" y2="26" stroke="#3a2e20" stroke-width="1"/>
+    <text x="0" y="48" class="muted">Два кирпича, из которых собраны почти все семнадцать экранов.</text>
+  </g>
+
+  <g transform="translate(48,1268)">
+    <rect x="0" y="0" width="656" height="212" rx="16" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
+    <text x="24" y="30" class="brow-sheet">КАРТОЧКА · .msg</text>
+    <g transform="translate(24,46)">
+      <rect x="0" y="0" width="608" height="140" rx="16" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+      <text x="20" y="28" class="brow">ЧИСТЫЕ ПРУДЫ</text>
+      <text x="20" y="60" class="body" font-size="15">Кто-нибудь ещё слышал этот оркестр во дворе в семь утра?</text>
+      <text x="20" y="84" class="body" font-size="15">Я думал, мне снится.</text>
+      <text x="20" y="118" class="mono">14:32 · 2 МИНУТЫ НАЗАД</text>
+      <text x="20" y="136" class="warn" font-size="10">↑ метка района набрана акцентом — 3.36:1. Это дефект, а не приём; см. панель ниже.</text>
+      <circle cx="574" cy="34" r="18" fill="none" stroke="#3a2e20" stroke-width="1"/>
+      <text x="574" y="40" class="disp" font-size="18" text-anchor="middle" style="fill:#bd4b2a">+</text>
+    </g>
+  </g>
+
+  <g transform="translate(736,1268)">
+    <rect x="0" y="0" width="656" height="212" rx="16" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
+    <text x="24" y="30" class="brow-sheet">ЧАТ</text>
+    <g transform="translate(24,46)">
+      <rect x="0" y="0" width="380" height="56" rx="16" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+      <text x="18" y="24" class="body">Слышал. Думал, это у меня в голове.</text>
+      <text x="18" y="44" class="mono">14:33</text>
+    </g>
+    <g transform="translate(228,116)">
+      <rect x="0" y="0" width="404" height="56" rx="16" fill="#bd4b2a"/>
+      <text x="18" y="24" class="body" style="fill:#fff6f0">Значит, нас двое. Завтра проверим вместе?</text>
+      <text x="18" y="44" class="mono" style="fill:#fff6f0">14:35 · ДОСТАВЛЕНО</text>
+    </g>
+  </g>
+
+  <!-- ============================================================== НАЙДЕННОЕ -->
+  <g transform="translate(48,1520)">
+    <text x="0" y="16" class="disp" font-size="19">Найденное при съёме цветов</text>
+    <line x1="0" y1="26" x2="1344" y2="26" stroke="#3a2e20" stroke-width="1"/>
+  </g>
+
+  <g transform="translate(48,1560)">
+    <rect x="0" y="0" width="1344" height="164" rx="16" fill="#17130f" stroke="#e0973a" stroke-width="2"/>
+
+    <text x="24" y="34" class="fail">Светлая тема: --muted на --panel-2 даёт 4.11:1 при пороге 4.5.</text>
+    <text x="24" y="56" class="body">Это вторичный текст во вложенных плашках и во входящих пузырях чата — то есть подпись под каждым чужим сообщением. --muted-2 там даёт 4.55:1 и проходит.</text>
+
+    <text x="24" y="94" class="warn">Акцент как текст: 3.7–4.2:1 в обеих темах.</text>
+    <text x="24" y="116" class="body">Крупному заголовку хватает порога 3:1, эйбрау в 0.7rem — нет. Либо эйбрау набирается --muted-2, либо акцент для него темнеет.</text>
+
+    <text x="24" y="146" class="mono">DESIGN_SPEC устарел: в нём акцент #d6552f и цикл из пяти, на лендинге — шесть именованных, по умолчанию terra #bd4b2a.</text>
+  </g>
+
+  <!-- ================================================================= ПОДВАЛ -->
+  <g transform="translate(48,1764)">
+    <rect x="0" y="0" width="1344" height="152" rx="16" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+    <text x="24" y="34" class="body" font-weight="700">Что дальше</text>
+    <text x="24" y="60" class="body">03-feed.svg — лента района, телефон и широкий экран. Затем остальные шестнадцать экранов из ../../docs/.</text>
+    <text x="24" y="92" class="mono">Цвета сняты с landing/index.html. Контраст посчитан, а не заявлен.</text>
+    <text x="24" y="112" class="mono">Шрифт подключён из ../../landing/fonts.css — тот же файл, что отдаёт лендинг.</text>
+    <text x="24" y="132" class="mono">Брат: neighbro.place/design/interface/ — тот же брутализм, своё лицо.</text>
+  </g>
+</svg>

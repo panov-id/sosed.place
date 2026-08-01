@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1372" viewBox="0 0 1440 1372" font-family="Golos Text, system-ui, sans-serif">
+  <title>сосед — экран 10, настройки</title>
+  <desc>Тема, контрастность, одна ссылка на себя — и переход на согласие, а не переключатель. Нарисовано по ../../docs/10-*_RU.md; цвета сняты с landing/index.html.</desc>
+  <style>
+    @import url("../../landing/fonts.css");
+    /* Colour lives in style, never in a fill attribute: a class outranks the
+       attribute, so a per-element fill="…" is thrown away and the label is
+       painted in the class colour on top of its own ground. */
+    .disp  { font-weight: 800; letter-spacing: -0.03em; fill: #f0e7dc; }
+    .body  { font-size: 13px; font-weight: 500; fill: #f0e7dc; }
+    .msg   { font-size: 14px; font-weight: 500; fill: #f0e7dc; }
+    .small { font-size: 11px; font-weight: 500; fill: #f0e7dc; }
+    .muted { font-size: 12px; font-weight: 500; fill: #ab9d88; }
+    .mono  { font-family: ui-monospace, SF Mono, Menlo, Consolas, monospace;
+             font-size: 10px; fill: #ab9d88; }
+    .brow  { font-family: ui-monospace, SF Mono, Menlo, Consolas, monospace;
+             font-size: 10px; letter-spacing: 2.2px; fill: #ab9d88; font-weight: 600; }
+    .warn  { font-size: 11px; font-weight: 600; fill: #e0973a; }
+    /* neighbro's prototype sets a live message's timer in the accent, uppercase
+       and wide. sosed has no such thing — there the timer is a plain caption. */
+    .timer { font-family: ui-monospace, SF Mono, Menlo, Consolas, monospace;
+             font-size: 10px; letter-spacing: 1.4px; fill: #ab9d88; font-weight: 600; }
+  </style>
+  <rect x="0" y="0" width="1440" height="1372" rx="0" fill="#0d0b0a"/>
+    <g transform="translate(48,40)">
+      <rect x="0" y="0" width="1344" height="104" rx="16" fill="#bd4b2a"/>
+      <text x="28" y="46" class="disp" font-size="30" style="fill:#fff6f0">Экран 10. настройки</text>
+      <text x="28" y="74" class="body" style="fill:#fff6f0">Тема, контрастность, одна ссылка на себя — и переход на согласие, а не переключатель.</text>
+      <text x="1316" y="46" class="mono" style="fill:#fff6f0" text-anchor="end">design/interface/10-settings.svg</text>
+      <text x="1316" y="74" class="mono" style="fill:#fff6f0" text-anchor="end">по ../../docs/10-settings-screen_RU.md</text>
+    </g>
+    <g transform="translate(48,184)">
+      <text x="0" y="16" class="disp" font-size="19">Телефон · 390 × 844</text>
+      <line x1="0" y1="26" x2="1344" y2="26" stroke="#3a2e20" stroke-width="1"/>
+      <text x="0" y="48" class="muted">Истинная геометрия, без масштаба.</text>
+    </g>
+  <g transform="translate(48,256)">
+    <text x="0" y="0" class="brow">НАСТРОЙКИ</text>
+    <rect x="0" y="14" width="390" height="844" rx="46" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
+    <g transform="translate(8,22)">
+      <rect x="0" y="0" width="374" height="828" rx="35" fill="#0d0b0a"/>
+      <text x="187" y="30" class="mono" text-anchor="middle">9:41</text>
+      <text x="20" y="64" class="disp" font-size="20">настройки</text>
+      <text x="20" y="84" class="mono">применяются сразу</text>
+      <line x1="0" y1="104" x2="374" y2="104" stroke="#3a2e20" stroke-width="1"/>
+      <text x="24" y="150" class="brow">ТЕМА</text>
+      <rect x="16" y="166" width="342" height="48" rx="14" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+      <rect x="20" y="170" width="167" height="40" rx="11" fill="#bd4b2a"/>
+      <text x="103" y="195" class="small" style="fill:#fff6f0;font-weight:700" text-anchor="middle">тёмная</text>
+      <text x="271" y="195" class="small" text-anchor="middle">светлая</text>
+      <text x="24" y="260" class="brow">КОНТРАСТНОСТЬ</text>
+      <rect x="24" y="286" width="326" height="4" rx="2" fill="#241c14"/>
+      <rect x="24" y="286" width="202" height="4" rx="2" fill="#bd4b2a"/>
+      <circle cx="226" cy="288" r="11" fill="#bd4b2a"/>
+      <text x="24" y="340" class="brow">ССЫЛКА НА СЕБЯ</text>
+      <rect x="16" y="356" width="342" height="44" rx="12" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+      <text x="32" y="384" class="small" style="fill:#ab9d88">https://</text>
+      <text x="24" y="424" class="mono">одно поле, без выбора площадки</text>
+      <text x="24" y="442" class="mono">ею можно поделиться в чате</text>
+      <line x1="16" y1="490" x2="358" y2="490" stroke="#3a2e20" stroke-width="1"/>
+      <text x="24" y="528" class="msg">Сообщения с сексуальным подтекстом</text>
+      <text x="24" y="552" class="mono">выключено — включается на отдельном экране</text>
+      <text x="342" y="534" class="disp" font-size="18" style="fill:#bd4b2a" text-anchor="end">→</text>
+      <rect x="16" y="590" width="342" height="74" rx="16" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
+      <text x="32" y="618" class="brow">ЭТО НЕ ПЕРЕКЛЮЧАТЕЛЬ</text>
+      <text x="32" y="642" class="mono">к нему приходят, а не щёлкают мимоходом</text>
+    </g>
+  </g>
+    <g transform="translate(48,1160)">
+      <text x="0" y="16" class="disp" font-size="19">Открытое, из описания экрана</text>
+      <line x1="0" y1="26" x2="1344" y2="26" stroke="#3a2e20" stroke-width="1"/>
+    </g>
+    <g transform="translate(48,1200)">
+      <rect x="0" y="0" width="1344" height="88" rx="16" fill="#17130f" stroke="#e0973a" stroke-width="2"/>
+      <text x="24" y="34" class="warn">Описание не оставило здесь открытых вопросов.</text>
+      <text x="24" y="58" class="body">Площадки не перечисляются: ни Telegram, ни Instagram отдельными пунктами — одно поле произвольной ссылки.</text>
+    </g>
+    <g transform="translate(48,1312)">
+      <rect x="0" y="-8" width="1344" height="36" rx="10" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+      <text x="24" y="16" class="mono">Цвета — landing/index.html, шрифт — landing/fonts.css. Брат: neighbro.place/design/interface/</text>
+    </g>
+</svg>

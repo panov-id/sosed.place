@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1420" viewBox="0 0 1440 1420" font-family="Golos Text, system-ui, sans-serif">
+  <title>сосед — экран 5, действия с сообщением</title>
+  <desc>Лайк виден сразу. Жалоба и блокировка спрятаны — их не предлагают, к ним приходят. Нарисовано по ../../docs/05-*_RU.md; цвета сняты с landing/index.html.</desc>
+  <style>
+    @import url("../../landing/fonts.css");
+    /* Colour lives in style, never in a fill attribute: a class outranks the
+       attribute, so a per-element fill="…" is thrown away and the label is
+       painted in the class colour on top of its own ground. */
+    .disp  { font-weight: 800; letter-spacing: -0.03em; fill: #f0e7dc; }
+    .body  { font-size: 13px; font-weight: 500; fill: #f0e7dc; }
+    .msg   { font-size: 14px; font-weight: 500; fill: #f0e7dc; }
+    .small { font-size: 11px; font-weight: 500; fill: #f0e7dc; }
+    .muted { font-size: 12px; font-weight: 500; fill: #ab9d88; }
+    .mono  { font-family: ui-monospace, SF Mono, Menlo, Consolas, monospace;
+             font-size: 10px; fill: #ab9d88; }
+    .brow  { font-family: ui-monospace, SF Mono, Menlo, Consolas, monospace;
+             font-size: 10px; letter-spacing: 2.2px; fill: #ab9d88; font-weight: 600; }
+    .warn  { font-size: 11px; font-weight: 600; fill: #e0973a; }
+    /* neighbro's prototype sets a live message's timer in the accent, uppercase
+       and wide. sosed has no such thing — there the timer is a plain caption. */
+    .timer { font-family: ui-monospace, SF Mono, Menlo, Consolas, monospace;
+             font-size: 10px; letter-spacing: 1.4px; fill: #ab9d88; font-weight: 600; }
+  </style>
+  <rect x="0" y="0" width="1440" height="1420" rx="0" fill="#0d0b0a"/>
+    <g transform="translate(48,40)">
+      <rect x="0" y="0" width="1344" height="104" rx="16" fill="#bd4b2a"/>
+      <text x="28" y="46" class="disp" font-size="30" style="fill:#fff6f0">Экран 5. действия с сообщением</text>
+      <text x="28" y="74" class="body" style="fill:#fff6f0">Лайк виден сразу. Жалоба и блокировка спрятаны — их не предлагают, к ним приходят.</text>
+      <text x="1316" y="46" class="mono" style="fill:#fff6f0" text-anchor="end">design/interface/05-message-actions.svg</text>
+      <text x="1316" y="74" class="mono" style="fill:#fff6f0" text-anchor="end">по ../../docs/05-message-actions_RU.md</text>
+    </g>
+    <g transform="translate(48,184)">
+      <text x="0" y="16" class="disp" font-size="19">Телефон · 390 × 844</text>
+      <line x1="0" y1="26" x2="1344" y2="26" stroke="#3a2e20" stroke-width="1"/>
+      <text x="0" y="48" class="muted">Истинная геометрия, без масштаба.</text>
+    </g>
+  <g transform="translate(48,256)">
+    <text x="0" y="0" class="brow">КАРТОЧКА</text>
+    <rect x="0" y="14" width="390" height="844" rx="46" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
+    <g transform="translate(8,22)">
+      <rect x="0" y="0" width="374" height="828" rx="35" fill="#0d0b0a"/>
+      <text x="187" y="30" class="mono" text-anchor="middle">9:41</text>
+      <text x="20" y="64" class="disp" font-size="20">рядом</text>
+      <text x="20" y="84" class="mono">чистые пруды · 1.2 км</text>
+      <rect x="310" y="46" width="44" height="44" rx="12" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+      <line x1="323" y1="62" x2="341" y2="62" stroke="#bd4b2a" stroke-width="2" stroke-linecap="round"/>
+      <line x1="326" y1="68" x2="338" y2="68" stroke="#bd4b2a" stroke-width="2" stroke-linecap="round"/>
+      <line x1="329" y1="74" x2="335" y2="74" stroke="#bd4b2a" stroke-width="2" stroke-linecap="round"/>
+      <line x1="0" y1="104" x2="374" y2="104" stroke="#3a2e20" stroke-width="1"/>
+      <rect x="16" y="150" width="342" height="98" rx="16" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
+      <text x="32" y="174" class="brow">ЧИСТЫЕ ПРУДЫ · 29</text>
+      <text x="32" y="198" class="msg">Кто-нибудь ещё слышал этот</text>
+      <text x="32" y="218" class="msg">оркестр во дворе в семь утра?</text>
+      <text x="32" y="240" class="mono">14:32</text>
+      <circle cx="316" cy="176" r="16" fill="none" stroke="#3a2e20" stroke-width="1"/>
+      <path d="M310 176 a5 5 0 0 1 6 -3 a5 5 0 0 1 6 3 q0 6 -6 9 q-6 -3 -6 -9 z" fill="#bd4b2a"/>
+      <text x="316" y="236" class="disp" font-size="16" style="fill:#ab9d88" text-anchor="middle">···</text>
+      <text x="16" y="290" class="mono">лайк — снаружи, на карточке</text>
+      <text x="16" y="308" class="mono">жалоба и блокировка — в скрытом меню</text>
+    </g>
+  </g>
+  <g transform="translate(525,256)">
+    <text x="0" y="0" class="brow">СКРЫТОЕ МЕНЮ</text>
+    <rect x="0" y="14" width="390" height="844" rx="46" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
+    <g transform="translate(8,22)">
+      <rect x="0" y="0" width="374" height="828" rx="35" fill="#0d0b0a"/>
+      <g opacity="0.45">
+        <text x="187" y="30" class="mono" text-anchor="middle">9:41</text>
+        <text x="20" y="64" class="disp" font-size="20">рядом</text>
+        <text x="20" y="84" class="mono">чистые пруды · 1.2 км</text>
+        <rect x="310" y="46" width="44" height="44" rx="12" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+        <line x1="323" y1="62" x2="341" y2="62" stroke="#bd4b2a" stroke-width="2" stroke-linecap="round"/>
+        <line x1="326" y1="68" x2="338" y2="68" stroke="#bd4b2a" stroke-width="2" stroke-linecap="round"/>
+        <line x1="329" y1="74" x2="335" y2="74" stroke="#bd4b2a" stroke-width="2" stroke-linecap="round"/>
+        <line x1="0" y1="104" x2="374" y2="104" stroke="#3a2e20" stroke-width="1"/>
+        <rect x="16" y="150" width="342" height="98" rx="16" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
+        <text x="32" y="174" class="brow">ЧИСТЫЕ ПРУДЫ · 29</text>
+        <text x="32" y="198" class="msg">Кто-нибудь ещё слышал этот</text>
+        <text x="32" y="218" class="msg">оркестр во дворе в семь утра?</text>
+        <text x="32" y="240" class="mono">14:32</text>
+      </g>
+      <rect x="0" y="0" width="374" height="828" rx="35" fill="#0d0b0a" opacity="0.62"/>
+      <g transform="translate(0,480)">
+  <path d="M0 40 A35 35 0 0 1 35 5 L339 5 A35 35 0 0 1 374 40 L374 348 L0 348 Z" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
+  <rect x="163" y="18" width="48" height="4" rx="2" fill="#3a2e20"/>
+  <text x="24" y="58" class="disp" font-size="18">Сообщение</text>
+  <text x="24" y="126" class="msg">Пожаловаться</text>
+  <text x="24" y="150" class="mono">снижает квоту публикаций автора</text>
+  <line x1="24" y1="174" x2="350" y2="174" stroke="#3a2e20" stroke-width="1"/>
+  <text x="24" y="210" class="msg">Заблокировать</text>
+  <text x="24" y="234" class="mono">снижает квоту и прячет это сообщение</text>
+  <text x="24" y="252" class="mono">лично для вас — у остальных оно остаётся</text>
+  <line x1="24" y1="276" x2="350" y2="276" stroke="#3a2e20" stroke-width="1"/>
+  <text x="24" y="312" class="msg" style="fill:#ab9d88">Отмена</text>
+</g>
+    </g>
+  </g>
+    <g transform="translate(48,1160)">
+      <text x="0" y="16" class="disp" font-size="19">Открытое, из описания экрана</text>
+      <line x1="0" y1="26" x2="1344" y2="26" stroke="#3a2e20" stroke-width="1"/>
+    </g>
+    <g transform="translate(48,1200)">
+      <rect x="0" y="0" width="1344" height="136" rx="16" fill="#17130f" stroke="#e0973a" stroke-width="2"/>
+      <text x="24" y="34" class="warn">Три вопроса описание оставляет открытыми.</text>
+      <text x="24" y="58" class="body">Прячет ли жалоба сообщение лично для пожаловавшегося, как это делает блокировка.</text>
+      <text x="24" y="82" class="body">Способ вызова скрытого меню не определён: долгое нажатие, кнопка «···» или свайп.</text>
+      <text x="24" y="106" class="body">Насколько жалоба и блокировка снижают квоту — не определено.</text>
+    </g>
+    <g transform="translate(48,1360)">
+      <rect x="0" y="-8" width="1344" height="36" rx="10" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+      <text x="24" y="16" class="mono">Цвета — landing/index.html, шрифт — landing/fonts.css. Брат: neighbro.place/design/interface/</text>
+    </g>
+</svg>

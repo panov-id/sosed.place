@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1420" viewBox="0 0 1440 1420" font-family="Golos Text, system-ui, sans-serif">
+  <title>сосед — экран 13, пустые и пограничные состояния</title>
+  <desc>Три случая, когда показывать нечего. Каждый называет причину и даёт выход. Нарисовано по ../../docs/13-*_RU.md; цвета сняты с landing/index.html.</desc>
+  <style>
+    @import url("../../landing/fonts.css");
+    /* Colour lives in style, never in a fill attribute: a class outranks the
+       attribute, so a per-element fill="…" is thrown away and the label is
+       painted in the class colour on top of its own ground. */
+    .disp  { font-weight: 800; letter-spacing: -0.03em; fill: #f0e7dc; }
+    .body  { font-size: 13px; font-weight: 500; fill: #f0e7dc; }
+    .msg   { font-size: 14px; font-weight: 500; fill: #f0e7dc; }
+    .small { font-size: 11px; font-weight: 500; fill: #f0e7dc; }
+    .muted { font-size: 12px; font-weight: 500; fill: #ab9d88; }
+    .mono  { font-family: ui-monospace, SF Mono, Menlo, Consolas, monospace;
+             font-size: 10px; fill: #ab9d88; }
+    .brow  { font-family: ui-monospace, SF Mono, Menlo, Consolas, monospace;
+             font-size: 10px; letter-spacing: 2.2px; fill: #ab9d88; font-weight: 600; }
+    .warn  { font-size: 11px; font-weight: 600; fill: #e0973a; }
+    /* neighbro's prototype sets a live message's timer in the accent, uppercase
+       and wide. sosed has no such thing — there the timer is a plain caption. */
+    .timer { font-family: ui-monospace, SF Mono, Menlo, Consolas, monospace;
+             font-size: 10px; letter-spacing: 1.4px; fill: #ab9d88; font-weight: 600; }
+  </style>
+  <rect x="0" y="0" width="1440" height="1420" rx="0" fill="#0d0b0a"/>
+    <g transform="translate(48,40)">
+      <rect x="0" y="0" width="1344" height="104" rx="16" fill="#bd4b2a"/>
+      <text x="28" y="46" class="disp" font-size="30" style="fill:#fff6f0">Экран 13. пустые и пограничные состояния</text>
+      <text x="28" y="74" class="body" style="fill:#fff6f0">Три случая, когда показывать нечего. Каждый называет причину и даёт выход.</text>
+      <text x="1316" y="46" class="mono" style="fill:#fff6f0" text-anchor="end">design/interface/13-empty-states.svg</text>
+      <text x="1316" y="74" class="mono" style="fill:#fff6f0" text-anchor="end">по ../../docs/13-empty-and-edge-states_RU.md</text>
+    </g>
+    <g transform="translate(48,184)">
+      <text x="0" y="16" class="disp" font-size="19">Телефон · 390 × 844</text>
+      <line x1="0" y1="26" x2="1344" y2="26" stroke="#3a2e20" stroke-width="1"/>
+      <text x="0" y="48" class="muted">Истинная геометрия, без масштаба.</text>
+    </g>
+  <g transform="translate(48,256)">
+    <text x="0" y="0" class="brow">КВОТА ИСЧЕРПАНА</text>
+    <rect x="0" y="14" width="390" height="844" rx="46" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
+    <g transform="translate(8,22)">
+      <rect x="0" y="0" width="374" height="828" rx="35" fill="#0d0b0a"/>
+      <text x="187" y="30" class="mono" text-anchor="middle">9:41</text>
+      <text x="20" y="64" class="disp" font-size="20">рядом</text>
+      <text x="20" y="84" class="mono">чистые пруды · 1.2 км</text>
+      <rect x="310" y="46" width="44" height="44" rx="12" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+      <line x1="323" y1="62" x2="341" y2="62" stroke="#bd4b2a" stroke-width="2" stroke-linecap="round"/>
+      <line x1="326" y1="68" x2="338" y2="68" stroke="#bd4b2a" stroke-width="2" stroke-linecap="round"/>
+      <line x1="329" y1="74" x2="335" y2="74" stroke="#bd4b2a" stroke-width="2" stroke-linecap="round"/>
+      <line x1="0" y1="104" x2="374" y2="104" stroke="#3a2e20" stroke-width="1"/>
+      <rect x="16" y="240" width="342" height="140" rx="16" fill="none" stroke="#ab9d88" stroke-width="2" stroke-dasharray="6 5"/>
+      <text x="187" y="278" class="disp" font-size="18" text-anchor="middle">Квота исчерпана</text>
+      <text x="187" y="310" class="muted" text-anchor="middle">Пять сообщений уже в ленте.</text>
+      <text x="187" y="330" class="muted" text-anchor="middle">Освободится, когда уйдёт старое.</text>
+      <rect x="74" y="324" width="220" height="44" rx="12" fill="#bd4b2a"/>
+      <text x="184.0" y="352" class="small" style="fill:#fff6f0;font-weight:700" text-anchor="middle">Мои сообщения</text>
+    </g>
+  </g>
+  <g transform="translate(525,256)">
+    <text x="0" y="0" class="brow">НИКОГО РЯДОМ</text>
+    <rect x="0" y="14" width="390" height="844" rx="46" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
+    <g transform="translate(8,22)">
+      <rect x="0" y="0" width="374" height="828" rx="35" fill="#0d0b0a"/>
+      <text x="187" y="30" class="mono" text-anchor="middle">9:41</text>
+      <text x="20" y="64" class="disp" font-size="20">рядом</text>
+      <text x="20" y="84" class="mono">чистые пруды · 1.2 км</text>
+      <rect x="310" y="46" width="44" height="44" rx="12" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+      <line x1="323" y1="62" x2="341" y2="62" stroke="#bd4b2a" stroke-width="2" stroke-linecap="round"/>
+      <line x1="326" y1="68" x2="338" y2="68" stroke="#bd4b2a" stroke-width="2" stroke-linecap="round"/>
+      <line x1="329" y1="74" x2="335" y2="74" stroke="#bd4b2a" stroke-width="2" stroke-linecap="round"/>
+      <line x1="0" y1="104" x2="374" y2="104" stroke="#3a2e20" stroke-width="1"/>
+      <rect x="16" y="240" width="342" height="140" rx="16" fill="none" stroke="#ab9d88" stroke-width="2" stroke-dasharray="6 5"/>
+      <text x="187" y="278" class="disp" font-size="18" text-anchor="middle">Рядом тихо</text>
+      <text x="187" y="310" class="muted" text-anchor="middle">В этом радиусе сейчас никого.</text>
+      <text x="187" y="330" class="muted" text-anchor="middle">Попробуйте расширить круг.</text>
+      <rect x="74" y="324" width="220" height="44" rx="12" fill="#bd4b2a"/>
+      <text x="184.0" y="352" class="small" style="fill:#fff6f0;font-weight:700" text-anchor="middle">Расширить радиус</text>
+    </g>
+  </g>
+  <g transform="translate(1002,256)">
+    <text x="0" y="0" class="brow">НЕТ ГЕОПОЗИЦИИ</text>
+    <rect x="0" y="14" width="390" height="844" rx="46" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
+    <g transform="translate(8,22)">
+      <rect x="0" y="0" width="374" height="828" rx="35" fill="#0d0b0a"/>
+      <text x="187" y="30" class="mono" text-anchor="middle">9:41</text>
+      <text x="20" y="64" class="disp" font-size="20">рядом</text>
+      <text x="20" y="84" class="mono">чистые пруды · 1.2 км</text>
+      <rect x="310" y="46" width="44" height="44" rx="12" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+      <line x1="323" y1="62" x2="341" y2="62" stroke="#bd4b2a" stroke-width="2" stroke-linecap="round"/>
+      <line x1="326" y1="68" x2="338" y2="68" stroke="#bd4b2a" stroke-width="2" stroke-linecap="round"/>
+      <line x1="329" y1="74" x2="335" y2="74" stroke="#bd4b2a" stroke-width="2" stroke-linecap="round"/>
+      <line x1="0" y1="104" x2="374" y2="104" stroke="#3a2e20" stroke-width="1"/>
+      <rect x="16" y="240" width="342" height="140" rx="16" fill="none" stroke="#ab9d88" stroke-width="2" stroke-dasharray="6 5"/>
+      <text x="187" y="278" class="disp" font-size="18" text-anchor="middle">Где вы — неизвестно</text>
+      <text x="187" y="310" class="muted" text-anchor="middle">Доступ к геопозиции не дан.</text>
+      <text x="187" y="330" class="muted" text-anchor="middle">Место можно указать вручную.</text>
+      <rect x="74" y="324" width="220" height="44" rx="12" fill="#bd4b2a"/>
+      <text x="184.0" y="352" class="small" style="fill:#fff6f0;font-weight:700" text-anchor="middle">Указать на карте</text>
+    </g>
+  </g>
+    <g transform="translate(48,1160)">
+      <text x="0" y="16" class="disp" font-size="19">Открытое, из описания экрана</text>
+      <line x1="0" y1="26" x2="1344" y2="26" stroke="#3a2e20" stroke-width="1"/>
+    </g>
+    <g transform="translate(48,1200)">
+      <rect x="0" y="0" width="1344" height="136" rx="16" fill="#17130f" stroke="#e0973a" stroke-width="2"/>
+      <text x="24" y="34" class="warn">Три вопроса описание оставляет открытыми.</text>
+      <text x="24" y="58" class="body">Точные тексты и вид каждого состояния не определены — здесь они предложены, а не утверждены.</text>
+      <text x="24" y="82" class="body">Восстанавливается ли квота со временем или только по мере ухода старых сообщений — не определено.</text>
+      <text x="24" y="106" class="body">Поведение при отказе в геопозиции не определено: повторный запрос или только ручной ввод.</text>
+    </g>
+    <g transform="translate(48,1360)">
+      <rect x="0" y="-8" width="1344" height="36" rx="10" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+      <text x="24" y="16" class="mono">Цвета — landing/index.html, шрифт — landing/fonts.css. Брат: neighbro.place/design/interface/</text>
+    </g>
+</svg>
