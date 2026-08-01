@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="2880" height="4880" viewBox="0 0 1440 2440" font-family="Golos Text, system-ui, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="2880" height="4576" viewBox="0 0 1440 2288" font-family="Golos Text, system-ui, sans-serif">
   <title>сосед — экран 6, мэтч и чат</title>
   <desc>Взаимный лайк открывает чат и показывает, на чём именно совпало. Следующий лайк не заводит второй чат. Обе темы. Нарисовано по ../../docs/06-match-and-chat_RU.md; цвета сняты с landing/index.html.</desc>
   <style>
@@ -33,7 +33,7 @@
     .on-light .timer { font-family: ui-monospace, SF Mono, Menlo, Consolas, monospace;
              font-size: 10px; letter-spacing: 1.4px; fill: #655847; font-weight: 600; }
   </style>
-  <rect x="0" y="0" width="1440" height="2440" rx="0" fill="#0d0b0a"/>
+  <rect x="0" y="0" width="1440" height="2288" rx="0" fill="#0d0b0a"/>
     <g transform="translate(48,40)">
       <rect x="0" y="0" width="1344" height="104" rx="16" fill="#bd4b2a"/>
       <text x="28" y="46" class="disp" font-size="30" style="fill:#fff6f0">Экран 6. мэтч и чат</text>
@@ -48,6 +48,8 @@
   <g transform="translate(48,256)">
     <text x="0" y="0" class="brow">МЭТЧ</text>
     <rect x="0" y="14" width="390" height="844" rx="46" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
+    <clipPath id="screen25"><rect x="8" y="22" width="374" height="828" rx="35"/></clipPath>
+    <g clip-path="url(#screen25)">
     <g transform="translate(8,22)">
       <rect x="0" y="0" width="374" height="828" rx="35" fill="#0d0b0a"/>
       <text x="187" y="30" class="mono" text-anchor="middle">9:41</text>
@@ -60,35 +62,37 @@
       <text x="32" y="408" class="msg">оркестр во дворе в семь утра?</text>
       <text x="32" y="430" class="mono">14:32</text>
       <text x="187" y="500" class="mono" text-anchor="middle">чат уже открыт</text>
-      <rect x="16" y="700" width="342" height="44" rx="12" fill="#bd4b2a"/>
+      <rect x="16" y="700" width="342" height="44" rx="16" fill="#bd4b2a"/>
       <text x="187.0" y="728" class="small" style="fill:#fff6f0;font-weight:700" text-anchor="middle">Написать</text>
+    </g>
     </g>
   </g>
   <g transform="translate(525,256)">
     <text x="0" y="0" class="brow">ЛАЙК ПОСЛЕ МЭТЧА</text>
     <rect x="0" y="14" width="390" height="844" rx="46" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
+    <clipPath id="screen26"><rect x="8" y="22" width="374" height="828" rx="35"/></clipPath>
+    <g clip-path="url(#screen26)">
     <g transform="translate(8,22)">
       <rect x="0" y="0" width="374" height="828" rx="35" fill="#0d0b0a"/>
       <text x="187" y="30" class="mono" text-anchor="middle">9:41</text>
       <text x="20" y="64" class="disp" font-size="20">ЧИСТЫЕ ПРУДЫ · 29</text>
       <text x="20" y="84" class="mono">приватно</text>
       <line x1="0" y1="104" x2="374" y2="104" stroke="#3a2e20" stroke-width="1"/>
-      <rect x="16" y="140" width="300" height="64" rx="16" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+      <path d="M32 140 h268 a16 16 0 0 1 16 16 v32 a16 16 0 0 1 -16 16 h-279 a5 5 0 0 1 -5 -5 v-43 a16 16 0 0 1 16 -16 z" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
       <text x="32" y="166" class="msg">Слышал. Думал, это у меня в голове.</text>
       <text x="32" y="188" class="mono">14:33</text>
-      <rect x="98" y="216" width="260" height="64" rx="16" fill="#bd4b2a"/>
+      <path d="M114 216 h228 a16 16 0 0 1 16 16 v43 a5 5 0 0 1 -5 5 h-239 a16 16 0 0 1 -16 -16 v-32 a16 16 0 0 1 16 -16 z" fill="#bd4b2a"/>
       <text x="114" y="242" class="msg" style="fill:#fff6f0">Значит, нас двое.</text>
       <text x="114" y="264" class="mono" style="fill:#fff6f0">14:35 · ДОСТАВЛЕНО</text>
       <rect x="16" y="300" width="342" height="70" rx="16" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
       <path d="M32 322 a5 5 0 0 1 6 -3 a5 5 0 0 1 6 3 q0 6 -6 9 q-6 -3 -6 -9 z" fill="#bd4b2a"/>
       <text x="56" y="328" class="small">лайкнули ещё одно ваше сообщение</text>
       <text x="32" y="354" class="mono">«Продаю велосипед, стоял год на балконе»</text>
-      <text x="16" y="400" class="mono">второй лайк не открывает второй чат —</text>
-      <text x="16" y="418" class="mono">он приходит сюда, уведомлением</text>
-      <rect x="16" y="700" width="278" height="44" rx="12" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+      <rect x="16" y="700" width="278" height="44" rx="16" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
       <text x="32" y="728" class="small" style="fill:#ab9d88">написать…</text>
       <circle cx="332" cy="722" r="22" fill="#bd4b2a"/>
       <text x="332" y="729" class="disp" font-size="20" style="fill:#fff6f0" text-anchor="middle">↑</text>
+    </g>
     </g>
   </g>
     <g transform="translate(48,1194)">
@@ -100,6 +104,8 @@
   <g transform="translate(48,1266)">
     <text x="0" y="0" class="brow">МЭТЧ</text>
     <rect x="0" y="14" width="390" height="844" rx="46" fill="#f5efe4" stroke="#221a12" stroke-width="1"/>
+    <clipPath id="screen27"><rect x="8" y="22" width="374" height="828" rx="35"/></clipPath>
+    <g clip-path="url(#screen27)">
     <g transform="translate(8,22)">
       <rect x="0" y="0" width="374" height="828" rx="35" fill="#ece4d8"/>
       <text x="187" y="30" class="mono" text-anchor="middle">9:41</text>
@@ -112,50 +118,42 @@
       <text x="32" y="408" class="msg">оркестр во дворе в семь утра?</text>
       <text x="32" y="430" class="mono">14:32</text>
       <text x="187" y="500" class="mono" text-anchor="middle">чат уже открыт</text>
-      <rect x="16" y="700" width="342" height="44" rx="12" fill="#bd4b2a"/>
+      <rect x="16" y="700" width="342" height="44" rx="16" fill="#bd4b2a"/>
       <text x="187.0" y="728" class="small" style="fill:#fff6f0;font-weight:700" text-anchor="middle">Написать</text>
+    </g>
     </g>
   </g>
   <g transform="translate(525,1266)">
     <text x="0" y="0" class="brow">ЛАЙК ПОСЛЕ МЭТЧА</text>
     <rect x="0" y="14" width="390" height="844" rx="46" fill="#f5efe4" stroke="#221a12" stroke-width="1"/>
+    <clipPath id="screen28"><rect x="8" y="22" width="374" height="828" rx="35"/></clipPath>
+    <g clip-path="url(#screen28)">
     <g transform="translate(8,22)">
       <rect x="0" y="0" width="374" height="828" rx="35" fill="#ece4d8"/>
       <text x="187" y="30" class="mono" text-anchor="middle">9:41</text>
       <text x="20" y="64" class="disp" font-size="20">ЧИСТЫЕ ПРУДЫ · 29</text>
       <text x="20" y="84" class="mono">приватно</text>
       <line x1="0" y1="104" x2="374" y2="104" stroke="#221a12" stroke-width="1"/>
-      <rect x="16" y="140" width="300" height="64" rx="16" fill="#ddd0bd" stroke="#221a12" stroke-width="1"/>
+      <path d="M32 140 h268 a16 16 0 0 1 16 16 v32 a16 16 0 0 1 -16 16 h-279 a5 5 0 0 1 -5 -5 v-43 a16 16 0 0 1 16 -16 z" fill="#ddd0bd" stroke="#221a12" stroke-width="1"/>
       <text x="32" y="166" class="msg">Слышал. Думал, это у меня в голове.</text>
       <text x="32" y="188" class="mono">14:33</text>
-      <rect x="98" y="216" width="260" height="64" rx="16" fill="#bd4b2a"/>
+      <path d="M114 216 h228 a16 16 0 0 1 16 16 v43 a5 5 0 0 1 -5 5 h-239 a16 16 0 0 1 -16 -16 v-32 a16 16 0 0 1 16 -16 z" fill="#bd4b2a"/>
       <text x="114" y="242" class="msg" style="fill:#fff6f0">Значит, нас двое.</text>
       <text x="114" y="264" class="mono" style="fill:#fff6f0">14:35 · ДОСТАВЛЕНО</text>
       <rect x="16" y="300" width="342" height="70" rx="16" fill="#ddd0bd" stroke="#221a12" stroke-width="1"/>
       <path d="M32 322 a5 5 0 0 1 6 -3 a5 5 0 0 1 6 3 q0 6 -6 9 q-6 -3 -6 -9 z" fill="#bd4b2a"/>
       <text x="56" y="328" class="small">лайкнули ещё одно ваше сообщение</text>
       <text x="32" y="354" class="mono">«Продаю велосипед, стоял год на балконе»</text>
-      <text x="16" y="400" class="mono">второй лайк не открывает второй чат —</text>
-      <text x="16" y="418" class="mono">он приходит сюда, уведомлением</text>
-      <rect x="16" y="700" width="278" height="44" rx="12" fill="#ddd0bd" stroke="#221a12" stroke-width="1"/>
+      <rect x="16" y="700" width="278" height="44" rx="16" fill="#ddd0bd" stroke="#221a12" stroke-width="1"/>
       <text x="32" y="728" class="small" style="fill:#655847">написать…</text>
       <circle cx="332" cy="722" r="22" fill="#bd4b2a"/>
       <text x="332" y="729" class="disp" font-size="20" style="fill:#fff6f0" text-anchor="middle">↑</text>
     </g>
+    </g>
   </g>
   </g>
-    <g transform="translate(48,2204)">
-      <text x="0" y="16" class="disp" font-size="19">Открытое, из описания экрана</text>
-      <line x1="0" y1="26" x2="1344" y2="26" stroke="#3a2e20" stroke-width="1"/>
-    </g>
-    <g transform="translate(48,2244)">
-      <rect x="0" y="0" width="1344" height="128" rx="16" fill="#17130f" stroke="#e0973a" stroke-width="2"/>
-      <text x="24" y="34" class="warn">Два вопроса описание оставляет открытыми.</text>
-      <text x="24" y="58" class="body">Вид анимации мэтча не определён — здесь показано только её содержание.</text>
-      <text x="24" y="82" class="body">Формат уведомления о лайке внутри чата не определён: текст, карточка или иконка.</text>
-    </g>
-    <g transform="translate(48,2380)">
-      <rect x="0" y="-8" width="1344" height="36" rx="10" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+    <g transform="translate(48,2228)">
+      <rect x="0" y="-8" width="1344" height="36" rx="16" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
       <text x="24" y="16" class="mono">Цвета — landing/index.html, шрифт — landing/fonts.css. Брат: neighbro.place/design/interface/</text>
     </g>
 </svg>

@@ -48,6 +48,8 @@
   <g transform="translate(48,256)">
     <text x="0" y="0" class="brow">НАСТРОЙКИ</text>
     <rect x="0" y="14" width="390" height="844" rx="46" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
+    <clipPath id="screen35"><rect x="8" y="22" width="374" height="828" rx="35"/></clipPath>
+    <g clip-path="url(#screen35)">
     <g transform="translate(8,22)">
       <rect x="0" y="0" width="374" height="828" rx="35" fill="#0d0b0a"/>
       <text x="187" y="30" class="mono" text-anchor="middle">9:41</text>
@@ -64,7 +66,7 @@
       <rect x="24" y="286" width="202" height="4" rx="2" fill="#bd4b2a"/>
       <circle cx="226" cy="288" r="11" fill="#bd4b2a"/>
       <text x="24" y="340" class="brow">ССЫЛКА НА СЕБЯ</text>
-      <rect x="16" y="356" width="342" height="44" rx="12" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+      <rect x="16" y="356" width="342" height="44" rx="16" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
       <text x="32" y="384" class="small" style="fill:#ab9d88">https://</text>
       <text x="24" y="424" class="mono">одно поле, без выбора площадки</text>
       <text x="24" y="442" class="mono">ею можно поделиться в чате</text>
@@ -72,9 +74,7 @@
       <text x="24" y="528" class="msg">Сообщения с сексуальным подтекстом</text>
       <text x="24" y="552" class="mono">выключено — включается на отдельном экране</text>
       <text x="342" y="534" class="disp" font-size="18" style="fill:#bd4b2a" text-anchor="end">→</text>
-      <rect x="16" y="590" width="342" height="74" rx="16" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
-      <text x="32" y="618" class="brow">ЭТО НЕ ПЕРЕКЛЮЧАТЕЛЬ</text>
-      <text x="32" y="642" class="mono">к нему приходят, а не щёлкают мимоходом</text>
+    </g>
     </g>
   </g>
     <g transform="translate(48,1194)">
@@ -86,6 +86,8 @@
   <g transform="translate(48,1266)">
     <text x="0" y="0" class="brow">НАСТРОЙКИ</text>
     <rect x="0" y="14" width="390" height="844" rx="46" fill="#f5efe4" stroke="#221a12" stroke-width="1"/>
+    <clipPath id="screen36"><rect x="8" y="22" width="374" height="828" rx="35"/></clipPath>
+    <g clip-path="url(#screen36)">
     <g transform="translate(8,22)">
       <rect x="0" y="0" width="374" height="828" rx="35" fill="#ece4d8"/>
       <text x="187" y="30" class="mono" text-anchor="middle">9:41</text>
@@ -102,7 +104,7 @@
       <rect x="24" y="286" width="202" height="4" rx="2" fill="#bd4b2a"/>
       <circle cx="226" cy="288" r="11" fill="#bd4b2a"/>
       <text x="24" y="340" class="brow">ССЫЛКА НА СЕБЯ</text>
-      <rect x="16" y="356" width="342" height="44" rx="12" fill="#ddd0bd" stroke="#221a12" stroke-width="1"/>
+      <rect x="16" y="356" width="342" height="44" rx="16" fill="#ddd0bd" stroke="#221a12" stroke-width="1"/>
       <text x="32" y="384" class="small" style="fill:#655847">https://</text>
       <text x="24" y="424" class="mono">одно поле, без выбора площадки</text>
       <text x="24" y="442" class="mono">ею можно поделиться в чате</text>
@@ -110,20 +112,12 @@
       <text x="24" y="528" class="msg">Сообщения с сексуальным подтекстом</text>
       <text x="24" y="552" class="mono">выключено — включается на отдельном экране</text>
       <text x="342" y="534" class="disp" font-size="18" style="fill:#983c22" text-anchor="end">→</text>
-      <rect x="16" y="590" width="342" height="74" rx="16" fill="#f5efe4" stroke="#221a12" stroke-width="1"/>
-      <text x="32" y="618" class="brow">ЭТО НЕ ПЕРЕКЛЮЧАТЕЛЬ</text>
-      <text x="32" y="642" class="mono">к нему приходят, а не щёлкают мимоходом</text>
+    </g>
     </g>
   </g>
   </g>
-    <g transform="translate(525,256)">
-      <rect x="0" y="0" width="867" height="104" rx="16" fill="#17130f" stroke="#e0973a" stroke-width="2"/>
-      <text x="24" y="30" class="brow">ОТКРЫТОЕ, ИЗ ОПИСАНИЯ ЭКРАНА</text>
-      <text x="24" y="56" class="warn">Описание не оставило здесь открытых вопросов.</text>
-      <text x="24" y="80" class="body">Площадки не перечисляются: ни Telegram, ни Instagram отдельными пунктами — одно поле произвольной ссылки.</text>
-    </g>
     <g transform="translate(48,2228)">
-      <rect x="0" y="-8" width="1344" height="36" rx="10" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+      <rect x="0" y="-8" width="1344" height="36" rx="16" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
       <text x="24" y="16" class="mono">Цвета — landing/index.html, шрифт — landing/fonts.css. Брат: neighbro.place/design/interface/</text>
     </g>
 </svg>

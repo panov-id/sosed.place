@@ -17,6 +17,30 @@ landing serves, not a copy of it.
 | `01`…`17` | the rest of the screens from [`../../docs/`](../../docs/), one sheet each |
 | [`03-feed-shape.svg`](./03-feed-shape.svg) | how this product's shape differs from its brother's: one column, a round button over the feed, a rule down what is new |
 
+## The hand
+
+Soft geometry, depth made of light, and what is chosen is washed rather than
+ringed. Read off [`../../landing/index.html`](../../landing/index.html), which
+carries twenty radius declarations and exactly two hard shadows.
+
+| | |
+|---|---|
+| radius | **16px** on cards and bubbles |
+| border | **1px** |
+| depth | none — the phone's shadow is ambient, `0 36px 74px` |
+| bubble tail | **one corner tightened to 5px**, the bottom one on the speaker's side |
+| outgoing | filled with the accent |
+| avatar | **a circle**, accent-filled |
+| chosen | a **12% wash of the accent**, not a ring |
+| phone | 46 / 35 |
+
+A dashed accent frame appears **exactly once** — the "why you matched" footnote at
+the head of a chat. Nothing else on the property is dashed, so it reads as a
+footnote and not as a control.
+
+**Do not copy the brother.** neighbro is right angles, 2px borders and a hard
+offset shadow. It is a different product, not a different palette.
+
 ## The generator
 
 Sheets `01`…`17` are built by [`render.py`](./render.py) — one definition per

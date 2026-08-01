@@ -48,35 +48,31 @@
   <g transform="translate(48,256)">
     <text x="0" y="0" class="brow">БЕСЕДА</text>
     <rect x="0" y="14" width="390" height="844" rx="46" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
+    <clipPath id="screen31"><rect x="8" y="22" width="374" height="828" rx="35"/></clipPath>
+    <g clip-path="url(#screen31)">
     <g transform="translate(8,22)">
       <rect x="0" y="0" width="374" height="828" rx="35" fill="#0d0b0a"/>
       <text x="187" y="30" class="mono" text-anchor="middle">9:41</text>
       <text x="20" y="64" class="disp" font-size="20">ЧИСТЫЕ ПРУДЫ · 29</text>
       <text x="20" y="84" class="mono">приватно</text>
       <line x1="0" y1="104" x2="374" y2="104" stroke="#3a2e20" stroke-width="1"/>
-      <rect x="16" y="130" width="300" height="64" rx="16" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+      <path d="M32 130 h268 a16 16 0 0 1 16 16 v32 a16 16 0 0 1 -16 16 h-279 a5 5 0 0 1 -5 -5 v-43 a16 16 0 0 1 16 -16 z" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
       <text x="32" y="156" class="msg">Слышал. Думал, это у меня в голове.</text>
       <text x="32" y="178" class="mono">14:33</text>
-      <rect x="118" y="206" width="240" height="64" rx="16" fill="#bd4b2a"/>
+      <path d="M134 206 h208 a16 16 0 0 1 16 16 v43 a5 5 0 0 1 -5 5 h-219 a16 16 0 0 1 -16 -16 v-32 a16 16 0 0 1 16 -16 z" fill="#bd4b2a"/>
       <text x="134" y="232" class="msg" style="fill:#fff6f0">Значит, нас двое.</text>
       <text x="134" y="254" class="mono" style="fill:#fff6f0">14:35 · ДОСТАВЛЕНО</text>
-      <rect x="16" y="282" width="280" height="64" rx="16" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+      <path d="M32 282 h248 a16 16 0 0 1 16 16 v32 a16 16 0 0 1 -16 16 h-259 a5 5 0 0 1 -5 -5 v-43 a16 16 0 0 1 16 -16 z" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
       <text x="32" y="308" class="msg">Каждое утро под одним окном.</text>
       <text x="32" y="330" class="mono">14:36</text>
-      <rect x="98" y="358" width="260" height="64" rx="16" fill="#bd4b2a"/>
+      <path d="M114 358 h228 a16 16 0 0 1 16 16 v43 a5 5 0 0 1 -5 5 h-239 a16 16 0 0 1 -16 -16 v-32 a16 16 0 0 1 16 -16 z" fill="#bd4b2a"/>
       <text x="114" y="384" class="msg" style="fill:#fff6f0">Завтра проверим вместе?</text>
       <text x="114" y="406" class="mono" style="fill:#fff6f0">14:38 · ДОСТАВЛЕНО</text>
-      <rect x="16" y="470" width="342" height="96" rx="16" fill="#17130f" stroke="#3a2e20" stroke-width="1"/>
-      <text x="32" y="498" class="brow">ЧТО ЗДЕСЬ ИНАЧЕ</text>
-      <text x="32" y="522" class="mono">переписка не исчезает через 4:20 —</text>
-      <text x="32" y="540" class="mono">она живёт, пока живёт чат</text>
-      <text x="32" y="558" class="mono">хранится на устройстве, зашифрованной</text>
-      <text x="16" y="604" class="mono">каждое сообщение проходит ту же проверку,</text>
-      <text x="16" y="622" class="mono">что и лента, но без капчи и рейтлимита</text>
-      <rect x="16" y="700" width="278" height="44" rx="12" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+      <rect x="16" y="700" width="278" height="44" rx="16" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
       <text x="32" y="728" class="small" style="fill:#ab9d88">написать…</text>
       <circle cx="332" cy="722" r="22" fill="#bd4b2a"/>
       <text x="332" y="729" class="disp" font-size="20" style="fill:#fff6f0" text-anchor="middle">↑</text>
+    </g>
     </g>
   </g>
     <g transform="translate(48,1194)">
@@ -88,47 +84,36 @@
   <g transform="translate(48,1266)">
     <text x="0" y="0" class="brow">БЕСЕДА</text>
     <rect x="0" y="14" width="390" height="844" rx="46" fill="#f5efe4" stroke="#221a12" stroke-width="1"/>
+    <clipPath id="screen32"><rect x="8" y="22" width="374" height="828" rx="35"/></clipPath>
+    <g clip-path="url(#screen32)">
     <g transform="translate(8,22)">
       <rect x="0" y="0" width="374" height="828" rx="35" fill="#ece4d8"/>
       <text x="187" y="30" class="mono" text-anchor="middle">9:41</text>
       <text x="20" y="64" class="disp" font-size="20">ЧИСТЫЕ ПРУДЫ · 29</text>
       <text x="20" y="84" class="mono">приватно</text>
       <line x1="0" y1="104" x2="374" y2="104" stroke="#221a12" stroke-width="1"/>
-      <rect x="16" y="130" width="300" height="64" rx="16" fill="#ddd0bd" stroke="#221a12" stroke-width="1"/>
+      <path d="M32 130 h268 a16 16 0 0 1 16 16 v32 a16 16 0 0 1 -16 16 h-279 a5 5 0 0 1 -5 -5 v-43 a16 16 0 0 1 16 -16 z" fill="#ddd0bd" stroke="#221a12" stroke-width="1"/>
       <text x="32" y="156" class="msg">Слышал. Думал, это у меня в голове.</text>
       <text x="32" y="178" class="mono">14:33</text>
-      <rect x="118" y="206" width="240" height="64" rx="16" fill="#bd4b2a"/>
+      <path d="M134 206 h208 a16 16 0 0 1 16 16 v43 a5 5 0 0 1 -5 5 h-219 a16 16 0 0 1 -16 -16 v-32 a16 16 0 0 1 16 -16 z" fill="#bd4b2a"/>
       <text x="134" y="232" class="msg" style="fill:#fff6f0">Значит, нас двое.</text>
       <text x="134" y="254" class="mono" style="fill:#fff6f0">14:35 · ДОСТАВЛЕНО</text>
-      <rect x="16" y="282" width="280" height="64" rx="16" fill="#ddd0bd" stroke="#221a12" stroke-width="1"/>
+      <path d="M32 282 h248 a16 16 0 0 1 16 16 v32 a16 16 0 0 1 -16 16 h-259 a5 5 0 0 1 -5 -5 v-43 a16 16 0 0 1 16 -16 z" fill="#ddd0bd" stroke="#221a12" stroke-width="1"/>
       <text x="32" y="308" class="msg">Каждое утро под одним окном.</text>
       <text x="32" y="330" class="mono">14:36</text>
-      <rect x="98" y="358" width="260" height="64" rx="16" fill="#bd4b2a"/>
+      <path d="M114 358 h228 a16 16 0 0 1 16 16 v43 a5 5 0 0 1 -5 5 h-239 a16 16 0 0 1 -16 -16 v-32 a16 16 0 0 1 16 -16 z" fill="#bd4b2a"/>
       <text x="114" y="384" class="msg" style="fill:#fff6f0">Завтра проверим вместе?</text>
       <text x="114" y="406" class="mono" style="fill:#fff6f0">14:38 · ДОСТАВЛЕНО</text>
-      <rect x="16" y="470" width="342" height="96" rx="16" fill="#f5efe4" stroke="#221a12" stroke-width="1"/>
-      <text x="32" y="498" class="brow">ЧТО ЗДЕСЬ ИНАЧЕ</text>
-      <text x="32" y="522" class="mono">переписка не исчезает через 4:20 —</text>
-      <text x="32" y="540" class="mono">она живёт, пока живёт чат</text>
-      <text x="32" y="558" class="mono">хранится на устройстве, зашифрованной</text>
-      <text x="16" y="604" class="mono">каждое сообщение проходит ту же проверку,</text>
-      <text x="16" y="622" class="mono">что и лента, но без капчи и рейтлимита</text>
-      <rect x="16" y="700" width="278" height="44" rx="12" fill="#ddd0bd" stroke="#221a12" stroke-width="1"/>
+      <rect x="16" y="700" width="278" height="44" rx="16" fill="#ddd0bd" stroke="#221a12" stroke-width="1"/>
       <text x="32" y="728" class="small" style="fill:#655847">написать…</text>
       <circle cx="332" cy="722" r="22" fill="#bd4b2a"/>
       <text x="332" y="729" class="disp" font-size="20" style="fill:#fff6f0" text-anchor="middle">↑</text>
     </g>
-  </g>
-  </g>
-    <g transform="translate(525,256)">
-      <rect x="0" y="0" width="867" height="128" rx="16" fill="#17130f" stroke="#e0973a" stroke-width="2"/>
-      <text x="24" y="30" class="brow">ОТКРЫТОЕ, ИЗ ОПИСАНИЯ ЭКРАНА</text>
-      <text x="24" y="56" class="warn">Описание не оставило здесь открытых вопросов.</text>
-      <text x="24" y="80" class="body">Хранение названо прямо: IndexedDB на устройстве, шифрование через Web Crypto перед записью.</text>
-      <text x="24" y="104" class="body">«Защищённого» хранилища браузера не существует, и описание это оговаривает.</text>
     </g>
+  </g>
+  </g>
     <g transform="translate(48,2228)">
-      <rect x="0" y="-8" width="1344" height="36" rx="10" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
+      <rect x="0" y="-8" width="1344" height="36" rx="16" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
       <text x="24" y="16" class="mono">Цвета — landing/index.html, шрифт — landing/fonts.css. Брат: neighbro.place/design/interface/</text>
     </g>
 </svg>
