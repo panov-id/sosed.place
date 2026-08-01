@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1420" viewBox="0 0 1440 1420" font-family="Golos Text, system-ui, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="2880" height="4576" viewBox="0 0 1440 2288" font-family="Golos Text, system-ui, sans-serif">
   <title>сосед — экран 4, публикация сообщения</title>
-  <desc>128 символов, сколько вас, и радиус размытия места. Картинок нет — они бывают только у продвигаемого сообщения. Нарисовано по ../../docs/04-*_RU.md; цвета сняты с landing/index.html.</desc>
+  <desc>128 символов, сколько вас, и радиус размытия места. Картинок нет — они бывают только у продвигаемого сообщения. Обе темы. Нарисовано по ../../docs/04-post-composer_RU.md; цвета сняты с landing/index.html.</desc>
   <style>
     @import url("../../landing/fonts.css");
     /* Colour lives in style, never in a fill attribute: a class outranks the
@@ -16,23 +16,34 @@
     .brow  { font-family: ui-monospace, SF Mono, Menlo, Consolas, monospace;
              font-size: 10px; letter-spacing: 2.2px; fill: #ab9d88; font-weight: 600; }
     .warn  { font-size: 11px; font-weight: 600; fill: #e0973a; }
-    /* neighbro's prototype sets a live message's timer in the accent, uppercase
-       and wide. sosed has no such thing — there the timer is a plain caption. */
     .timer { font-family: ui-monospace, SF Mono, Menlo, Consolas, monospace;
              font-size: 10px; letter-spacing: 1.4px; fill: #ab9d88; font-weight: 600; }
+    /* The same drawing again, on the light ground. Only the values differ — the
+       geometry, the wording and the layout are one thing drawn twice. */
+    .on-light .disp  { font-weight: 800; letter-spacing: -0.03em; fill: #1c140d; }
+    .on-light .body  { font-size: 13px; font-weight: 500; fill: #1c140d; }
+    .on-light .msg   { font-size: 14px; font-weight: 500; fill: #1c140d; }
+    .on-light .small { font-size: 11px; font-weight: 500; fill: #1c140d; }
+    .on-light .muted { font-size: 12px; font-weight: 500; fill: #655847; }
+    .on-light .mono  { font-family: ui-monospace, SF Mono, Menlo, Consolas, monospace;
+             font-size: 10px; fill: #655847; }
+    .on-light .brow  { font-family: ui-monospace, SF Mono, Menlo, Consolas, monospace;
+             font-size: 10px; letter-spacing: 2.2px; fill: #655847; font-weight: 600; }
+    .on-light .warn  { font-size: 11px; font-weight: 600; fill: #8a5200; }
+    .on-light .timer { font-family: ui-monospace, SF Mono, Menlo, Consolas, monospace;
+             font-size: 10px; letter-spacing: 1.4px; fill: #655847; font-weight: 600; }
   </style>
-  <rect x="0" y="0" width="1440" height="1420" rx="0" fill="#0d0b0a"/>
+  <rect x="0" y="0" width="1440" height="2288" rx="0" fill="#0d0b0a"/>
     <g transform="translate(48,40)">
       <rect x="0" y="0" width="1344" height="104" rx="16" fill="#bd4b2a"/>
       <text x="28" y="46" class="disp" font-size="30" style="fill:#fff6f0">Экран 4. публикация сообщения</text>
       <text x="28" y="74" class="body" style="fill:#fff6f0">128 символов, сколько вас, и радиус размытия места. Картинок нет — они бывают только у продвигаемого сообщения.</text>
       <text x="1316" y="46" class="mono" style="fill:#fff6f0" text-anchor="end">design/interface/04-composer.svg</text>
-      <text x="1316" y="74" class="mono" style="fill:#fff6f0" text-anchor="end">по ../../docs/04-post-composer_RU.md</text>
+      <text x="1316" y="74" class="mono" style="fill:#fff6f0" text-anchor="end">×2 · обе темы · ../../docs/04-post-composer_RU.md</text>
     </g>
     <g transform="translate(48,184)">
-      <text x="0" y="16" class="disp" font-size="19">Телефон · 390 × 844</text>
+      <text x="0" y="16" class="disp" font-size="19">ТЁМНАЯ · ПО УМОЛЧАНИЮ</text>
       <line x1="0" y1="26" x2="1344" y2="26" stroke="#3a2e20" stroke-width="1"/>
-      <text x="0" y="48" class="muted">Истинная геометрия, без масштаба.</text>
     </g>
   <g transform="translate(48,256)">
     <text x="0" y="0" class="brow">НАПИСАТЬ</text>
@@ -73,18 +84,61 @@
       <text x="187.0" y="728" class="small" style="fill:#fff6f0;font-weight:700" text-anchor="middle">Отправить</text>
     </g>
   </g>
-    <g transform="translate(48,1160)">
-      <text x="0" y="16" class="disp" font-size="19">Открытое, из описания экрана</text>
-      <line x1="0" y1="26" x2="1344" y2="26" stroke="#3a2e20" stroke-width="1"/>
+    <g transform="translate(48,1194)">
+      <text x="0" y="16" class="disp" font-size="19">СВЕТЛАЯ</text>
+      <line x1="0" y1="26" x2="1344" y2="26" stroke="#221a12" stroke-width="1"/>
     </g>
-    <g transform="translate(48,1200)">
-      <rect x="0" y="0" width="1344" height="136" rx="16" fill="#17130f" stroke="#e0973a" stroke-width="2"/>
-      <text x="24" y="34" class="warn">Три вопроса описание оставляет открытыми.</text>
-      <text x="24" y="58" class="body">Осталось ли отдельное поле города и страны, или его заменил слайдер размытия.</text>
-      <text x="24" y="82" class="body">Умолчания и границы слайдера размытия не определены. 300 м на чертеже — пример.</text>
-      <text x="24" y="106" class="body">Вид кнопки отправки не определён — здесь она текстовая.</text>
+  <rect x="0" y="1238" width="1440" height="946" fill="#ece4d8"/>
+  <g class="on-light">
+  <g transform="translate(48,1266)">
+    <text x="0" y="0" class="brow">НАПИСАТЬ</text>
+    <rect x="0" y="14" width="390" height="844" rx="46" fill="#f5efe4" stroke="#221a12" stroke-width="1"/>
+    <g transform="translate(8,22)">
+      <rect x="0" y="0" width="374" height="828" rx="35" fill="#ece4d8"/>
+      <text x="187" y="30" class="mono" text-anchor="middle">9:41</text>
+      <text x="20" y="64" class="disp" font-size="20">сказать</text>
+      <text x="20" y="84" class="mono">видно тем, кто рядом</text>
+      <line x1="0" y1="104" x2="374" y2="104" stroke="#221a12" stroke-width="1"/>
+      <rect x="16" y="130" width="342" height="128" rx="16" fill="#ddd0bd" stroke="#221a12" stroke-width="1"/>
+      <text x="32" y="160" class="msg">Во дворе поставили стол для</text>
+      <text x="32" y="180" class="msg">пинг-понга. Ракетки у консьержа.</text>
+      <text x="32" y="244" class="mono">64 / 128</text>
+      <text x="24" y="296" class="brow">СКОЛЬКО ВАС</text>
+      <rect x="24" y="312" width="46" height="38" rx="12" fill="#bd4b2a"/>
+      <rect x="82" y="312" width="46" height="38" rx="12" fill="#ddd0bd" stroke="#221a12" stroke-width="1"/>
+      <rect x="140" y="312" width="46" height="38" rx="12" fill="#ddd0bd" stroke="#221a12" stroke-width="1"/>
+      <rect x="198" y="312" width="46" height="38" rx="12" fill="#ddd0bd" stroke="#221a12" stroke-width="1"/>
+      <rect x="256" y="312" width="46" height="38" rx="12" fill="#ddd0bd" stroke="#221a12" stroke-width="1"/>
+      <text x="47" y="337" class="small" style="fill:#fff6f0;font-weight:700" text-anchor="middle">1</text>
+      <text x="105" y="337" class="small" text-anchor="middle">2</text>
+      <text x="163" y="337" class="small" text-anchor="middle">3</text>
+      <text x="221" y="337" class="small" text-anchor="middle">4</text>
+      <text x="279" y="337" class="small" text-anchor="middle">5+</text>
+      <text x="24" y="400" class="brow">РАЗМЫТИЕ МЕСТА</text>
+      <text x="24" y="428" class="msg">около 300 м</text>
+      <rect x="24" y="454" width="326" height="4" rx="2" fill="#ddd0bd"/>
+      <rect x="24" y="454" width="110" height="4" rx="2" fill="#bd4b2a"/>
+      <circle cx="134" cy="456" r="11" fill="#bd4b2a"/>
+      <text x="24" y="500" class="mono">сообщение привязано к зоне, а не к точке —</text>
+      <text x="24" y="518" class="mono">это приватность автора, а не видимость поста</text>
+      <rect x="16" y="560" width="342" height="92" rx="16" fill="#f5efe4" stroke="#221a12" stroke-width="1"/>
+      <text x="32" y="588" class="brow">ПЕРЕД ПУБЛИКАЦИЕЙ</text>
+      <text x="32" y="612" class="mono">проверка на токсичность и тон,</text>
+      <text x="32" y="630" class="mono">капча и рейтлимит — только для ленты</text>
+      <rect x="16" y="700" width="342" height="44" rx="12" fill="#bd4b2a"/>
+      <text x="187.0" y="728" class="small" style="fill:#fff6f0;font-weight:700" text-anchor="middle">Отправить</text>
     </g>
-    <g transform="translate(48,1360)">
+  </g>
+  </g>
+    <g transform="translate(525,256)">
+      <rect x="0" y="0" width="867" height="152" rx="16" fill="#17130f" stroke="#e0973a" stroke-width="2"/>
+      <text x="24" y="30" class="brow">ОТКРЫТОЕ, ИЗ ОПИСАНИЯ ЭКРАНА</text>
+      <text x="24" y="56" class="warn">Три вопроса описание оставляет открытыми.</text>
+      <text x="24" y="80" class="body">Осталось ли отдельное поле города и страны, или его заменил слайдер размытия.</text>
+      <text x="24" y="104" class="body">Умолчания и границы слайдера размытия не определены. 300 м на чертеже — пример.</text>
+      <text x="24" y="128" class="body">Вид кнопки отправки не определён — здесь она текстовая.</text>
+    </g>
+    <g transform="translate(48,2228)">
       <rect x="0" y="-8" width="1344" height="36" rx="10" fill="#241c14" stroke="#3a2e20" stroke-width="1"/>
       <text x="24" y="16" class="mono">Цвета — landing/index.html, шрифт — landing/fonts.css. Брат: neighbro.place/design/interface/</text>
     </g>
