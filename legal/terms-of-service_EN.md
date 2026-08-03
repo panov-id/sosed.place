@@ -1,28 +1,11 @@
-# Terms of Service — sosed.place
+# Terms of service — where the text lives
 
-Effective from: July 4, 2026
-Service operator (natural person): Evgenii Panov, ARC 0500694444, Cyprus, Limassol
+The text in force is [`../landing/legal/terms_EN.md`](../landing/legal/terms_EN.md)
+— the file the documents page actually serves and people actually read.
 
-## What this service is
+The copy that used to sit here was a second one, was served nowhere, and had
+drifted away from the served text: it promised one thing while the product did
+another. A legal text must not have two sources, so only a pointer is left here.
 
-sosed.place is a service for exchanging short messages with people nearby. Messages exist for a limited time and disappear. There are no permanent profiles or accounts.
-
-## Registration
-
-Signing in requires no email or password — just a birth year and, optionally, a name. Registration is scoped to a specific browser: switching browsers or devices creates a new identity, and access cannot be recovered.
-
-## What you can't post
-
-Harassment, drug-related content, and sex-work solicitation are prohibited — such messages are rejected automatically. Content must stay within the norms of a calm, peaceful society. The full rule set is in the Community Guidelines.
-
-## Quotas, reports, blocks
-
-Every user has a limited posting quota. Reports and blocks from other users reduce that quota. The service may restrict or terminate a user's access for rule violations.
-
-## Limitation of liability
-
-The service is provided "as is". Governing law: the laws of the Republic of Cyprus.
-
-## Contact
-
-Questions and requests go through the in-app support button, or: [contact email].
+**English, one authoritative version.** The documents page requests `_EN`
+explicitly; a translation creates a second edition that drifts in silence.

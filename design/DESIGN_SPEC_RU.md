@@ -101,4 +101,4 @@
 
 ---
 
-_Далее: перенос в `sosed.place/landing` с самохостом шрифтов Golos (как у neighbro) и реальным waitlist на прод-Supabase. См. [DESIGN_SPEC_EN](./DESIGN_SPEC_EN.md)._
+_Сделано: лендинг живёт в `sosed.place/landing` с самохостом шрифтов Golos, лист ожидания принимает релей. См. [DESIGN_SPEC_EN](./DESIGN_SPEC_EN.md)._

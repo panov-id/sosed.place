@@ -101,4 +101,4 @@ Warm courtyard, occasionally a touch “gop” (in moderation, good-natured). Gr
 
 ---
 
-_Next: port to `sosed.place/landing` with self-hosted Golos fonts (like neighbro) and a real waitlist on the prod Supabase. See [DESIGN_SPEC_RU](./DESIGN_SPEC_RU.md)._
+_Done: the landing lives in `sosed.place/landing` with self-hosted Golos fonts, and the waitlist is taken by the relay. See [DESIGN_SPEC_RU](./DESIGN_SPEC_RU.md)._
