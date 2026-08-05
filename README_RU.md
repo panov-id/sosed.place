@@ -5,3 +5,9 @@ SOSED — русскоязычное/СНГ лицо гиперлокально�
 
 - [`xor.ad`](https://github.com/panov-id/xor.ad) — общая платформа за этим фронтендом; полное описание концепции, архитектуры и политики модерации там.
 - [`neighbro.place`](https://github.com/panov-id/neighbro.place) — англоязычное родственное лицо.
+
+## Поддержать
+
+Сервис не берёт денег: офферы размещаются бесплатно, внутреннего баланса нет. Инфраструктуру покрывают добровольные донаты.
+
+[![PayPal](https://img.shields.io/badge/PayPal-донат-00457C?logo=paypal&logoColor=white)](https://www.paypal.com/donate/?hosted_button_id=5SMKMYYWFHMJC)

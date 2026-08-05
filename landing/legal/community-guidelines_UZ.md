@@ -14,7 +14,7 @@ sosed yaxshi qoʻshnilar uchun — odamlarga oʻzing koʻcheda qanday muomala ku
 
 ## Sotish va reklama yoʻq
 
-sosed bozor emas. **Oddiy xabarlar, chatlar yoki postlarda mol yoki xizmat sotish yoki reklama qilish, daʼvat, mablagʻ yigʻish yoki odam yollash mumkin emas.** Biror narsani reklama qilmoqchi boʻlsang, **pulli reklama bloki**dan foydalan — tijoriy kontent uchun yagona joy shu.
+sosed bozor emas. **Oddiy xabarlar, chatlar yoki postlarda mol yoki xizmat sotish yoki reklama qilish, daʼvat, mablagʻ yigʻish yoki odam yollash mumkin emas.** Biror narsani reklama qilmoqchi boʻlsang, faqat **qoʻshnichilik taklifi** orqali: mahalliy biznesning qoʻshnilarga chegirma beradigan posti. Joylashtirish bepul, buning uchun pul olmaymiz.
 
 ## Koʻrinishi cheklangan kontent
 

@@ -14,7 +14,7 @@ sosed est fait pour les bons voisins. Traite les gens comme tu voudrais qu’on 
 
 ## Aucune vente ni promotion
 
-sosed n’est pas une brocante. **La vente ou la publicité de biens et services, le racolage, la collecte de fonds ou le recrutement dans les messages ordinaires, les chats ou les posts sont interdits.** Tu veux faire de la pub — utilise le **bloc publicitaire payant**, c’est le seul endroit pour du contenu commercial.
+sosed n’est pas une brocante. **La vente ou la publicité de biens et services, le racolage, la collecte de fonds ou le recrutement dans les messages ordinaires, les chats ou les posts sont interdits.** Tu veux faire de la pub — uniquement via une **offre de quartier** : un post d’un commerce local avec une réduction pour les voisins. La publication est gratuite, nous ne prenons pas d’argent pour ça.
 
 ## Contenu à affichage restreint
 

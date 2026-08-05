@@ -14,7 +14,7 @@ sosed jest dla dobrych sąsiadów. Traktuj ludzi tak, jak chciałbyś, by trakto
 
 ## Żadnej sprzedaży i promocji
 
-sosed to nie targowisko. **Sprzedaż lub reklama towarów i usług, nagabywanie, zbiórki lub rekrutacja w zwykłych wiadomościach, czatach lub postach są zabronione.** Chcesz coś zareklamować — użyj **płatnego bloku reklamowego**, to jedyne miejsce na treści komercyjne.
+sosed to nie targowisko. **Sprzedaż lub reklama towarów i usług, nagabywanie, zbiórki lub rekrutacja w zwykłych wiadomościach, czatach lub postach są zabronione.** Chcesz coś zareklamować — tylko przez **ofertę sąsiedzką**: post lokalnego biznesu ze zniżką dla sąsiadów. Publikacja jest bezpłatna, nie bierzemy za nią pieniędzy.
 
 ## Treści o ograniczonym wyświetlaniu
 

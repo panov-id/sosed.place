@@ -14,7 +14,7 @@ sosed es para buenos vecinos. Trata a la gente como querrías que te tratasen en
 
 ## Nada de ventas ni promoción
 
-sosed no es un mercadillo. **La venta o publicidad de bienes y servicios, la captación, la recaudación de fondos o el reclutamiento en mensajes normales, chats o posts están prohibidos.** ¿Quieres anunciar algo? Usa el **bloque publicitario de pago**, es el único lugar para contenido comercial.
+sosed no es un mercadillo. **La venta o publicidad de bienes y servicios, la captación, la recaudación de fondos o el reclutamiento en mensajes normales, chats o posts están prohibidos.** ¿Quieres anunciar algo? Solo a través de una **oferta de barrio**: una publicación de un negocio local con descuento para los vecinos. Publicarla es gratis, no cobramos nada por ella.
 
 ## Contenido con visualización restringida
 

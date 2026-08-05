@@ -14,7 +14,7 @@ sosed e pentru vecini de treabă — poartă-te cu oamenii așa cum ai vrea să 
 
 ## Fără vânzări sau promovare
 
-sosed nu e un magazin. **Vânzarea sau promovarea de bunuri ori servicii, racolarea, strângerea de fonduri sau recrutarea în mesaje obișnuite, chaturi sau postări nu sunt permise.** Dacă vrei să promovezi ceva, folosește **blocul de publicitate plătită** — acela e singurul loc pentru conținut comercial.
+sosed nu e un magazin. **Vânzarea sau promovarea de bunuri ori servicii, racolarea, strângerea de fonduri sau recrutarea în mesaje obișnuite, chaturi sau postări nu sunt permise.** Dacă vrei să promovezi ceva, doar printr-o **ofertă de cartier**: o postare a unui business local cu reducere pentru vecini. Publicarea e gratuită, nu luăm bani pentru ea.
 
 ## Conținut cu vizibilitate limitată
 

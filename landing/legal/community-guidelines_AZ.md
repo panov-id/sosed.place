@@ -14,7 +14,7 @@ sosed yaxşı qonşular üçündür — insanlara öz küçəndə necə davranı
 
 ## Satış və reklam yoxdur
 
-sosed bazar deyil. **Adi mesajlarda, çatlarda və ya postlarda mal-xidmət satmaq, reklam etmək, təklif etmək, vəsait toplamaq və ya işə cəlb etmək qadağandır.** Nəyisə tanıtmaq istəyirsənsə, **ödənişli reklam blokundan** istifadə et — kommersiya məzmunu üçün yeganə yer budur.
+sosed bazar deyil. **Adi mesajlarda, çatlarda və ya postlarda mal-xidmət satmaq, reklam etmək, təklif etmək, vəsait toplamaq və ya işə cəlb etmək qadağandır.** Nəyisə tanıtmaq istəyirsənsə, yalnız **qonşuluq təklifi** ilə: yerli biznesin qonşulara endirim verən postu. Yerləşdirmə pulsuzdur, bunun üçün pul almırıq.
 
 ## Məhdud görünürlüklü məzmun
 
