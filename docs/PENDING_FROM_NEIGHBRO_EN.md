@@ -25,7 +25,7 @@ Source of changes: the `neighbro.place/landing/*` repo (branch day4).
 | 13 | Remove dead i18n keys (e.g. `sayPh` on neighbro) | ✅ | ☐ (check its own) |
 
 ## Server-side (not in sosed's code)
-- RLS audit of `waitlist`/`push_subscriptions` and `unique(waitlist.email)` — at the DB (shared by both faces), no sosed-specific work. See `db/migrations/` in xor.ad.
+- RLS audit of `waitlist` and `unique(waitlist.email)` — at the DB (shared by both faces), no sosed-specific work. The `push_subscriptions` part is dropped: push was cancelled on 07.08.2026. See `db/migrations/` in xor.ad.
 
 ## How to port
 Look at the diff of the corresponding file in `neighbro.place/landing/` and apply it similarly to `sosed.place/landing/`, matching local class names / i18n keys. After porting, run `scripts/run-landing-tests.sh` (in xor.ad): several tests loop over both faces.

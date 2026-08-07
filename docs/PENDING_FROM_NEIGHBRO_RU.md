@@ -25,7 +25,7 @@
 | 13 | Удалить мёртвые i18n-ключи (напр. `sayPh` на neighbro) | ✅ | ☐ (проверить свои) |
 
 ## Общесерверное (не в коде sosed)
-- RLS-аудит `waitlist`/`push_subscriptions` и `unique(waitlist.email)` — на уровне БД (общей для обеих витрин), sosed-специфики нет. См. миграции `db/migrations/` в xor.ad.
+- RLS-аудит `waitlist` и `unique(waitlist.email)` — на уровне БД (общей для обеих витрин), sosed-специфики нет. Часть про `push_subscriptions` снята: пуши отменены 07.08.2026. См. миграции `db/migrations/` в xor.ad.
 
 ## Как переносить
 Смотреть diff соответствующего файла в `neighbro.place/landing/` и применять аналогично к `sosed.place/landing/`, сверяясь с локальными именами классов/ключей i18n. После переноса — прогнать `scripts/run-landing-tests.sh` (в xor.ad): часть тестов зациклена на обе витрины.
