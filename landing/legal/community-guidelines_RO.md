@@ -10,16 +10,11 @@ sosed e pentru vecini de treabă — poartă-te cu oamenii așa cum ai vrea să 
 
 ## Complet interzis
 
-**Hărțuirea, bullyingul, umilirea, intimidarea, amenințările și orice comportament antisocial, crud sau degradant**, plus conținutul legat de droguri și solicitarea de servicii sexuale. Astfel de mesaje nu sunt niciodată publicate sau trimise, nici în feed, nici în chat.
+**Hărțuirea, bullyingul, umilirea, intimidarea, amenințările și orice comportament antisocial, crud sau degradant**, plus conținutul legat de droguri, conținutul sexual și solicitarea de servicii sexuale. Astfel de mesaje nu sunt niciodată publicate sau trimise, nici în feed, nici în chat. Acesta este un serviciu pentru vecini, nu o aplicație de întâlniri: nu există nicio setare care să activeze conținutul sexual. Dacă un mesaj nu trece verificarea, autorul său este anunțat — nimic nu dispare în tăcere.
 
 ## Fără vânzări sau promovare
 
 sosed nu e un magazin. **Vânzarea sau promovarea de bunuri ori servicii, racolarea, strângerea de fonduri sau recrutarea în mesaje obișnuite, chaturi sau postări nu sunt permise.** Dacă vrei să promovezi ceva, doar printr-o **ofertă de cartier**: o postare a unui business local cu reducere pentru vecini. Publicarea e gratuită, nu luăm bani pentru ea.
-
-## Conținut cu vizibilitate limitată
-
-- **Subtext sexual.** Ascuns implicit pentru toată lumea. Poți activa singur afișarea lui în setări, acceptând un acord separat.
-- **Subiecte legate de LGBT.** Afișate în feed pe aceeași bază ca orice altceva. Poți bloca personal astfel de mesaje pentru tine — asta le ascunde doar pentru tine, nu pentru toată lumea.
 
 ## Raportări și blocări
 

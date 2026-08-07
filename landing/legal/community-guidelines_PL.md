@@ -10,16 +10,11 @@ sosed jest dla dobrych sąsiadów. Traktuj ludzi tak, jak chciałbyś, by trakto
 
 ## Całkowicie zabronione
 
-**Molestowanie, nękanie (bullying), zawstydzanie, zastraszanie, groźby oraz wszelkie zachowania antyspołeczne, okrutne lub poniżające**, a także treści o narkotykach i oferowanie usług seksualnych. Takie wiadomości nie są publikowane ani wysyłane — ani w kanale, ani na czacie.
+**Molestowanie, nękanie (bullying), zawstydzanie, zastraszanie, groźby oraz wszelkie zachowania antyspołeczne, okrutne lub poniżające**, a także treści o narkotykach, treści seksualne i oferowanie usług seksualnych. Takie wiadomości nie są publikowane ani wysyłane — ani w kanale, ani na czacie. To serwis dla sąsiadów, a nie aplikacja randkowa: nie ma ustawienia, które włącza treści seksualne. Jeśli wiadomość nie przejdzie sprawdzenia, jej autor zostanie o tym poinformowany — nic nie znika po cichu.
 
 ## Żadnej sprzedaży i promocji
 
 sosed to nie targowisko. **Sprzedaż lub reklama towarów i usług, nagabywanie, zbiórki lub rekrutacja w zwykłych wiadomościach, czatach lub postach są zabronione.** Chcesz coś zareklamować — tylko przez **ofertę sąsiedzką**: post lokalnego biznesu ze zniżką dla sąsiadów. Publikacja jest bezpłatna, nie bierzemy za nią pieniędzy.
-
-## Treści o ograniczonym wyświetlaniu
-
-- **Podtekst seksualny.** Domyślnie nie jest pokazywany nikomu. Użytkownik może sam włączyć wyświetlanie w ustawieniach, akceptując osobną zgodę.
-- **Tematyka LGBT.** Wyświetlana w kanale na zasadach ogólnych. Użytkownik może osobiście zablokować takie wiadomości dla siebie — ukrywa je to tylko u niego, nie u wszystkich.
 
 ## Zgłoszenia i blokady
 

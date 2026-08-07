@@ -10,16 +10,11 @@ sosed yaxshi qoʻshnilar uchun — odamlarga oʻzing koʻcheda qanday muomala ku
 
 ## Butunlay taqiqlanadi
 
-**Taʼqib qilish, bezovta qilish, sharmanda qilish, qoʻrqitish, tahdid va har qanday jamiyatga zid, shafqatsiz yoki tahqirlovchi xatti-harakat**, shuningdek giyohvandlikka oid kontent va tan savdosiga daʼvat. Bunday xabarlar lentada ham, chatda ham hech qachon eʼlon qilinmaydi va joʻnatilmaydi.
+**Taʼqib qilish, bezovta qilish, sharmanda qilish, qoʻrqitish, tahdid va har qanday jamiyatga zid, shafqatsiz yoki tahqirlovchi xatti-harakat**, shuningdek giyohvandlikka oid kontent, jinsiy kontent va tan savdosiga daʼvat. Bunday xabarlar lentada ham, chatda ham hech qachon eʼlon qilinmaydi va joʻnatilmaydi. Bu — qoʻshnilar uchun xizmat, tanishuv ilovasi emas: jinsiy kontentni yoqadigan sozlama yoʻq. Xabar tekshiruvdan oʻtmasa, muallifiga bu haqda aytiladi — jimgina hech narsa yoʻqolmaydi.
 
 ## Sotish va reklama yoʻq
 
 sosed bozor emas. **Oddiy xabarlar, chatlar yoki postlarda mol yoki xizmat sotish yoki reklama qilish, daʼvat, mablagʻ yigʻish yoki odam yollash mumkin emas.** Biror narsani reklama qilmoqchi boʻlsang, faqat **qoʻshnichilik taklifi** orqali: mahalliy biznesning qoʻshnilarga chegirma beradigan posti. Joylashtirish bepul, buning uchun pul olmaymiz.
-
-## Koʻrinishi cheklangan kontent
-
-- **Jinsiy mavzu.** Sukut boʻyicha hammadan yashiriladi. Uni koʻrsatishni sozlamalardan, alohida kelishuvni qabul qilib, oʻzing yoqishing mumkin.
-- **LGBT mavzulari.** Lentada boshqa hamma narsa bilan bir xil asosda koʻrsatiladi. Bunday xabarlarni oʻzing uchun shaxsan bloklashing mumkin — bu ularni faqat sen uchun yashiradi, hamma uchun emas.
 
 ## Shikoyatlar va bloklar
 

@@ -10,16 +10,11 @@ sosed yaxşı qonşular üçündür — insanlara öz küçəndə necə davranı
 
 ## Tam qadağandır
 
-**Təqib, zorakılıq, utandırma, hədələmə, təhdid və hər cür antisosial, qəddar və ya alçaldıcı davranış**, həmçinin narkotiklərlə bağlı məzmun və seks-xidmət təklifi. Belə mesajlar nə lentdə, nə çatda heç vaxt dərc olunmur və göndərilmir.
+**Təqib, zorakılıq, utandırma, hədələmə, təhdid və hər cür antisosial, qəddar və ya alçaldıcı davranış**, həmçinin narkotiklərlə bağlı məzmun, cinsi məzmun və seks-xidmət təklifi. Belə mesajlar nə lentdə, nə çatda heç vaxt dərc olunmur və göndərilmir. Bu, qonşular üçün xidmətdir, tanışlıq tətbiqi deyil: cinsi məzmunu açan heç bir tənzimləmə yoxdur. Mesaj yoxlamadan keçmirsə, müəllifinə bu barədə bildirilir — heç nə səssizcə yox olmur.
 
 ## Satış və reklam yoxdur
 
 sosed bazar deyil. **Adi mesajlarda, çatlarda və ya postlarda mal-xidmət satmaq, reklam etmək, təklif etmək, vəsait toplamaq və ya işə cəlb etmək qadağandır.** Nəyisə tanıtmaq istəyirsənsə, yalnız **qonşuluq təklifi** ilə: yerli biznesin qonşulara endirim verən postu. Yerləşdirmə pulsuzdur, bunun üçün pul almırıq.
-
-## Məhdud görünürlüklü məzmun
-
-- **Cinsi çalar.** Standart olaraq hamıdan gizlədilir. Ayrıca razılaşmanı qəbul edərək, tənzimləmələrdə özün göstərilməsini aça bilərsən.
-- **LGBT mövzuları.** Lentdə hər şeylə eyni əsasda göstərilir. Bu cür mesajları özün üçün şəxsən bloklaya bilərsən — bu, onları yalnız sənin üçün gizlədir, hamı üçün yox.
 
 ## Şikayət və bloklar
 
