@@ -202,7 +202,9 @@ Ordered by impact. Items G1–G3 are, in my view, worth doing in the same pass.
       the screen for two seconds and is only discovered after the stylesheet is parsed — it
       now has `rel="preload"`. Image weight is moderate (the hero, at 180 KB, is the
       largest).
-- [ ] **G10. A 404 page — blocked by Bunny.** The page itself is written
+- [x] **G10. The 404 page — won't-fix, closed 2026-08-10.** A duplicate: the
+      decision was taken on 2026-07-29 in `xor.ad/docs/open-work_EN.md` D6 and
+      never reached here. Earlier text: The page itself is written
       (`landing/404.html`, deployed and reachable at `/404.html`), but it cannot replace the
       default one: `ErrorPageCustomCode` covers origin errors, not 404s from storage —
       verified on the dev zone, and enabling it together with `ErrorPageWhitelabel` changes
