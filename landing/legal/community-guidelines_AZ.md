@@ -1,5 +1,9 @@
 # İcma Qaydaları — sosed.place
 
+**Bu qaydalar bir neçə dildə dərc olunub. İngilis dilindəki versiya qüvvədədir; tərcümələr rahatlıq üçün verilib.**
+
+*The English version of these rules is the one that applies; translations are provided for convenience.*
+
 ## Ümumi prinsip
 
 Məzmun sakit, dinc cəmiyyətin normaları çərçivəsində qalmalıdır. Biz avtomatik, dərc olunmadan əvvəl moderasiya edirik — hər mesajı əvvəlcədən yoxlamaq üçün **AI modellərindən** istifadə edirik — sonra deyil.

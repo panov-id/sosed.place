@@ -1,5 +1,9 @@
 # Hamjamiyat qoidalari — sosed.place
 
+**Ushbu qoidalar bir necha tilda chop etilgan. Ingliz tilidagi versiya amal qiladi; tarjimalar qulaylik uchun berilgan.**
+
+*The English version of these rules is the one that applies; translations are provided for convenience.*
+
 ## Umumiy tamoyil
 
 Kontent tinch, osoyishta jamiyat normalari doirasida boʻlishi kerak. Biz avtomatik tarzda, eʼlon qilinishidan oldin moderatsiya qilamiz — har bir xabarni **sunʼiy intellekt modellari** yordamida oldindan tekshiramiz — keyin emas.

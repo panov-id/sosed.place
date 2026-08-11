@@ -1,5 +1,9 @@
 # Zasady społeczności — sosed.place
 
+**Te zasady publikowane są w kilku językach. Obowiązuje wersja angielska; tłumaczenia mają charakter pomocniczy.**
+
+*The English version of these rules is the one that applies; translations are provided for convenience.*
+
 ## Zasada ogólna
 
 Treści muszą pozostawać w granicach norm spokojnego, pokojowego społeczeństwa. Moderujemy automatycznie, przed publikacją — używając **modeli AI** do wstępnego sprawdzania każdej wiadomości — a nie po niej.

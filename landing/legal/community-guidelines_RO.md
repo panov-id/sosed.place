@@ -1,5 +1,9 @@
 # Reguli ale comunității — sosed.place
 
+**Aceste reguli sunt publicate în mai multe limbi. Versiunea în limba engleză este cea care se aplică; traducerile sunt oferite pentru comoditate.**
+
+*The English version of these rules is the one that applies; translations are provided for convenience.*
+
 ## Principiu general
 
 Conținutul trebuie să rămână în limitele unei societăți calme și pașnice. Moderăm automat, înainte de publicare — folosind **modele AI** pentru a preverifica fiecare mesaj — nu după.

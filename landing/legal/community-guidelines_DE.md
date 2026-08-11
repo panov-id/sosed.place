@@ -1,5 +1,9 @@
 # Community-Regeln — sosed.place
 
+**Diese Regeln erscheinen in mehreren Sprachen. Maßgeblich ist die englische Fassung; Übersetzungen dienen der Bequemlichkeit.**
+
+*The English version of these rules is the one that applies; translations are provided for convenience.*
+
 ## Grundprinzip
 
 Inhalte müssen im Rahmen der Normen einer ruhigen, friedlichen Gesellschaft bleiben. Wir moderieren automatisch, vor der Veröffentlichung — mit **KI-Modellen**, die jede Nachricht vorab prüfen — nicht danach.
