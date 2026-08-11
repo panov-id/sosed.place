@@ -106,6 +106,18 @@
       <input type="text" name="target_id" id="targetId" autocomplete="off" placeholder="Message or offer identifier, if you have it">
     </label>
 
+    <div class="note" id="chatNote" hidden>
+      <strong>A chat is not stored anywhere</strong>, not even by us: it is
+      encrypted on the two devices and passes through the server without being
+      kept. So there is nothing on our side to look at, and a description in your
+      own words leaves us with nothing to examine — while we are still obliged to
+      examine it and answer you with reasons.
+      <br><br>
+      <strong>Paste the message itself below</strong>, from your own device, along
+      with why you believe it is illegal. That copy is the only copy there will
+      be.
+    </div>
+
     <label>
       <span class="label">Why you believe it is illegal — required</span>
       <textarea name="reason_text" id="reason" required placeholder="What the content is, and which law or offence you believe it breaks. Be specific: a report we cannot understand is a report we cannot act on."></textarea>
@@ -154,6 +166,19 @@
   var PUBLISHABLE_KEY = CFG.publishableKey || "";
   var form = document.getElementById("reportForm");
   var result = document.getElementById("result");
+  // A chat report is the one kind where we hold nothing: the copy has to come
+  // from the person reporting, and nobody would guess that. The note appears
+  // with the choice rather than sitting there always — a warning shown to
+  // everyone about a case that applies to one in four is a warning nobody reads.
+  (function () {
+    var kind = document.getElementById("kind");
+    var note = document.getElementById("chatNote");
+    if (!kind || !note) return;
+    function sync() { note.hidden = kind.value !== "chat"; }
+    kind.addEventListener("change", sync);
+    sync();
+  })();
+
   var send = document.getElementById("send");
 
   // The landing keeps the reader's theme choice; the form should not arrive in a
