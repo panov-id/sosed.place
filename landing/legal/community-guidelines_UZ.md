@@ -6,7 +6,9 @@
 
 ## Umumiy tamoyil
 
-Kontent tinch, osoyishta jamiyat normalari doirasida boʻlishi kerak. Biz avtomatik tarzda, eʼlon qilinishidan oldin moderatsiya qilamiz — har bir xabarni **sunʼiy intellekt modellari** yordamida oldindan tekshiramiz — keyin emas.
+Kontent tinch, osoyishta jamiyat me’yorlari doirasida qolishi kerak. **Chop etiladigan** narsa — lenta va qo‘shnichilik takliflari — paydo bo‘lishidan oldin **SI modellari** bilan avtomatik tekshiriladi, keyin emas.
+
+**Chat tekshirilmaydi.** U bir qurilmadan boshqasiga shifrlangan holda boradi va biz uni o‘qiy olmaymiz. Quyidagi qoidalar u yerda ham amal qiladi; farqi faqat ularning qanday ta’minlanishida — bizning tekshiruvimiz orqali emas, suhbatdoshning shikoyati orqali.
 
 ## Yaxshi qoʻshni boʻl
 
@@ -14,7 +16,7 @@ sosed yaxshi qoʻshnilar uchun — odamlarga oʻzing koʻcheda qanday muomala ku
 
 ## Butunlay taqiqlanadi
 
-**Taʼqib qilish, bezovta qilish, sharmanda qilish, qoʻrqitish, tahdid va har qanday jamiyatga zid, shafqatsiz yoki tahqirlovchi xatti-harakat**, shuningdek giyohvandlikka oid kontent, jinsiy kontent va tan savdosiga daʼvat. Bunday xabarlar lentada ham, chatda ham hech qachon eʼlon qilinmaydi va joʻnatilmaydi. Bu — qoʻshnilar uchun xizmat, tanishuv ilovasi emas: jinsiy kontentni yoqadigan sozlama yoʻq. Xabar tekshiruvdan oʻtmasa, muallifiga bu haqda aytiladi — jimgina hech narsa yoʻqolmaydi.
+**Taʼqib qilish, bezovta qilish, sharmanda qilish, qoʻrqitish, tahdid va har qanday jamiyatga zid, shafqatsiz yoki tahqirlovchi xatti-harakat**, shuningdek giyohvandlikka oid kontent, jinsiy kontent va tan savdosiga daʼvat. Bunday xabarlar hech qachon chop etilmaydi: tekshiruv ularni lentaga yetib borishidan oldin rad etadi, muallif esa bundan xabar topadi — hech narsa jimgina yo‘qolmaydi. Bu — tanishuv uchun emas, qo‘shnilar uchun xizmat: jinsiy kontentni yoqadigan sozlama yo‘q. Chatda bunday tekshiruv yo‘q va u yerda ham bularning birortasiga ruxsat berilmaydi — sizga shunday narsa yuborilsa, shikoyat qiling, nusxani esa qurilmangiz ilova qiladi, chunki bizda u yo‘q.
 
 ## Sotish va reklama yoʻq
 

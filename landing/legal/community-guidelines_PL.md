@@ -6,7 +6,9 @@
 
 ## Zasada ogólna
 
-Treści muszą pozostawać w granicach norm spokojnego, pokojowego społeczeństwa. Moderujemy automatycznie, przed publikacją — używając **modeli AI** do wstępnego sprawdzania każdej wiadomości — a nie po niej.
+Treści muszą pozostawać w granicach norm spokojnego, pokojowego społeczeństwa. To, co jest **publikowane** — tablica i oferty sąsiedzkie — jest sprawdzane automatycznie przez **modele SI** przed pojawieniem się, a nie po.
+
+**Czat nie jest sprawdzany.** Idzie zaszyfrowany z jednego urządzenia na drugie i nie możemy go odczytać. Zasady poniżej obowiązują również tam; różni się tylko to, jak są egzekwowane — przez zgłoszenie rozmówcy, a nie przez sprawdzenie po naszej stronie.
 
 ## Bądź dobrym sąsiadem
 
@@ -14,7 +16,7 @@ sosed jest dla dobrych sąsiadów. Traktuj ludzi tak, jak chciałbyś, by trakto
 
 ## Całkowicie zabronione
 
-**Molestowanie, nękanie (bullying), zawstydzanie, zastraszanie, groźby oraz wszelkie zachowania antyspołeczne, okrutne lub poniżające**, a także treści o narkotykach, treści seksualne i oferowanie usług seksualnych. Takie wiadomości nie są publikowane ani wysyłane — ani w kanale, ani na czacie. To serwis dla sąsiadów, a nie aplikacja randkowa: nie ma ustawienia, które włącza treści seksualne. Jeśli wiadomość nie przejdzie sprawdzenia, jej autor zostanie o tym poinformowany — nic nie znika po cichu.
+**Molestowanie, nękanie (bullying), zawstydzanie, zastraszanie, groźby oraz wszelkie zachowania antyspołeczne, okrutne lub poniżające**, a także treści o narkotykach, treści seksualne i oferowanie usług seksualnych. Takie wiadomości nigdy nie są publikowane: sprawdzenie odrzuca je, zanim trafią na tablicę, a autor się o tym dowiaduje — nic nie znika po cichu. To serwis dla sąsiadów, a nie do randkowania: nie ma ustawienia, które włącza treści seksualne. Na czacie takiego sprawdzenia nie ma i nic z tego również tam nie jest dozwolone — jeśli ktoś ci to wyśle, zgłoś to, a kopię załącza twoje urządzenie, bo my żadnej nie mamy.
 
 ## Żadnej sprzedaży i promocji
 

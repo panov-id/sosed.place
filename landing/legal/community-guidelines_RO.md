@@ -6,7 +6,9 @@
 
 ## Principiu general
 
-Conținutul trebuie să rămână în limitele unei societăți calme și pașnice. Moderăm automat, înainte de publicare — folosind **modele AI** pentru a preverifica fiecare mesaj — nu după.
+Conținutul trebuie să rămână în limitele normelor unei societăți liniștite și pașnice. Ceea ce se **publică** — fluxul și ofertele de cartier — este verificat automat de **modele de IA** înainte să apară, nu după.
+
+**O conversație nu este verificată.** Ea circulă criptată de la un dispozitiv la altul și nu o putem citi. Regulile de mai jos se aplică și acolo; diferă doar modul în care sunt respectate — prin sesizarea interlocutorului, nu printr-o verificare din partea noastră.
 
 ## Fii un vecin de treabă
 
@@ -14,7 +16,7 @@ sosed e pentru vecini de treabă — poartă-te cu oamenii așa cum ai vrea să 
 
 ## Complet interzis
 
-**Hărțuirea, bullyingul, umilirea, intimidarea, amenințările și orice comportament antisocial, crud sau degradant**, plus conținutul legat de droguri, conținutul sexual și solicitarea de servicii sexuale. Astfel de mesaje nu sunt niciodată publicate sau trimise, nici în feed, nici în chat. Acesta este un serviciu pentru vecini, nu o aplicație de întâlniri: nu există nicio setare care să activeze conținutul sexual. Dacă un mesaj nu trece verificarea, autorul său este anunțat — nimic nu dispare în tăcere.
+**Hărțuirea, bullyingul, umilirea, intimidarea, amenințările și orice comportament antisocial, crud sau degradant**, plus conținutul legat de droguri, conținutul sexual și solicitarea de servicii sexuale. Astfel de mesaje nu sunt publicate niciodată: verificarea le respinge înainte să ajungă în flux, iar autorul este anunțat — nimic nu dispare în tăcere. Acesta este un serviciu pentru vecini, nu pentru întâlniri: nu există o setare care să activeze conținutul sexual. În conversație nu există o astfel de verificare și nimic din toate acestea nu este permis nici acolo — dacă cineva îți trimite așa ceva, sesizează, iar copia o atașează dispozitivul tău, pentru că noi nu avem niciuna.
 
 ## Fără vânzări sau promovare
 

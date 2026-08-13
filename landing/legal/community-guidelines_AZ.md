@@ -6,7 +6,9 @@
 
 ## Ümumi prinsip
 
-Məzmun sakit, dinc cəmiyyətin normaları çərçivəsində qalmalıdır. Biz avtomatik, dərc olunmadan əvvəl moderasiya edirik — hər mesajı əvvəlcədən yoxlamaq üçün **AI modellərindən** istifadə edirik — sonra deyil.
+Məzmun sakit, dinc cəmiyyətin normaları çərçivəsində qalmalıdır. **Dərc olunan** — lent və qonşuluq təklifləri — görünməzdən əvvəl **süni intellekt modelləri** ilə avtomatik yoxlanılır, sonra yox.
+
+**Söhbət yoxlanılmır.** O, bir cihazdan digərinə şifrələnmiş halda gedir və biz onu oxuya bilmirik. Aşağıdakı qaydalar orada da qüvvədədir; fərq yalnız onların necə təmin olunmasındadır — bizim yoxlamamızla deyil, həmsöhbətin şikayəti ilə.
 
 ## Yaxşı qonşu ol
 
@@ -14,7 +16,7 @@ sosed yaxşı qonşular üçündür — insanlara öz küçəndə necə davranı
 
 ## Tam qadağandır
 
-**Təqib, zorakılıq, utandırma, hədələmə, təhdid və hər cür antisosial, qəddar və ya alçaldıcı davranış**, həmçinin narkotiklərlə bağlı məzmun, cinsi məzmun və seks-xidmət təklifi. Belə mesajlar nə lentdə, nə çatda heç vaxt dərc olunmur və göndərilmir. Bu, qonşular üçün xidmətdir, tanışlıq tətbiqi deyil: cinsi məzmunu açan heç bir tənzimləmə yoxdur. Mesaj yoxlamadan keçmirsə, müəllifinə bu barədə bildirilir — heç nə səssizcə yox olmur.
+**Təqib, zorakılıq, utandırma, hədələmə, təhdid və hər cür antisosial, qəddar və ya alçaldıcı davranış**, həmçinin narkotiklərlə bağlı məzmun, cinsi məzmun və seks-xidmət təklifi. Belə mesajlar heç vaxt dərc olunmur: yoxlama onları lentə çatmazdan əvvəl rədd edir və müəllif bundan xəbər tutur — heç nə səssizcə yox olmur. Bu, tanışlıq üçün deyil, qonşular üçün xidmətdir: cinsi məzmunu aktivləşdirən heç bir tənzimləmə yoxdur. Söhbətdə belə yoxlama yoxdur və bunların heç biri orada da icazəli deyil — sizə belə bir şey göndərilsə, şikayət edin, nüsxəni isə sizin cihazınız əlavə edir, çünki bizdə o yoxdur.
 
 ## Satış və reklam yoxdur
 
