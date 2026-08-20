@@ -4,9 +4,12 @@
 <meta charset="utf-8">
 <title>sosed — OG image template</title>
 <link rel="stylesheet" href="../landing/fonts.css">
+<!-- Georgian: none of the brand faces covers it (see landing/fonts-georgian.css). -->
+<link rel="stylesheet" href="../landing/fonts-georgian.css">
+<link rel="stylesheet" href="../landing/fonts-armenian.css">
 <style>
   html, body { margin: 0; padding: 0; }
-  body { width: 1200px; height: 630px; overflow: hidden; font-family: 'Golos Text', sans-serif; }
+  body { width: 1200px; height: 630px; overflow: hidden; font-family: 'Golos Text', 'Noto Sans Georgian', sans-serif; }
   #stage { position: relative; width: 1200px; height: 630px; }
   #stage svg { position: absolute; inset: 0; display: block; }
   #brand {
@@ -16,7 +19,11 @@
   #logo { font-weight: 800; font-size: 118px; letter-spacing: -0.035em; line-height: 1; }
   #logo .dot { color: var(--accent); }
   #caption {
-    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    /* The caption used to be set in whatever monospace the machine had, so the
+       sheet was never twice the same — a container with a CJK mono drew it in
+       one. It is the brand mono now, with the two scripts the brand faces do
+       not cover behind it. */
+    font-family: 'JetBrains Mono', 'Noto Sans Georgian', 'Noto Sans Armenian', ui-monospace, monospace;
     font-size: 16px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 500;
     padding-left: 0.22em; /* optically re-center letterspaced text */
     line-height: 1.9;
