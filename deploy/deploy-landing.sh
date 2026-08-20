@@ -20,6 +20,7 @@
 #   LANDING_ENV              dev | uat | prod (default: dev). Only prod is crawlable;
 #                            anything else gets a Disallow-all robots.txt and noindex
 #   SEARCH_CONSOLE_TOKEN     Google Search Console verification token (prod only)
+#   SITE_ORIGIN              absolute origin for canonical/hreflang/sitemap URLs
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
@@ -162,6 +163,14 @@ if [ -f "$STAGE/sw.js" ]; then
 fi
 # After the generator ran, so the language pages carry the same build id.
 find "$STAGE" -name '*.html' -exec sed -i "s/__BUILD__/${BUILD}/g" {} +
+
+# Before a byte goes up: does the staged copy hold only what we meant to publish?
+# Five of our own check scripts answered 200 on production for months because the
+# landing ships whole and nothing held it against a list. The prune that runs
+# after the upload removes what the build dropped and never questions what it
+# kept — this does, and it stops rather than deletes: a new kind of file is a
+# decision, not an accident to clean up.
+python3 "$ROOT_DIR/deploy/check-shipped-files.py" "$STAGE" "$ROOT_DIR/deploy/landing-shipped.manifest"
 
 echo "Deploying landing → Bunny zone '${BUNNY_STORAGE_ZONE}'"
 # curl without --fail exits 0 on 401, 403 and 507, so this loop used to report a
