@@ -1,5 +1,7 @@
 # Reguli ale comunității — sosed.place
 
+**Ultima actualizare: 13 august 2026**
+
 **Aceste reguli sunt publicate în mai multe limbi. Versiunea în limba engleză este cea care se aplică; traducerile sunt oferite pentru comoditate.**
 
 *The English version of these rules is the one that applies; translations are provided for convenience.*

@@ -1,5 +1,7 @@
 # Қоидаҳои ҷамъият — sosed.place
 
+**Навсозии охирин: 13 августи соли 2026**
+
 **Ин қоидаҳо бо якчанд забон нашр шудаанд. Нусхаи англисӣ эътибор дорад; тарҷумаҳо барои қулайӣ дода шудаанд.**
 
 *The English version of these rules is the one that applies; translations are provided for convenience.*
