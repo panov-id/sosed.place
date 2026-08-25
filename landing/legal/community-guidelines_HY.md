@@ -1,5 +1,7 @@
 # Համայնքի կանոններ — sosed.place
 
+**Վերջին թարմացումը՝ 2026 թ. օգոստոսի 13**
+
 **Այս կանոնները հրապարակված են մի քանի լեզվով։ Գործում է անգլերեն տարբերակը. թարգմանությունները տրված են հարմարության համար։**
 
 *The English version of these rules is the one that applies; translations are provided for convenience.*

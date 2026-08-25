@@ -1,5 +1,7 @@
 # Коомдук эрежелер — sosed.place
 
+**Акыркы жаңыртуу: 2026-жылдын 13-августу**
+
 **Бул эрежелер бир нече тилде жарыяланган. Англис тилиндеги нускасы колдонулат; котормолор ыңгайлуулук үчүн берилген.**
 
 *The English version of these rules is the one that applies; translations are provided for convenience.*
