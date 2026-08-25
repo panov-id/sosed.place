@@ -1,5 +1,7 @@
 # İcma Qaydaları — sosed.place
 
+**Son yenilənmə: 13 avqust 2026**
+
 **Bu qaydalar bir neçə dildə dərc olunub. İngilis dilindəki versiya qüvvədədir; tərcümələr rahatlıq üçün verilib.**
 
 *The English version of these rules is the one that applies; translations are provided for convenience.*
