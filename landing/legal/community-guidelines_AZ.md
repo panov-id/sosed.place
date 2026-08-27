@@ -26,7 +26,7 @@ sosed bazar deyil. **Adi mesajlarda, çatlarda və ya postlarda mal-xidmət satm
 
 ## Şikayət və bloklar
 
-Mesaj qaydaları pozursa, şikayət et. Şikayət və bloklar müəllifin post kvotasını azaldır. Bloklamaq mesajı yalnız sənin üçün gizlədir, hamı üçün yox. Həmçinin **istifadəçini bloklaya** bilərsən — onun məzmununu bir daha görməyəcəksən. Biz bu alətləri və **AI ön-moderasiyasını** kömək üçün veririk, amma **digər istifadəçilərin davranışına görə cavabdeh deyilik**; hər kəs öz davranışına görə özü cavabdehdir.
+Mesaj qaydaları pozursa, şikayət et. Bloklamaq mesajı yalnız sənin üçün gizlədir, hamı üçün yox. Həmçinin **istifadəçini bloklaya** bilərsən — onun məzmununu bir daha görməyəcəksən. Biz bu alətləri və **AI ön-moderasiyasını** kömək üçün veririk, amma **digər istifadəçilərin davranışına görə cavabdeh deyilik**; hər kəs öz davranışına görə özü cavabdehdir.
 
 ## Pozuntuların nəticələri
 
