@@ -26,7 +26,7 @@ sosed no es un mercadillo. **La venta o publicidad de bienes y servicios, la cap
 
 ## Denuncias y bloqueos
 
-Si un mensaje incumple las normas — denúncialo. Las denuncias y bloqueos reducen la cuota de publicación del autor. Un bloqueo oculta el mensaje solo para ti. También puedes **bloquear a un usuario** — no volverás a ver su contenido. Ofrecemos estas herramientas y la **premoderación por IA**, pero **no somos responsables del comportamiento de otros usuarios**; cada persona es responsable de sus actos.
+Si un mensaje incumple las normas — denúncialo. Un bloqueo oculta el mensaje solo para ti. También puedes **bloquear a un usuario** — no volverás a ver su contenido. Ofrecemos estas herramientas y la **premoderación por IA**, pero **no somos responsables del comportamiento de otros usuarios**; cada persona es responsable de sus actos.
 
 ## Consecuencias de las infracciones
 
