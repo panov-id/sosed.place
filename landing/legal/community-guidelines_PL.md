@@ -26,7 +26,7 @@ sosed to nie targowisko. **Sprzedaż lub reklama towarów i usług, nagabywanie,
 
 ## Zgłoszenia i blokady
 
-Jeśli wiadomość łamie zasady — zgłoś ją. Blokada ukrywa wiadomość tylko u ciebie. Możesz też **zablokować użytkownika** — nie zobaczysz więcej jego treści. Udostępniamy te narzędzia i **wstępną moderację AI**, ale **nie odpowiadamy za zachowanie innych użytkowników**; każdy odpowiada za własne czyny.
+Jeśli wiadomość łamie zasady — zgłoś ją. Blokada ukrywa wiadomość tylko u ciebie. Możesz też **zablokować użytkownika** — nie zobaczysz więcej jego treści. Udostępniamy te narzędzia i **wstępną moderację AI**, ale **nie odpowiadamy za zachowanie innych użytkowników**; każdy odpowiada za własne czyny. **Zgłoszenie i zablokowanie nie naruszają limitu publikacji autora** — jedno dotknięcie nie może po cichu zawężać czyjegoś głosu.
 
 ## Konsekwencje naruszeń
 

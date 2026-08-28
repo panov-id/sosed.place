@@ -26,7 +26,7 @@ sosed bozor emas. **Oddiy xabarlar, chatlar yoki postlarda mol yoki xizmat sotis
 
 ## Shikoyatlar va bloklar
 
-Xabar qoidani buzsa, shikoyat qil. Bloklash xabarni faqat sen uchun yashiradi, hamma uchun emas. Shuningdek **foydalanuvchini bloklash** mumkin — uning kontentini boshqa koʻrmaysan. Biz bu vositalarni va **AI oldindan moderatsiya**ni yordam uchun beramiz, lekin boshqa foydalanuvchilar xatti-harakati uchun **javobgar emasmiz**; har kim oʻz harakati uchun oʻzi javob beradi.
+Xabar qoidani buzsa, shikoyat qil. Bloklash xabarni faqat sen uchun yashiradi, hamma uchun emas. Shuningdek **foydalanuvchini bloklash** mumkin — uning kontentini boshqa koʻrmaysan. Biz bu vositalarni va **AI oldindan moderatsiya**ni yordam uchun beramiz, lekin boshqa foydalanuvchilar xatti-harakati uchun **javobgar emasmiz**; har kim oʻz harakati uchun oʻzi javob beradi. **Shikoyat va bloklash muallifning eʼlon qilish kvotasiga tegmaydi** — bitta bosish oʻzganing ovozini jimgina toraytirmasligi kerak.
 
 ## Qoidabuzarliklar oqibatlari
 
