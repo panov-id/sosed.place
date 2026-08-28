@@ -209,6 +209,16 @@ Ordered by impact. Items G1–G3 are, in my view, worth doing in the same pass.
       default one: `ErrorPageCustomCode` covers origin errors, not 404s from storage —
       verified on the dev zone, and enabling it together with `ErrorPageWhitelabel` changes
       nothing either; dev was restored afterwards. The status code is correct regardless
+      **It was the wrong field — clarified 2026-08-28.** What was tested is
+      `ErrorPageCustomCode`, while the field that substitutes a file is
+      `Custom404FilePath`. It was measured on 2026-08-25 across the panel's three
+      environments and does exactly that — serves the named file, and **under code
+      404**, which for an error page is precisely right (it was a problem for the
+      panel, which needed 200 on its application routes; `xor.ad/docs/panel_EN.md`).
+      So a custom 404 page is reachable, and won't-fix stays a decision about price
+      rather than about possibility. Checked in the API the same day: neither
+      storefront's production zone has `Custom404FilePath` set at all.
+
       (a real 404, not a soft one), so this is cosmetic for indexing. The remaining option
       is a real origin instead of storage — excessive for an error page.
 
@@ -223,6 +233,19 @@ Ordered by impact. Items G1–G3 are, in my view, worth doing in the same pass.
       held the maximum five patterns) and purges it. Verified: `config.js` at 300s,
       fonts and styles still at 30 days. This unblocks A8: `REQUIRE_API_KEY` no
       longer has to wait a month.
+
+## Verified live on 2026-08-28
+
+The document had called these done since 2026-07-27, and after the deploy not one
+of them had been checked with a request (`xor.ad/scripts/check-seo-live.sh`):
+
+| What is promised | What the live address answers |
+|---|---|
+| `sitemap.xml` with every language | 19 URLs: 17 languages plus `rules.html` and `legal.html` |
+| mutual `hreflang` + `x-default` | 18 links in the root's head |
+| `robots.txt` pointing at the sitemap | present, 7 lines |
+| www redirects to the apex | `301 → https://sosed.place/` |
+| a short cache for html | `public, max-age=300` |
 
 ## Open decisions
 
