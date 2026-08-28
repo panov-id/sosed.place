@@ -26,7 +26,7 @@ sosed nu e un magazin. **Vânzarea sau promovarea de bunuri ori servicii, racola
 
 ## Raportări și blocări
 
-Dacă un mesaj încalcă regulile, raportează-l. Raportările și blocările reduc cota de postare a autorului. Blocarea ascunde un mesaj doar pentru tine, nu pentru toată lumea. Poți de asemenea **bloca un utilizator** — nu-i vei mai vedea conținutul. Îți punem la dispoziție aceste instrumente și **premoderarea AI** ca să te ajute, dar **nu suntem responsabili pentru comportamentul altor utilizatori**; fiecare e responsabil pentru felul în care se poartă.
+Dacă un mesaj încalcă regulile, raportează-l. Blocarea ascunde un mesaj doar pentru tine, nu pentru toată lumea. Poți de asemenea **bloca un utilizator** — nu-i vei mai vedea conținutul. Îți punem la dispoziție aceste instrumente și **premoderarea AI** ca să te ajute, dar **nu suntem responsabili pentru comportamentul altor utilizatori**; fiecare e responsabil pentru felul în care se poartă. **Raportarea și blocarea nu afectează cota de publicare a autorului** — o apăsare nu trebuie să îngusteze în tăcere vocea altcuiva.
 
 ## Consecințele încălcărilor
 
