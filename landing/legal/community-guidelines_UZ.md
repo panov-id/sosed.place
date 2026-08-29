@@ -1,6 +1,6 @@
 # Hamjamiyat qoidalari — sosed.place
 
-**Oxirgi yangilanish: 2026-yil 13-avgust**
+**Oxirgi yangilanish: 2026-yil 27-avgust**
 
 **Ushbu qoidalar bir necha tilda chop etilgan. Ingliz tilidagi versiya amal qiladi; tarjimalar qulaylik uchun berilgan.**
 
