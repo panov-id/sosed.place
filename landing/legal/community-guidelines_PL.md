@@ -1,6 +1,6 @@
 # Zasady społeczności — sosed.place
 
-**Ostatnia aktualizacja: 13 sierpnia 2026**
+**Ostatnia aktualizacja: 27 sierpnia 2026**
 
 **Te zasady publikowane są w kilku językach. Obowiązuje wersja angielska; tłumaczenia mają charakter pomocniczy.**
 

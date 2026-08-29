@@ -1,6 +1,6 @@
 # İcma Qaydaları — sosed.place
 
-**Son yenilənmə: 13 avqust 2026**
+**Son yenilənmə: 27 avqust 2026**
 
 **Bu qaydalar bir neçə dildə dərc olunub. İngilis dilindəki versiya qüvvədədir; tərcümələr rahatlıq üçün verilib.**
 
