@@ -8,12 +8,12 @@
     "privacy": {
       "date": "2026-09-10",
       "reaccept": "required",
-      "sha256": "f01371aff2900c9b95ee6086d8d0386afae52e0076a04bb45fa344b62e36c032"
+      "sha256": "deb95a7560ff81f3d230655002c99653e294a86d5d68e58fba88652b4fb9451c"
     },
     "terms": {
       "date": "2026-09-10",
       "reaccept": "required",
-      "sha256": "7e6f1f95c3a1ed97b9e4031996a6bc29be26fbd4d31ee9f1943d22df5b7fc1a0"
+      "sha256": "443952d40b7378b8ee73fdc2e3b7bfcfe4d248ca785f216807b4f3ad3b716a30"
     }
   }
 }
