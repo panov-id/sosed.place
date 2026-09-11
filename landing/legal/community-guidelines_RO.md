@@ -1,6 +1,6 @@
 # Reguli ale comunității — sosed.place
 
-**Ultima actualizare: 27 august 2026**
+**Ultima actualizare: 10 septembrie 2026**
 
 **Aceste reguli sunt publicate în mai multe limbi. Versiunea în limba engleză este cea care se aplică; traducerile sunt oferite pentru comoditate.**
 
@@ -10,7 +10,7 @@
 
 Conținutul trebuie să rămână în limitele normelor unei societăți liniștite și pașnice. Ceea ce se **publică** — fluxul și ofertele de cartier — este verificat automat de **modele de IA** înainte să apară, nu după.
 
-**O conversație nu este verificată.** Ea circulă criptată de la un dispozitiv la altul și nu o putem citi. Regulile de mai jos se aplică și acolo; diferă doar modul în care sunt respectate — prin sesizarea interlocutorului, nu printr-o verificare din partea noastră.
+**O conversație nu este verificată.** Ea circulă criptată de la un dispozitiv la altul și nu o putem citi. **Tabla de joc este excepția, începând cu 09.09.2026:** tabla și mutările nu sunt criptate, le vedem și verificăm mutările după regulile jocului. Cuvintele tot nu le citim; o mutare pe tablă nu înseamnă cuvinte. Regulile de mai jos se aplică și acolo; diferă doar modul în care sunt respectate — prin sesizarea interlocutorului, nu printr-o verificare din partea noastră.
 
 ## Fii un vecin de treabă
 

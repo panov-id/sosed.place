@@ -1,6 +1,6 @@
 # Hamjamiyat qoidalari — sosed.place
 
-**Oxirgi yangilanish: 2026-yil 27-avgust**
+**Oxirgi yangilanish: 2026-yil 10-sentabr**
 
 **Ushbu qoidalar bir necha tilda chop etilgan. Ingliz tilidagi versiya amal qiladi; tarjimalar qulaylik uchun berilgan.**
 
@@ -10,7 +10,7 @@
 
 Kontent tinch, osoyishta jamiyat me’yorlari doirasida qolishi kerak. **Chop etiladigan** narsa — lenta va qo‘shnichilik takliflari — paydo bo‘lishidan oldin **SI modellari** bilan avtomatik tekshiriladi, keyin emas.
 
-**Chat tekshirilmaydi.** U bir qurilmadan boshqasiga shifrlangan holda boradi va biz uni o‘qiy olmaymiz. Quyidagi qoidalar u yerda ham amal qiladi; farqi faqat ularning qanday ta’minlanishida — bizning tekshiruvimiz orqali emas, suhbatdoshning shikoyati orqali.
+**Chat tekshirilmaydi.** U bir qurilmadan boshqasiga shifrlangan holda boradi va biz uni o‘qiy olmaymiz. **O‘yin taxtasi — 09.09.2026-dan boshlab istisno:** taxta va yurishlar shifrlanmaydi, biz ularni ko‘ramiz va yurishlarni o‘yin qoidalari bilan solishtiramiz. So‘zlarni avvalgidek o‘qimaymiz; taxtadagi yurish — so‘z emas. Quyidagi qoidalar u yerda ham amal qiladi; farqi faqat ularning qanday ta’minlanishida — bizning tekshiruvimiz orqali emas, suhbatdoshning shikoyati orqali.
 
 ## Yaxshi qoʻshni boʻl
 
