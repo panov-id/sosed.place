@@ -1,6 +1,6 @@
 # Reguli ale comunității — sosed.place
 
-**Ultima actualizare: 10 septembrie 2026**
+**Ultima actualizare: 12 septembrie 2026**
 
 **Aceste reguli sunt publicate în mai multe limbi. Versiunea în limba engleză este cea care se aplică; traducerile sunt oferite pentru comoditate.**
 
@@ -18,7 +18,7 @@ sosed e pentru vecini de treabă — poartă-te cu oamenii așa cum ai vrea să 
 
 ## Complet interzis
 
-**Hărțuirea, bullyingul, umilirea, intimidarea, amenințările și orice comportament antisocial, crud sau degradant**, plus conținutul legat de droguri, conținutul sexual și solicitarea de servicii sexuale. Astfel de mesaje nu sunt publicate niciodată: verificarea le respinge înainte să ajungă în flux, iar autorul este anunțat — nimic nu dispare în tăcere. Acesta este un serviciu pentru vecini, nu pentru întâlniri: nu există o setare care să activeze conținutul sexual. În conversație nu există o astfel de verificare și nimic din toate acestea nu este permis nici acolo — dacă cineva îți trimite așa ceva, sesizează, iar copia o atașează dispozitivul tău, pentru că noi nu avem niciuna.
+**Hărțuirea, bullyingul, umilirea, intimidarea, amenințările și orice comportament antisocial, crud sau degradant**, plus conținutul legat de droguri, conținutul sexual și solicitarea de servicii sexuale. Astfel de mesaje nu sunt publicate niciodată: verificarea le respinge înainte să ajungă în flux, iar autorul este anunțat — nimic nu dispare în tăcere. Acesta este un serviciu pentru vecini, nu pentru întâlniri: nu există o setare care să activeze conținutul sexual. În conversație nu există o astfel de verificare și nimic din toate acestea nu este permis nici acolo — dacă cineva îți trimite așa ceva, sesizează și descrie cu cuvintele tale ce s-a întâmplat: noi nu avem nicio copie, iar dispozitivul tău nu trimite niciuna.
 
 ## Fără vânzări sau promovare
 

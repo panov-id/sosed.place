@@ -1,6 +1,6 @@
 # İcma Qaydaları — sosed.place
 
-**Son yenilənmə: 10 sentyabr 2026**
+**Son yenilənmə: 12 sentyabr 2026**
 
 **Bu qaydalar bir neçə dildə dərc olunub. İngilis dilindəki versiya qüvvədədir; tərcümələr rahatlıq üçün verilib.**
 
@@ -18,7 +18,7 @@ sosed yaxşı qonşular üçündür — insanlara öz küçəndə necə davranı
 
 ## Tam qadağandır
 
-**Təqib, zorakılıq, utandırma, hədələmə, təhdid və hər cür antisosial, qəddar və ya alçaldıcı davranış**, həmçinin narkotiklərlə bağlı məzmun, cinsi məzmun və seks-xidmət təklifi. Belə mesajlar heç vaxt dərc olunmur: yoxlama onları lentə çatmazdan əvvəl rədd edir və müəllif bundan xəbər tutur — heç nə səssizcə yox olmur. Bu, tanışlıq üçün deyil, qonşular üçün xidmətdir: cinsi məzmunu aktivləşdirən heç bir tənzimləmə yoxdur. Söhbətdə belə yoxlama yoxdur və bunların heç biri orada da icazəli deyil — sizə belə bir şey göndərilsə, şikayət edin, nüsxəni isə sizin cihazınız əlavə edir, çünki bizdə o yoxdur.
+**Təqib, zorakılıq, utandırma, hədələmə, təhdid və hər cür antisosial, qəddar və ya alçaldıcı davranış**, həmçinin narkotiklərlə bağlı məzmun, cinsi məzmun və seks-xidmət təklifi. Belə mesajlar heç vaxt dərc olunmur: yoxlama onları lentə çatmazdan əvvəl rədd edir və müəllif bundan xəbər tutur — heç nə səssizcə yox olmur. Bu, tanışlıq üçün deyil, qonşular üçün xidmətdir: cinsi məzmunu aktivləşdirən heç bir tənzimləmə yoxdur. Söhbətdə belə yoxlama yoxdur və bunların heç biri orada da icazəli deyil — sizə belə bir şey göndərilsə, şikayət edin və baş verənləri öz sözlərinizlə təsvir edin: nüsxə nə bizdə var, nə də cihazınız onu göndərir.
 
 ## Satış və reklam yoxdur
 

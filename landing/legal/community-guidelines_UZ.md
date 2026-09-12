@@ -1,6 +1,6 @@
 # Hamjamiyat qoidalari — sosed.place
 
-**Oxirgi yangilanish: 2026-yil 10-sentabr**
+**Oxirgi yangilanish: 2026-yil 12-sentabr**
 
 **Ushbu qoidalar bir necha tilda chop etilgan. Ingliz tilidagi versiya amal qiladi; tarjimalar qulaylik uchun berilgan.**
 
@@ -18,7 +18,7 @@ sosed yaxshi qoʻshnilar uchun — odamlarga oʻzing koʻcheda qanday muomala ku
 
 ## Butunlay taqiqlanadi
 
-**Taʼqib qilish, bezovta qilish, sharmanda qilish, qoʻrqitish, tahdid va har qanday jamiyatga zid, shafqatsiz yoki tahqirlovchi xatti-harakat**, shuningdek giyohvandlikka oid kontent, jinsiy kontent va tan savdosiga daʼvat. Bunday xabarlar hech qachon chop etilmaydi: tekshiruv ularni lentaga yetib borishidan oldin rad etadi, muallif esa bundan xabar topadi — hech narsa jimgina yo‘qolmaydi. Bu — tanishuv uchun emas, qo‘shnilar uchun xizmat: jinsiy kontentni yoqadigan sozlama yo‘q. Chatda bunday tekshiruv yo‘q va u yerda ham bularning birortasiga ruxsat berilmaydi — sizga shunday narsa yuborilsa, shikoyat qiling, nusxani esa qurilmangiz ilova qiladi, chunki bizda u yo‘q.
+**Taʼqib qilish, bezovta qilish, sharmanda qilish, qoʻrqitish, tahdid va har qanday jamiyatga zid, shafqatsiz yoki tahqirlovchi xatti-harakat**, shuningdek giyohvandlikka oid kontent, jinsiy kontent va tan savdosiga daʼvat. Bunday xabarlar hech qachon chop etilmaydi: tekshiruv ularni lentaga yetib borishidan oldin rad etadi, muallif esa bundan xabar topadi — hech narsa jimgina yo‘qolmaydi. Bu — tanishuv uchun emas, qo‘shnilar uchun xizmat: jinsiy kontentni yoqadigan sozlama yo‘q. Chatda bunday tekshiruv yo‘q va u yerda ham bularning birortasiga ruxsat berilmaydi — sizga shunday narsa yuborilsa, shikoyat qiling va nima bo‘lganini o‘z so‘zlaringiz bilan tasvirlab bering: bizda ham nusxa yo‘q, qurilmangiz ham uni yubormaydi.
 
 ## Sotish va reklama yoʻq
 

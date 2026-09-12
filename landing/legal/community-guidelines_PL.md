@@ -1,6 +1,6 @@
 # Zasady społeczności — sosed.place
 
-**Ostatnia aktualizacja: 10 września 2026**
+**Ostatnia aktualizacja: 12 września 2026**
 
 **Te zasady publikowane są w kilku językach. Obowiązuje wersja angielska; tłumaczenia mają charakter pomocniczy.**
 
@@ -18,7 +18,7 @@ sosed jest dla dobrych sąsiadów. Traktuj ludzi tak, jak chciałbyś, by trakto
 
 ## Całkowicie zabronione
 
-**Molestowanie, nękanie (bullying), zawstydzanie, zastraszanie, groźby oraz wszelkie zachowania antyspołeczne, okrutne lub poniżające**, a także treści o narkotykach, treści seksualne i oferowanie usług seksualnych. Takie wiadomości nigdy nie są publikowane: sprawdzenie odrzuca je, zanim trafią na tablicę, a autor się o tym dowiaduje — nic nie znika po cichu. To serwis dla sąsiadów, a nie do randkowania: nie ma ustawienia, które włącza treści seksualne. Na czacie takiego sprawdzenia nie ma i nic z tego również tam nie jest dozwolone — jeśli ktoś ci to wyśle, zgłoś to, a kopię załącza twoje urządzenie, bo my żadnej nie mamy.
+**Molestowanie, nękanie (bullying), zawstydzanie, zastraszanie, groźby oraz wszelkie zachowania antyspołeczne, okrutne lub poniżające**, a także treści o narkotykach, treści seksualne i oferowanie usług seksualnych. Takie wiadomości nigdy nie są publikowane: sprawdzenie odrzuca je, zanim trafią na tablicę, a autor się o tym dowiaduje — nic nie znika po cichu. To serwis dla sąsiadów, a nie do randkowania: nie ma ustawienia, które włącza treści seksualne. Na czacie takiego sprawdzenia nie ma i nic z tego również tam nie jest dozwolone — jeśli ktoś ci to wyśle, zgłoś to i opisz własnymi słowami, co się stało: nie mamy żadnej kopii i twoje urządzenie też jej nie wysyła.
 
 ## Żadnej sprzedaży i promocji
 
