@@ -40,6 +40,7 @@ They were not split for a simple reason: the bottom navigation has exactly four 
 - A theme switch: light, dark, or as in the system.
 - Contrast — **three steps**: normal, raised, maximum (settled 2026-08-26).
 - **The default silence span applies to new conversations only** (decided 2026-08-28): it does not touch those already open. The price is named — a person changes the default and does not see why the current conversation still runs on the old one — but the opposite would mean one tap in the settings killing a conversation with an hour left in it.
+- **Support** — your own requests and answers (screen 14), added 2026-09-14. A dot on this item and on "Me" in the bottom navigation when an answer is waiting: there is no permanent support icon, and the mark needed a place.
 - **What happened** — the console (screen 21), added 2026-09-14: what the product did and what did not work. Here rather than behind a gesture or an address, because this is where people go when something is off.
 - **Step away** — 20 minutes, an hour, or 8 hours (screen 20). From here, because there is nowhere else.
 - **A default zone and mode for new phrases** (added 2026-08-28): the composer opens with them, and changing them per phrase is no longer required. The price is named: privacy stops being a decision made for **each** phrase, while different phrases often want different things — so the default is visible in the composer and editable right there.

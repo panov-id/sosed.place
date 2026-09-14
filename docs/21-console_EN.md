@@ -32,8 +32,10 @@ separate panel that is opened rather than kept open.
   introduced on 2026-09-10 (screen 19), and without a line in the console a person
   only sees the board move on without them.
 - **A change of route for a message — added 2026-09-10.** A report support cannot
-  take travels the way the Article 16 form does (screen 14), and that is said in a
-  line: "sent as a report of illegal content". A silent move looks like the text
+  take is moved by the app into the Article 16 form (screen 14) with the same text,
+  and that is said in a line: "the illegal-content form is open — your text is
+  already in it". The person sends the form themselves: nobody ticks the good-faith
+  box for them (clarified 2026-09-14; this said "sent as a report" [retired]). A silent move looks like the text
   went missing — at exactly the moment somebody is reporting something serious.
 - **A timestamp** on every line, from the device's clock.
 
