@@ -753,7 +753,7 @@ untrue, and here they do not disagree anywhere except where it says so.
 |---|---|---|---|
 | a feed message: text, zone, people count, language | server | to show the feed | **4:20, then deleted outright** — not hidden, erased |
 | the "how many there were" counter | server | statistics | indefinitely, **without text and without author** |
-| business profile: email, name, address, status | server | not to post an envelope again | **a year from the last offer**, then deleted along with the complaints about it; for `suspended`, the address hash and date stay one more year (2026-09-14) |
+| business profile: email, name, address, status | server | not to post an envelope again | **a year from the last offer**, then deleted along with the complaints about it; for `suspended` over systematic complaints, the keyed address hash and date stay one more year (2026-09-14) |
 | a complaint about an offer | server | to tell whether complaints are systematic | as long as the profile |
 | chat messages | **the device**, IndexedDB, Web Crypto | the conversation | the shorter of the two settings (§2) |
 | chat in transit | server | delivery | **not stored**; if the other side is offline, until delivered or until the chat's life ends, whichever comes first |
@@ -829,7 +829,7 @@ beside its own sentence about an intention not being a doer.
   arrives with the date, through `WAITLIST_RETENTION_DAYS`. That is waiting on an
   external event, not an open question.
 - Durations that genuinely have no doer: **a business profile and the complaints
-  about its offers** (a year from the last offer) and **a support message** (a
+  about its offers** (a year from the last offer; for one suspended over systematic complaints, one more year of the keyed address hash) and **a support message** (a
   year). Both rows stand in the table above, and none of the six jobs touches
   them (2026-09-07).
 - How long a report waits "until reviewed" if no review happens.

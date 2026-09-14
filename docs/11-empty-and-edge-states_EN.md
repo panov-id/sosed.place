@@ -87,7 +87,7 @@ twice, no explaining how the system is built, no "oops".
 | The node is unreachable | This one is on us | We are not answering — that is our side. What you typed is here. | Retry |
 | Moderation refusal | This will not go out | *(the class of reason — `xor.ad/docs/refusal-wordings_EN.md`)* | Edit |
 | Fifth refusal within an hour | Fifteen minutes off | The feed, likes on phrases and conversations all work — phrases, table lines, name changes and offer likes while the name is not accepted are paused. Another refusal this hour — another 15 minutes. | — |
-| Table hold | One moment | Checking your earlier lines — the new one goes after the verdict. | — |
+| Hold | One moment | Checking what you sent earlier — the new one goes after the verdict. | — |
 | The conversation ended for the other person | The conversation ended | There is nothing here any more. | Close |
 | The other person stepped away | Stepped away | — | — |
 | The identity moved to another device | Your identity is not here any more | The identity was brought up on another device. It no longer works here, and the correspondence on this device will not open again. If it was not you, you have your paper code. | Enter the code |
