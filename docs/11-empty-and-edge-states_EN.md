@@ -45,7 +45,7 @@ Interface states for missing data or reached limits, rather than the normal usag
 - **You did not confirm in time (added 2026-09-10).** The 30 seconds for confirming the line-up ran out and the person became a spectator (`table.confirm.window`). The line is required: without it they come back to the board and find themselves out of the game for no reason at all — and there was a reason, namely that they were not there.
 - **The move timed out — a pass was recorded (added 2026-09-14).** The move window ran out and the engine passed on the person's behalf (`table.move.window`, screen 19). The line stands by the board, not only in the console: the console is opened by someone already looking for something, and here the person does not yet know what to look for.
 - **Three passes — you are watching now (added 2026-09-14).** A third pass in a row made the person a spectator (`table.pass.limit`). A line and a "Watch" button; an application for the next game can be made once a place frees up. Shown **only to the person themselves** — nobody else is told separately.
-- **A report moves into a notice of illegal content (added 2026-09-14).** Support cannot take such a text, so the app opens the Article 16 form with it already in the field (screen 14). A line above the form: "this looks like a report of something illegal — your text is here, confirm and send". A report moved silently looks like one that went missing.
+- **A report moves into a notice of illegal content (added 2026-09-14).** Support cannot take such a text, so the app opens the Article 16 form with it already in the field (screen 14). A line above the form: "this looks like a report of something illegal — your text is here, confirm and send", and under it "without an email the decision will not reach you" (added 2026-09-14 after the review panel: screen 14 promises an answer in the app, while the decision on a notice goes by email only). A report moved silently looks like one that went missing.
 - **Your own table with nobody sitting at it (added 2026-09-10).** An empty table does not reach the selection and goes out on silence; only its author sees it, in the list of their own (screen 9). The line explains why it is not in the feed — otherwise the author reads it as a fault.
 - **A table outside your bands** — there is no state and there will not be: someone outside the bands is not shown the table at all, because a greyed-out card would itself report who is sitting where (screen 19).
 - **Geolocation does not exist as a state — edit of 2026-08-28.** Permission is never requested, so "no access" is not an edge case but the norm: the point is worked out from the time zone, the address and the language, labelled as approximate, the circle is wider, and everything is refined by hand on the diagram (`00-mechanics_EN.md` §4).
@@ -70,7 +70,7 @@ twice, no explaining how the system is built, no "oops".
 
 | State | Heading | Line under it | Action |
 |---|---|---|---|
-| Quota spent | That is all for now | Your four phrases are still alive. When one frees up, you can speak again. | My messages |
+| Quota spent | That is all for now | Your four phrases are still alive. The next slot frees at HH:MM. | My messages |
 | Four already said this hour | Enough for now | Four phrases already said this hour. The next one can go at HH:MM. | — |
 | Tab locked | Enter your PIN | Six digits and you are back. | — |
 | Locked, fewer than four attempts left | Enter your PIN | 3 attempts left. After that the correspondence on this device is gone — neither we nor you will be able to bring it back. | — |
@@ -97,7 +97,7 @@ twice, no explaining how the system is built, no "oops".
 | You did not confirm in time | You are watching now | The confirmation waited 30 seconds. There are no seats in this game — you can apply for the next one. | Watch |
 | The move timed out | A pass was recorded | Five minutes went by without a move, and a pass was made for you. | — |
 | Three passes | You are watching now | Three moves went by without you. You can apply once a seat frees up. | Watch |
-| A report is being moved | This looks like something illegal | Your text is now in the notice form. Confirm and send. | Review and send |
+| A report is being moved | This looks like something illegal | Your text is now in the notice form. Confirm and send. Without an email the decision will not reach you. | Review and send |
 | Your own table with nobody at it | Nobody at the table | An empty table is not shown in the feed. Sit down at it and it will be seen again — you will have to stand up from your current table. | Sit down |
 | A document changed | Something changed | Read what is different and accept it — writing does not work until you do. | Read |
 
