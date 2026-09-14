@@ -620,6 +620,12 @@ deciding for everyone.
 
 **People are counted, not taps.** Five reports from one person are one report.
 
+**Only people who posted long ago are counted — decided 2026-09-14 after the review
+panel.** An identity takes ten seconds to create, and without this condition three
+private windows would take down any phrase in a small area. The threshold counts
+reports from people whose first publication is older than a day; the rest hide the
+phrase for themselves only.
+
 **A report from someone the author has blocked does not count.** Blocking parts
 the two of them completely: a private feud does not turn into votes against the
 feed. The price is stated plainly: it takes a voice away from whoever is being
@@ -752,7 +758,7 @@ untrue, and here they do not disagree anywhere except where it says so.
 | chat in transit | server | delivery | **not stored**; if the other side is offline, until delivered or until the chat's life ends, whichever comes first |
 | likes and matches | server | to open a chat | as long as the chat lives |
 | reports and blocks | server | moderation and personal hiding | a block while it holds; a report until it is reviewed |
-| the quota | server | the limit | derived from live messages, not stored separately |
+| the quota | server | the limit | live ones — derived from messages; moments of publications and refusals within the last hour and the date of the first publication — in the identity's counters, while the identity lives (since 2026-09-14) |
 | identity: the UID | server | recognition between visits | until the browser is lost |
 | age and name | server, on the identity row | the age band, a byline | with the identity |
 | ~~connected devices~~ | — | — | [retired] row dropped 2026-08-31: there is one live session, and no list of devices exists or will (§8.2 of the spec) |
