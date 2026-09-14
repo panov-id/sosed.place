@@ -47,13 +47,22 @@ have destroyed their correspondence silently.
   > 3 attempts left. After that the correspondence on this device is gone —
   > neither we nor you will be able to bring it back.
 
+- **From the sixth attempt there is a wait, and it grows (decided 2026-09-14).** The
+  sixth after 30 seconds, the seventh after 2 minutes, the eighth after 10 minutes, the
+  ninth after an hour, the tenth after 4 hours; the lock says when to try again. The
+  node holds it, not the tab: whoever picked the phone up off the table cannot burn the
+  share in a minute (`xor.ad/docs/chat_EN.md` §8.2).
 - **The tenth mistake burns the node's share, and this device's correspondence is
-  gone for good.** The identity itself survives: name, age and the paper code go
-  on working; the history does not, because there is nothing left to decrypt it
-  with. That is why the warning is mandatory and stands before the last attempt
+  gone for good.** The identity survives, but on this device it is frozen until the
+  paper code is entered: live phrases are taken down, table seats freed, and only
+  recovery and a new support request work; the history does not come back — there is
+  nothing left to decrypt it with (clarified 2026-09-14; this said "name, age and the
+  paper code go on working" [retired]). That is why the warning is mandatory and stands before the last attempt
   rather than after it.
-- **Only the PIN unlocks it.** Neither the paper code nor a move to another
-  device opens this lock: the share belongs to the device, not to the identity
+- **The PIN opens the lock; without it, only the paper code, and then this device's
+  correspondence is lost.** A move to another device does not open the lock
+  (clarified 2026-09-14; this said "only the PIN unlocks it, the paper code does not"
+  [retired]): the share belongs to the device, not to the identity
   (`xor.ad/docs/chat_EN.md` §8.2), and it cannot be reached from anywhere — not
   even from a live session of the same identity.
   **The lock has a "forgot your PIN?" link, and it leads to the paper code — decided
@@ -62,9 +71,10 @@ have destroyed their correspondence silently.
   correspondence is erased for good — as after the tenth mistake. No code, no way
   out: otherwise a stranger with a locked tab would set their own PIN and get a live
   identity (`xor.ad/docs/chat_EN.md` §8.2). [retired] This said "a new PIN with a new
-  share" — without the code.
-  The identity and the paper code are intact. Until now the only way out was to get
-  it wrong ten times on purpose.
+  share" — without the code. During an attack on the node, code entry may wait up to
+  15 minutes — the price of the shared guard against guessing
+  (`xor.ad/docs/protocol_EN.md` §8, item 7). [retired] "Until now the only way out was
+  to get it wrong ten times on purpose" — ten mistakes are no way out any more.
 - **Change the PIN.** The PIN locks the disk, not the identity, and a PIN someone
   has seen cannot be changed any other way except by moving to another device.
   Changing it re-encrypts the local database and takes a new share from the node

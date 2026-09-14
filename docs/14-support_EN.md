@@ -16,6 +16,7 @@ A support contact button, reachable from the app at any time.
 ## Logic
 
 - The sent message lands in the `support_requests` table in the database beside the node — **the eleventh table of the first migration** (decided 2026-09-14, `xor.ad/docs/chat_EN.md` §13): otherwise the list of requests and the answer attached to the identity promised here would have nothing to stand on.
+- **A frozen session may write a new request** (decided 2026-09-14, `xor.ad/docs/chat_EN.md` §8.2): after the share burns it is the only thing besides recovery the node allows it. Earlier answers and the list of requests are not shown to it — whoever holds someone else's tab would read them.
 - A new ticket fires a notification (email/webhook) for the team.
 - **No number is promised for the reply time — decided 2026-08-29.** The line tells the truth: "we read everything, we do not answer at once — there are few of us". A number here would be a promise held by one person on holiday. The exception is a report of something unlawful: it enters the notice register and takes its deadlines, and that is said in a line of its own, because those deadlines are the law's rather than ours.
 - There's no automated handling — just logging the request and notifying the team.
