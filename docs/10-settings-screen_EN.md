@@ -43,7 +43,7 @@ They were not split for a simple reason: the bottom navigation has exactly four 
 - **Support** — your own requests and answers (screen 14), added 2026-09-14. A dot on this item and on "Me" in the bottom navigation when an answer is waiting: there is no permanent support icon, and the mark needed a place.
 - **What happened** — the console (screen 21), added 2026-09-14: what the product did and what did not work. Here rather than behind a gesture or an address, because this is where people go when something is off.
 - **Step away** — 20 minutes, an hour, or 8 hours (screen 20). From here, because there is nowhere else.
-- **A default zone and mode for new phrases** (added 2026-08-28): the composer opens with them, and changing them per phrase is no longer required. The price is named: privacy stops being a decision made for **each** phrase, while different phrases often want different things — so the default is visible in the composer and editable right there.
+- **A default zone and mode for new phrases** (added 2026-08-28): the composer opens with them, and changing them per phrase is no longer required. The price is named: privacy stops being a decision made for **each** phrase, while different phrases often want different things — so the default is visible in the composer and editable right there. **A second price — added 2026-09-14 after the review panel:** the same point with the same step on different phrases links them to each other, and a default makes such a repeat the norm. The composer says so in a line next to the default (screen 4).
 - **Hidden phrases** — a list with a way back (added 2026-08-28, screen 5). Short-lived by construction: a hidden phrase disappears with its own span, like any other.
 
 **Identity and security — a screen of its own (decided 2026-08-28):**
@@ -61,7 +61,7 @@ They were not split for a simple reason: the bottom navigation has exactly four 
 - **The social link field is gone — edit of 2026-08-26.** There are no links in the product, neither in the feed nor in a conversation: they are stripped, and the one place a link lives is a neighbourhood offer (`00-mechanics_EN.md` §5). The field was a leftover of screen 12, dropped along with it.
 - There is no sexual-content setting here, because there is nothing to switch on: such content is rejected before publication for everyone alike.
 - **Links to the three legal documents** — terms, privacy, community rules (screen 15). Here, because this is the only place a person comes back to them after registration.
-- **The irreversible is kept apart from the reversible.** Theme and contrast apply at once and undo with a tap; an age raised, a code re-issued and "start over" undo with nothing. So they sit in a separate block rather than in one list with the theme.
+- **The irreversible is kept apart from the reversible.** Theme and contrast apply at once and undo with a tap; an age crossing the 20/21 line, a code re-issued and "start over" undo with nothing (edited 2026-09-14: this said "an age raised" [retired] — since 2026-09-10 the age is editable both ways within one's own band, above). So they sit in a separate block rather than in one list with the theme.
 
 ## Open questions
 
