@@ -247,7 +247,9 @@ pass the filter never reached the feed, so it has nothing to occupy: a refusal
 costs nothing, the text is edited and sent again.
 
 **A run of refusals is stopped by a pause, not by the ceiling — settled
-2026-09-07.** Five refusals **within an hour** close sending for 15 minutes; the
+2026-09-07.** Five refusals **within an hour** close for 15 minutes everything that goes to
+checking — phrases, table lines and applications, a name change (clarified
+2026-09-14); each further refusal in the same hour — another 15 minutes; the
 feed, likes and chats keep working, and that is said plainly, or a silent refusal
 of everything reads as a ban. The wording is written:
 `xor.ad/docs/refusal-wordings_EN.md` §4.

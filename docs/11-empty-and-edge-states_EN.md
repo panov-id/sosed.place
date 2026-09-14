@@ -34,7 +34,7 @@ Interface states for missing data or reached limits, rather than the normal usag
 - **Locked, with no connection (added 2026-09-14).** The PIN is checked against the node (`xor.ad/docs/chat_EN.md` §8.2), so the tab cannot be unlocked offline. The line says exactly that rather than "wrong PIN": otherwise a network failure would count against the ten attempts in the person's head.
 - **A moderation refusal** — the phrase did not pass, the class of reason is named, the text stays at hand (screen 4, wordings in `xor.ad/docs/refusal-wordings_EN.md`).
 - **A published phrase of yours was restricted** — the Article 17 statement of reasons is shown in the app at the next sign-in, because the author usually has no email (screen 9; added 2026-09-04).
-- **The fifth refusal within an hour** — fifteen minutes without posting (edited 2026-09-14: this said "in a row" [retired], and a successful phrase does not reset the count, `00-mechanics_EN.md` §3); the feed, likes and conversations keep working, and the refusal says so.
+- **The fifth refusal within an hour** — for fifteen minutes nothing goes to checking: phrases, table lines, a name change; each further refusal in the same hour — another pause (edited 2026-09-14: this said "in a row" [retired], and a successful phrase does not reset the count, `00-mechanics_EN.md` §3); the feed, likes and conversations keep working, and the refusal says so.
 - **A conversation ended for the other person** — a gravestone on the open screen; in the list the row is marked when you open the conversation or try to write, not at once (screen 7, the 2026-09-10 rule; edited 2026-09-14: this said "a marked row in the list" [retired]).
 - **The other person stepped away** — a label saying "away" above a live input field, with no span; lifted by their first message (screen 8; edited 2026-09-14: this said "a line instead of the input field" [retired]).
 - **The identity moved to another device** — the node closed the socket with `4002`, the conversation closes, reconnecting is pointless (screen 8; added 2026-09-04).
@@ -85,7 +85,7 @@ twice, no explaining how the system is built, no "oops".
 | Waiting for the first answer | — | (a skeleton of cards, no text) | — |
 | The node is unreachable | This one is on us | We are not answering — that is our side. What you typed is here. | Retry |
 | Moderation refusal | This will not go out | *(the class of reason — `xor.ad/docs/refusal-wordings_EN.md`)* | Edit |
-| Fifth refusal within an hour | Fifteen minutes off | The feed, likes and conversations all work — only new phrases are paused. | — |
+| Fifth refusal within an hour | Fifteen minutes off | The feed, likes and conversations all work — phrases, table lines and name changes are paused. Another refusal this hour — another 15 minutes. | — |
 | The conversation ended for the other person | The conversation ended | There is nothing here any more. | Close |
 | The other person stepped away | Stepped away | — | — |
 | The identity moved to another device | Your identity is not here any more | The identity was brought up on another device. It no longer works here, and the correspondence on this device will not open again. If it was not you, you have your paper code. | Enter the code |
