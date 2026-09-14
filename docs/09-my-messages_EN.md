@@ -21,7 +21,7 @@ Everything a person has put into the feed and that is still alive: **phrases, of
   - at a table where you are sitting — "return" and "get up", as before;
   - at your own table without you — **"sit down"**, with a line saying it will lift you from the table you are at now: leaving somebody else's game silently is no more allowed from here than from the composer (screen 4);
   - **if nobody is sitting at it — a note saying "not visible in the feed"**. An empty table does not reach the selection and goes out on silence: this list is the only place it is still visible, and only to whoever set it up.
-- **A "say it again" button** on an expiring or expired phrase (added 2026-08-28): it opens the composer with the same text. The price is named: this is a direct path to repeating the same thing forever, and the only thing holding it is the ceiling of four publications an hour.
+- **A "say it again" button** on an expiring or expired phrase (added 2026-08-28): it opens the composer with the same text. **On an offer the button reads "show it again" and asks to change the text or the discount** (added 2026-09-14): the node would refuse the same text as a duplicate (`xor.ad/docs/offers/SPEC_EN.md` §6.1). The price is named: this is a direct path to repeating the same thing forever, and the only thing holding it is the ceiling of four publications an hour.
 - The remaining posting quota (how many of the 4 phrases are still available).
 
 ## Logic
