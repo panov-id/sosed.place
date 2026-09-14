@@ -116,8 +116,8 @@ chat disappears for them — 10 minutes, 30 minutes, an hour, or "while we're
 talking" — and that time runs from their own last message, not from anyone
 else's.
 
-Petya set ten minutes, Kolya two hours. Petya says nothing for ten minutes and the
-chat is gone **for Petya**. Kolya says nothing for two hours and it is gone for
+Petya set ten minutes, Kolya an hour. Petya says nothing for ten minutes and the
+chat is gone **for Petya**. Kolya says nothing for an hour and it is gone for
 Kolya. The same conversation lives differently for the two of them, and that is
 the design rather than a fault.
 
@@ -1133,16 +1133,16 @@ touch either for the sake of playing together (settled 2026-08-26).
 
 ## 13. Stepping away
 
-**The "step away" button is not a pause but a temporary departure.** It is not for someone leaving the room for a minute; it is for someone who has been sitting here too long and wants to break off. So the departure is real: the account moves into a "stepped away" state, and the product ceases to exist for that person for the chosen span — **20 minutes, an hour, or 8 hours** (2026-09-14: "until morning" [retired] was dropped — it had no end hour).
+**The "step away" button is not a pause but a temporary departure.** It is not for someone leaving the room for a minute; it is for someone who has been sitting here too long and wants to break off. So the departure is real: the account moves into a "stepped away" state, and the product ceases to exist for that person for the chosen span — **20 minutes, an hour, or 4 hours** (2026-09-14: "until morning" [retired] was dropped — it had no end hour; "8 hours" [retired] the same day: longer than any conversation, review panel).
 
 **What happens at the moment of leaving:**
 
 - **Your own phrases are deleted for good**, along with the likes they collected. The quota slots free up at once: come back and you write anew, with all four available (edited 2026-09-07: this said "five" — a relic of the old quota, marked [retired] in §3 back on 2026-08-28). **What frees is the slots, and only the slots**: the hourly limit of four publications, the refusal counter and whatever is left of the fifteen-minute pause all survive the departure (§3, added 2026-09-07). Otherwise the button meant to help you break off would double as a way to speak twice as fast.
 - **Matches burn.** For whoever was waiting on an answer, the offer simply disappears — with no explanation of who left or why.
-- **Conversations run on their own timers** and are not frozen: your silence keeps counting. So an eight-hour departure is survived only by conversations with a long span, and every ten-minute one is gone. This is said **before** the press, on the screen where the span is chosen, not after.
+- **Conversations run on their own timers** and are not frozen: your silence keeps counting. So a four-hour departure is survived only by a 260-minute conversation where you wrote shortly before leaving, and the rest are gone (edited 2026-09-14: "eight hours" [retired] was survived by none). This is said **before** the press, on the screen where the span is chosen, not after.
 - **The screen goes empty**: no feed, no conversations, no counters — one line and the time remaining.
 
-**What others see.** Only those you have an open conversation with: above the input, a label saying "stepped away", and the input is live — what is written waits for you. The label is lifted by your first message in that conversation, not by the span: otherwise the moment it vanished would give away which of the three spans was chosen (edited 2026-09-14; before, the line stood in place of the input, "so nobody spends words on emptiness" [retired]). Nowhere else and to nobody else: whoever liked you sees only a vanished offer. This is the single place where the product reports someone else's state, and it is allowed because **the person declared it themselves** rather than the system giving away their presence.
+**What others see.** Only those you have an open conversation with: above the input, a label saying "stepped away", and the input is live — what is written waits for you, if the conversation lives that long. The label is lifted by your first message in that conversation, not by the span: otherwise the moment it vanished would give away which of the three spans was chosen (edited 2026-09-14; before, the line stood in place of the input, "so nobody spends words on emptiness" [retired]). Nowhere else and to nobody else: whoever liked you sees only a vanished offer. This is the single place where the product reports someone else's state, and it is allowed because **the person declared it themselves** rather than the system giving away their presence.
 
 **Coming back.** Leaving early is possible but takes a confirmation — otherwise a button meant to help you break off brings you back in three minutes. On return: **a clean feed and no summaries**: a count of what was missed would restore the very pull the departure was for.
 

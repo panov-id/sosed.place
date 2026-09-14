@@ -6,13 +6,13 @@ A temporary departure for someone who has been sitting here too long. Not "a pau
 
 ## The choice screen
 
-- Three buttons: **20 minutes**, **an hour**, **8 hours** (decided 2026-09-14; the third used to be "until morning" [retired] — it had no end hour, so the price "2 conversations out of 7 will not survive" could not be counted).
+- Three buttons: **20 minutes**, **an hour**, **4 hours** (decided 2026-09-14; "8 hours" [retired] the same day: longer than any conversation, review panel; the third used to be "until morning" [retired] — it had no end hour, so the price "2 conversations out of 7 will not survive" could not be counted).
 - Beneath them, the cost of the choice, plainly and in advance: how many live phrases will vanish and how many conversations will not survive that span. The numbers are computed on the spot rather than described in general terms.
 - A cancel button — a departure must not happen by a misplaced tap.
 
 ## What has to be said to the person
 
-> Your phrases will vanish along with their likes, and offers to talk will burn. Conversations run on their own timers: the ones where you set ten minutes will not survive this break. If you are sitting at a table, you will stand up from it — the game goes on without you. A phrase still waiting for its check will vanish with the rest. The hourly posting limit and the pause after refusals outlast the break: when you come back you get four free places, not a fresh hour.
+> Your phrases will vanish along with their likes, and offers to talk will burn. Conversations run on their own timers: this break is survived only by those with the longest span where you wrote shortly before leaving — how many, it says above the button. If you are sitting at a table, you will stand up from it — the game goes on without you. A phrase still waiting for its check will vanish with the rest. The hourly posting limit and the pause after refusals outlast the break: when you come back you get four free places, not a fresh hour.
 
 The last two sentences were added on 2026-09-14: the rule "say it before the tap" stood below since 2026-09-07, and the quote itself did not follow it.
 
@@ -38,7 +38,7 @@ The last two sentences were added on 2026-09-14: the rule "say it before the tap
 
 ## How it looks to others
 
-- In an open conversation, above the input, a label saying **"stepped away"**, and the input stays live: what is written waits for the return. No return time, no time of departure.
+- In an open conversation, above the input, a label saying **"stepped away"**, and the input stays live: what is written waits for the return, if the conversation lives that long. No return time, no time of departure.
   **The label is lifted by the returning person's first message in that conversation, not by the span — decided 2026-09-14** (review panel of 2026-09-11, S18). With three fixed spans, the moment the line vanished gave away which one was chosen. Opening the conversation does not lift it: the node does not know about visits. The price is named: people write to someone who is not there, and the label may hang until the conversation ends if the returning person stays silent in it. Before, the line stood in place of the input, "so nobody spends words on emptiness" [retired]: the words are not lost, they wait for delivery (`xor.ad/docs/chat_EN.md` §8.8).
 - Nowhere else: whoever liked your phrase sees only a vanished offer.
 
