@@ -1084,9 +1084,9 @@ correct you.
 **The score lives as long as the conversation or the table does** and outlives
 neither: no history of wins, no mark on an identity — §1 promises no trace is left.
 
-The two still agree between themselves — including whether to take turns: the toggle
-exists, but both
-switch it on.
+**The engine holds turn order in every class — decided 2026-09-14.** There is no
+"take turns" toggle any more (screen 18). [retired] This said "the two still agree
+between themselves — including whether to take turns: the toggle exists".
 
 **A move counts as activity, exactly like a reply.** A conversation and a table live
 from the last movement rather than the last word: the game exists so that one can be
