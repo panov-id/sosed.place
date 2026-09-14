@@ -56,9 +56,13 @@ have destroyed their correspondence silently.
   device opens this lock: the share belongs to the device, not to the identity
   (`xor.ad/docs/chat_EN.md` §8.2), and it cannot be reached from anywhere — not
   even from a live session of the same identity.
-  **The lock has a "forgot your PIN?" link — decided 2026-09-14.** It leads to the
-  honest price: without the old PIN the only way in is a new PIN with a new share,
-  and this device's correspondence is erased for good — as after the tenth mistake.
+  **The lock has a "forgot your PIN?" link, and it leads to the paper code — decided
+  2026-09-14, refined after the review panel the same day.** Without the old PIN the
+  only way in is recovery: the code mints a new share and a new PIN, and this device's
+  correspondence is erased for good — as after the tenth mistake. No code, no way
+  out: otherwise a stranger with a locked tab would set their own PIN and get a live
+  identity (`xor.ad/docs/chat_EN.md` §8.2). [retired] This said "a new PIN with a new
+  share" — without the code.
   The identity and the paper code are intact. Until now the only way out was to get
   it wrong ten times on purpose.
 - **Change the PIN.** The PIN locks the disk, not the identity, and a PIN someone
