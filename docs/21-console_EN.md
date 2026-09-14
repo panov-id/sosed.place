@@ -20,6 +20,11 @@ separate panel that is opened rather than kept open.
   happened, and describes it in the product's words rather than the code's.
 - **Errors that concern the person**: no connection, refused by quota, refused by
   age, phrase too long, the table no longer exists.
+  **"Refused by age" is only about the person's own age** (under 13, screen 2),
+  clarified 2026-09-14. A table that became unavailable after its band was
+  recalculated is named in the console the same way as one that vanished: "the
+  table no longer exists". An age line at the moment of sitting down would confirm
+  the age of whoever just sat there — the oracle screen 19 closed on 2026-09-03.
 - **What the system did on the person's behalf — added 2026-09-10.** People
   remember their own actions; what was done for them looks like a breakage: "the
   move timed out, a pass was recorded", "three passes in a row — you are a
