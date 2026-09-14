@@ -56,6 +56,11 @@ have destroyed their correspondence silently.
   device opens this lock: the share belongs to the device, not to the identity
   (`xor.ad/docs/chat_EN.md` §8.2), and it cannot be reached from anywhere — not
   even from a live session of the same identity.
+  **The lock has a "forgot your PIN?" link — decided 2026-09-14.** It leads to the
+  honest price: without the old PIN the only way in is a new PIN with a new share,
+  and this device's correspondence is erased for good — as after the tenth mistake.
+  The identity and the paper code are intact. Until now the only way out was to get
+  it wrong ten times on purpose.
 - **Change the PIN.** The PIN locks the disk, not the identity, and a PIN someone
   has seen cannot be changed any other way except by moving to another device.
   Changing it re-encrypts the local database and takes a new share from the node
