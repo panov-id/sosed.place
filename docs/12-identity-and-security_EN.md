@@ -26,8 +26,10 @@ neither the input nor the warning, and ten taps into someone else's phone would
 have destroyed their correspondence silently.
 
 - **The lock closes on leaving the tab and after 5 minutes without a touch**
-  (decided 2026-09-04). Leaving is the same `visibilitychange` already measured
-  for stepping away (`00-mechanics_EN.md` §11). The price is named: switch to
+  (decided 2026-09-04). Leaving is the same `visibilitychange` that counts the hour
+  for the step-away prompt (`00-mechanics_EN.md` §13); **transitions on mobile are not
+  measured** — the mechanics says plainly they could not be captured (edited
+  2026-09-14: this said "already measured… §11" [retired], and §11 is "Like and match"). The price is named: switch to
   another tab and back, and it is six digits again — and the mistakes go into the
   same counter of ten.
 - **The lock shows the PIN field and nothing else.** No name, no number of
@@ -70,6 +72,10 @@ have destroyed their correspondence silently.
   seen and handled. Erasing is irreversible and takes only the history: the
   identity, the phrases and the open conversations remain, but the earlier
   conversations inside them go silent, as after a move.
+  **A session not seen for a year is swept together with its share**
+  (`xor.ad/docs/chat_EN.md` §8.2, said here since 2026-09-14): whoever comes back after
+  a year finds this device's correspondence unreadable — the share that opened it is
+  gone.
 - **The game is not listed here, and that has to be said out loud — added
   2026-09-10.** Since 2026-09-09 the board and the moves are not encrypted, and a
   person is entitled to ask where they live. The answer: **here as well — rewritten
@@ -84,7 +90,9 @@ have destroyed their correspondence silently.
   history" button takes them with the rest.
 - **Start over** — a new identity in place of this one. Before the button, the
   cost is counted **on the spot**: live phrases, open conversations, waiting
-  offers. On its own line: that the paper code becomes useless, because the
+  offers. **Saved offers** are counted separately (added 2026-09-14): they sit on the
+  device and do not pass to the new identity, and someone who saved a discount for
+  tomorrow would otherwise find out at the till. On its own line: that the paper code becomes useless, because the
   identity it brings back will no longer exist.
 
 ## Logic
@@ -104,14 +112,10 @@ have destroyed their correspondence silently.
 - ~~How the screen opens from the settings~~ — **as an item in the settings list**
   (decided 2026-09-02), by the general rule for entrances: a screen is opened from the
   place that makes you want it, and identity and security is wanted in settings.
-  What that item looks like is not drawn. Formerly: a list item or a line at the bottom —
-  is not drawn.
+  What that item looks like is not drawn.
 - ~~Whether to show the local database's size exactly or as a band~~ — **exactly, in
   megabytes** (decided 2026-09-03). The bands in the feed are not there for looks: an
   exact count by radius is an instrument for working out where an author stands. Here
   there is nothing and nobody to work out: a person is looking at **their own** device
   and their own conversations, and the only question they are answering is "is this
   worth the room on my phone". A band of "a little / noticeable" does not answer it.
-  Formerly: exactly (in megabytes) or as a band,
-  like the feed's density, is undecided. An exact number here is not an
-  instrument, but a third digit is of no use either.
