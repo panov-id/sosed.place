@@ -9,7 +9,7 @@ A table is a shared board several neighbours sit around. The screen was created 
 ## How it looks and how to join
 
 - A table shows up **in the feed**, among the phrases, to those whose viewing circle caught its zone — marked as a table, with the name of the game and how many are sitting.
-- **The games at a table are the same classes as for two** (screen 18): dominoes and cards gather a group best, a grid board usually stays pairwise, and flick-draughts physics works with any number of players.
+- **The games at a table are the same classes as for two** (screen 18): dominoes and cards gather a group best, a grid board usually stays pairwise, and flick-draughts takes two to four (`xor.ad/docs/chat_EN.md` §6; edited 2026-09-14: this said "any number of players").
 - **A table is set up from the composer** (screen 4, the "table" tab): the game, the zone, a "set it up" button. Until 2026-08-27 that path did not exist — this screen described pulling up a chair to a table nobody could put there.
 - **Getting back to a table goes through the line in the feed header** (settled 2026-08-27). A table is not in the conversations list: it is not a conversation. The cost is named: narrow the circle or leave the radius and the line still returns you, but finding the table in the feed again will not work.
 - A **"pull up a chair"** button — open to anyone within the radius, with no invitation and no application.
@@ -22,14 +22,14 @@ A table is a shared board several neighbours sit around. The screen was created 
 - **Stickers exist at a table, as they do in a conversation — decided 2026-08-30.** The same catalogue, the same "one sticker instead of a line" rule, the same name for the terminal and the screen reader (screen 16).
   **But there is a difference, and it is spoken on screen:** in a conversation the sticker's identifier travels inside the ciphertext and the node does not know which sticker was sent; **at a table there is no encryption by construction**, and the node sees the sticker exactly as it sees the lines and the board. Hiding that is out for the same reason the screen already states the visibility of speech: someone who read about stickers in a conversation will carry the expectation here.
   **A sticker needs no moderation queue** even here: the images and the names are ours, from the catalogue, and a user cannot send their own.
-- **No hard cap on numbers.** As many as sit down, play; the limit is the readability of the board, not a rule.
+- **Any number may sit; the number who play is the set's seat count** (edited 2026-09-14). This said "as many as sit down, play" [retired] — which went against the 2026-09-10 decision below: sitting and playing are different things, and a game has its own number of seats.
 - **A table lives from its last move — on one span shared by everyone** (clarified 2026-08-27). A move or a line from any sitter pushes it alike. This differs from a conversation, where each side has its own count: there two people are involved, while here the company changes, and a separate count would mean the table exists in different states for those sitting at it. When they leave it disappears with the board and everything said at it.
 - **A table with one sitter is a normal state** (settled 2026-08-27): it is visible in the feed, people can pull up a chair, and that person is precisely waiting for company. It disappears on the same silence span. Closing it when the last guest stands up would take the table away from whoever set it up and is waiting for the first.
 - **The node sees the speech and the board at a table — said plainly (2026-08-27).** The conversation key is derived for two and does not work here, while the lines are public and go through moderation — there is nothing to check in ciphertext. End-to-end encryption (`xor.ad/docs/chat_EN.md` §8.13) is about a conversation between two and does not extend to a table. This has to be on the screen: someone who read about encryption in a conversation will carry the expectation over.
 - **Whoever joins does not see what came before.** The board arrives as it stands, the replies only from the moment they sat down (settled 2026-08-26). The same rule as moving an identity: history does not appear out of nowhere.
 - **Talk at a table is public.** Replies go through the same moderation queue as the feed (`00-mechanics_EN.md` §5): strangers sit at a table, and "there are two of us, nobody sees" is not true here. The cost is named plainly: a 2.8 second median per reply is felt more at a table than in the feed.
 - **Age bands — everyone with everyone.** You may join only if you are inside every sitter's band and they are inside yours (`xor.ad/docs/chat_EN.md` §8.2). The same rule as for a pair, applied to all at once.
-- **"Play again" is a proposal, not a command (decided 2026-08-29).** A game has ended — the table stays; those who agree play on, and **whoever declines stops playing but stays as a spectator** (clarified 2026-09-09: with applications in place, sitting and playing are different things, and "not another game" stopped meaning "I am leaving these people"). To play again they apply like anybody else, and they may not be taken back. If one person is left, the table does not close but waits: that is the normal state described below. If everyone declines, the table goes with the game.
+- **"Play again" is a proposal, not a command (decided 2026-08-29; one button asking what to play since 2026-09-09, screen 18).** A game has ended — the table stays; those who agree play on, and **whoever declines stops playing but stays as a spectator** (clarified 2026-09-09: with applications in place, sitting and playing are different things, and "not another game" stopped meaning "I am leaving these people"). To play again they apply like anybody else, and they may not be taken back. If one person is left, the table does not close but waits: that is the normal state described above. **If everyone declines, everyone becomes a spectator and the table goes out on its silence span** (edited 2026-09-14 after `xor.ad/docs/chat_EN.md` §6: this said "the table goes with the game" [retired] — at a table there is nothing to close).
 - **An undo at a table takes the agreement of everyone playing (decided 2026-08-29, clarified 2026-09-09, screen 18).** Everyone playing, not everyone seated: a spectator is not in the game, and letting them block a take-back would give power over a game to somebody who does not move in it. The more people, the more expensive it is to take a move back, and that is deliberate: a cheap undo in company is precisely how somebody else's game gets spoiled.
 - **A move has a deadline — 5 minutes, then a pass (decided 2026-09-10).** The
   engine has been checking the turn order since 2026-09-09, so the game used to
@@ -85,9 +85,11 @@ A table is a shared board several neighbours sit around. The screen was created 
   in hand, not enough for somebody who put it down — and the second is what needs
   filtering out.
 - **A "congratulate the winner" button (2026-09-09)** — an addressed gesture, not a
-  verdict: the engine knows no rules and cannot decide a winner. Whoever presses it
-  picks who they congratulate, and a line appears at the table. No score and no
-  history of wins is kept.
+  verdict: the engine does not name a winner. Whoever presses it picks who they
+  congratulate, and a line appears at the table. **No history of wins is kept; the
+  engine keeps the round's score** (`table_scores`, above). Edited 2026-09-14: this
+  said "the engine knows no rules… no score" [retired] — which contradicted the turn
+  checking and scoring of 2026-09-09.
 - **The application is opening words, the refusal is an explanation, and both are
   visible to everyone at the table.** Ordinary lines: the same moderation queue,
   the same 128 characters, the same report. An addressed application "to the
@@ -131,7 +133,7 @@ A table is a shared board several neighbours sit around. The screen was created 
   unblock" would answer whether a named person is at a table right now — and the
   product shows nowhere who is at their screen. The cost: after lifting a block you
   will not see the table straight away.
-  **If the block happens while you are already at the same table,** the game ends and the one who leaves is **whoever did the blocking**. That is said before the button, not after: the cost falls on whoever made the decision.
+  **If the block happens while you are already at the same table,** the one who leaves is **whoever did the blocking**, and **the game goes on for the others**: their move becomes a pass on the move window (`table.move.window`). That is said before the button, not after: the cost falls on whoever made the decision, and only on them (decided 2026-09-14; this said "the game ends" [retired] — which cut the game off for people at the table who had nothing to do with someone else's block, exactly what the 2026-09-10 edit above set out to stop).
 - **Someone outside the bands does not see the table at all — settled 2026-08-27.** No greyed card, no "you cannot join" line: such a card would itself report who is sitting where, and would tease a teenager with what is off limits. The cost is accepted: a person may not understand why a neighbour is talking about a table they cannot see.
 
 ## Open questions

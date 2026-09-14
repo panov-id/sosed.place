@@ -1113,8 +1113,12 @@ chat's:
   every sitter's band and all of them are inside yours.
 - **The majority of those sitting can ask someone to leave.** A table does not belong
   to whoever started it.
-- **A block hides the table entirely** — someone else's game along with it, and that
-  is the accepted cost.
+- **A block separates at the seat rather than breaking up a game** (rewritten
+  2026-09-14 after screen 19): a table with the blocked person is not shown to you,
+  sitting beside each other is refused both ways, and if you are already at one
+  table, whoever blocked leaves and the game goes on for the others. [retired] This
+  said "hides the table entirely — someone else's game along with it, and that is the
+  accepted cost": the wording from before 2026-09-10.
 
 **Private conversations stay pairwise.** A table does not turn the chat into a group
 chat: the chat has a unique pair key and encryption derived for two, and we did not

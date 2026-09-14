@@ -77,7 +77,7 @@ twice, no explaining how the system is built, no "oops".
 | Waiting for the first answer | — | (a skeleton of cards, no text) | — |
 | The node is unreachable | This one is on us | We are not answering — that is our side. What you typed is here. | Retry |
 | Moderation refusal | This will not go out | *(the class of reason — `xor.ad/docs/refusal-wordings_EN.md`)* | Edit |
-| Fifth refusal in a row | Fifteen minutes off | The feed, likes and conversations all work — only new phrases are paused. | — |
+| Fifth refusal within an hour | Fifteen minutes off | The feed, likes and conversations all work — only new phrases are paused. | — |
 | The conversation ended for the other person | The conversation ended | There is nothing here any more. | Close |
 | The other person stepped away | Stepped away | — | — |
 | The identity moved to another device | Your identity is not here any more | The identity was brought up on another device. It no longer works here, and the correspondence on this device will not open again. If it was not you, you have your paper code. | Enter the code |
