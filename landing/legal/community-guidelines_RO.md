@@ -30,4 +30,4 @@ Dacă un mesaj încalcă regulile, raportează-l. Blocarea ascunde un mesaj doar
 
 ## Consecințele încălcărilor
 
-Ce se poate întâmpla cu adevărat — și de fiecare dată ți se spune de ce: un mesaj nu este publicat; după cinci refuzuri într-o oră, timp de 15 minute nimic nu mai merge la verificare; un mesaj dispare pentru toți când îl raportează destui oameni sau este eliminat după o notificare de conținut ilegal; o amenințare la viața sau siguranța cuiva este transmisă autorităților. Nu reducem cota nimănui și nu închidem accesul nimănui după bunul nostru plac.
+Ce se poate întâmpla cu adevărat — și de fiecare dată ți se spune de ce: un mesaj nu este publicat; după cinci refuzuri într-o oră, timp de 15 minute nimic nu mai merge la verificare; un mesaj dispare pentru toți când îl raportează destui oameni sau este eliminat după o notificare de conținut ilegal; o amenințare la viața sau siguranța cuiva este transmisă autorităților. Nu reducem cota nimănui și nu închidem accesul nimănui după bunul nostru plac. La o masă, o mutare nefăcută în 5 minute devine pas, iar trei pase la rând te fac spectator; poți reveni în joc printr-o cerere.

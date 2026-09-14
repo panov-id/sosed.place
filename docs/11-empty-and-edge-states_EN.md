@@ -86,7 +86,7 @@ twice, no explaining how the system is built, no "oops".
 | Waiting for the first answer | — | (a skeleton of cards, no text) | — |
 | The node is unreachable | This one is on us | We are not answering — that is our side. What you typed is here. | Retry |
 | Moderation refusal | This will not go out | *(the class of reason — `xor.ad/docs/refusal-wordings_EN.md`)* | Edit |
-| Fifth refusal within an hour | Fifteen minutes off | The feed, likes on phrases and conversations all work — phrases, table lines, name changes and offer likes while the name is not accepted are paused. Another refusal this hour — another 15 minutes. | — |
+| Fifth refusal within an hour | Fifteen minutes off | The feed, likes on phrases and conversations all work — phrases, table lines, name changes and offer likes while the name is not accepted are paused. Another refusal this hour — another 15 minutes. The decision is automatic; the pause ends at HH:MM; ground — the Terms §8 and §15; if you disagree — the Digital Services Coordinator or a court (composition per Art. 17(3), 2026-09-14). | — |
 | Hold | One moment | Checking what you sent earlier — the new one goes after the verdict. | — |
 | The conversation ended for the other person | The conversation ended | There is nothing here any more. | Close |
 | The other person stepped away | Stepped away | — | — |

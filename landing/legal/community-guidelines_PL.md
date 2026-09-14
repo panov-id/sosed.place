@@ -30,4 +30,4 @@ Jeśli wiadomość łamie zasady — zgłoś ją. Blokada ukrywa wiadomość tyl
 
 ## Konsekwencje naruszeń
 
-Co naprawdę może się stać — i za każdym razem powiemy ci dlaczego: wiadomość nie zostaje opublikowana; po pięciu odmowach w ciągu godziny przez 15 minut nic nie trafia do sprawdzenia; wiadomość znika u wszystkich, gdy zgłosi ją wystarczająco dużo osób, albo zostaje usunięta po zgłoszeniu nielegalnych treści; o zagrożeniu życia lub bezpieczeństwa człowieka informujemy władze. Nie obniżamy nikomu limitu i nie blokujemy nikomu dostępu według własnego uznania.
+Co naprawdę może się stać — i za każdym razem powiemy ci dlaczego: wiadomość nie zostaje opublikowana; po pięciu odmowach w ciągu godziny przez 15 minut nic nie trafia do sprawdzenia; wiadomość znika u wszystkich, gdy zgłosi ją wystarczająco dużo osób, albo zostaje usunięta po zgłoszeniu nielegalnych treści; o zagrożeniu życia lub bezpieczeństwa człowieka informujemy władze. Nie obniżamy nikomu limitu i nie blokujemy nikomu dostępu według własnego uznania. Przy stole ruch niewykonany w ciągu 5 minut staje się pasem, a trzy pasy z rzędu przenoszą do widzów; do gry można wrócić zgłoszeniem.
