@@ -235,12 +235,13 @@ tap would let a single person quietly narrow another's voice — and the author 
 never learn of it. Against real harm there are reports (§5) and the fact that the
 dangerous is caught before publication.
 
-**A message waiting on its name takes no slot and blocks the next one.** The
+**A message being checked takes no slot and blocks the next one.** The
 first publication goes into the queue together with the name and appears in the feed
 only when both are accepted (§5). While it waits it is not in the feed, so there is
 nothing to occupy; but the next one cannot be sent either, or waiting would stack a
-queue around the ceiling. This happens once: the name is checked at the first
-publication and at every change, and changing it requires a clean slate.
+queue around the ceiling. Since 2026-09-14 the rule is general: while one's own phrase is being checked, the
+next does not go, with a name or without (`xor.ad/docs/chat_EN.md` §8.3). [retired]
+"This happens once" — true while the rule covered only waiting for the name.
 
 **A message refused by moderation takes no slot at all.** A message that did not
 pass the filter never reached the feed, so it has nothing to occupy: a refusal
@@ -248,7 +249,7 @@ costs nothing, the text is edited and sent again.
 
 **A run of refusals is stopped by a pause, not by the ceiling — settled
 2026-09-07.** Five refusals **within an hour** close for 15 minutes everything that goes to
-checking — phrases, table lines and applications, a name change, an offer like (clarified
+checking — phrases, table lines and applications, a name change, an offer like while the name is not accepted (clarified
 2026-09-14); each further refusal in the same hour — another 15 minutes; the
 feed, likes on phrases and chats keep working, and that is said plainly, or a silent refusal
 of everything reads as a ban. The wording is written:
@@ -1150,7 +1151,7 @@ touch either for the sake of playing together (settled 2026-08-26).
 - **Conversations run on their own timers** and are not frozen: your silence keeps counting. So a four-hour departure is survived only by a 260-minute conversation where you wrote shortly before leaving, and the rest are gone (edited 2026-09-14: "eight hours" [retired] was survived by none). This is said **before** the press, on the screen where the span is chosen, not after.
 - **The screen goes empty**: no feed, no conversations, no counters — one line and the time remaining.
 
-**What others see.** Only those you have an open conversation with: above the input, a label saying "stepped away", and the input is live — what is written waits for you, if the conversation lives that long. The label is lifted by your first message in that conversation, not by the span: otherwise the moment it vanished would give away which of the three spans was chosen (edited 2026-09-14; before, the line stood in place of the input, "so nobody spends words on emptiness" [retired]). Nowhere else and to nobody else: whoever liked you sees only a vanished offer. This is the single place where the product reports someone else's state, and it is allowed because **the person declared it themselves** rather than the system giving away their presence.
+**What others see.** Only those you have an open conversation with: above the input, a label saying "stepped away", and the input is live — what is written waits for you, if the conversation lives that long. The label is lifted by your first message or move in that conversation, not by the span: otherwise the moment it vanished would give away which of the three spans was chosen (edited 2026-09-14; before, the line stood in place of the input, "so nobody spends words on emptiness" [retired]). Nowhere else and to nobody else: whoever liked you sees only a vanished offer. This is the single place where the product reports someone else's state, and it is allowed because **the person declared it themselves** rather than the system giving away their presence.
 
 **Coming back.** Leaving early is possible but takes a confirmation — otherwise a button meant to help you break off brings you back in three minutes. On return: **a clean feed and no summaries**: a count of what was missed would restore the very pull the departure was for.
 
