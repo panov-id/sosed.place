@@ -1,6 +1,6 @@
 # sosed — Terms & Conditions
 
-**Last updated: 12 September 2026**
+**Last updated: 14 September 2026**
 
 ## 1. Who we are
 
@@ -61,7 +61,7 @@ sosed is meant to feel like good neighbors — respectful and sociable. You agre
 - attempt to exchange images through message content, or bypass the text-only limitation;
 - probe, disrupt, reverse-engineer, or overload the Service or its infrastructure.
 
-These community rules are also set out, in plain language, in our **Community Guidelines**. Content may be **moderated before it is published**; posting quotas, reports, and blocks help enforce the rules. Pre-publication moderation is performed by automated systems, **including AI models**, that screen content before it appears. You can **block another user** at any time; blocking hides their content from you. We may remove content and suspend or block access at our discretion, especially for safety or legal reasons.
+These community rules are also set out, in plain language, in our **Community Guidelines**. Content may be **moderated before it is published**; posting quotas (four messages per sliding hour), reports, and blocks help enforce the rules; after five automated refusals within an hour, nothing goes to checking for 15 minutes. Pre-publication moderation is performed by automated systems, **including AI models**, that screen content before it appears. You can **block another user** at any time; blocking hides their content from you. What we do when the rules are broken is listed in §15, each time with a reason; we do not close anyone's access at our own discretion.
 
 ## 9. Content and ephemerality
 
@@ -73,7 +73,7 @@ These community rules are also set out, in plain language, in our **Community Gu
 - **What an offer is.** An offer is a post by a local business that must carry a **discount**, available to anyone who comes and asks for it. Publication is **free**: we take no money and no barter for it, and there is no paid placement of any kind.
 - **We are not a party.** An offer is the business's **own proposal**. Any agreement that follows is between you and that business; we do not sell or supply anything in it, and we are not responsible for the goods, the service, or the discount itself.
 - **A published discount must be honoured.** A business that announces a discount is obliged to give it. If it refuses, you can complain from the offer. Complaints are **private** — never shown publicly, and never revealing who complained. Repeated well-founded complaints suspend the business.
-- **Review and removal.** Offers pass automated checks before publication — a discount must be present, banned categories are refused, and the link is checked against reputation lists and may not use a shortener. A person looks at an offer **after** a complaint, not before. We may reject or remove any offer. An offer without a discount is rejected. So are offers for **alcohol, tobacco, gambling, financial services, medicine and supplements, or weapons**, and offers whose terms depend on **who a person is** rather than where they are — a discount may depend on place, never on sex, age, origin, or the like.
+- **Review and removal.** Offers pass automated checks before publication — a discount must be present, banned categories are refused, and the link is checked against reputation lists and may not use a shortener. A person looks at an offer **after** a complaint, not before — except that a link in an offer goes dark by itself once two people who have posted in the feed for more than a day report it; the business is emailed at that moment with what was done, that it was automatic, and how to contest it. We may reject or remove any offer. An offer without a discount is rejected. So are offers for **alcohol, tobacco, gambling, financial services, medicine and supplements, or weapons**, and offers whose terms depend on **who a person is** rather than where they are — a discount may depend on place, never on sex, age, origin, or the like.
 - **Links and codes exist only in offers.** Ordinary messages and posts carry no links. A promo code shown in an offer belongs to the **business's own system**: we do not issue it, do not verify it, and do not count its use. An external link leads to a site we do not run; if a link is phishing or harmful, report it from the screen shown before you leave and it is switched off.
 - **Images.** An offer may carry an image; ordinary messages and chats may not (§2).
 - **No guarantees to businesses.** Offers fade like everything else and are shown at a limited rate — no more than one offer per ten ordinary posts in a reader's feed, fewer when the feed is quiet. There are no statistics, no targeting guarantees, no scheduling, and no automatic repetition.
@@ -84,13 +84,13 @@ These community rules are also set out, in plain language, in our **Community Gu
 - **Offers sit in the same feed.** An offer appears among ordinary posts at a fixed rate — no more than one offer per ten posts (§10) — and is never ordered ahead of them.
 - **Offers are commercial, and identifiable as such.** An offer carries the name of the business it comes from and the discount it promises, so it reads as a business's message rather than a neighbour's. **Nobody pays us for placement**: there is no sponsorship, no boosting, and no third party paying to have something shown.
 - **No targeting on people.** Offers are never targeted by profiling — not on your behaviour, not on special categories such as health, beliefs, or origin, and not on data about minors. **Place is the only thing** that decides who can see an offer.
-- **How moderation works.** Every feed message is checked **before** it is published by automated systems, **including AI models**. Chats are **not** checked and are not stored on our servers, so we cannot examine what is written inside them. A game board inside a chat is the exception: we see the moves, because we judge them by the rules of the game — and moves are made of a class of board and a coordinate, not of your words. Decisions on reports of illegal content are taken by **a person**, not by a machine.
+- **How moderation works.** Every feed message is checked **before** it is published by automated systems, **including AI models**. Chats are **not** checked and are not stored on our servers, so we cannot examine what is written inside them. A game board inside a chat is the exception: we see the moves, because we judge them by the rules of the game — and moves are made of a class of board and a coordinate, not of your words. Some decisions on reports are **automatic**, and say so: a message goes for everyone once enough people report it, and a link in an offer goes dark after two reports. A notice of illegal content is read by a person. Every decision tells you whether automated means were involved.
 - **Complaining about what you see.** You can complain about a message from the message itself — that is a vote against showing it, not an accusation. You can complain about an offer from the offer if the discount it promised was refused, or if the offer itself misleads. The quality of what a business sold you is **not** something we can judge: we are not a party to that deal (§10), and we will say so and point you to the business and to consumer redress.
 - **Reporting illegal content.** Anything you consider **illegal** can be reported from the [report form](/report.html) or to **support@sosed.place**, by users and by authorities alike; the form is the shortest route and that address is our point of contact. Tell us **why** you believe it is illegal and **where** it is, and give your **name and email** — except where the report concerns the sexual abuse of children, when we ask for neither. We confirm receipt, examine it, and tell you what we decided, why, and how to contest it.
 - **Decisions are explained.** If your message is not published, or your content is removed or hidden, you are told **what was done and why**, whether automated means were involved, and what you can do about it. Nothing is removed silently. We never tell an author who reported them.
 - **If you disagree.** What happens next depends on who made the decision, and we say which rather than promising the same for both.
-  **A decision taken on a report** — content removed or hidden after somebody reported it — is taken by a person, and a person can look at it again: write to **support@sosed.place**.
-  **A refusal to publish** is different. It is made automatically, before anybody has seen the message, and **it is final**: there is nobody to appeal to, because no person took it. The message can be edited and sent again — that is the whole of the remedy, and we would rather say so than imply a review that does not exist.
+  **A decision taken on a report** — content removed or hidden after somebody reported it — may be automatic or taken by a person, and either way a person can look at it again: write to **support@sosed.place**.
+  **A refusal to publish** is different. It is made automatically, before anybody has seen the message, and **it is final**: there is nobody to appeal to, because no person took it. The message can be edited and sent again — that is the whole of the remedy, and we would rather say so than imply a review that does not exist. **A pause** — nothing goes to checking for 15 minutes after five refusals within an hour — is automatic too and has no appeal either: it ends by itself.
   In either case you may complain to the **Digital Services Coordinator** of your country of residence, or to the Cypriot one — the **Radiotelevision and Digital Services Authority**, `rtdsa.org.cy` — or go to court (§20). We do not operate a formal internal appeals body, and we do not pretend to.
 
 ## 12. Donations
@@ -114,7 +114,7 @@ These community rules are also set out, in plain language, in our **Community Gu
 
 ## 15. Suspension and termination
 
-We may suspend, restrict, or terminate your access at any time, including for breach of these Terms or for safety or legal reasons. You may stop using the Service at any time.
+We do not suspend or terminate anyone's access at our own discretion. When these Terms are broken, this is what can happen, and each time you are told what was done and why: a message is not published; after five automated refusals within an hour, nothing goes to checking for 15 minutes; content goes for everyone once enough people report it, or is removed after a notice of illegal content; a link in an offer goes dark; a business's venue is suspended after repeated justified complaints; and where content suggests a threat to someone's life or safety, we inform the authorities (Art. 18 DSA). You may stop using the Service at any time.
 
 ## 16. Disclaimers
 
@@ -130,7 +130,7 @@ You agree to indemnify PSYTICAN & PEJEDED / Evgenii Panov against claims arising
 
 ## 19. Changes to these Terms
 
-We may update these Terms. There is no account to write to and no mailing list, so a new edition is signposted **at the door**: the next time you open the Service after a change, you are told that the documents have changed and asked to accept them. The date at the top of this document is the current edition. Continued use after a change means you accept the updated Terms.
+We may update these Terms. There is no account to write to and no mailing list, so a new edition is signposted **at the door**: the next time you open the Service after a change, you are told that the documents have changed and what changed (Art. 14(2) DSA). The date at the top of this document is the current edition. Continued use after a change means you accept the updated Terms.
 
 ## 20. Governing law and jurisdiction
 

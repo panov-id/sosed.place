@@ -1,6 +1,6 @@
 # Règles de la communauté — sosed.place
 
-**Dernière mise à jour : 12 septembre 2026**
+**Dernière mise à jour : 14 septembre 2026**
 
 **Ces règles sont publiées en plusieurs langues. La version anglaise fait foi ; les traductions sont fournies à titre de commodité.**
 
@@ -30,4 +30,4 @@ Si un message enfreint les règles — signale-le. Un blocage masque le message 
 
 ## Conséquences des infractions
 
-Des infractions répétées peuvent entraîner une réduction du quota ou un blocage total de l’accès.
+Ce qui peut réellement arriver — et chaque fois on te dit pourquoi : un message n’est pas publié ; après cinq refus en une heure, rien ne part en vérification pendant 15 minutes ; un message disparaît pour tout le monde quand assez de personnes le signalent, ou est retiré après un signalement de contenu illicite ; une menace pour la vie ou la sécurité d’une personne est transmise aux autorités. Nous ne réduisons le quota de personne et ne fermons l’accès de personne à notre discrétion.

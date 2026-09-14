@@ -1,6 +1,6 @@
 # Hamjamiyat qoidalari — sosed.place
 
-**Oxirgi yangilanish: 2026-yil 12-sentabr**
+**Oxirgi yangilanish: 2026-yil 14-sentabr**
 
 **Ushbu qoidalar bir necha tilda chop etilgan. Ingliz tilidagi versiya amal qiladi; tarjimalar qulaylik uchun berilgan.**
 
@@ -30,4 +30,4 @@ Xabar qoidani buzsa, shikoyat qil. Bloklash xabarni faqat sen uchun yashiradi, h
 
 ## Qoidabuzarliklar oqibatlari
 
-Takroriy qoidabuzarliklar kvotaning kamayishiga yoki kirishdan butunlay mahrum boʻlishga olib kelishi mumkin.
+Aslida nima boʻlishi mumkin — va har safar sababini aytamiz: xabar eʼlon qilinmaydi; bir soat ichida beshta raddan keyin 15 daqiqa hech narsa tekshiruvga ketmaydi; yetarlicha odam shikoyat qilsa, xabar hamma uchun yoʻqoladi yoki noqonuniy kontent haqidagi xabarnomadan keyin oʻchiriladi; insonning hayoti yoki xavfsizligiga tahdid haqida hokimiyatga xabar beriladi. Hech kimning kvotasini kamaytirmaymiz va hech kimning kirishini oʻz xohishimiz bilan yopmaymiz.

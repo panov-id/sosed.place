@@ -1,6 +1,6 @@
 # Normas de la comunidad — sosed.place
 
-**Última actualización: 12 de septiembre de 2026**
+**Última actualización: 14 de septiembre de 2026**
 
 **Estas normas se publican en varios idiomas. La versión en inglés es la que rige; las traducciones se ofrecen por comodidad.**
 
@@ -30,4 +30,4 @@ Si un mensaje incumple las normas — denúncialo. Un bloqueo oculta el mensaje 
 
 ## Consecuencias de las infracciones
 
-Las infracciones repetidas pueden llevar a una reducción de la cuota o al bloqueo total del acceso.
+Lo que de verdad puede pasar — y cada vez se te dice por qué: un mensaje no se publica; tras cinco rechazos en una hora, durante 15 minutos nada pasa a revisión; un mensaje desaparece para todos cuando lo denuncian suficientes personas, o se retira tras un aviso de contenido ilícito; una amenaza para la vida o la seguridad de alguien se comunica a las autoridades. No reducimos la cuota de nadie ni cerramos el acceso de nadie a nuestra discreción.

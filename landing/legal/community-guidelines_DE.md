@@ -1,6 +1,6 @@
 # Community-Regeln — sosed.place
 
-**Zuletzt aktualisiert: 12. September 2026**
+**Zuletzt aktualisiert: 14. September 2026**
 
 **Diese Regeln erscheinen in mehreren Sprachen. Maßgeblich ist die englische Fassung; Übersetzungen dienen der Bequemlichkeit.**
 
@@ -30,4 +30,4 @@ Verstößt eine Nachricht gegen die Regeln — melde sie. Eine Blockierung verbi
 
 ## Folgen von Verstößen
 
-Wiederholte Verstöße können zu einer Kürzung des Kontingents oder zur vollständigen Sperrung des Zugangs führen.
+Was tatsächlich passieren kann — und jedes Mal erfährst du, warum: Eine Nachricht wird nicht veröffentlicht; nach fünf Ablehnungen innerhalb einer Stunde geht 15 Minuten lang nichts zur Prüfung; eine Nachricht verschwindet für alle, sobald genug Menschen sie melden, oder wird nach einer Meldung rechtswidriger Inhalte entfernt; eine Gefahr für Leben oder Sicherheit eines Menschen wird den Behörden gemeldet. Wir kürzen niemandes Kontingent und sperren niemanden nach eigenem Ermessen.

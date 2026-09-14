@@ -104,7 +104,7 @@ If you accept, Google Analytics sets cookies and processes your IP address (trun
 
 ## 13. Changes
 
-We may update this Policy. There is no account to write to and no mailing list, so a new edition is signposted **at the door**: the next time you open the Service after a change, you are told and asked to accept it. The "last updated" date at the top is the current edition.
+We may update this Policy. There is no account to write to and no mailing list, so a new edition is signposted **at the door**: the next time you open the Service after a change, you are told that it changed and what changed. The "last updated" date at the top is the current edition.
 
 ## 14. Contact
 

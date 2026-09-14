@@ -1,6 +1,6 @@
 # Reguli ale comunității — sosed.place
 
-**Ultima actualizare: 12 septembrie 2026**
+**Ultima actualizare: 14 septembrie 2026**
 
 **Aceste reguli sunt publicate în mai multe limbi. Versiunea în limba engleză este cea care se aplică; traducerile sunt oferite pentru comoditate.**
 
@@ -30,4 +30,4 @@ Dacă un mesaj încalcă regulile, raportează-l. Blocarea ascunde un mesaj doar
 
 ## Consecințele încălcărilor
 
-Încălcările repetate pot duce la o cotă redusă sau la pierderea completă a accesului.
+Ce se poate întâmpla cu adevărat — și de fiecare dată ți se spune de ce: un mesaj nu este publicat; după cinci refuzuri într-o oră, timp de 15 minute nimic nu mai merge la verificare; un mesaj dispare pentru toți când îl raportează destui oameni sau este eliminat după o notificare de conținut ilegal; o amenințare la viața sau siguranța cuiva este transmisă autorităților. Nu reducem cota nimănui și nu închidem accesul nimănui după bunul nostru plac.

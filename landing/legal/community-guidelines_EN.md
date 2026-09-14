@@ -1,6 +1,6 @@
 # Community Guidelines — sosed.place
 
-**Last updated: 12 September 2026**
+**Last updated: 14 September 2026**
 
 **These rules are published in several languages. The English version is the one that applies; translations are provided for convenience.**
 
@@ -28,4 +28,4 @@ If a message breaks the rules, report it: it disappears from your feed at once, 
 
 ## Consequences of violations
 
-Repeated violations can lead to a reduced quota or losing access entirely.
+What can actually happen — and each time you are told why: a message is not published; after five refusals within an hour nothing goes to checking for 15 minutes; a message goes for everyone once enough people report it, or is removed after a report of illegal content; a threat to someone's life or safety is passed to the authorities. We do not cut anyone's quota and do not close anyone's access at our own discretion.

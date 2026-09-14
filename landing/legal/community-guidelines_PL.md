@@ -1,6 +1,6 @@
 # Zasady społeczności — sosed.place
 
-**Ostatnia aktualizacja: 12 września 2026**
+**Ostatnia aktualizacja: 14 września 2026**
 
 **Te zasady publikowane są w kilku językach. Obowiązuje wersja angielska; tłumaczenia mają charakter pomocniczy.**
 
@@ -30,4 +30,4 @@ Jeśli wiadomość łamie zasady — zgłoś ją. Blokada ukrywa wiadomość tyl
 
 ## Konsekwencje naruszeń
 
-Powtarzające się naruszenia mogą prowadzić do obniżenia limitu lub całkowitej blokady dostępu.
+Co naprawdę może się stać — i za każdym razem powiemy ci dlaczego: wiadomość nie zostaje opublikowana; po pięciu odmowach w ciągu godziny przez 15 minut nic nie trafia do sprawdzenia; wiadomość znika u wszystkich, gdy zgłosi ją wystarczająco dużo osób, albo zostaje usunięta po zgłoszeniu nielegalnych treści; o zagrożeniu życia lub bezpieczeństwa człowieka informujemy władze. Nie obniżamy nikomu limitu i nie blokujemy nikomu dostępu według własnego uznania.

@@ -1,6 +1,6 @@
 # İcma Qaydaları — sosed.place
 
-**Son yenilənmə: 12 sentyabr 2026**
+**Son yenilənmə: 14 sentyabr 2026**
 
 **Bu qaydalar bir neçə dildə dərc olunub. İngilis dilindəki versiya qüvvədədir; tərcümələr rahatlıq üçün verilib.**
 
@@ -30,4 +30,4 @@ Mesaj qaydaları pozursa, şikayət et. Bloklamaq mesajı yalnız sənin üçün
 
 ## Pozuntuların nəticələri
 
-Təkrar pozuntular kvotanın azalmasına və ya girişin tam itirilməsinə səbəb ola bilər.
+Əslində nə baş verə bilər — və hər dəfə səbəbi sənə deyilir: mesaj dərc olunmur; bir saat ərzində beş imtinadan sonra 15 dəqiqə heç nə yoxlamaya getmir; kifayət qədər insan şikayət etdikdə mesaj hamı üçün yox olur və ya qanunsuz məzmun barədə bildirişdən sonra silinir; kiminsə həyatına və ya təhlükəsizliyinə təhdid hakimiyyət orqanlarına bildirilir. Heç kimin kvotasını azaltmırıq və heç kimin girişini öz istəyimizlə bağlamırıq.
