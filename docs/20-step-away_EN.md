@@ -6,13 +6,15 @@ A temporary departure for someone who has been sitting here too long. Not "a pau
 
 ## The choice screen
 
-- Three buttons: **20 minutes**, **an hour**, **until morning**.
+- Three buttons: **20 minutes**, **an hour**, **8 hours** (decided 2026-09-14; the third used to be "until morning" [retired] — it had no end hour, so the price "2 conversations out of 7 will not survive" could not be counted).
 - Beneath them, the cost of the choice, plainly and in advance: how many live phrases will vanish and how many conversations will not survive that span. The numbers are computed on the spot rather than described in general terms.
 - A cancel button — a departure must not happen by a misplaced tap.
 
 ## What has to be said to the person
 
-> Your phrases will vanish along with their likes, and offers to talk will burn. Conversations run on their own timers: the ones where you set ten minutes will not survive this break. If you are sitting at a table, you will stand up from it — the game goes on without you.
+> Your phrases will vanish along with their likes, and offers to talk will burn. Conversations run on their own timers: the ones where you set ten minutes will not survive this break. If you are sitting at a table, you will stand up from it — the game goes on without you. A phrase still waiting for its check will vanish with the rest. The hourly posting limit and the pause after refusals outlast the break: when you come back you get four free places, not a fresh hour.
+
+The last two sentences were added on 2026-09-14: the rule "say it before the tap" stood below since 2026-09-07, and the quote itself did not follow it.
 
 - **A board in a private conversation leaves with the person leaving — clarified 2026-08-29.** Screen 20 discussed the table in detail and said nothing about a paired board, although the case is just as common. The rule is now explicit: in a pair, one person leaving ends the game (screen 18) — there is nobody to wait for. A table is the opposite, and that is below.
   **The game cache leaves with the game — added 2026-09-10.** Since 2026-09-10 the
@@ -55,5 +57,5 @@ After an hour of continuous use, one line — "you have been here an hour: step 
 ## Open questions
 
 - ~~How to show the cost of leaving with a dozen conversations~~ — **one sentence with two numbers** (decided 2026-08-30): "3 phrases will vanish, 2 conversations out of 7 will not survive". A list of names is rejected deliberately: an inventory of the people you are abandoning, placed in front of the leave button, is guilt as a list — precisely the device used to hold people. The price is accepted: a person will not see which conversation they are losing, and will not get to write one last line.
-- ~~"Until morning" across a change of time zone~~ — counted by the zone **at the moment of leaving**: the person chose morning where they were falling asleep. A zone shifting on a journey does not recompute the span, or a flight east would cut the break short in the middle of the night (settled 2026-08-27).
+- [retired] ~~"Until morning" across a change of time zone~~ — dropped on 2026-09-14 together with "until morning" itself: eight hours have no time zone. The former decision: counted by the zone **at the moment of leaving**: the person chose morning where they were falling asleep. A zone shifting on a journey does not recompute the span, or a flight east would cut the break short in the middle of the night (settled 2026-08-27).
 - ~~Whether to offer stepping away to someone who has already stepped away today~~ — **yes, the hour counter restarts after a return** (decided 2026-08-30). The hour counts **continuous** use, and a person who came back and sat for another hour really did sit for another hour. The rule "dismissed by a tap, gone for the rest of the day" stays, but it concerns dismissal rather than a break: leaving resets the counter.

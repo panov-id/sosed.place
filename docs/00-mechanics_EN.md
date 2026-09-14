@@ -1125,13 +1125,13 @@ touch either for the sake of playing together (settled 2026-08-26).
 
 ## 13. Stepping away
 
-**The "step away" button is not a pause but a temporary departure.** It is not for someone leaving the room for a minute; it is for someone who has been sitting here too long and wants to break off. So the departure is real: the account moves into a "stepped away" state, and the product ceases to exist for that person for the chosen span — **20 minutes, an hour, or until morning**.
+**The "step away" button is not a pause but a temporary departure.** It is not for someone leaving the room for a minute; it is for someone who has been sitting here too long and wants to break off. So the departure is real: the account moves into a "stepped away" state, and the product ceases to exist for that person for the chosen span — **20 minutes, an hour, or 8 hours** (2026-09-14: "until morning" [retired] was dropped — it had no end hour).
 
 **What happens at the moment of leaving:**
 
 - **Your own phrases are deleted for good**, along with the likes they collected. The quota slots free up at once: come back and you write anew, with all four available (edited 2026-09-07: this said "five" — a relic of the old quota, marked [retired] in §3 back on 2026-08-28). **What frees is the slots, and only the slots**: the hourly limit of four publications, the refusal counter and whatever is left of the fifteen-minute pause all survive the departure (§3, added 2026-09-07). Otherwise the button meant to help you break off would double as a way to speak twice as fast.
 - **Matches burn.** For whoever was waiting on an answer, the offer simply disappears — with no explanation of who left or why.
-- **Conversations run on their own timers** and are not frozen: your silence keeps counting. So a departure "until morning" is survived only by conversations with a long span, and every ten-minute one is gone. This is said **before** the press, on the screen where the span is chosen, not after.
+- **Conversations run on their own timers** and are not frozen: your silence keeps counting. So an eight-hour departure is survived only by conversations with a long span, and every ten-minute one is gone. This is said **before** the press, on the screen where the span is chosen, not after.
 - **The screen goes empty**: no feed, no conversations, no counters — one line and the time remaining.
 
 **What others see.** Only those you have an open conversation with: instead of the input, a line saying "stepped away", so nobody spends words on emptiness. Nowhere else and to nobody else: whoever liked you sees only a vanished offer. This is the single place where the product reports someone else's state, and it is allowed because **the person declared it themselves** rather than the system giving away their presence.

@@ -68,7 +68,11 @@ deliberate.
 
 ## Open questions
 
-- How the console is opened in the web — a gesture, a menu item or an address —
-  is not decided.
+- ~~How the console is opened in the web — a gesture, a menu item or an address~~
+  — **as a "What happened" item under "Me"** (screen 10), decided 2026-09-14.
+  Nobody finds a gesture and nobody types an address, while "Me" is where people
+  go when something is off. The lines without which a game or a report makes no
+  sense — a pass, "you are a spectator", a change of route — **are duplicated as
+  screen 11 states**, so the console is no longer the only channel for any of them.
 - Whether there should be a "copy everything" button: it helps support and it also
   turns "look" into "forward", and people forward without reading.
