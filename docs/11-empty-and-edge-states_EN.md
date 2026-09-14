@@ -36,7 +36,7 @@ Interface states for missing data or reached limits, rather than the normal usag
 - **A published phrase of yours was restricted** — the Article 17 statement of reasons is shown in the app at the next sign-in, because the author usually has no email (screen 9; added 2026-09-04).
 - **The fifth refusal within an hour** — fifteen minutes without posting (edited 2026-09-14: this said "in a row" [retired], and a successful phrase does not reset the count, `00-mechanics_EN.md` §3); the feed, likes and conversations keep working, and the refusal says so.
 - **A conversation ended for the other person** — a gravestone on the open screen; in the list the row is marked when you open the conversation or try to write, not at once (screen 7, the 2026-09-10 rule; edited 2026-09-14: this said "a marked row in the list" [retired]).
-- **The other person stepped away** — a line saying "away" instead of the input field, with no span (screen 8).
+- **The other person stepped away** — a label saying "away" above a live input field, with no span; lifted by their first message (screen 8; edited 2026-09-14: this said "a line instead of the input field" [retired]).
 - **The identity moved to another device** — the node closed the socket with `4002`, the conversation closes, reconnecting is pointless (screen 8; added 2026-09-04).
 - **The app is out of date** — the node does not support this version, code `4004`, no reconnection is attempted (screen 8; added 2026-09-04).
 - **An application is waiting (added 2026-09-10).** Somebody applied for the next game at a table and is waiting (screen 19). Neither emptiness nor a refusal: the players decide by the start of the next game. While waiting they are a spectator — they see the board and talk in the chat.

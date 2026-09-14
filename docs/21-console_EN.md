@@ -76,5 +76,8 @@ deliberate.
   go when something is off. The lines without which a game or a report makes no
   sense — a pass, "you are a spectator", a change of route — **are duplicated as
   screen 11 states**, so the console is no longer the only channel for any of them.
-- Whether there should be a "copy everything" button: it helps support and it also
-  turns "look" into "forward", and people forward without reading.
+- ~~Whether there should be a "copy everything" button~~ — **no** (decided
+  2026-09-14). It helps support and it also turns "look" into "forward", and people
+  forward without reading. Support gets by with a screenshot or lines selected by
+  hand, and `depth` with the terminal's own selection. The price is accepted:
+  support more often receives a picture rather than text.

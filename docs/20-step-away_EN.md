@@ -38,7 +38,8 @@ The last two sentences were added on 2026-09-14: the rule "say it before the tap
 
 ## How it looks to others
 
-- In an open conversation, instead of the input, a line saying **"stepped away"**. No return time, no time of departure.
+- In an open conversation, above the input, a label saying **"stepped away"**, and the input stays live: what is written waits for the return. No return time, no time of departure.
+  **The label is lifted by the returning person's first message in that conversation, not by the span — decided 2026-09-14** (review panel of 2026-09-11, S18). With three fixed spans, the moment the line vanished gave away which one was chosen. Opening the conversation does not lift it: the node does not know about visits. The price is named: people write to someone who is not there, and the label may hang until the conversation ends if the returning person stays silent in it. Before, the line stood in place of the input, "so nobody spends words on emptiness" [retired]: the words are not lost, they wait for delivery (`xor.ad/docs/chat_EN.md` §8.8).
 - Nowhere else: whoever liked your phrase sees only a vanished offer.
 
 ## After coming back
