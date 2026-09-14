@@ -16,7 +16,7 @@ A support contact button, reachable from the app at any time.
 ## Logic
 
 - The sent message lands in the `support_requests` table in the database beside the node — **the eleventh table of the first migration** (decided 2026-09-14, `xor.ad/docs/chat_EN.md` §13): otherwise the list of requests and the answer attached to the identity promised here would have nothing to stand on.
-- **A frozen session may write a new request** (decided 2026-09-14, `xor.ad/docs/chat_EN.md` §8.2): after the share burns it is the only thing besides recovery the node allows it. Earlier answers and the list of requests are not shown to it — whoever holds someone else's tab would read them.
+- **A session frozen by the PIN limit may write a new request** (decided 2026-09-14, `xor.ad/docs/chat_EN.md` §8.2): one a day, flagged for the team, and only while the identity has no other live session. Earlier answers, the list of requests and the "answer waiting" dot are not shown to it — whoever holds someone else's tab would see them. A device frozen by a move or by closing the identity gets no support: otherwise a lost phone would write on the identity's behalf.
 - A new ticket fires a notification (email/webhook) for the team.
 - **No number is promised for the reply time — decided 2026-08-29.** The line tells the truth: "we read everything, we do not answer at once — there are few of us". A number here would be a promise held by one person on holiday. The exception is a report of something unlawful: it enters the notice register and takes its deadlines, and that is said in a line of its own, because those deadlines are the law's rather than ours.
 - There's no automated handling — just logging the request and notifying the team.

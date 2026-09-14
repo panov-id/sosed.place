@@ -44,35 +44,37 @@ have destroyed their correspondence silently.
   speaks plainly.** The wording is fixed by the spec (`xor.ad/docs/chat_EN.md`
   §8.2) and must not drift:
 
-  > 3 attempts left. After that the correspondence on this device is gone —
-  > neither we nor you will be able to bring it back.
+  > 3 attempts left. After that this device is locked until the paper code.
 
 - **From the sixth attempt there is a wait, and it grows (decided 2026-09-14).** The
   sixth after 30 seconds, the seventh after 2 minutes, the eighth after 10 minutes, the
   ninth after an hour, the tenth after 4 hours; the lock says when to try again. The
-  node holds it, not the tab: whoever picked the phone up off the table cannot burn the
-  share in a minute (`xor.ad/docs/chat_EN.md` §8.2).
-- **The tenth mistake burns the node's share, and this device's correspondence is
-  gone for good.** The identity survives, but on this device it is frozen until the
-  paper code is entered: live phrases are taken down, table seats freed, and only
-  recovery and a new support request work; the history does not come back — there is
-  nothing left to decrypt it with (clarified 2026-09-14; this said "name, age and the
-  paper code go on working" [retired]). That is why the warning is mandatory and stands before the last attempt
+  node holds it, not the tab: whoever picked the phone up off the table cannot lock access
+  in a minute (`xor.ad/docs/chat_EN.md` §8.2). A correct PIN is not taken during the
+  wait either; a wait you did not cause means someone else is using your session — the
+  way out is the paper code.
+- **The tenth mistake locks access on this device until the paper code, and does not
+  erase the correspondence (decided 2026-09-14).** Live phrases are taken down, table
+  seats freed, and only recovery and one support request a day work. After the code
+  the old PIN opens the history again; if the PIN is forgotten, a new one is set and
+  this device's correspondence is lost. [retired] This said "burns the node's share, and
+  the correspondence is gone for good" — a stolen signing key erased someone's history
+  that way remotely. That is why the warning is mandatory and stands before the last attempt
   rather than after it.
-- **The PIN opens the lock; without it, only the paper code, and then this device's
-  correspondence is lost.** A move to another device does not open the lock
+- **The PIN opens the lock; without it, only the paper code, and if the PIN is
+  forgotten this device's correspondence is lost.** A move to another device does not open the lock
   (clarified 2026-09-14; this said "only the PIN unlocks it, the paper code does not"
   [retired]): the share belongs to the device, not to the identity
   (`xor.ad/docs/chat_EN.md` §8.2), and it cannot be reached from anywhere — not
   even from a live session of the same identity.
   **The lock has a "forgot your PIN?" link, and it leads to the paper code — decided
   2026-09-14, refined after the review panel the same day.** Without the old PIN the
-  only way in is recovery: the code mints a new share and a new PIN, and this device's
-  correspondence is erased for good — as after the tenth mistake. No code, no way
+  only way in is recovery: the code opens access and asks for a new PIN, and this device's
+  correspondence is lost — without the old PIN there is nothing to decrypt it with. No code, no way
   out: otherwise a stranger with a locked tab would set their own PIN and get a live
   identity (`xor.ad/docs/chat_EN.md` §8.2). [retired] This said "a new PIN with a new
-  share" — without the code. During an attack on the node, code entry may wait up to
-  15 minutes — the price of the shared guard against guessing
+  share" — without the code. While the node is under attack, code entry is closed with
+  no end — the price of the shared guard against guessing
   (`xor.ad/docs/protocol_EN.md` §8, item 7). [retired] "Until now the only way out was
   to get it wrong ten times on purpose" — ten mistakes are no way out any more.
 - **Change the PIN.** The PIN locks the disk, not the identity, and a PIN someone
