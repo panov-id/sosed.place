@@ -9,7 +9,7 @@ references now lead here.
 
 Read alongside:
 
-- [`01`…`17`](./) — the screens: what is on each and what it offers.
+- [`01`…`21`](./) — the screens: what is on each and what it offers.
 - [`../design/interface/`](../design/interface/) — the same screens, drawn.
 
 ---
@@ -149,7 +149,8 @@ they chose is not.
 **When the chat has ended for the other person, one line says so.** Otherwise an
 expired timer is indistinguishable from a snub: one falls silent and the other
 believes they are being ignored. One line removes the misunderstanding and gives
-away nothing beyond the fact.
+away nothing beyond the fact. **It is said when you open the conversation or try to
+write** (the 2026-09-10 rule, screen 7), not at the moment the other span runs out.
 
 **A chat that has ended cannot be written into.** If it is gone for Petya, Kolya
 sees that and spends no words: nothing goes into the void. And nothing reaches
@@ -162,8 +163,8 @@ shown fading: you can see it going, and there is time to answer.
 2026-09-04 after the review panel.** This said "the disappearance itself is
 silent — no headstones", and it argued with two screens at once: whoever had the
 chat open is left with a "this conversation has ended" headstone until they
-touch it (screen 8), and for the other person it sits in the list marked "ended"
-until their own span runs out (screen 7). The reason given there is stronger than
+touch it (screen 8), and for the other person it stays in the list until their own span runs out and is
+marked "ended" when they open it or try to write (screen 7, 2026-09-10). The reason given there is stronger than
 the old wording: a silent "you cannot write here" is indistinguishable from a
 fault. The promise that nothing stays is about the correspondence, not about the
 fact that the conversation is over.
@@ -365,9 +366,10 @@ mark is, the reader governs how wide their own feed is, and those two decisions 
 made by different people.
 
 **No location permission is asked for on arrival.** The first point is worked
-out from indirect signals, and that is enough for the feed to open at once. A
-person asks for a real fix themselves, with a button, when they want one — how,
-below.
+out from indirect signals, and that is enough for the feed to open at once. Nobody
+asks for a real fix: there is no "where am I" button, and the point is refined by
+hand on the diagram (edited 2026-09-14: this said "asks for a real fix themselves,
+with a button" [retired] — a leftover from before 2026-08-28, screen 3).
 
 ### Where the first point comes from
 
@@ -966,9 +968,11 @@ not for whoever changed their mind.
   node counting the attempts (ten). The share itself sits in the database
   encrypted under the node's key (edited 2026-08-21 after review). A share belongs
   to a device, not to an identity (removed 2026-09-07).
-- The browser may evict IndexedDB on its own when space runs out. The
-  conversation would vanish early — whether that counts as normal behaviour or
-  deserves a warning.
+- ~~The browser may evict IndexedDB on its own when space runs out~~ — **closed
+  2026-09-11** (`xor.ad/docs/chat_EN.md` §8.2) by the paper code, and the consequence
+  is not "the conversation vanishes early" but "the closed half of the key — that is,
+  the identity — vanishes from this device". Screen 2 says so before the code is
+  issued (edited 2026-09-14).
 - Several tabs at once: whose timer is authoritative and how they agree.
 - ~~Whether an explicit "forget this device" is needed separately from "delete
   everything"~~ — built under a different name on 2026-09-04, screen 12

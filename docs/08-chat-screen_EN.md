@@ -58,7 +58,7 @@ A private conversation between two people, opened after both accepted the match 
   The second limit, **2048 bytes of ciphertext** (`max_ciphertext_bytes`), is not shown to the person: with an honest 256 characters it is unreachable — even a string of nothing but emoji comes to 1404 bytes, and hitting 2048 takes 378 characters. It guards against a forged client, not against a real conversation.
 - **Two statuses: accepted and error (rewritten 2026-09-12).** "✓" means "the node took it and answers for delivery": if the other person is offline, the message waits for them while the conversation lives. An error gives a line with a retry and means only that the node refused. **There is no "delivered" and no "read"** and will not be: either would tell you whether the other person is online and when they opened the conversation.
 - **The silence timer is chosen here**, not when accepting the match, and can be changed at any moment. An hour by default. Each side has their own count and cannot see the other's (`00-mechanics_EN.md` §2).
-- **Expiry is announced in advance**: in its last minutes the conversation is shown fading. When it has ended for the other person, one line says so — otherwise an expired timer is indistinguishable from being snubbed.
+- **Expiry is announced in advance**: in its last minutes the conversation is shown fading. When it has ended for the other person, one line says so — **when you open the conversation or try to write**, not at the moment their span runs out (the 2026-09-10 rule, screen 7) — otherwise an expired timer is indistinguishable from being snubbed.
 - **An expired conversation disappears for whoever's span ran out — amended 2026-08-27.** It used to say "for both", which held while the span was shared. The span is now each person's own (§5 of the spec), and for the other it stays until their own span, marked "ended" (screen 7). Whoever had it on screen at that moment keeps a headstone reading "the conversation has ended" until they tap it, and it does not return to the list.
 - **The conversation key and the game board go out for both at the first death** (§8.13). **Clarified 2026-09-09:** the board goes out with the conversation, but no longer because its key did — the board no longer sits under it. It is held by the conversation's span rather than by its encryption, and it leaves together with the score. So neither side can write, even while the other still counts the conversation as alive: they keep their own history — it sits under the vault key, not the conversation key — but not the conversation.
 - **"End it" is not the same as expiry.** Silence is not a decision; a button is, and so it works symmetrically: it ends the conversation for both at once. The confirmation is mandatory, because the other side loses its history without having agreed to it.
@@ -73,7 +73,10 @@ A private conversation between two people, opened after both accepted the match 
     connection is back.
   - **The identity moved to another device** (the node closed the socket with
     code `4002`). Reconnecting is pointless: the conversation closes and the
-    person is told the identity now lives on another device.
+    person is told the identity now lives on another device. The vault key is
+    dropped from the tab's memory and the database is closed (clarified
+    2026-09-14): otherwise an open tab on a lost phone would keep reading the
+    history with a key derived earlier.
   - **The conversation ended** (code `4003`) — not a connection error but the
     tombstone described above.
   - **The app is out of date** (code `4004`) — the node does not support this
@@ -85,11 +88,18 @@ A private conversation between two people, opened after both accepted the match 
   not instant. While it runs — a skeleton of replies, not an empty screen: an
   empty screen, in a product where conversations disappear by themselves, reads
   as "everything was erased".
+- **"Something was here and you do not have it" — line added 2026-09-14.** If
+  the node's conversation is newer than the local history, the conversation shows
+  "you missed a message — ask them to send it again" (`xor.ad/docs/chat_EN.md`
+  §8.12). There is no button that signals the other person: asking works with an
+  ordinary reply, and a signal would be a second report of presence beside
+  "stepped away".
 - **Conversations are not moderated** — neither for rudeness nor for explicitness: they never leave the pair of devices. Only what is published to the feed is checked (`00-mechanics_EN.md` §5).
 - **There are no links in a conversation** — they are stripped, as in the feed; the one place a link lives is a neighbourhood offer (`00-mechanics_EN.md` §5).
 - **Encryption happens on the devices**: the key is derived by the two of them and the node carries ciphertext (`xor.ad/docs/chat_EN.md` §8.13). A conversation is not merely unchecked — there is nothing to read it with.
   **A game is the exception, and a person is told so plainly (2026-09-09).** The board and the moves are outside end-to-end encryption: only whoever sees them can keep to the rules. The node knows what you play and how, and does not know what you say. The warning on screen 6 carries this line too, but it belongs here as well: the conversation is where a person lives rather than passes through.
 - **History sits on the device** in IndexedDB, encrypted with the vault key made of the PIN and the node's share. It exists neither with us nor on another device.
+- **The other person changed device — dialog added 2026-09-14 after the review panel.** After someone moves or recovers their identity, the conversation stays silent until its key is reissued, and the other side sees the canon's question (`xor.ad/docs/chat_EN.md` §8.13): "The other person changed device. Issue new keys? Earlier messages will not come back". **There is no default consent**: two buttons of equal weight, "issue" and "not now". Under the question, one line: "it may not be them — whoever got hold of their paper code could change device too, and would have the same safety code". The code does not change, because it is derived from the long-term keys, so comparing it aloud cannot tell the owner from someone who stole the whole identity. Until this edit the dialog existed on no screen, although the canon calls it the defence for when an identity has been taken.
 - **A draft reply lives while the conversation is open and never reaches the disk — decided 2026-08-28.** Go out to the list and back, and the text is there; close the app, and it is gone. This **differs** from a phrase's draft (screen 4), which survives leaving the screen and sits in encrypted storage, and the difference is deliberate: publishing is an intention that outlives a screen, while a conversation disappears by itself, and a draft outliving it would outlive the thing that was meant to vanish.
 
 ## Open questions

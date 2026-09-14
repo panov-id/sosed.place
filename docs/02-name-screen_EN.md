@@ -80,7 +80,9 @@ begins.
 
 On the screen itself, not in small print:
 
-> **Write this code down on paper.** It is the only way to bring your identity back. We have no email and no password — lose the device or clear the site's data, and there is nothing to restore you with, and we cannot look the code up: we do not have it. It will not be shown a second time.
+> **Write this code down on paper.** It is the only way to bring your identity back. We have no email and no password — lose the device, clear the site's data, or let the browser erase it when it runs short of disk space, and there is nothing to restore you with, and we cannot look the code up: we do not have it. Nobody from support will ever ask for this code. It will not be shown a second time.
+
+Edited 2026-09-14 after the review panel: the quote now includes eviction by the browser — in the words of the mandatory text in `xor.ad/docs/chat_EN.md` §8.2 — and the line "nobody from support will ever ask for this code", which until then stood only in the "it's me" dialog, while the code is dictated precisely from this screen.
 
 A separate line about the conversations, because the code does not bring those back:
 

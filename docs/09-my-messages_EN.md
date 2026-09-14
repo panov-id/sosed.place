@@ -12,7 +12,7 @@ Everything a person has put into the feed and that is still alive: **phrases, of
 
   **It is shown here because there is nowhere else.** The author usually has no email — an identity is a key pair and we do not ask for electronic contact — and Art. 17(2) requires no letter in that case. The spec requires more (`xor.ad/docs/dsa/SPEC_EN.md` §7): silent removal contradicts the "a refusal is explained" principle, so the statement waits in the app and is shown at the next sign-in with that identity.
 
-  **It lives on the device, and it cannot live anywhere else — recorded 2026-09-04 after the review panel.** The node does not keep it: a rejected `feed_messages` row is deleted and the reason goes to the author (`xor.ad/docs/chat_EN.md` §13). So the block on top can only be assembled from local storage, and it now has its own row in the table in §9. Until this edit the screen promised to show something nobody stored: close the tab as the verdict lands, and there is nothing to show.
+  **It lives on the device, and it cannot live anywhere else — recorded 2026-09-04 after the review panel.** The node does not keep it: a rejected `feed_messages` row is deleted and the reason goes to the author (`xor.ad/docs/chat_EN.md` §8.3; edited 2026-09-14: this pointed at §13, "Build order"). So the block on top can only be assembled from local storage, and it now has its own row in the table in §9. Until this edit the screen promised to show something nobody stored: close the tab as the verdict lands, and there is nothing to show.
 - A list of what is published and not yet gone, each marked by type: phrase, offer, table.
 - A countdown timer to disappearance and a manual delete button on each entry.
 - A phrase and an offer carry their **like count** (settled 2026-08-27).
@@ -37,5 +37,5 @@ Everything a person has put into the feed and that is still alive: **phrases, of
 ## Open questions
 
 - ~~Whether manual deletion restores the quota~~ — the slot frees that instant (`00-mechanics_EN.md` §3).
-- ~~How this screen is opened from the main interface~~ — **from the feed, where the need arises** (decided 2026-09-02). People look for their own phrases where they see them; there will be no "me" section listing screens — every screen is entered from the place that makes you want it.
+- ~~How this screen is opened from the main interface~~ — **from the feed, where the need arises** (decided 2026-09-02). People look for their own phrases where they see them; every screen is entered from the place that makes you want it. **Screen 9 is the top of the "Me" screen** (screen 10): what is live above, settings below (edited 2026-09-14: this said "there will be no 'me' section listing screens" [retired], while a "Me" item has been in the bottom navigation since 2026-08-27).
 - ~~What "delete" means for a table~~ — **you get up and the table lives on** (decided 2026-08-28). The same as stepping away: nobody owns a table, and one person leaving does not take the game from the others. So the table's button is labelled differently from a phrase's: "get up", not "delete".

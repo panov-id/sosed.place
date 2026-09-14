@@ -45,8 +45,9 @@ An animation themed around neighbourliness, friendship and shared activities —
   landing sees two animations in a row.
 - **The screen's job is to show the character of the place** (decided 2026-08-28),
   so the animation stays the content rather than the background: the line and the
-  two entrances sit at the bottom and do not compete with it. Language and rules
-  are **not** added here — they belong on screen 2, where a person has already
+  two entrances sit at the bottom and do not compete with it. Rules
+  are **not** added here (the language is, as an icon, above; edited 2026-09-14:
+  this said "language and rules" [retired]) — they belong on screen 2, where a person has already
   stopped to read.
 - `prefers-reduced-motion` turns off the animation and the fades — the rule is shared (`00-mechanics_EN.md` §4).
 - **There are no live numbers on the splash — settled 2026-08-26, retiring them together with the zero rule.** "How many people are online nearby, how many messages in the last hour" used to stand here, and it is gone for two reasons, either of which would be enough on its own.
