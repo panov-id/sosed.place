@@ -753,7 +753,7 @@ untrue, and here they do not disagree anywhere except where it says so.
 |---|---|---|---|
 | a feed message: text, zone, people count, language | server | to show the feed | **4:20, then deleted outright** — not hidden, erased |
 | the "how many there were" counter | server | statistics | indefinitely, **without text and without author** |
-| business profile: email, name, address, status | server | not to post an envelope again | **a year from the last offer**, then deleted along with the complaints about it |
+| business profile: email, name, address, status | server | not to post an envelope again | **a year from the last offer**, then deleted along with the complaints about it; for `suspended`, the address hash and date stay one more year (2026-09-14) |
 | a complaint about an offer | server | to tell whether complaints are systematic | as long as the profile |
 | chat messages | **the device**, IndexedDB, Web Crypto | the conversation | the shorter of the two settings (§2) |
 | chat in transit | server | delivery | **not stored**; if the other side is offline, until delivered or until the chat's life ends, whichever comes first |
@@ -797,14 +797,17 @@ not out of strictness but because there is nothing to restore it from.
 **Who does the deleting.** Every duration needs a doer — a job, not an intention.
 
 **Recounted against the code on 2026-09-07**
-(`xor.ad/relay/node/src/lib/scheduled.ts`). There are **three** jobs, and each
-re-arms itself a day ahead:
+(`xor.ad/relay/node/src/lib/scheduled.ts`). There are **six** jobs (recounted again 2026-09-14: "three" [retired] — three more
+arrived on 2026-09-08), and each re-arms itself:
 
 | Job | What it prunes |
 |---|---|
 | `prune_pageviews` | page views, on their own 14-day window |
 | `prune_objects` | six collections in object storage: the audit log (a year), server logs, client errors (two collections) and CSP reports — 30 days each; the waitlist has no window, see below |
 | `prune_dsa_records` | Article 16 notices and the statements of reasons answering them, a year |
+| `prune_idempotency` | idempotency keys, a day; in batches, so the first pass holds no long locks |
+| `prune_magic_links` | unused panel sign-in links, an hour past expiry; comes back in a minute while any remain |
+| `prune_job_tombstones` | the queue's own jobs that gave up, 30 days |
 
 [retired] This used to read "today there are two: the page-view prune and message
 expiry". Wrong in both directions: `prune_objects` and `prune_dsa_records` went
@@ -827,7 +830,7 @@ beside its own sentence about an intention not being a doer.
   external event, not an open question.
 - Durations that genuinely have no doer: **a business profile and the complaints
   about its offers** (a year from the last offer) and **a support message** (a
-  year). Both rows stand in the table above, and none of the three jobs touches
+  year). Both rows stand in the table above, and none of the six jobs touches
   them (2026-09-07).
 - How long a report waits "until reviewed" if no review happens.
 - Backups: if they exist, everything we deleted lives on inside them. Their

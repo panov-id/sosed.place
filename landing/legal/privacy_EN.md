@@ -1,6 +1,6 @@
 # sosed — Privacy Policy
 
-**Last updated: 12 September 2026**
+**Last updated: 14 September 2026**
 
 ## 1. Who we are (controller)
 
@@ -40,7 +40,7 @@ sosed is **ephemeral, area-based, and low-identity by design**. We process the *
 - **A chat's contents** live on your device for the shorter of the two times the two of you chose. On our servers they are **kept only until delivered** — if you are away when one arrives, it waits for you, encrypted, until you come back or until the conversation ends, and we cannot read it at any moment of that. **What our node does keep is the outline of a conversation**: that one exists between two identities, when it last moved, the span each of you chose, and when it ended. Not a word of what was said, and no copy of it. **One thing more, since 2026-09-10: if you play a game inside a chat, the node keeps the state of that game** — the position on the board, whose turn it is, the players' hands and the score of the pair. It is not encrypted, because the node judges the play by the rules and a judge without the position cannot judge. No reply of yours is in there, it is tied to the conversation, and it is deleted the moment the conversation is.
 - **Profile data** (identity, year of birth, name, your settings) is kept while you use the Service in this browser.
 - **A waitlist email** is kept until launch and for one year after, then deleted — sooner if you ask.
-- **A report of illegal content**, the copy taken with it, and the explanation sent to the author: **1 year**, then deleted — an anonymous count is all that remains. **A business profile and the complaints about its offers**: kept while the business publishes, and deleted a year after its last offer.
+- **A report of illegal content**, the copy taken with it, and the explanation sent to the author: **1 year**, then deleted — an anonymous count is all that remains. **A business profile and the complaints about its offers**: kept while the business publishes, and deleted a year after its last offer. If the business was suspended for systematic justified complaints or at the venue's own "this is not us", a hash of the venue's address and the date of suspension are kept one more year, so that waiting out the year does not lift the suspension.
 - **A support message**: 1 year. **Detailed page views**: 14 days. **The admin audit log**: 1 year. **A nightly backup of our database**: 14 days, so anything you delete leaves our backups within a fortnight. **Server logs and client errors**: 30 days.
 - **Personal data is not written to logs** — not an email address, not the text of a message, not an identifier.
 
