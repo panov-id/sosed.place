@@ -79,6 +79,8 @@ Interface states for missing data or reached limits, rather than the normal usag
 - **The connection dropped at a table (added 2026-09-15).** The node holds the seat, not the tab: the move window runs on without a connection, after five minutes a pass is recorded, after three passes — a spectator (screen 19). A "No connection" line stands by the board and says the move time is running.
 - **The current paper code did not match on reissue (added 2026-09-15).** Reissuing only on presenting the current code (screen 12): it did not match — no new one is issued, and the current one stays valid.
 - **Appearance with no connection (added 2026-09-15).** The choice applies on the device at once and is saved with the identity by the first request once the connection is back (screen 22). This is not sending a message: there is nothing to lose and nothing to retry by hand.
+- **A phrase ended in the viewer (added 2026-09-15).** The phrase expired or was taken down while open full screen (screen 23): it gives way to the next one with a line rather than vanishing silently.
+- **The viewer reached the end of the batch (added 2026-09-15).** Next is "show more", as under the feed (screen 3); if there is nothing more, the line leads back to the feed.
 - **Geolocation does not exist as a state — edit of 2026-08-28.** Permission is never requested, so "no access" is not an edge case but the norm: the point is worked out from the time zone, the address and the language, labelled as approximate, the circle is wider, and everything is refined by hand on the diagram (`00-mechanics_EN.md` §4).
 
 - **A document changed while the person was away — state added 2026-08-29.**
@@ -163,6 +165,8 @@ twice, no explaining how the system is built, no "oops".
 | The connection dropped at a table | No connection | The move time runs without a connection: after five minutes a pass is recorded. | Retry |
 | The current code did not match on reissue | The code did not match | A new code is issued only on the valid one. The current one still works. | Try again |
 | Appearance with no connection | — | Applied. We will save it once the connection is back. | — |
+| A phrase ended in the viewer | The phrase has ended | It is no longer here. | Next |
+| The viewer reached the end | No more phrases | New ones will appear in the feed. | To the feed |
 | A document changed | Something changed | Read what is different and accept it — until you do, you cannot publish or open new conversations. Conversations already going carry on. | Read |
 
 Five lines are deliberately empty. "Stepped away" has no second line because we

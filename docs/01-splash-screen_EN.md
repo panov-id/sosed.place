@@ -24,10 +24,12 @@ An animation themed around neighbourliness, friendship and shared activities —
   can only be corrected after they have been read. The very person the line was
   written for — someone who does not understand where they have arrived — was the
   one who could not understand it. Here it is a language code or a globe with no
-  label; the full choice with a list stays on screen 2, and what is chosen
+  visible label (its name for a screen reader is "language", rule 5 of the accessibility minimum in `xor.ad/docs/accessibility-and-i18n_EN.md`); the full choice with a list stays on screen 2, and what is chosen
   travels there with the person. The cost is accepted: the splash now has four
   elements instead of three.
-- A "next" button — icon only, no text label.
+- ~~A "next" button — icon only, no text label~~ — **removed 2026-09-15 by the screen
+  cross-check**: since 2026-08-28 the way on is the two worded entries (above), and the icon
+  button was a fifth element on a screen that itself counts four.
 
 ## Logic
 
@@ -65,4 +67,5 @@ An animation themed around neighbourliness, friendship and shared activities —
 ## Open questions
 
 - **Settled by drawing (2026-09-15).** The exact set of icons for the animation is not defined yet.
-- **Settled by drawing (2026-09-15).** The exact icon for the "next" button is not defined yet.
+- ~~The exact icon for the "next" button~~ — the splash no longer has that button (removed
+  2026-09-15, above); the "next" icon remains on screen 2.

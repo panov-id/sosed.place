@@ -16,7 +16,7 @@ Everything a person has put into the feed and that is still alive: **phrases, of
 - A list of what is published and not yet gone, each marked by type: phrase, offer, table.
 - A countdown timer to disappearance and a manual delete button on each entry.
 - A phrase and an offer carry their **like count** (settled 2026-08-27).
-- A table carries the number of people sitting, a "return" button and a **"get up"** button (decided 2026-08-28: the table stays alive).
+- A table carries two numbers, how many play and how many watch (screen 19), a "return" button and a **"get up"** button (decided 2026-08-28: the table stays alive).
 - **Your table and the table you are sitting at have been different things since 2026-09-09.** You may set up any number of tables and sit at only one, so this list can hold **your own tables without you**. They carry different buttons and a different note:
   - at a table where you are sitting — "return" and "get up", as before;
   - at your own table without you — **"sit down"**, with a line saying it will lift you from the table you are at now: leaving somebody else's game silently is no more allowed from here than from the composer (screen 4);

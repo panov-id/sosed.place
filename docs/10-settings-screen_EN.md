@@ -43,6 +43,7 @@ They were not split for a simple reason: the bottom navigation has exactly four 
 - **Support** — your own requests and answers (screen 14), added 2026-09-14. A dot on this item and on "Me" in the bottom navigation when an answer is waiting: there is no permanent support icon, and the mark needed a place.
 - **What happened** — the console (screen 21), added 2026-09-14: what the product did and what did not work. Here rather than behind a gesture or an address, because this is where people go when something is off.
 - **Step away** — 20 minutes, an hour, or 4 hours (screen 20). From here, because there is nowhere else.
+- **Show hints again** (screen 24, added 2026-09-15): wipes the device's memory of closed hints.
 - **A default zone and mode for new phrases** (added 2026-08-28): the composer opens with them, and changing them per phrase is no longer required. The price is named: privacy stops being a decision made for **each** phrase, while different phrases often want different things — so the default is visible in the composer and editable right there. **A second price — added 2026-09-14 after the review panel:** the same point with the same step on different phrases links them to each other, and a default makes such a repeat the norm. The composer says so in a line next to the default (screen 4).
 - **Hidden phrases** — a list with a way back (added 2026-08-28, screen 5). Short-lived by construction: a hidden phrase disappears with its own span, like any other.
 

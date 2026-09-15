@@ -9,7 +9,7 @@ references now lead here.
 
 Read alongside:
 
-- [`01`…`22`](./) — the screens: what is on each and what it offers.
+- [`01`…`24`](./) — the screens: what is on each and what it offers.
 - [`../design/interface/`](../design/interface/) — the same screens, drawn.
 
 ---
@@ -142,7 +142,7 @@ their very first exchange halfway through.
 **Your own count is visible, the other's is not.** A chat always shows how much
 is left **for you**: it is your setting and your last message, and there is
 nothing to hide there. Of the other person neither the setting nor the number is
-shown — only the fading of the last minutes, that is, "about to go". Knowing that
+shown — only the fading in the last quarter of the span, that is, "about to go". Knowing that
 it is time to answer is necessary; reading someone's character off the length
 they chose is not.
 
@@ -156,7 +156,7 @@ write** (the 2026-09-10 rule, screen 7), not at the moment the other span runs o
 sees that and spends no words: nothing goes into the void. And nothing reaches
 Petya — what disappeared is not revived by someone else's activity.
 
-**The ending is announced in advance.** For its last minutes a message or a chat is
+**The ending is announced in advance.** For the last quarter of its span a message or a chat is
 shown fading: you can see it going, and there is time to answer.
 
 **Nothing stays of the content, but the fact that it ended is shown — edited
@@ -179,8 +179,10 @@ fact that the conversation is over.
   a review panel: this pointed at §5 of the spec, where the quarter is the
   **silence counter** rather than the fading, and `chat_EN.md` §8.6 says outright
   that the quarter is "a threshold for showing, not a span").
-- How long before the end a **feed phrase** fades is undecided. A share is no use
-  here: 4:20 is the same for everyone, so it needs one number.
+- ~~How long before the end a feed phrase fades~~ — **65 minutes: the last quarter of 4:20**
+  (decided 2026-09-15 by the screen cross-check). The share was decided on 2026-08-26 on
+  screen 8 and named there for the phrase as well, while this item stayed open; the one
+  number it asked for is that quarter.
 
 ---
 
@@ -455,7 +457,8 @@ answered:
   toggle-hunting on the first visit.
 - `prefers-reduced-motion` — fades and the splash animation switch off for people
   they make ill.
-- `pointer` and `hover` — a finger or a mouse; swipe or hover depends on it.
+- `pointer` and `hover` — a finger or a mouse; hover and the swipe in the phrase viewer
+  depend on it — the swipe exists only on a touch screen (screen 23; feed cards have no swipe, screen 5).
 - screen size, pixel density, window size — layout, and which images to fetch.
 - `navigator.connection` — how good the network is and whether to fetch the heavy
   things. Chromium only, so a hint and nothing more.

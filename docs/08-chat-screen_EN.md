@@ -41,6 +41,8 @@ A private conversation between two people, opened after both accepted the match 
 
 ## Logic
 
+- **On a wide screen** a conversation opens in the right column, 400 px wide, next to the list (screen 3, "Wide screen", decided 2026-09-15).
+
 - **Reading is not speaking** (`00-mechanics_EN.md`, added 2026-09-15 after the review panel): only your own message resets the conversation's timer — opening and reading it does not extend its span.
 - **Writing direction belongs to the message, not the page** (`00-mechanics_EN.md`): a line in Arabic or Hebrew runs right to left by itself among the others, without flipping the screen's layout.
 
@@ -64,7 +66,7 @@ A private conversation between two people, opened after both accepted the match 
   The second limit, **2048 bytes of ciphertext** (`max_ciphertext_bytes`), is not shown to the person: with an honest 256 characters it is unreachable — even a string of nothing but emoji comes to 1404 bytes, and hitting 2048 takes 378 characters. It guards against a forged client, not against a real conversation.
 - **Two statuses: accepted and error (rewritten 2026-09-12).** "✓" means "the node took it and answers for delivery": if the other person is offline, the message waits for them while the conversation lives. An error gives a line with a retry and means only that the node refused. **There is no "delivered" and no "read"** and will not be: either would tell you whether the other person is online and when they opened the conversation.
 - **The silence timer is chosen here**, not when accepting the match, and can be changed at any moment. An hour by default. Each side has their own count and cannot see the other's (`00-mechanics_EN.md` §2).
-- **Expiry is announced in advance**: in its last minutes the conversation is shown fading. When it has ended for the other person, one line says so — **when you open the conversation or try to write**, not at the moment their span runs out (the 2026-09-10 rule, screen 7) — otherwise an expired timer is indistinguishable from being snubbed.
+- **Expiry is announced in advance**: for the last quarter of its span the conversation is shown fading (clarified 2026-09-15 by the screen cross-check: this said "last minutes", while the 2026-08-26 decision below is a quarter). When it has ended for the other person, one line says so — **when you open the conversation or try to write**, not at the moment their span runs out (the 2026-09-10 rule, screen 7) — otherwise an expired timer is indistinguishable from being snubbed.
 - **An expired conversation disappears for whoever's span ran out — amended 2026-08-27.** It used to say "for both", which held while the span was shared. The span is now each person's own (§5 of the spec), and for the other it stays until their own span, marked "ended" (screen 7). Whoever had it on screen at that moment keeps a headstone reading "the conversation has ended" until they tap it, and it does not return to the list.
 - **The conversation key and the game board go out for both at the first death** (§8.13). **Clarified 2026-09-09:** the board goes out with the conversation, but no longer because its key did — the board no longer sits under it. It is held by the conversation's span rather than by its encryption, and it leaves together with the score. So neither side can write, even while the other still counts the conversation as alive: they keep their own history — it sits under the vault key, not the conversation key — but not the conversation.
 - **"End it" is not the same as expiry.** Silence is not a decision; a button is, and so it works symmetrically: it ends the conversation for both at once. The confirmation is mandatory, because the other side loses its history without having agreed to it.
@@ -74,9 +76,10 @@ A private conversation between two people, opened after both accepted the match 
   person's side; the protocol accounts for it (`xor.ad/docs/protocol_EN.md`
   §4.4) and the screen, until now, did not. What is seen:
   - **Reconnecting.** A bar in the conversation header, the input alive, what
-    was typed kept. A reply sent at that moment queues on the device with the
-    same error status as any undelivered one and goes out by itself once the
-    connection is back.
+    was typed kept. A reply sent at that moment queues on the device with no mark — the ✓ appears once the node accepts it — and
+    goes out by itself once the connection is back (clarified 2026-09-15 by the screen
+    cross-check: this said "the same error status", while an error means only a refusal
+    by the node, above).
   - **The identity moved to another device** (the node closed the socket with
     code `4002`). Reconnecting is pointless: the conversation closes and the
     person is told the identity now lives on another device. The vault key is

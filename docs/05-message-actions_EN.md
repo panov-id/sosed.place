@@ -7,7 +7,7 @@ The set of actions available on a message card in the feed: like, hide, block, r
 ## Message card elements
 
 - A like icon — visible right on the card, outside any menu.
-- A **"…"** button on the card — opens three actions (settled 2026-08-26: long-press is unobvious and does not work with a mouse, a swipe fights the scroll). They run from the quietest to the loudest: **hide the phrase**, **block the person**, **report**.
+- A **"…"** button on the card — opens three actions (settled 2026-08-26: long-press is unobvious and does not work with a mouse, a swipe fights the scroll; the full-screen phrase viewer has no scroll, and a swipe works there — screen 23, 2026-09-15). They run from the quietest to the loudest: **hide the phrase**, **block the person**, **report**.
 
 ## Logic
 

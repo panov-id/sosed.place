@@ -43,7 +43,9 @@ begins.
   back to the splash on 2026-09-10, the full list stayed here): taken from
   the browser by default, but someone whose phone is in a language they do not read
   has to be able to fix that before typing their own name.
-- A "next" button — icon only, no text label (same as screen 1).
+- A "next" button — an icon with no visible label; it has a worded name for a screen reader
+  ("next"), rule 5 of the accessibility minimum (`xor.ad/docs/accessibility-and-i18n_EN.md`;
+  edited 2026-09-15: this said "same as screen 1", and the splash no longer has the button).
 
 ## Logic
 
