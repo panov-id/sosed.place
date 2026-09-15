@@ -6,7 +6,7 @@ Access to the Terms of Service, Privacy Policy, and Community Guidelines.
 
 ## Screen elements
 
-- Links to three documents: Terms of Service, Privacy Policy, Community Guidelines.
+- Links to three documents — Terms of Service, Privacy Policy, Community Guidelines — and to the changes page (below).
 - **A "what changed" page — added 2026-09-15.** The new-edition bar links to `legal.html?doc=changes`: a section per edition, newest first, a few lines per document. Terms §19 promises to say what changed, and before this edit the bar opened the Terms themselves — the person had to find the difference. `check-legal-bar.mjs` goes red when the current edition has no section. The price: every future edition carries a required paragraph.
 - **A revision date under each link** (added 2026-08-29), and, if the text changed after the person **read** it, a note beside it: "changed since".
   **It is held by a read mark on the device — clarified 2026-09-10.** This used to

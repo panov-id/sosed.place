@@ -8,6 +8,7 @@ Each new edition of the Terms, the Privacy Policy or the Community Guidelines is
 
 **Terms**
 
+- **The posting limit is named** (§8): four messages per sliding hour.
 - **What happens when the rules are broken** is now a closed list (§15): a message is not published; after five automated refusals within an hour nothing goes to checking for 15 minutes; content goes for everyone after enough reports or is removed after a notice of illegal content; a link in an offer goes dark; an offer is rejected or removed; a venue is suspended after repeated justified complaints. We no longer reserve closing anyone's access at our own discretion.
 - **Automated decisions are named as such** (§11): a refusal to publish and the 15-minute pause are automatic and final; decisions on reports may be automatic, and every decision says whether automated means were involved.
 - **A link in an offer** goes dark by itself after reports from people who were already posting before the offer came out; the business is emailed at that moment (§10).

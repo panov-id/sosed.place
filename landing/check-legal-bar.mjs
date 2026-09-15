@@ -66,9 +66,17 @@ if (!barLink || barLink[1] !== "legal.html?doc=changes") {
   problems.push(`the bar links to ${barLink ? barLink[1] : "nothing"} rather than legal.html?doc=changes — "what changed" is promised and not shown`);
 }
 const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-const edition = ["terms_EN.md", "privacy_EN.md"]
-  .map((name) => readFileSync(join(landing, "legal", name), "utf8").match(/Last updated: (\d{1,2}) ([A-Z][a-z]+) (\d{4})/))
-  .filter(Boolean)
+// All three documents date the edition; each must carry a parseable "Last updated" — a
+// document without one silently dropped out before (review panel 2026-09-15), and the
+// guidelines were not counted at all.
+const datedDocs = ["terms_EN.md", "privacy_EN.md", "community-guidelines_EN.md"].map((name) => {
+  const m = readFileSync(join(landing, "legal", name), "utf8").match(/Last updated: (\d{1,2}) ([A-Z][a-z]+) (\d{4})/);
+  if (!m) problems.push(`legal/${name} has no "Last updated: D Month YYYY" line — the edition cannot be dated`);
+  else if (MONTHS.indexOf(m[2]) < 0) problems.push(`legal/${name}: unknown month "${m[2]}"`);
+  return m;
+});
+const edition = datedDocs
+  .filter((m) => m && MONTHS.indexOf(m[2]) >= 0)
   .map((m) => ({ text: `${m[1]} ${m[2]} ${m[3]}`, key: Number(m[3]) * 10000 + (MONTHS.indexOf(m[2]) + 1) * 100 + Number(m[1]) }))
   .sort((a, b) => b.key - a.key)[0];
 const changesFile = join(landing, "legal", "changes_EN.md");
