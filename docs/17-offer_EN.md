@@ -49,4 +49,4 @@ A neighbourhood offer — a post with a mandatory discount, and the only form of
 
 - ~~What marks an offer~~ — **the word "offer" and the size of the discount**, right on the card (settled 2026-08-26). A border or a background is not distinguishable in every theme, and a venue icon reads as a neighbour's avatar — advertising disguised as a person.
 - ~~Where the saved offers live~~ — **a local list on the device, and nothing about it ever leaves** (`xor.ad/docs/offers/SPEC_EN.md`; the screen kept this open although the spec answered it). What is undrawn is the button's state after the press, and the list itself.
-- The creation screen for a venue is not drawn: the fields are known from the spec, the look is not.
+- **Settled by drawing (2026-09-15).** The creation screen for a venue is not drawn: the fields are known from the spec, the look is not.

@@ -35,4 +35,4 @@ The section holding everything to do with talking: offers waiting for an answer,
 - ~~Sorting~~ — **by the time of the last line** (settled 2026-08-26): the list answers the question "where are people talking right now".
 - ~~The counter on the offers tab~~ — it counts offers **waiting for your answer** and clears as they are answered, not by visiting the tab (settled 2026-08-26). Otherwise one visits, does not answer, and the offer quietly expires with the phrases.
 - ~~A counter on the conversations tab~~ — **there is none** (2026-08-27).
-- How exactly the fading row and the "ended" row are shown — by colour, by a label, or both — is not drawn.
+- **Settled by drawing (2026-09-15).** How exactly the fading row and the "ended" row are shown — by colour, by a label, or both — is not drawn.

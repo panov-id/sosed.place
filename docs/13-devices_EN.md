@@ -79,4 +79,4 @@ Move the identity to another device **or raise it from the paper code** (decided
   The price is named: one more button on the screen and one more branch in the
   transfer flow.
 - ~~What to do if a move is started and abandoned~~ — **the "moving" state is described above** (decided 2026-08-29). Closed in the Russian half that day and left open here until 2026-09-03: the halves are checked for numbers, not for which of them still calls a question open.
-- How the two confirmation lines ("called itself", "when") are shown is not drawn.
+- **Settled by drawing (2026-09-15).** How the two confirmation lines ("called itself", "when") are shown is not drawn.

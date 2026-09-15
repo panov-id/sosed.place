@@ -42,4 +42,4 @@ The set of actions available on a message card in the feed: like, hide, block, r
 - ~~What an inactive like looks like~~ — settled 2026-08-26: the icon is **visible but muted**; pressing it gives the line "to like, say something yourself" and a way into the composer. Hiding it is not allowed: a person would never learn that likes exist, nor why they should publish.
 - ~~The report's category~~ — **there is none; a free-text justification instead** (2026-08-27, per the legal spec).
 - ~~How hiding differs from reporting~~ — **said in the report form rather than in the menu** (decided 2026-08-28, above).
-- How the list of hidden phrases looks in the settings — a line per phrase or a number that expands — is not drawn.
+- **Settled by drawing (2026-09-15).** How the list of hidden phrases looks in the settings — a line per phrase or a number that expands — is not drawn.

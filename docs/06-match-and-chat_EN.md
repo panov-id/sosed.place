@@ -38,5 +38,5 @@ What happens on a mutual like and how a conversation opens. **Edit of 2026-08-26
 ## Open questions
 
 - ~~The form of the card~~ — settled 2026-08-26: **your phrase on top, theirs beneath**, one under the other like the start of a conversation, with the button below. Side by side at 375px, two phrases of 128 characters become two narrow strips.
-- The format of the like line inside a conversation (text, a card of the phrase, an icon) is undefined.
+- **Settled by drawing (2026-09-15).** The format of the like line inside a conversation (text, a card of the phrase, an icon) is undefined.
 - ~~What the first to accept sees~~ — **only "no answer yet"** (2026-08-27). The item was listed as open in `00-mechanics_EN.md` §11 and as settled here at the same time; it is now settled the same way in both.

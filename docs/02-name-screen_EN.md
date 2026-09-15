@@ -94,8 +94,8 @@ A separate line about the conversations, because the code does not bring those b
 
 ## Open questions
 
-- The name field's placeholder is not defined yet.
-- Whether the warning about losing the identity is shown only here or stays reachable in settings.
+- ~~The name field's placeholder is not defined yet~~ — **"What should we call you"** (decided 2026-09-15): a question, not a sample name — people copy samples.
+- ~~Whether the warning about losing the identity is shown only here or stays reachable in settings~~ — **wherever a new paper code is on the screen: here and on reissue in screen 12** (decided 2026-09-15, follows from screen 12). There is no standing settings item with the warning: there is nothing to warn about when no code is on the screen.
 - ~~A name length limit~~ — **24 graphemes, refused by the node** (settled 2026-08-26). The item sat here as open while the number stood a paragraph above in this same file; what was missing was the rule on the node, and now it exists.
 - ~~The format of the code~~ — **four groups of four, Crockford base32 without `I`, `L`, `O`, `U`**, confirmed with two of the four groups. Not a decision but a transfer from the spec: it was written there and missing here.
 - ~~What happens if the person closes the tab between seeing the code and confirming it~~ — the answer stood in this screen's own "Logic": there is no identity, and registration starts again with a new code.

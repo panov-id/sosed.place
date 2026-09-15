@@ -64,5 +64,5 @@ An animation themed around neighbourliness, friendship and shared activities —
 
 ## Open questions
 
-- The exact set of icons for the animation is not defined yet.
-- The exact icon for the "next" button is not defined yet.
+- **Settled by drawing (2026-09-15).** The exact set of icons for the animation is not defined yet.
+- **Settled by drawing (2026-09-15).** The exact icon for the "next" button is not defined yet.

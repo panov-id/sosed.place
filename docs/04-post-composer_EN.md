@@ -46,7 +46,7 @@ The screen from which anything at all appears in the feed. Opened by the "Say" b
 
 ## Open questions
 
-- The send button's form (icon vs. text) is not defined yet.
-- How switching between the "phrase" and "table" tabs looks — a toggle, segments or two buttons — is not drawn.
+- **Settled by drawing (2026-09-15).** The send button's form (icon vs. text) is not defined yet.
+- **Settled by drawing (2026-09-15).** How switching between the "phrase" and "table" tabs looks — a toggle, segments or two buttons — is not drawn.
 - ~~What happens to a half-set-up table if the person leaves the screen~~ — **the draft stays, decided 2026-08-28**, and the rule is one for both tabs. What was typed lives **on the device**, in the same encrypted storage as conversations (§9 of the mechanics), and disappears with it: on moving an identity, on recovery, and when the share burns. A draft never reaches the node — otherwise unchecked text would sit with us, which the whole construction avoids.
-- How the quota remainder is shown — a number, dots or a line — is not drawn.
+- **Settled by drawing (2026-09-15).** How the quota remainder is shown — a number, dots or a line — is not drawn.

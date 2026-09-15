@@ -50,7 +50,7 @@ The application's main screen. Short messages from people nearby, **the newest o
 
 ## Open questions
 
-- The exact filter icon is not defined yet.
-- How exactly a table and an offer are labelled in the stream — by a word, a frame or an icon — is not drawn; all that is settled is that both are labelled and both run in the common stream (2026-08-26).
+- **Settled by drawing (2026-09-15).** The exact filter icon is not defined yet.
+- **Settled by drawing (2026-09-15).** How exactly a table and an offer are labelled in the stream — by a word, a frame or an icon — is not drawn; all that is settled is that both are labelled and both run in the common stream (2026-08-26).
 - ~~Default radius values~~ — **3 km, from 500 m to 25 km** (settled 2026-08-26, stated above in this same file).
 - ~~The posting screen~~ — described separately, screen 4.

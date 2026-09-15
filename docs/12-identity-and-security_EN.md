@@ -122,6 +122,7 @@ have destroyed their correspondence silently.
   heading rather than implied by layout.
 - **The cost is shown as numbers before the press, not as words after** — the same
   rule as on the step-away screen (screen 20).
+- **A new paper code is shown with the same warning as on screen 2 — decided 2026-09-15.** "Write this code down on paper…" stands wherever a code appears on the screen: when the identity is created and on reissue here; "it will not be shown a second time" applies to every code issued.
 - **Changing the PIN and reissuing the code do not touch the identity**: the
   `identity_id` is the same and the chats are in place. What changes is keys, not
   the person.
