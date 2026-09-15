@@ -8,7 +8,7 @@ Helping a new person work out how things work here. Decided 2026-09-15: **not a 
 
 - **One line or a short card next to what it is about**, with a "got it" button. A hint does not cover what it explains and does not pause the feed.
 - **No more than one at a time.** Meeting two mechanics at once, the second waits until the first is closed.
-- **Shown once.** Which hints are closed is remembered by the device, not by the identity and not by the node: the node has no need to know "this person liked something for the first time". A private window is a new person (`00-mechanics_EN.md` §1), and the hints show there again.
+- **Shown once.** Which hints are closed is remembered by the device, not by the identity and not by the node: the node has no need to know "this person liked something for the first time". A private window is a new person (`00-mechanics_EN.md` §1), and the hints show there again. **"Start over" wipes this memory** together with the identity (added 2026-09-15 after the review panel): a new identity is a new person, and the old flags would remain a trace of what was done here.
 - **One requires confirmation — the swipe** (screen 23): a gesture that hides a neighbour does not act until the person has said they understood. The others close with a tap or go by themselves once the person has done what they describe.
 - **"Show hints again"** — an item under "Me" (screen 10): it wipes the device's memory of closed hints.
 
@@ -16,20 +16,20 @@ Helping a new person work out how things work here. Decided 2026-09-15: **not a 
 
 | When | Where | What it says |
 |---|---|---|
-| the first like | screen 5 | the author sees a like only if they like back; then an offer to talk opens |
+| the first like | screen 5 | the author sees how many likes, not whose; an offer to talk comes if they like back; a like can be taken back until then |
 | the first offer to talk | screen 6 | a conversation starts only if both agree; "not now" tells the other nothing |
 | the first open conversation | screen 8 | each side has its own span of silence; a conversation fades and ends for the two at different times |
 | the first hide | screens 5 and 23 | hiding is not blocking: the author will not know, and it can be brought back under "Me" |
 | the first swipe in the viewer | screen 23 | right is like, left is hide; the gesture does not act before "got it" |
-| the first table in the feed | screen 19 | one can sit at one table; as many play as there are seats, the rest watch |
-| the first offer in the feed | screen 17 | this is an advertisement with a discount, marked with a word; "save" keeps the discount until its term |
+| the first table in the feed | screen 19 | one can sit at one table; whoever sits watches and talks, and plays by applying for the next game |
+| the first offer in the feed | screen 17 | this is an advertisement with a discount, marked with a word; a venue's "save" keeps the discount until its term, a private author's like offers to talk at once |
 
 The "first visit with no phrase of your own" line is not a hint but a screen 11 state: it stays while there is no phrase of one's own and is not closed by a tap (`11-empty-and-edge-states_EN.md`).
 
 ## Logic
 
 - **This screen's edge states and their texts — screen 11** (`11-empty-and-edge-states_EN.md`).
-- **A hint does not explain how the system is built** — the same rule of voice as for the lines of screen 11: what a person sees and what will happen, without "node" or "queue".
+- **A hint does not explain how the system is built** — the same rule of voice as for the lines of screen 11 ("we do not explain how the system is built"): what a person sees and what will happen.
 - **Accessibility.** A screen reader announces a hint politely, without taking focus; only the swipe confirmation moves focus, because the gesture does not work without it. The "got it" button is at least 44 px (`xor.ad/docs/accessibility-and-i18n_EN.md`).
 - **Languages.** Hint strings live in the shared translation dictionary like any app string and are translated into the storefront's languages.
 - **The `depth` terminal** shows the same hints as one line in the same place; there is no swipe there, so nothing to confirm.

@@ -24,7 +24,7 @@ The application's main screen. Short messages from people nearby, **the newest o
   **The bounds are not labelled with numbers — settled 2026-08-26.** The handle simply stops: a stated bound would point out where the wall is and what number to claim in order to get past it. The stop is drawn to read as the end of the scale, not as a frozen interface.
   **For an adult the right end is "no limit", not a number.** The band has no ceiling, and an invented one such as 65+ would cut off older neighbours for no reason.
   **When the band has shifted** — the person got older and the saved filter was clamped into the new one — a single line says so on their next visit. Changing someone's feed in silence is not allowed.
-- **Radius filter** — **a diagram, not a map (decided 2026-08-28)**: a circle, the radius handle, the distance in words and the place named. **3 km by default, from 500 m to 25 km** (settled 2026-08-26). Three kilometres is a whole district: the feed is full from the first day, and a person does not hit emptiness before understanding why they came.
+- **Radius filter** — **a diagram, not a map (decided 2026-08-28)**: a circle, the radius handle with "−" and "+" steps beside it (dragging is doubled by a tap, WCAG 2.5.7; added 2026-09-15 after the review panel), the distance in words and the place named. **3 km by default, from 500 m to 25 km** (settled 2026-08-26). Three kilometres is a whole district: the feed is full from the first day, and a person does not hit emptiness before understanding why they came.
   **No face draws a map — and that is a decision about privacy, not about cost.** A tile is a request, and it tells whoever serves it which square a person is looking at; from a third party it comes with their IP as well. Proxying tiles through our own node does not help: the node then knows the same thing, and the whole of §4 of the mechanics is built on the opposite. So there are no streets in the browser or in the terminal: a circle, a number of metres, a density band and **the district's name in words** — labelled as approximate.
   **Naming the place requires a gazetteer** (a consequence named right away): turning coordinates into "Kolonaki, Athens" without an external service is only possible with a set of places of our own. The list is **delivered to the device** together with the area, and it works both ways — the caption under the circle and **search by name: type a district or a city and the circle moves there** (decided 2026-08-28). The search is local, so no record of "what place a person searched for" exists with us or with a third party. The price: the list is coarse — districts and cities, no streets.
   **Under the circle it says how many are talking in there right now** (settled 2026-08-26). Not an exact number but a step: `nobody here yet` · `a few` · `about a dozen` · `dozens` · `hundreds`. Otherwise the handle is dragged blind — a person does not know whether to pull further, and ends up in emptiness or in somebody else's district.
@@ -33,21 +33,29 @@ The application's main screen. Short messages from people nearby, **the newest o
 
 ## Wide screen (decided 2026-09-15)
 
-From a window width of 900 px the app lays out in three columns, as in the July prototype
-(`xor.ad/docs/app-prototype-spec_EN.md` §6.1), and each scrolls on its own:
+From a window width of 900 px the app lays out in columns after the July prototype
+(`xor.ad/docs/app-prototype-spec_EN.md` §6.1), and each scrolls on its own. **The third column
+appears only when a conversation is open** (clarified 2026-09-15 after the review panel):
+three columns at once left the feed two hundred pixels at 900 px.
 
 - **The feed** — flexible, on the left; the phrase viewer (screen 23), the composer
   (screen 4) and "Me" (screen 10) open in this same column.
 - **Conversations** (screen 7) — 300 px, in the middle.
-- **The open conversation** (screen 8) — 400 px, on the right; while none is open, it
-  holds the line "pick a conversation".
+- **The open conversation** (screen 8) — 400 px, on the right, only while it is open. From
+  1030 px (330 + 300 + 400) it stands next to the list; between 900 and 1030 px the open
+  conversation takes the list's place, and "back" returns to it.
+- **The other screens** — the match (6), "Me" and settings (9, 10), identity, moving,
+  support and documents (12–15), stickers, the offer, the board and the table (16–19),
+  stepping away, the console and appearance (20–22) — open in the feed column, with a
+  "to the feed" button.
 
 There is no bottom navigation on a wide screen: "Say" and "Me" sit in the feed header,
 and the feed and conversations are in view anyway. Below 900 px there is one column and the
 bottom navigation, as on every screen. The prototype's collapsing of columns into rails and
 its `Refresh` / `Auto` buttons are **not** taken: the feed tops up with "show more" (below),
 and auto-refresh would shift a phrase from under a reader's eyes. The price is named: screens
-3, 7 and 8 each have two layouts in the mock-ups.
+3, 7 and 8 each have two layouts in the mock-ups, and between 900 and 1030 px a conversation
+covers the list.
 
 ## Logic
 

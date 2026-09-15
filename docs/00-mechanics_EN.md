@@ -142,7 +142,7 @@ their very first exchange halfway through.
 **Your own count is visible, the other's is not.** A chat always shows how much
 is left **for you**: it is your setting and your last message, and there is
 nothing to hide there. Of the other person neither the setting nor the number is
-shown — only the fading in the last quarter of the span, that is, "about to go". Knowing that
+shown — only the fading in the last quarter of **your** span, that is, "about to go". Knowing that
 it is time to answer is necessary; reading someone's character off the length
 they chose is not.
 
@@ -939,6 +939,7 @@ holds it for the same periods as the server**.
 |---|---|---|
 | the encrypted UID | local storage | until the person clears the browser |
 | settings: conversation lifetime, language filter, zone | local storage | same |
+| closed hints (screen 24) | local storage | until the person clears the browser or starts over (2026-09-15) |
 | the consent choice and its date | **the server**, `legal_acceptances` | proof of acceptance: a date and the digest of the text's substance | edited 2026-08-31; [retired] it used to live in local storage |
 | conversations: messages, times, status | IndexedDB, encrypted with Web Crypto | until the conversation expires (§2) |
 | the draft of an unsent phrase or table | the same, encrypted | until it is sent or cleared (2026-08-28) |
@@ -1066,6 +1067,12 @@ a card: on it are the two phrases that caused it, and a button. The chat appears
 when both have pressed; while only one has, the other sees an offer and the first
 sees that there is no answer yet. When the other person was last online is not
 shown: that is about them, not about the conversation.
+
+**A like can be taken back at any time until an offer to talk has come of it — decided
+2026-09-15.** A second tap removes the like: the count on the phrase goes down, and the
+author learns only that number, as they learned of the like. Once the offer has opened,
+the like is spent — declining is the "not now" button on the card (screen 6). The price is
+named: the count on a phrase can move up and down, and the author sees it.
 
 **An offer lives exactly as long as both phrases live.** Either one expires and the
 match goes with it, because the meeting of moods was what tied them together.

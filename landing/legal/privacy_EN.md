@@ -96,7 +96,7 @@ We take reasonable technical and organizational measures to protect data. No met
 
 ## 12. Local storage / cookies
 
-We use browser **local storage** for your device identity and preferences (name, age, language, and a copy of your appearance — theme, contrast and accent — whose original is kept with your identity, §3). We do not use advertising cookies and we do not sell or share data with ad networks.
+We use browser **local storage** for your device identity and preferences (name, age, language, and a copy of your appearance — theme, contrast and accent — whose original is kept with your identity, §3; and which of the in-app hints you have closed). We do not use advertising cookies and we do not sell or share data with ad networks.
 
 **Analytics on the website — removed on 2026-09-10.** This used to describe Google Analytics 4, off by default and loaded only after you pressed "accept" in a cookie banner. There is no banner any more and no analytics script: visits are counted by our own counter on our own server, which sets no cookie, sends nothing to anybody, and keeps detail for 14 days before reducing it to a number. Nothing here now rests on your consent, which is also why nothing here asks a 13-year-old for a parent's.
 

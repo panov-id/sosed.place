@@ -13,6 +13,7 @@ Each new edition of the Terms, the Privacy Policy or the Community Guidelines is
 **Privacy Policy**
 
 - **New data named:** your appearance in the app — theme, contrast step and accent colour — is kept with your identity on our node, separately for each service you use it through, so that it moves with the identity (§3), on the same legal basis as the rest of the Service (§4); it lives as long as the identity and is deleted at once when you close it (§5), and the copy on your device is named among local storage (§12).
+- **Hints:** which of the in-app hints you have closed is remembered in your browser's local storage, and starting over clears it (§12).
 
 ## Edition of 14 September 2026
 

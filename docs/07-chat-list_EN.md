@@ -16,7 +16,7 @@ The section holding everything to do with talking: offers waiting for an answer,
 
 - **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
 
-- **On a wide screen** the section is the middle column, 300 px wide, and the open conversation is the right one (screen 3, "Wide screen", decided 2026-09-15).
+- **On a wide screen** the section is the second column, 300 px wide; the open conversation stands to its right from 1030 px, and below that takes the list's place (screen 3, "Wide screen", decided 2026-09-15).
 - The tabs live **inside the section**, not in the bottom navigation: that has exactly four items (`Feed` / `Chats` / `Say` / `Me`), and a fifth does not fit a narrow screen (`xor.ad/docs/chat_EN.md` §9).
 - An **offer** is a match waiting on acceptance — yours, theirs, or both. It disappears when either of the two phrases expires.
 - A **conversation** enters the list once both have accepted, and lives until silence eats it — each side by their own count (`00-mechanics_EN.md` §2).

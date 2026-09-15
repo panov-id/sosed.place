@@ -165,7 +165,7 @@ twice, no explaining how the system is built, no "oops".
 | The connection dropped at a table | No connection | The move time runs without a connection: after five minutes a pass is recorded. | Retry |
 | The current code did not match on reissue | The code did not match | A new code is issued only on the valid one. The current one still works. | Try again |
 | Appearance with no connection | — | Applied. We will save it once the connection is back. | — |
-| A phrase ended in the viewer | The phrase has ended | It is no longer here. | Next |
+| A phrase ended in the viewer | The phrase has ended | It is no longer here. | — |
 | The viewer reached the end | No more phrases | New ones will appear in the feed. | To the feed |
 | A document changed | Something changed | Read what is different and accept it — until you do, you cannot publish or open new conversations. Conversations already going carry on. | Read |
 
