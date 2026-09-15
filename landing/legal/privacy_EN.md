@@ -1,6 +1,6 @@
 # sosed — Privacy Policy
 
-**Last updated: 14 September 2026**
+**Last updated: 15 September 2026**
 
 ## 1. Who we are (controller)
 
@@ -18,6 +18,7 @@ sosed is **ephemeral, area-based, and low-identity by design**. We process the *
 - **Area.** An approximate area worked out from your time zone, IP address and browser language, or a point you place by hand. Two settings are yours: how far you look, and how precisely you are seen. **We never ask your browser for your exact coordinates — there is no button that does, and the permission is never requested.** Your point is placed from those indirect signals and moved by hand on a diagram; a permission nobody can grant is a permission that cannot leak.
 - **Age.** The age you enter, and your age-filter preference, to keep the space appropriate.
 - **Name.** The display name you optionally set.
+- **Appearance.** The theme (light, dark or as in your system), the contrast step and the accent colour you chose in the app. We keep them with your identity on our node, so that they come with the identity when you move it or raise it with the paper code. Nobody else sees them, and they are used for nothing but drawing the app for you.
 - **Content.** The messages, likes (plus/skip), and chats you create — most of which fades and is deleted automatically.
 - **Waitlist email.** If you request access: your email address, the source of the request, which face you came through, and the language, colour and light-or-dark setting you were using — the last three so the email we send you looks like the site you asked from.
 - **Technical data.** Basic logs (e.g. IP, timestamp, user agent) needed for security and to run the Service.
@@ -39,6 +40,7 @@ sosed is **ephemeral, area-based, and low-identity by design**. We process the *
 - **A feed message** lives 4 hours 20 minutes and is then **deleted, not hidden**. What remains is a counter of how many there were, without the text and without the author.
 - **A chat's contents** live on your device for the shorter of the two times the two of you chose. On our servers they are **kept only until delivered** — if you are away when one arrives, it waits for you, encrypted, until you come back or until the conversation ends, and we cannot read it at any moment of that. **What our node does keep is the outline of a conversation**: that one exists between two identities, when it last moved, the span each of you chose, and when it ended. Not a word of what was said, and no copy of it. **One thing more, since 2026-09-10: if you play a game inside a chat, the node keeps the state of that game** — the position on the board, whose turn it is, the players' hands and the score of the pair. It is not encrypted, because the node judges the play by the rules and a judge without the position cannot judge. No reply of yours is in there, it is tied to the conversation, and it is deleted the moment the conversation is.
 - **Profile data** (identity, year of birth, name, your settings) is kept while you use the Service in this browser.
+- **Appearance** (§3): while the identity lives; closing the identity deletes it.
 - **The "stepped away" label** is kept on each of your live conversations while you are away, and goes when you write or make a move in that conversation, or when the conversation ends.
 - **The moments of your publications and refusals, and the date of your first publication** (§3): while the identity lives.
 - **A waitlist email** is kept until launch and for one year after, then deleted — sooner if you ask.
@@ -94,7 +96,7 @@ We take reasonable technical and organizational measures to protect data. No met
 
 ## 12. Local storage / cookies
 
-We use browser **local storage** for your device identity and preferences (name, age, language, theme). We do not use advertising cookies and we do not sell or share data with ad networks.
+We use browser **local storage** for your device identity and preferences (name, age, language, and a copy of your appearance — theme, contrast and accent — whose original is kept with your identity, §3). We do not use advertising cookies and we do not sell or share data with ad networks.
 
 **Analytics on the website — removed on 2026-09-10.** This used to describe Google Analytics 4, off by default and loaded only after you pressed "accept" in a cookie banner. There is no banner any more and no analytics script: visits are counted by our own counter on our own server, which sets no cookie, sends nothing to anybody, and keeps detail for 14 days before reducing it to a number. Nothing here now rests on your consent, which is also why nothing here asks a 13-year-old for a parent's.
 

@@ -1,8 +1,18 @@
 # sosed — What changed in the documents
 
-**Last updated: 14 September 2026**
+**Last updated: 15 September 2026**
 
 Each new edition of the Terms, the Privacy Policy or the Community Guidelines is listed here, newest first, in a few plain lines. The documents themselves are the text that applies; this page only tells you where to look.
+
+## Edition of 15 September 2026
+
+**Terms**
+
+- **The order of the feed is corrected** ("What decides what you see"): the newest messages are at the top, not at the bottom. The feed is still chronological, with no ranking; only the direction was described wrongly.
+
+**Privacy Policy**
+
+- **New data named:** your appearance in the app — theme, contrast step and accent colour — is kept with your identity on our node so that it moves with the identity (§3); it lives as long as the identity (§5), and the copy on your device is named among local storage (§12).
 
 ## Edition of 14 September 2026
 

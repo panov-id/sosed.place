@@ -78,6 +78,7 @@ Interface states for missing data or reached limits, rather than the normal usag
 - **A move with no connection (added 2026-09-15).** The move code appears after an exchange with the node (screen 13): with no connection no code is shown and the previous device confirms nothing — the identity stays here.
 - **The connection dropped at a table (added 2026-09-15).** The node holds the seat, not the tab: the move window runs on without a connection, after five minutes a pass is recorded, after three passes — a spectator (screen 19). A "No connection" line stands by the board and says the move time is running.
 - **The current paper code did not match on reissue (added 2026-09-15).** Reissuing only on presenting the current code (screen 12): it did not match — no new one is issued, and the current one stays valid.
+- **Appearance with no connection (added 2026-09-15).** The choice applies on the device at once and is saved with the identity by the first request once the connection is back (screen 22). This is not sending a message: there is nothing to lose and nothing to retry by hand.
 - **Geolocation does not exist as a state — edit of 2026-08-28.** Permission is never requested, so "no access" is not an edge case but the norm: the point is worked out from the time zone, the address and the language, labelled as approximate, the circle is wider, and everything is refined by hand on the diagram (`00-mechanics_EN.md` §4).
 
 - **A document changed while the person was away — state added 2026-08-29.**
@@ -161,6 +162,7 @@ twice, no explaining how the system is built, no "oops".
 | A move with no connection | No connection | The move code will appear once there is a connection. The identity is still here. | Retry |
 | The connection dropped at a table | No connection | The move time runs without a connection: after five minutes a pass is recorded. | Retry |
 | The current code did not match on reissue | The code did not match | A new code is issued only on the valid one. The current one still works. | Try again |
+| Appearance with no connection | — | Chosen on this device. It will be saved with your identity once there is a connection. | — |
 | A document changed | Something changed | Read what is different and accept it — until you do, you cannot publish or open new conversations. Conversations already going carry on. | Read |
 
 Four lines are deliberately empty. "Stepped away" has no second line because we

@@ -6,14 +6,14 @@
       "sha256": "5d89c55d9502c5ec2c31f8c0b0c2941307a362e4b0272ea06e1d3b06208c071f"
     },
     "privacy": {
-      "date": "2026-09-14",
+      "date": "2026-09-15",
       "reaccept": "required",
-      "sha256": "d0e397c7bcf5d285ab20c3b0981063504a036241db662becec61d7cfe9f668c0"
+      "sha256": "2dd1da96d5c07e8d09251ec240515a8c3fa45d22fc0760cfc0fc1a75e3eeb20e"
     },
     "terms": {
-      "date": "2026-09-14",
+      "date": "2026-09-15",
       "reaccept": "required",
-      "sha256": "b5d42b7112c57cd2c3a88454505c84a90f0747bae7f25c337c41de9387fc0abd"
+      "sha256": "901d295dcc47c5e34a91831eeee8c2c10bb8ebdb4e2983668b806aaf546ab1a5"
     }
   }
 }

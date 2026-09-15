@@ -9,7 +9,7 @@ references now lead here.
 
 Read alongside:
 
-- [`01`…`21`](./) — the screens: what is on each and what it offers.
+- [`01`…`22`](./) — the screens: what is on each and what it offers.
 - [`../design/interface/`](../design/interface/) — the same screens, drawn.
 
 ---

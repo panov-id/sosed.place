@@ -1,6 +1,6 @@
 # sosed — Terms & Conditions
 
-**Last updated: 14 September 2026**
+**Last updated: 15 September 2026**
 
 ## 1. Who we are
 
@@ -80,7 +80,7 @@ These community rules are also set out, in plain language, in our **Community Gu
 
 ## 11. How the feed is put together, and how to report
 
-- **What decides what you see.** The feed is **chronological** — newest at the bottom, like a chat. What reaches you is decided by **the area and reach you chose** and by **the age filter you set**, and by nothing else. We do not profile you, we do not rank by what you opened or how long you looked, and there is no personalised recommendation model. Content fades on a timer (§9), so the feed empties on its own rather than by our choosing.
+- **What decides what you see.** The feed is **chronological** — newest at the top. What reaches you is decided by **the area and reach you chose** and by **the age filter you set**, and by nothing else. We do not profile you, we do not rank by what you opened or how long you looked, and there is no personalised recommendation model. Content fades on a timer (§9), so the feed empties on its own rather than by our choosing.
 - **Offers sit in the same feed.** An offer appears among ordinary posts at a fixed rate — no more than one offer per ten posts (§10) — and is never ordered ahead of them.
 - **Offers are commercial, and identifiable as such.** An offer carries the name of the business it comes from and the discount it promises, so it reads as a business's message rather than a neighbour's. **Nobody pays us for placement**: there is no sponsorship, no boosting, and no third party paying to have something shown.
 - **No targeting on people.** Offers are never targeted by profiling — not on your behaviour, not on special categories such as health, beliefs, or origin, and not on data about minors. **Place is the only thing** that decides who can see an offer.

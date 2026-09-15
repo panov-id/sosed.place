@@ -37,8 +37,7 @@ They were not split for a simple reason: the bottom navigation has exactly four 
   app, not a fact about the person: the first decides what language the labels are
   in, the second whose messages to show (`00-mechanics_EN.md` §8). Taken from the
   browser by default, and from the choice afterwards.
-- A theme switch: light, dark, or as in the system.
-- Contrast — **three steps**: normal, raised, maximum (settled 2026-08-26).
+- **Appearance** — theme, contrast and accent: screen 22 (added 2026-09-15). Theme and contrast sat here — light, dark or as in the system; three steps, settled 2026-08-26 — and moved there together with their rules.
 - **The default silence span applies to new conversations only** (decided 2026-08-28): it does not touch those already open. The price is named — a person changes the default and does not see why the current conversation still runs on the old one — but the opposite would mean one tap in the settings killing a conversation with an hour left in it.
 - **My notices** — notices of illegal content sent from this device, and the decisions on them by receipt (`xor.ad/docs/dsa/SPEC_EN.md` §6), added 2026-09-15. A dot on this item and on "Me" when a decision arrives; the decision's text only after a tap. The list lives on the device, not with the identity.
 - **Support** — your own requests and answers (screen 14), added 2026-09-14. A dot on this item and on "Me" in the bottom navigation when an answer is waiting: there is no permanent support icon, and the mark needed a place.
@@ -59,8 +58,8 @@ They were not split for a simple reason: the bottom navigation has exactly four 
 
 - **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
 
-- Theme and contrast apply immediately, no confirmation needed.
-- **The theme lives in two places and is one state:** the house mark in the header flips it with a tap, here it is an explicit choice of three (`xor.ad/docs/chat_EN.md` §11). Two controls, one value; they must not drift apart.
+- Appearance applies immediately, no confirmation needed (screen 22).
+- **The accent lives in two places and is one state** (decided 2026-09-15): the house mark in the header cycles it with a tap, screen 22 gives an explicit choice from the storefront's set (`xor.ad/docs/chat_EN.md` §11). Two controls, one value; they must not drift apart. [retired] This said "The theme lives in two places": in the app the house mark flipped the theme while on the landing it cycled the accent, so the "shared behaviour" of §11 did not hold.
 - **The social link field is gone — edit of 2026-08-26.** There are no links in the product, neither in the feed nor in a conversation: they are stripped, and the one place a link lives is a neighbourhood offer (`00-mechanics_EN.md` §5). The field was a leftover of screen 12, dropped along with it.
 - There is no sexual-content setting here, because there is nothing to switch on: such content is rejected before publication for everyone alike.
 - **Links to the three legal documents** — terms, privacy, community rules (screen 15). Here, because this is the only place a person comes back to them after registration.
