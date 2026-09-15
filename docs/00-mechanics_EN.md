@@ -654,7 +654,7 @@ machine.
   `xor.ad/docs/refusal-wordings_EN.md`: six sections, a text for every class. §10
   of this same file has known that since that day, while the question stood here
   for another ten (removed 2026-09-07).
-- **There is no appeal against an automatic refusal, and since 2026-09-10 the terms say so.** They used to promise "write to support and a person will look again" — a single promise for two different decisions, and therefore untrue for one of them: a decision **on a report** is taken by a person and can be looked at again; a refusal **before publication** is taken by a model, and there is nobody to appeal to. The document now distinguishes the two instead of covering both with one sentence.
+- **There is no appeal against an automatic refusal, and since 2026-09-10 the terms say so.** They used to promise "write to support and a person will look again" — a single promise for two different decisions, and therefore untrue for one of them: a decision **on a report** may be automatic (the threshold, a link going dark) or taken by a person, and a person looks at it again on a reply (edited 2026-09-14: "is taken by a person" [retired]); a refusal **before publication** is taken by a model, and there is nobody to appeal to. The document now distinguishes the two instead of covering both with one sentence.
 - **There is no appeal** — settled. A refusal is final; the text is edited and
   sent again. The price is measured and stated plainly: about 7% of ordinary
   messages are blocked for nothing, and their authors have nowhere to go. What
