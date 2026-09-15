@@ -55,6 +55,31 @@ if (!/localStorage\.setItem\(\s*["'][a-z]{2}-legal["']/.test(scripts)) {
   problems.push("the accepted edition is never stored — the bar cannot remember it was seen");
 }
 
+// The bar promises "what changed" (Terms §19): its link must open the list of changes,
+// and the list must carry a section for the edition the documents announce. Added
+// 2026-09-15 — before, the link opened the Terms and the promise had nothing behind it.
+import { existsSync } from "node:fs";
+import { dirname, join } from "node:path";
+const landing = dirname(file);
+const barLink = html.match(/id="legalUpdate"[\s\S]*?href="([^"]+)"/);
+if (!barLink || barLink[1] !== "legal.html?doc=changes") {
+  problems.push(`the bar links to ${barLink ? barLink[1] : "nothing"} rather than legal.html?doc=changes — "what changed" is promised and not shown`);
+}
+const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const edition = ["terms_EN.md", "privacy_EN.md"]
+  .map((name) => readFileSync(join(landing, "legal", name), "utf8").match(/Last updated: (\d{1,2}) ([A-Z][a-z]+) (\d{4})/))
+  .filter(Boolean)
+  .map((m) => ({ text: `${m[1]} ${m[2]} ${m[3]}`, key: Number(m[3]) * 10000 + (MONTHS.indexOf(m[2]) + 1) * 100 + Number(m[1]) }))
+  .sort((a, b) => b.key - a.key)[0];
+const changesFile = join(landing, "legal", "changes_EN.md");
+if (!existsSync(changesFile)) {
+  problems.push("legal/changes_EN.md is missing — the bar has nothing to show");
+} else if (!edition) {
+  problems.push("no Last updated date in terms_EN.md or privacy_EN.md");
+} else if (!readFileSync(changesFile, "utf8").includes(`## Edition of ${edition.text}`)) {
+  problems.push(`legal/changes_EN.md has no "## Edition of ${edition.text}" — the current edition is announced and not described`);
+}
+
 if (problems.length) {
   console.error("check-legal-bar: FAIL");
   for (const problem of problems) console.error(`  - ${problem}`);

@@ -91,6 +91,7 @@
       <div class="seg" id="docSeg">
         <button data-doc="terms" class="on">Terms</button>
         <button data-doc="privacy">Privacy</button>
+        <button data-doc="changes">Changes</button>
       </div>
     </div>
   </header>
@@ -158,7 +159,7 @@
     return html;
   }
 
-  const FILES = { terms: "terms", privacy: "privacy" };
+  const FILES = { terms: "terms", privacy: "privacy", changes: "changes" };
   const params = new URLSearchParams(location.search);
   let DOC = Object.keys(FILES).includes(params.get("doc")) ? params.get("doc") : "terms";
   // Legal documents are maintained in English only (single authoritative version).
