@@ -26,8 +26,8 @@ Repositories:
   each serving fully translated HTML in the server response.
 - Reciprocal `hreflang` across all languages + `x-default` pointing at the root.
 - `robots.txt` + `sitemap.xml` covering every language URL.
-- GA4 wired through an environment flag; disabled on dev/uat.
-- Cookie banner: GA4 does not load before consent.
+- ~~GA4 wired through an environment flag~~ — removed 2026-09-11, code deleted 2026-09-15.
+- ~~Cookie banner~~ — deleted together with GA4 on 2026-09-15.
 
 ## Checklist
 
@@ -78,12 +78,12 @@ Russian lives at `/ru/`, like every other language in its own folder.
 
 ### C. Analytics
 
-- [x] **C1. `analyticsId` flag in `config.js`** — empty by default; `deploy-landing.sh`
+- [x] ~~**C1. `analyticsId` flag in `config.js`**~~ (flag and code deleted 2026-09-15) — empty by default; `deploy-landing.sh`
       injects `ANALYTICS_ID`, and the production workflow takes it from a secret. dev and
       uat stay empty, meaning no counter and no banner.
-- [x] **C2. GA4 loader** — loads `gtag.js` lazily, only when an ID and consent are present.
-- [x] **C3. CSP** — widened `script-src`, `img-src`, `connect-src` for the Google domains.
-- [x] **C4. Waitlist submit event** — `waitlist_signup` carrying the page language.
+- [x] ~~**C2. GA4 loader**~~ (deleted 2026-09-15) — loads `gtag.js` lazily, only when an ID and consent are present.
+- [x] ~~**C3. CSP**~~ (Google's domains dropped from the policy 2026-09-15) — widened `script-src`, `img-src`, `connect-src` for the Google domains.
+- [x] ~~**C4. Waitlist submit event**~~ (deleted 2026-09-15) — `waitlist_signup` carrying the page language.
 - [x] **C5. Our own page counter** (2026-07-27) — `POST /pageview` on the relay, beside
       `/client-error`: the key decides the brand, the record lands in that tenant's
       space, and the panel reads it on a "Page views" page built on `LogExplorer`.
@@ -91,16 +91,16 @@ Russian lives at `/ru/`, like every other language in its own folder.
       address, no user agent and no identifier, and nothing survives on the device
       beyond a `sessionStorage` flag that dies with the tab. The referrer is reduced to
       its host (a full referrer can carry search terms) and the width to a
-      mobile/tablet/desktop bucket. GA4 stays behind consent and supplies the detail;
+      mobile/tablet/desktop bucket. GA4 stayed behind consent and supplied the detail (deleted 2026-09-15);
       this supplies an honest baseline with no gaps. CSP was untouched: the request
       goes to our own backend.
 
 ### D. Cookie consent
 
-- [x] **D1. Consent banner** — in the landing's visual language, "accept" / "essentials
+- [x] ~~**D1. Consent banner**~~ (deleted 2026-09-15) — in the landing's visual language, "accept" / "essentials
       only" buttons, choice stored in `localStorage` (`ss-consent`).
-- [x] **D2. GA4 stays unloaded before consent.** Decline means no counter at all.
-- [x] **D3. Banner copy in the `T` dictionary** — 4 keys across all 17 languages,
+- [x] ~~**D2. GA4 stays unloaded before consent.**~~ (GA4 deleted 2026-09-15) Decline means no counter at all.
+- [x] ~~**D3. Banner copy in the `T` dictionary**~~ (deleted 2026-09-15) — 4 keys across all 17 languages,
       completeness confirmed by `check-i18n.mjs`.
 - [x] **D4. Analytics and cookies section in `legal/privacy_EN.md`** + link from the banner.
 - [x] **D5. A "cookies" button in the footer.** It appears once a choice has been made,
@@ -150,7 +150,7 @@ neighbro (10 languages, 12 URLs), both green.
 
 ## Needed from the user
 
-- **GA4 Measurement ID** (`G-…`) — create the property in Google Analytics.
+- ~~**GA4 Measurement ID**~~ — not needed: GA4 deleted 2026-09-15.
 - **Google Search Console verification token.**
 
 The code is flag-driven, so both values can be filled in later without touching markup.
@@ -226,7 +226,7 @@ Ordered by impact. Items G1–G3 are, in my view, worth doing in the same pass.
       2026-07-27 from `relay_keyless_requests_total`, which kept climbing after the
       production deploy). Served as a `.js` file, it inherited the month-long asset
       cache — while its whole purpose is the opposite: switching the backend, the
-      publishable key and the GA4 id without a rebuild. A returning visitor would
+      publishable key (and, back then, the GA4 id) without a rebuild. A returning visitor would
       have kept a keyless config for a month, and a revoked key would have stayed
       usable just as long. Fixed by `deploy/bunny-config-cache-rule.sh`, which adds
       `/config.js` to the short-TTL rule (as a second condition — the first already

@@ -17,7 +17,6 @@
 #                     directory lives in /tmp and would otherwise be invisible)
 #   SITE_ORIGIN       passed through to the script when set
 #   RELAY_API_URL     same; the security policy names the relay it may talk to
-#   ANALYTICS_ID      same; without it the policy allows nothing of Google's
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
@@ -46,5 +45,4 @@ exec docker run --rm \
   --env SITE_ORIGIN \
   --env RELAY_API_URL \
   --env RELAY_REPORT_URL \
-  --env ANALYTICS_ID \
   "$NODE_IMAGE" node "$@"

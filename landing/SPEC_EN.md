@@ -41,8 +41,7 @@ On generated pages the language switcher navigates to a URL; in the raw source (
   30 register, §9: it was the last basis resting on consent, and consent drags Art. 8
   GDPR along. The earlier text: "GA4 is switched on by the `analyticsId` flag in
   `config.js`, which deploy fills from `ANALYTICS_ID`. Empty means no counter and no banner — which is exactly how dev and uat run.
-- Without explicit consent `gtag.js` is never downloaded. Declining means zero outbound requests.
-- Consent can be withdrawn through the "cookies" button in the footer, which brings the banner back.
+- **The GA4 loader and the consent banner were removed from the code on 2026-09-15**, with Google's hosts in the security policy: an empty flag left analytics one deploy variable away from switching on silently. [retired] This said "without explicit consent `gtag.js` is never downloaded" and "consent can be withdrawn through the cookies button".
 - Only production is indexable: any `LANDING_ENV` other than `prod` gets `Disallow: /`, a `noindex` meta tag in every HTML file, and no sitemap.
 
 ## Open questions

@@ -15,8 +15,6 @@
 #   BUNNY_PULL_ZONE_ID       numeric Pull Zone ID (for cache purge)
 #   BUNNY_API_KEY            account API key (purge; falls back to storage key)
 #   SOURCE_TAG               waitlist source tag (default: sosed.place-landing)
-#   ANALYTICS_ID             GA4 measurement ID; empty (dev, uat) disables analytics
-#                            and the consent banner entirely
 #   LANDING_ENV              dev | uat | prod (default: dev). Only prod is crawlable;
 #                            anything else gets a Disallow-all robots.txt and noindex
 #   SEARCH_CONSOLE_TOKEN     Google Search Console verification token (prod only)
@@ -102,7 +100,7 @@ LEGAL_REVISION="$(legal_revision)"
 echo "== legal revision: ${LEGAL_REVISION}"
 LEGAL_MANIFEST="$(legal_manifest)"
 
-# The bar is the whole of Article 14(6) here — there is no account to mail — and
+# The bar is the whole of Article 14(2) here — there is no account to mail — and
 # both of its failure modes are invisible on the day they appear: markup nobody
 # wires, or an edition somebody keeps by hand. Gate the deploy on it.
 bash "$ROOT_DIR/deploy/run-node.sh" landing/check-legal-bar.mjs landing/index.html
@@ -117,7 +115,6 @@ window.__XOR_CONFIG__ = {
   reportUrl: "${RELAY_REPORT_URL:-${RELAY_API_URL}}",
   publishableKey: "${RELAY_PUBLISHABLE_KEY:-}",
   alphaUrl: "${ALPHA_URL:-}",
-  analyticsId: "${ANALYTICS_ID:-}",
   legalRevision: "${LEGAL_REVISION}",
   // Per document: the date it declares, the digest of its substance, and what a
   // change to it costs a person who already accepted — "required" sends them to
@@ -279,7 +276,7 @@ elif [ -n "${BUNNY_PULL_ZONE_ID:-}" ] && [ -n "${BUNNY_API_KEY:-}" ]; then
   # RELAY_REPORT_URL идёт сюда наравне с RELAY_API_URL: политика обязана
   # разрешить тот хост, на который страница шлёт уведомление по ст.16, иначе
   # connect-src отклонит запрос молча и заявитель не увидит ничего.
-  HEADERS_JSON="$(RELAY_API_URL="$RELAY_API_URL" ANALYTICS_ID="${ANALYTICS_ID:-}" \
+  HEADERS_JSON="$(RELAY_API_URL="$RELAY_API_URL" \
     RELAY_REPORT_URL="${RELAY_REPORT_URL:-}" \
     RUN_NODE_MOUNT="$STAGE" bash "$ROOT_DIR/deploy/run-node.sh" \
     landing/security-headers.mjs "$STAGE")"

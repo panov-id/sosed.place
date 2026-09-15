@@ -13,7 +13,6 @@
 //   publishableKey  — relay API key naming this brand ("" = the relay falls back
 //                     to resolving the brand from the request host)
 //   alphaUrl        — where "enter the alpha" goes after signup ("" = hidden)
-//   analyticsId     — GA4 measurement ID; "" = no analytics and no consent banner
 //   legalRevision   — the date the Terms/Policy last changed, taken from the
 //                     documents at deploy time; "" = the "documents changed"
 //                     bar stays hidden, which is right for a local copy
@@ -22,6 +21,5 @@ window.__XOR_CONFIG__ = {
   reportUrl: "",
   publishableKey: "",
   alphaUrl: "",
-  analyticsId: "",
   legalRevision: "",
 };

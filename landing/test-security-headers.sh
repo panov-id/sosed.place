@@ -36,8 +36,8 @@ printf '%s' '<!doctype html><html><head><base href="/">
 printf '%s' '<!doctype html><html><body><p style="color:red">x</p><script>window.lang="ru"</script></body></html>' \
   > "$WORK/stage/ru/index.html"
 
-build() { # build <relay> [analytics id] [report host]
-  RELAY_API_URL="$1" ANALYTICS_ID="${2:-}" RELAY_REPORT_URL="${3:-}" \
+build() { # build <relay> [unused — was the analytics id, removed 2026-09-15] [report host]
+  RELAY_API_URL="$1" RELAY_REPORT_URL="${3:-}" \
     node "$BUILDER" "$WORK/stage" 2>&1
 }
 
@@ -159,7 +159,7 @@ else
   fi
 fi
 
-# --- what the policy says, with a relay and no analytics ---------------------
+# --- what the policy says, with a relay -------------------------------------
 
 GOOD="$(build "https://relay.example")"
 if [ $? -ne 0 ]; then
@@ -226,42 +226,12 @@ check("'unsafe-hashes' is present, because attributes are",
 # broke the home page once.
 check("base-uri is 'self'", "base-uri 'self'" in csp, csp)
 
-check("nothing of Google's without an analytics id",
+check("nothing of Google's in the policy",
       "google" not in csp, csp)
 
 sys.exit(1 if failed else 0)
 PY
 [ $? -eq 0 ] || failed=$((failed + 1))
-
-# --- with analytics ----------------------------------------------------------
-
-WITH_GA="$(build "https://relay.example" "G-TEST")"
-if [ $? -ne 0 ]; then
-  fail "analytics builds" "$WITH_GA"
-else
-  printf '%s' "$WITH_GA" > "$WORK/ga.json"
-  python3 - "$WORK/ga.json" <<'PY'
-import json, sys
-data = json.load(open(sys.argv[1]))
-csp = {h["name"]: h["value"] for h in data["headers"]}["Content-Security-Policy"]
-failed = 0
-def check(name, condition, detail=""):
-    global failed
-    if condition:
-        print(f"  ok   {name}")
-    else:
-        failed += 1
-        print(f"  FAIL {name} — {detail}")
-check("the tag manager is allowed to load",
-      "https://www.googletagmanager.com" in csp, csp)
-check("analytics may be talked to",
-      "https://www.google-analytics.com" in csp, csp)
-check("analytics is recorded as on", data["counted"]["analytics"] is True,
-      str(data["counted"]))
-sys.exit(1 if failed else 0)
-PY
-  [ $? -eq 0 ] || failed=$((failed + 1))
-fi
 
 echo
 if [ "$failed" -ne 0 ]; then

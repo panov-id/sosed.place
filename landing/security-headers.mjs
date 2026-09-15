@@ -109,20 +109,6 @@ const report = origin("RELAY_REPORT_URL");
 // Firefox and Safari honour. No relay means no endpoint, and the directives are
 // left out rather than pointed at nothing.
 const reportTo = relay ? `${relay}/csp-report` : "";
-// Analytics is production-only and consented; without an id, nothing of Google's
-// is allowed at all rather than allowed and unused.
-const analytics = process.env.ANALYTICS_ID
-  ? {
-    script: ["https://www.googletagmanager.com"],
-    connect: [
-      "https://www.google-analytics.com",
-      "https://region1.google-analytics.com",
-      "https://analytics.google.com",
-    ],
-    img: ["https://www.google-analytics.com"],
-  }
-  : { script: [], connect: [], img: [] };
-
 const csp = [
   "default-src 'self'",
   // 'self' rather than 'none': the per-language pages are served from /ru/, /de/
@@ -136,14 +122,14 @@ const csp = [
   // X-Frame-Options — costs nothing and covers older browsers.
   "frame-ancestors 'none'",
   "form-action 'self'",
-  `img-src 'self' data: ${analytics.img.join(" ")}`.trim(),
+  "img-src 'self' data:",
   "font-src 'self'",
   // 'unsafe-hashes' is what lets a hash apply to a style attribute rather than
   // only to a <style> block. It does not loosen script-src, and the hashes are
   // recomputed here on every deploy, so markup can be edited freely.
   `style-src 'self' 'unsafe-hashes' ${[...styles, ...styleAttributes].join(" ")}`,
-  `script-src 'self' ${[...scripts, ...analytics.script].join(" ")}`.replace(/\s+/g, " "),
-  `connect-src 'self' ${[relay, report, ...analytics.connect].filter(Boolean).join(" ")}`.trim(),
+  `script-src 'self' ${[...scripts].join(" ")}`.replace(/\s+/g, " "),
+  `connect-src 'self' ${[relay, report].filter(Boolean).join(" ")}`.trim(),
   ...(reportTo ? [`report-uri ${reportTo}`, "report-to csp"] : []),
   "upgrade-insecure-requests",
 ].join("; ");
@@ -171,6 +157,5 @@ console.log(JSON.stringify({
     inline_styles: styles.size,
     style_attributes: styleAttributes.size,
     relay: relay || "(not set)",
-    analytics: Boolean(process.env.ANALYTICS_ID),
   },
 }, null, 2));

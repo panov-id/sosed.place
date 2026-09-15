@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Verify the "the documents changed" bar is wired, not just present.
 //
-// Article 14(6) is signposted by that bar and by nothing else — there is no
+// Article 14(2) is signposted by that bar and by nothing else — there is no
 // account to mail. The failure mode is silent in both directions:
 //
 //   markup with no behaviour   the bar ships hidden and never appears. This is
