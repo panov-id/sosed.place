@@ -55,6 +55,12 @@ Interface states for missing data or reached limits, rather than the normal usag
 - **The move timed out — a pass was recorded (added 2026-09-14).** The move window ran out and the engine passed on the person's behalf (`table.move.window`, screen 19). The line stands by the board, not only in the console: the console is opened by someone already looking for something, and here the person does not yet know what to look for.
 - **Three passes — you are watching now (added 2026-09-14).** A third pass in a row made the person a spectator (`table.pass.limit`). A line and a "Watch" button; an application for the next game can be made once a place frees up. Shown **only to the person themselves** — nobody else is told separately.
 - **A report moves into a notice of illegal content (added 2026-09-14).** Support cannot take such a text, so the app opens the Article 16 form with it already in the field (screen 14). A line above the form: "this looks like a report of something illegal — your text is here, confirm and send", and under it "we will show the decision here; clear your browser data and you will not see it — leave an email" (edited 2026-09-15: a receipt on the device, `xor.ad/docs/dsa/SPEC_EN.md` §6; [retired] this said "without an email the decision will not reach you" while the decision on a notice went by email only). A report moved silently looks like one that went missing.
+- **You were asked to leave the table (added 2026-09-15).** Two of three said "enough" (screen 19). The line does not name who voted and does not lock anyone out: leaving is shown the door, not barred, and one can sit down again if the table is visible.
+- **The table is gone (added 2026-09-15).** The table went out on silence while the person was looking at it (screen 19). The line stands by the board, not only in the console (screen 21): otherwise the person writes into nothing.
+- **A game for two ended (added 2026-09-15).** The other person stepped away, and for two, one leaving ends the game (screens 18 and 20). The board is gone; the conversation, if alive, goes on.
+- **That move is not allowed (added 2026-09-15).** The engine stopped a move the game's rules do not let through (screen 18). The move is not counted and the turn has not passed.
+- **A decision on your notice (added 2026-09-15).** The device asked by the receipt, and there is a decision (`xor.ad/docs/dsa/SPEC_EN.md` §6): a dot on "Me" → "My notices", the decision's text only after a tap.
+- **An offer's link is switched off (added 2026-09-15).** After reports the link of this offer no longer opens; the offer itself is live (screen 17). A line stands in place of the jump rather than silence.
 - **Your own table with nobody sitting at it (added 2026-09-10).** An empty table does not reach the selection and goes out on silence; only its author sees it, in the list of their own (screen 9). The line explains why it is not in the feed — otherwise the author reads it as a fault.
 - **Nothing in "Offers" (added 2026-09-15).** Nobody is waiting for your answer. The line says where offers come from and invites nowhere: an offer cannot be summoned, only received (screen 7).
 - **Nothing in "Conversations" (added 2026-09-15).** Not a single open conversation; the line says how one opens and leads to the feed (screen 7).
@@ -67,7 +73,10 @@ Interface states for missing data or reached limits, rather than the normal usag
   The feed reads as usual; at the first attempt to publish or open a chat the
   node answers `legal_reacceptance_required` (`xor.ad/docs/protocol_EN.md` §6),
   and the person lands on a screen listing the documents that changed, with one
-  checkbox. Reading is left alone **deliberately**: someone who came to read a
+  checkbox. **What exactly waits for the checkbox — clarified 2026-09-15 by protocol §6:** phrases, table
+  lines and applications (these are publication) and opening a new conversation; a message in a
+  conversation already open and a move in a game — no: a conversation under way is not interrupted by
+  changed documents. Reading is left alone **deliberately**: someone who came to read a
   reply should get the reply, not a legal text. The guidelines never come here —
   their new revision is recorded silently (screen 15).
 
@@ -125,7 +134,13 @@ twice, no explaining how the system is built, no "oops".
 | Paper code entry is closed | Not taking codes right now | Someone is guessing codes against the node, so entry is closed for everyone. Your identity is intact — try later. | — |
 | The PIN cannot be changed offline | No connection | A new PIN has to be agreed with us. The old PIN keeps working meanwhile. | Retry |
 | This device was not used for a year | It has been a while | Sign in with your paper code. The old correspondence on this device will not open again. | Enter the code |
-| A document changed | Something changed | Read what is different and accept it — writing does not work until you do. | Read |
+| You were asked to leave the table | You left the table | Most of those sitting asked. You can sit down again if the table is visible. | To the feed |
+| The table is gone | The table went out | It fell silent, and the table is no more. | To the feed |
+| A game for two ended | The game ended | The other person stepped away, and there is no game for two without them. | — |
+| That move is not allowed | Not like that | The rules do not let this move through. It is still your turn. | — |
+| A decision on your notice | There is a decision | A decision was taken on your notice. | Open |
+| An offer's link is switched off | The link is off | After reports this link no longer opens. The offer itself is still here. | — |
+| A document changed | Something changed | Read what is different and accept it — until you do, you cannot publish or open new conversations. Conversations already going carry on. | Read |
 
 Three lines are deliberately empty. "Stepped away" has no second line because we
 do not know when they are back and will not invent it. "Waiting for the first
