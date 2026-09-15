@@ -41,6 +41,11 @@ A private conversation between two people, opened after both accepted the match 
 
 ## Logic
 
+- **Reading is not speaking** (`00-mechanics_EN.md`, added 2026-09-15 after the review panel): only your own message resets the conversation's timer — opening and reading it does not extend its span.
+- **Writing direction belongs to the message, not the page** (`00-mechanics_EN.md`): a line in Arabic or Hebrew runs right to left by itself among the others, without flipping the screen's layout.
+
+- **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
+
 - **The product introduces people; keeping in touch is yours — said out loud
   2026-09-10.** This is the first place it is stated plainly, and stating it is needed
   because the product leads to a meeting — the terms warn outright that it ends in

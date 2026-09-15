@@ -55,6 +55,8 @@ The last two sentences were added on 2026-09-14: the rule "say it before the tap
 
 After an hour of continuous use, one line — "you have been here an hour: step away?" — closing with a tap and not returning that day. The hour is counted on the device: a visible tab plus a touch within the last three minutes (`00-mechanics_EN.md` §13).
 
+- **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
+
 ## Open questions
 
 - ~~How to show the cost of leaving with a dozen conversations~~ — **one sentence with two numbers** (decided 2026-08-30): "3 phrases will vanish, 2 conversations out of 7 will not survive". A list of names is rejected deliberately: an inventory of the people you are abandoning, placed in front of the leave button, is guilt as a list — precisely the device used to hold people. The price is accepted: a person will not see which conversation they are losing, and will not get to write one last line.

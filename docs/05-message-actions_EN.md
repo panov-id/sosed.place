@@ -11,6 +11,8 @@ The set of actions available on a message card in the feed: like, hide, block, r
 
 ## Logic
 
+- **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
+
 - **A like is available only if you have a live phrase of your own in the feed** (`00-mechanics_EN.md` §11). Otherwise the button is inactive and says why: a match counts only while both phrases are alive, so a like without one of your own would go nowhere.
 - **A mutual like opens not a chat but an offer to talk**, accepted by both (screen 6).
 - **Hide the phrase.** The quietest action: the phrase disappears from your feed and from nowhere else. The author learns nothing, their feed does not change, the like counter is untouched, and nothing goes into the moderation queue. It is a viewer's filter, not a sanction (`xor.ad/docs/chat_EN.md` §8.9). The action returned to this screen on 2026-08-27: the spec knew about it from the start and kept a `hidden_messages` table for it, but it had no interface — a person who simply did not want to see something was left with reporting, that is, sending a neighbour into the moderation queue for not being to their taste.

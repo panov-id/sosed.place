@@ -14,6 +14,8 @@ The section holding everything to do with talking: offers waiting for an answer,
 
 ## Logic
 
+- **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
+
 - The tabs live **inside the section**, not in the bottom navigation: that has exactly four items (`Feed` / `Chats` / `Say` / `Me`), and a fifth does not fit a narrow screen (`xor.ad/docs/chat_EN.md` §9).
 - An **offer** is a match waiting on acceptance — yours, theirs, or both. It disappears when either of the two phrases expires.
 - A **conversation** enters the list once both have accepted, and lives until silence eats it — each side by their own count (`00-mechanics_EN.md` §2).

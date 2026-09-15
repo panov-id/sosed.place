@@ -44,7 +44,9 @@ have destroyed their correspondence silently.
   speaks plainly.** The wording is fixed by the spec (`xor.ad/docs/chat_EN.md`
   §8.2) and must not drift:
 
-  > 3 attempts left. After that this device is locked until the paper code.
+  > Attempts left: N. After that this device is locked until the paper code.
+
+  N is 3, 2 or 1 (edited 2026-09-15: "3 attempts left" [retired]).
 
 - **From the sixth attempt there is a wait, and it grows (decided 2026-09-14).** The
   sixth after 30 seconds, the seventh after 2 minutes, the eighth after 10 minutes, the
@@ -88,7 +90,7 @@ have destroyed their correspondence silently.
 - **What is stored on this device** (added 2026-08-28): the size of the local
   database, the **list of saved offers** (added 2026-08-29 — the only thing that
   outlives 4:20, so it is named here explicitly) and an **"erase conversation
-  history"** button. The product promises a
+  history"** button. **Since 2026-09-15 "My notices" is here too** — receipts of notices of illegal content — with an **"erase receipts"** button: they live on the device, "start over" does not erase them, and on a shared device this is the only place to remove them; an erased receipt means the decision on it can no longer be seen. With no identity there is no PIN, and nothing closes the list except erasing it — the price is named. The product promises a
   great deal about storage — and this is the only place where the promise can be
   seen and handled. Erasing is irreversible and takes only the history: the
   identity, the phrases and the open conversations remain, but the earlier
@@ -117,6 +119,8 @@ have destroyed their correspondence silently.
   identity it brings back will no longer exist.
 
 ## Logic
+
+- **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
 
 - **Nothing on this screen can be undone**, and that is said out loud in the
   heading rather than implied by layout.

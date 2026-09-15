@@ -26,6 +26,8 @@ Everything a person has put into the feed and that is still alive: **phrases, of
 
 ## Logic
 
+- **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
+
 - A message can be deleted manually at any point before its timer runs out.
 - A manually deleted message disappears from the feed immediately.
 - The timer and remaining quota are the same values that apply in the feed and at posting time (see screens 3 and 4, and the Moderation section).

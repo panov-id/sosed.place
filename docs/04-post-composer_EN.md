@@ -36,6 +36,8 @@ The screen from which anything at all appears in the feed. Opened by the "Say" b
 
 ## Logic
 
+- **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
+
 - Text is required; mode and blur radius are settings on the post.
 - **Links are stripped, and the person is told so** (`00-mechanics_EN.md` §5). There are no links in the feed or in a conversation; the only place a link lives is a venue's offer. Stripping them silently would read as broken input, so the line is mandatory.
 - **Publishing has two ceilings, and this is where a person meets them:** no more than **four live phrases** at once and no more than **four per hour** (edit of 2026-08-28; it used to be five and eight in 64 minutes). The first is about space in the neighbours' feed, the second is against someone taking their phrase down in a loop to free a slot. An offer occupies no slot; it has a quota of its own (screen 17).

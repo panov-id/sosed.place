@@ -39,6 +39,8 @@ A shared board for two inside a conversation — **a field and a set of pieces**
 
 ## Logic
 
+- **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
+
 - **Your own move holds your conversation exactly as your own message does** (settled 2026-08-27). The timer counts from your last action, and a move is an action: the game exists precisely so that one can be silent in words. **Their move does not push your timer** — for the same reason their line does not: whoever is silent is silent.
 - Play in silence long enough and the conversation lives for both — each pushes their own timer with their own moves. A spectator who only watches somebody else move loses it exactly as if they had left.
 - **The engine holds turn order — in every class (decided 2026-09-14).** Since 2026-09-09 it had checked whose turn it was almost everywhere, while the toggle beside it promised the opposite; dominoes and dots get the turn added to their class row (`xor.ad/docs/chat_EN.md` §6). The price: a game "without turns, just for fun" is no longer possible. [retired] This said "turn-taking is an agreement, not a rule… wiring turns into the engine is not allowed".

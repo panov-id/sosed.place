@@ -35,6 +35,8 @@ A neighbourhood offer — a post with a mandatory discount, and the only form of
 
 ## Logic
 
+- **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
+
 - **An offer takes no ordinary quota slot** (`00-mechanics_EN.md` §3): offers have their own limits — a share of the feed and a rate limit per venue. The baker stays a neighbour with their own four phrases (edited 2026-09-14: this said "five", a relic of the retired quota — the Russian half already said four).
 - **Age bands do not apply to venue offers — settled 2026-08-27.** A band separates teenagers and adults **in conversation**, and a coffee shop is not somebody to talk to: a venue has no age and no like, and no conversation is born from its card. The cost is named plainly: a teenager sees the whole commercial feed of the district, including what must not be sold to them — and what protects here is not the band but the moderation queue's stop categories, which publish such things to nobody.
 - **A private person's offer disappears when they step away**, like any phrase of theirs (screen 20): "step away" deletes phrases along with their likes, and a private offer is a phrase with a non-empty discount.

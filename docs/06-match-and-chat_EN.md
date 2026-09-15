@@ -6,6 +6,8 @@ What happens on a mutual like and how a conversation opens. **Edit of 2026-08-26
 
 ## Logic
 
+- **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
+
 - **A match is not a chat.** A mutual like opens a card: on it are **both phrases** that caused it, and a "talk" button. The conversation appears when both have pressed.
 - **What else is on the card (written down 2026-08-27).** The other phrase's mode (`alone` / `company` / `party`), the peer's **name and age**, and **the remainders of both phrases** — one per phrase, and the match dies with the first (edited 2026-09-14: this was a single timer `match expires · Nh Nm` [retired], while below it was decided on 2026-08-28 that two numbers are more honest than one). The name and age are not decoration here: the feed carries neither and never will, and this is the **first place** where the other person becomes somebody in particular (`xor.ad/docs/chat_EN.md` §8.11). Disclosure is stepwise and irreversible — which is why "talk" stays a deliberate press rather than automation.
 - **This same screen carries the only warning about what a person is stepping into:**

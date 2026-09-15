@@ -15,6 +15,8 @@ A support contact button, reachable from the app at any time.
 
 ## Logic
 
+- **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
+
 - The sent message lands in the `support_requests` table in the database beside the node — **the eleventh table of the first migration** (decided 2026-09-14, `xor.ad/docs/chat_EN.md` §13): otherwise the list of requests and the answer attached to the identity promised here would have nothing to stand on.
 - **A session frozen by the PIN limit may write a new request** (decided 2026-09-14, `xor.ad/docs/chat_EN.md` §8.2): one a day, flagged for the team, and only while the identity has no other live session. Earlier answers, the list of requests and the "answer waiting" dot are not shown to it — whoever holds someone else's tab would see them. A device frozen by a move or by closing the identity gets no support: otherwise a lost phone would write on the identity's behalf.
 - **The team gets a daily digest, not a letter per request** (decided 2026-09-14, `xor.ad/docs/chat_EN.md` §13): the number of new ones, of those awaiting an answer and of those written from a frozen session, with no text; the digest has no doer yet — open item `support.sweeper`. [retired] This used to say "a new ticket fires a notification (email/webhook)" — the mailbox became a copy of a table that lives a year. The price is named: the team sees an urgent one no earlier than the digest; a report of illegal content through the screen 5 form goes to the register at once, and one sent here — when support is read, up to a day later.

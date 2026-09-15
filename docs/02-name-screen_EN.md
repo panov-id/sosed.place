@@ -31,7 +31,7 @@ begins.
 
 ## Screen elements
 
-- A name field — **required**, up to **24 graphemes**: that is what fits the conversation header and the match card at 375px without an ellipsis. A counter shows what is left; the limit counts graphemes and **the node enforces it** (`xor.ad/docs/chat_EN.md` §8.2), not this field alone.
+- A name field with the visible label **"What should we call you"**, no placeholder (decided 2026-09-15; rule 4 of the accessibility minimum) — **required**, up to **24 graphemes**: that is what fits the conversation header and the match card at 375px without an ellipsis. A counter shows what is left; the limit counts graphemes and **the node enforces it** (`xor.ad/docs/chat_EN.md` §8.2), not this field alone.
 - Age — **a number of years** (settled 2026-08-26: the same as the node stores in its `age` column; once a year the app asks again, "still 38?"). Next to the field, a line saying **"13 and over"**, said before the input rather than after it.
 - A six-digit PIN, entered twice. An obvious one (`000000`, `123456`, one's own birth year) produces the line "this PIN is easy to guess" — and does **not** lock: the button stays live.
 - **The paper recovery code**: sixteen characters in **four groups of four**, shown once, with a confirmation — type back **two of the four groups** (the format comes from `xor.ad/docs/chat_EN.md` §8.2: Crockford base32 without `I`, `L`, `O`, `U`, which are confused with one and zero; case does not matter).
@@ -46,6 +46,10 @@ begins.
 - A "next" button — icon only, no text label (same as screen 1).
 
 ## Logic
+
+- **A private window is always a new person** (`00-mechanics_EN.md`, added 2026-09-15 after the review panel): in a private window this screen is passed again, and a closed window takes the identity with it — only the paper code issued here brings it back.
+
+- **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
 
 - **The terms are accepted before the first screen, not after — recorded
   2026-08-28.** The requirement rests on DSA Article 14 and the checklist that
@@ -94,7 +98,7 @@ A separate line about the conversations, because the code does not bring those b
 
 ## Open questions
 
-- ~~The name field's placeholder is not defined yet~~ — **"What should we call you"** (decided 2026-09-15): a question, not a sample name — people copy samples.
+- ~~The name field's placeholder is not defined yet~~ — **no placeholder; "What should we call you" is the field's visible label** (decided 2026-09-15, corrected the same day): rule 4 of the accessibility minimum — a field is labelled by a word, not a hint inside, because a placeholder vanishes on typing (`xor.ad/docs/accessibility-and-i18n_EN.md`); no sample name either — people copy samples. [retired] This said "placeholder "What should we call you"".
 - ~~Whether the warning about losing the identity is shown only here or stays reachable in settings~~ — **wherever a new paper code is on the screen: here and on reissue in screen 12** (decided 2026-09-15, follows from screen 12). There is no standing settings item with the warning: there is nothing to warn about when no code is on the screen.
 - ~~A name length limit~~ — **24 graphemes, refused by the node** (settled 2026-08-26). The item sat here as open while the number stood a paragraph above in this same file; what was missing was the rule on the node, and now it exists.
 - ~~The format of the code~~ — **four groups of four, Crockford base32 without `I`, `L`, `O`, `U`**, confirmed with two of the four groups. Not a decision but a transfer from the spec: it was written there and missing here.

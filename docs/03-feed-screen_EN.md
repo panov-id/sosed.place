@@ -32,6 +32,8 @@ The application's main screen. Short messages from people nearby, **the newest o
 
 ## Logic
 
+- **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
+
 - **The feed has a size: 30 cards, then "show more" — decided 2026-09-10.** The size
   used to be named nowhere, and that silence promised more than the product can give:
   the quota limits **a person** (four live phrases, four an hour) while **an area** is
