@@ -249,7 +249,7 @@ costs nothing, the text is edited and sent again.
 
 **A run of refusals is stopped by a pause, not by the ceiling — settled
 2026-09-07.** Five refusals **within an hour** close for 15 minutes everything that goes to
-checking — phrases, table lines and applications, a name change, an offer like while the name is not accepted (clarified
+checking — phrases, table lines and applications, a name change, an offer like while the name is not accepted, a hangman word (the word added 2026-09-15, screen 18; clarified
 2026-09-14); each further refusal in the same hour — another 15 minutes; the
 feed, likes on phrases and chats keep working, and that is said plainly, or a silent refusal
 of everything reads as a ban. The wording is written:

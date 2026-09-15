@@ -42,7 +42,7 @@ Interface states for missing data or reached limits, rather than the normal usag
 - **This device was not used for a year (added 2026-09-15).** The session was swept together with its vault share (screen 12): the paper code signs in, and this device's correspondence will not open again.
 - **A moderation refusal** — the phrase did not pass, the class of reason is named, the text stays at hand (screen 4, wordings in `xor.ad/docs/refusal-wordings_EN.md`).
 - **A published phrase of yours was restricted** — the Article 17 statement of reasons is shown in the app at the next sign-in, because the author usually has no email (screen 9; added 2026-09-04).
-- **The fifth refusal within an hour** — for fifteen minutes nothing goes to checking: phrases, table lines, a name change, an offer like while the name is not accepted; each further refusal in the same hour — another pause (edited 2026-09-14: this said "in a row" [retired], and a successful phrase does not reset the count, `00-mechanics_EN.md` §3); the feed, likes on phrases and conversations keep working, and the refusal says so.
+- **The fifth refusal within an hour** — for fifteen minutes nothing goes to checking: phrases, table lines, a name change, an offer like while the name is not accepted, a hangman word; each further refusal in the same hour — another pause (edited 2026-09-14: this said "in a row" [retired], and a successful phrase does not reset the count, `00-mechanics_EN.md` §3); the feed, likes on phrases and conversations keep working, and the refusal says so.
 - **A hold (listed since 2026-09-15; the wording stood since 2026-09-14).** Something of one's own is already being checked — a line, an application, a phrase or a name — and together with the refusals within the hour it makes five or more: a new send waits a few seconds for the verdicts. It is not a pause: there is no span, a verdict releases it (`xor.ad/docs/chat_EN.md` §8.3, `xor.ad/docs/refusal-wordings_EN.md` §4).
 - **A conversation ended for the other person** — a gravestone on the open screen; in the list the row is marked when you open the conversation or try to write, not at once (screen 7, the 2026-09-10 rule; edited 2026-09-14: this said "a marked row in the list" [retired]).
 - **The other person stepped away** — a label saying "away" above a live input field, with no span; lifted by their first message or move (screen 8; edited 2026-09-14: this said "a line instead of the input field" [retired]).
@@ -67,6 +67,13 @@ Interface states for missing data or reached limits, rather than the normal usag
 - **Nothing in "My messages" (added 2026-09-15).** No live phrases — there were none, or stepping away took them down (screens 9 and 20). The line names the free slots and leads to the composer.
 - **No support requests (added 2026-09-15).** The list is empty: nothing written yet, or a year has passed (screen 14). The input field is still there.
 - **A table outside your bands** — there is no state and there will not be: someone outside the bands is not shown the table at all, because a greyed-out card would itself report who is sitting where (screen 19).
+- **Registration step 2 with no connection (added 2026-09-15).** The share exchange with the node comes before the code is shown (screen 2): with no connection no code is shown, and the name, age and PIN stay on the screen. An unfinished row on the node, if it had time to appear, is swept after an hour, as on a drop.
+- **The match waits for your name (added 2026-09-15).** While your name stands rejected, the match does not open (screen 6). Only the person whose name failed sees the line; the other side is told nothing — otherwise a rejected name would become visible to a stranger.
+- **An offer vanished before your eyes (added 2026-09-15).** One of the two phrases expired while the match card was open, and the offer went with it (screen 6). A line in place of the card, not emptiness.
+- **A refusal by rate from the address (added 2026-09-15).** The node's per-address limit stands beside the identity's limits (screen 4); on a shared network someone else's sending can hit it. The line names no span: the screen does not describe one, and inventing it is not allowed.
+- **Checking editions with no connection (added 2026-09-15).** Until `/legal-manifest.json` arrives, the "changed since" mark on screen 15 is neither set nor cleared; the screen shows no error — the documents read from what is already there.
+- **"Step away" with no connection (added 2026-09-15).** Stepping away deletes phrases on the node (screen 20), so with no connection it does not happen: the step-away screen shows "No connection", and the chosen span stays.
+- **The console is empty (added 2026-09-15).** Nothing has happened yet; the line says events will appear here (screen 21).
 - **Geolocation does not exist as a state — edit of 2026-08-28.** Permission is never requested, so "no access" is not an edge case but the norm: the point is worked out from the time zone, the address and the language, labelled as approximate, the circle is wider, and everything is refined by hand on the diagram (`00-mechanics_EN.md` §4).
 
 - **A document changed while the person was away — state added 2026-08-29.**
@@ -108,7 +115,7 @@ twice, no explaining how the system is built, no "oops".
 | Waiting for the first answer | — | (a skeleton of cards, no text) | — |
 | The node is unreachable | This one is on us | We are not answering — that is our side. What you typed is here. | Retry |
 | Moderation refusal | This will not go out | *(the class of reason — `xor.ad/docs/refusal-wordings_EN.md`)* | Edit |
-| Fifth refusal within an hour | Fifteen minutes off | The feed, likes on phrases and conversations all work — phrases, table lines, name changes and offer likes while the name is not accepted are paused. Another refusal this hour — another 15 minutes. The decision is automatic; the pause ends at HH:MM; ground — the Terms §8 and §15; if you disagree — the Digital Services Coordinator or a court (composition per Art. 17(3), 2026-09-14). | — |
+| Fifth refusal within an hour | Fifteen minutes off | The feed, likes on phrases and conversations all work — phrases, table lines, name changes, offer likes while the name is not accepted and hangman words are paused. Another refusal this hour — another 15 minutes. The decision is automatic; the pause ends at HH:MM; ground — the Terms §8 and §15; if you disagree — the Digital Services Coordinator or a court (composition per Art. 17(3), 2026-09-14). | — |
 | Hold | One moment | Checking what you sent earlier — the new one goes after the verdict. | — |
 | The conversation ended for the other person | The conversation ended | There is nothing here any more. | Close |
 | The other person stepped away | Stepped away | — | — |
@@ -140,6 +147,12 @@ twice, no explaining how the system is built, no "oops".
 | That move is not allowed | Not like that | The rules do not let this move through. It is still your turn. | — |
 | A decision on your notice | There is a decision | A decision was taken on your notice. | Open |
 | An offer's link is switched off | The link is off | After reports this link no longer opens. The offer itself is still here. | — |
+| Registration step 2 with no connection | No connection | The internet seems to be gone. Your name, age and PIN are still here — we will show the code as soon as we can reach you. | Retry |
+| The match waits for your name | Name first | Your name did not pass the check, and the match will not open until a new one is accepted. | Change the name |
+| An offer vanished before your eyes | The offer is gone | One of the phrases expired, and the offer went with it. | Close |
+| A refusal by rate from the address | A bit later | Too much was just sent from this address. Try again in a little while. | — |
+| "Step away" with no connection | No connection | Stepping away deletes your phrases on our side, and there is no connection. The span is kept — try once the network is back. | Retry |
+| The console is empty | — | Events will appear here when something happens. | — |
 | A document changed | Something changed | Read what is different and accept it — until you do, you cannot publish or open new conversations. Conversations already going carry on. | Read |
 
 Three lines are deliberately empty. "Stepped away" has no second line because we
