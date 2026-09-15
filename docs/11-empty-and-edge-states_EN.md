@@ -162,14 +162,14 @@ twice, no explaining how the system is built, no "oops".
 | A move with no connection | No connection | The move code will appear once there is a connection. The identity is still here. | Retry |
 | The connection dropped at a table | No connection | The move time runs without a connection: after five minutes a pass is recorded. | Retry |
 | The current code did not match on reissue | The code did not match | A new code is issued only on the valid one. The current one still works. | Try again |
-| Appearance with no connection | — | Chosen on this device. It will be saved with your identity once there is a connection. | — |
+| Appearance with no connection | — | Applied. We will save it once the connection is back. | — |
 | A document changed | Something changed | Read what is different and accept it — until you do, you cannot publish or open new conversations. Conversations already going carry on. | Read |
 
-Four lines are deliberately empty. "Stepped away" has no second line because we
+Five lines are deliberately empty. "Stepped away" has no second line because we
 do not know when they are back and will not invent it. "Waiting for the first
 answer" has no text at all: the skeleton already says a load is running, and a
 caption under it turns a second of waiting into an event. The moderation refusal
-has a shared heading, while the reason arrives from the node — one per class. The empty console has no heading: a log with no events is not an event.
+has a shared heading, while the reason arrives from the node — one per class. The empty console has no heading: a log with no events is not an event. Nor has appearance with no connection: the choice is already applied and nothing went wrong (added 2026-09-15 after the review panel).
 
 ## Open questions
 
