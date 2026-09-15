@@ -34,6 +34,12 @@ Interface states for missing data or reached limits, rather than the normal usag
 - **The tab is locked (listed since 2026-09-15; the wording stood since 2026-09-14).** After five minutes idle the PIN locks the tab (`pin.lock.idle`, screen 12): the feed and conversations are hidden until it is entered, and nothing is sent while locked.
 - **Fewer than four attempts, and the wait before an attempt (listed since 2026-09-15).** From the seventh attempt the counter says how many are left; from the sixth the node holds a growing wait — 30 seconds, 2 minutes, 10 minutes, an hour, 4 hours — and a correct PIN is not accepted during the wait either (screen 12).
 - **Locked, with no connection (added 2026-09-14).** The PIN is checked against the node (`xor.ad/docs/chat_EN.md` §8.2), so the tab cannot be unlocked offline. The line says exactly that rather than "wrong PIN": otherwise a network failure would count against the ten attempts in the person's head.
+- **The move code no longer works (added 2026-09-15).** The invite is single-use and lives two minutes; the previous device's silence puts it out too (screen 13). The line says the previous device shows a new code — otherwise the person types the same code again.
+- **The move code burned (added 2026-09-15).** Five wrong entries and the invite burns (screen 13). Separate from "expired": here the person mistyped, and the line asks to check the typing, not the hurry.
+- **The paper code did not match (added 2026-09-15).** A mistake in any character finds no identity; the person has no attempt counter, the node counts the misses — per address and in total (`xor.ad/docs/chat_EN.md` §8.2). The line asks to check the groups and does not say whether such an identity exists.
+- **Paper code entry is closed (added 2026-09-15).** The node is under a guessing attack, and code entry is closed for everyone, with no span (screen 12, `xor.ad/docs/protocol_EN.md` §8, item 7). The line says the identity is intact and that it is worth trying later — and names no time, because there is none.
+- **The PIN cannot be changed offline (added 2026-09-15).** A new PIN takes a new share from the node (screen 12); the old PIN keeps working.
+- **This device was not used for a year (added 2026-09-15).** The session was swept together with its vault share (screen 12): the paper code signs in, and this device's correspondence will not open again.
 - **A moderation refusal** — the phrase did not pass, the class of reason is named, the text stays at hand (screen 4, wordings in `xor.ad/docs/refusal-wordings_EN.md`).
 - **A published phrase of yours was restricted** — the Article 17 statement of reasons is shown in the app at the next sign-in, because the author usually has no email (screen 9; added 2026-09-04).
 - **The fifth refusal within an hour** — for fifteen minutes nothing goes to checking: phrases, table lines, a name change, an offer like while the name is not accepted; each further refusal in the same hour — another pause (edited 2026-09-14: this said "in a row" [retired], and a successful phrase does not reset the count, `00-mechanics_EN.md` §3); the feed, likes on phrases and conversations keep working, and the refusal says so.
@@ -113,6 +119,12 @@ twice, no explaining how the system is built, no "oops".
 | Nothing in "Conversations" | No conversations yet | A conversation opens once an offer is accepted. | To the feed |
 | Nothing in "My messages" | No phrases of yours | Free slots: N of four. | Write one |
 | No requests | No requests yet | Your requests and the answers to them will appear here. | — |
+| The move code no longer works | The code expired | Codes live two minutes. The previous device will show a new one. | Enter a new one |
+| The move code burned | The code burned | Five wrong entries — this code will not be accepted again. The previous device will show a new one. | Enter a new one |
+| The paper code did not match | The code did not match | Check each group: one wrong character and the code is not found. | Try again |
+| Paper code entry is closed | Not taking codes right now | Someone is guessing codes against the node, so entry is closed for everyone. Your identity is intact — try later. | — |
+| The PIN cannot be changed offline | No connection | A new PIN has to be agreed with us. The old PIN keeps working meanwhile. | Retry |
+| This device was not used for a year | It has been a while | Sign in with your paper code. The old correspondence on this device will not open again. | Enter the code |
 | A document changed | Something changed | Read what is different and accept it — writing does not work until you do. | Read |
 
 Three lines are deliberately empty. "Stepped away" has no second line because we
