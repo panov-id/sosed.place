@@ -1,10 +1,10 @@
 # sosed — What changed in the documents
 
-**Last updated: 15 September 2026**
+**Last updated: 16 September 2026**
 
 Each new edition of the Terms, the Privacy Policy or the Community Guidelines is listed here, newest first, in a few plain lines. The documents themselves are the text that applies; this page only tells you where to look.
 
-## Edition of 15 September 2026
+## Edition of 16 September 2026 (the Guidelines are dated 15 September)
 
 **Terms**
 
@@ -15,6 +15,8 @@ Each new edition of the Terms, the Privacy Policy or the Community Guidelines is
 - **Content involving minors** (§8): it is refused before publication and reported where we suspect a criminal offence threatening life or safety (§15), rather than promised to be reported in every case.
 - **New editions** (§19): the Community Guidelines, too, wait for your checkbox inside the Service; nothing is recorded as accepted on your behalf.
 - **Disputes** (§20): the reference to the EU online dispute resolution platform is removed.
+- **Names** (§8): a refusal to accept a display name is named next to a refusal to publish — both automatic, both final.
+- **One date** (§9): the game-board exception is dated 2026-09-09, the day it was decided, in all three documents.
 
 **Privacy Policy**
 
@@ -28,6 +30,8 @@ Each new edition of the Terms, the Privacy Policy or the Community Guidelines is
 - **Rights** (§9): the line about withdrawing consent is gone, because nothing we process rests on consent.
 - **Children** (§10): the age bands are described as in the Terms.
 - **New editions** (§13): as in the Terms.
+- **More data named, again** (§3, §6a): the display name is required and moderated like a message; the languages you chose for the feed; the phrases you hid and the people you blocked, with the block's date; your support requests and our answers.
+- **One date** (§6a): the game-board exception is dated 2026-09-09.
 
 **Community Guidelines**
 

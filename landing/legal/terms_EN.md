@@ -1,6 +1,6 @@
 # sosed — Terms & Conditions
 
-**Last updated: 15 September 2026**
+**Last updated: 16 September 2026**
 
 ## 1. Who we are
 
@@ -66,7 +66,7 @@ These community rules are also set out, in plain language, in our **Community Gu
 ## 9. Content and ephemerality
 
 - **Your content.** You keep ownership of what you post. You grant us a limited, non-exclusive license to host, display, and distribute your content **within the Service** for the purpose of operating it.
-- **Ephemeral by design.** Content fades and is not recoverable. Chat contents are kept on our servers only until they are delivered — encrypted the whole way and unreadable to us — and then they are gone. **A game played inside a chat is the exception, named here since 2026-09-10:** its board, its moves and the score are not encrypted and their current state is held by us while the conversation lives, because we check the moves against the rules of the game. **The word set in hangman is part of that state:** our server sees it and checks it like a feed message before the other player sees it, and a refused word counts towards the 15-minute pause (§8). Apart from that word, what was said is still never stored; on your device they live for the shorter of the two spans the two of you chose; we do not provide export or long-term archives.
+- **Ephemeral by design.** Content fades and is not recoverable. Chat contents are kept on our servers only until they are delivered — encrypted the whole way and unreadable to us — and then they are gone. **A game played inside a chat is the exception, since 2026-09-09:** its board, its moves and the score are not encrypted and their current state is held by us while the conversation lives, because we check the moves against the rules of the game. **The word set in hangman is part of that state:** our server sees it and checks it like a feed message before the other player sees it, and a refused word counts towards the 15-minute pause (§8). Apart from that word, what was said is still never stored; on your device they live for the shorter of the two spans the two of you chose; we do not provide export or long-term archives.
 
 ## 10. Offers
 
@@ -90,7 +90,7 @@ These community rules are also set out, in plain language, in our **Community Gu
 - **Decisions are explained.** If your message is not published, or your content is removed or hidden, you are told **what was done and why**, whether automated means were involved, and what you can do about it. Nothing is removed silently. We never tell an author who reported them.
 - **If you disagree.** What happens next depends on who made the decision, and we say which rather than promising the same for both.
   **A decision taken on a report** — content removed or hidden after somebody reported it — may be automatic or taken by a person, and either way a person can look at it again: write to **support@sosed.place**.
-  **A refusal to publish** is different. It is made automatically, before anybody has seen the message, and **it is final**: there is nobody to appeal to, because no person took it. The message can be edited and sent again — that is the whole of the remedy, and we would rather say so than imply a review that does not exist. **A pause** — nothing goes to checking for 15 minutes after five refusals within an hour — is automatic too and has no appeal either: it ends by itself.
+  **A refusal to publish, or to accept a display name,** is different. It is made automatically, before anybody has seen the message, and **it is final**: there is nobody to appeal to, because no person took it. The message can be edited and sent again — that is the whole of the remedy, and we would rather say so than imply a review that does not exist. **A pause** — nothing goes to checking for 15 minutes after five refusals within an hour — is automatic too and has no appeal either: it ends by itself.
   In either case you may complain to the **Digital Services Coordinator** of your country of residence, or to the Cypriot one — the **Radiotelevision and Digital Services Authority**, `rtdsa.org.cy` — or go to court (§20). We do not operate a formal internal appeals body, and we do not pretend to.
 
 ## 12. Donations

@@ -2,7 +2,7 @@
 
 > Number 12 was taken again on 2026-08-28. The former screen 12 (the social link
 > field) was dropped on 2026-08-26 along with links themselves; the number came
-> free and is reused — renumbering twenty screens for the sake of an empty number
+> free and is reused — renumbering every screen for the sake of an empty number
 > costs more than saying this in a line.
 
 ## Purpose
