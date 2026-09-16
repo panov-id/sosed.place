@@ -56,6 +56,7 @@ The last two sentences were added on 2026-09-14: the rule "say it before the tap
 After an hour of continuous use, one line — "you have been here an hour: step away?" — closing with a tap and not returning that day. The hour is counted on the device: a visible tab plus a touch within the last three minutes (`00-mechanics_EN.md` §13).
 
 - **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
+- **When we did not answer — a line of its own, not "no connection"** (added 2026-09-15 from the screen-state matrix): stepping away does not happen, and the chosen span stays — screen 11, the "Step away" state where this one is on us.
 
 ## Open questions
 

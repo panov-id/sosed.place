@@ -15,6 +15,7 @@ The section holding everything to do with talking: offers waiting for an answer,
 ## Logic
 
 - **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
+- **While the list is being gathered — a skeleton of rows with no caption**, as the feed and the conversation have (added 2026-09-15 from the screen-state matrix; the skeleton rule is on screen 11, "Waiting for the first answer").
 
 - **On a wide screen** the section is the second column, 300 px wide; the open conversation stands to its right from 1030 px, and below that takes the list's place (screen 3, "Wide screen", decided 2026-09-15).
 - The tabs live **inside the section**, not in the bottom navigation: that has exactly four items (`Feed` / `Chats` / `Say` / `Me`), and a fifth does not fit a narrow screen (`xor.ad/docs/chat_EN.md` §9).

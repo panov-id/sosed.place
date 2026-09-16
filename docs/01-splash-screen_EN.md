@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The first screen a person sees on opening sosed.place. A splash and nothing else: the animation and one way onward. There is no registration here — **edit of 2026-08-26**: age moved to screen 2, where name, age, PIN and the paper code are asked in a single step, as in flow 1 of the spec (`xor.ad/docs/chat-flows_EN.md`) and in the terminal client. The faces must not diverge in the order of their steps: the core is one, and a splash is no place for a registration field.
+The first screen a person sees on opening sosed.place. A splash and nothing else: the animation and one way onward. There is no registration here — **edit of 2026-08-26**: age moved to screen 2, where signing up takes two steps: who you are (name, age, language, consent) and what brings you back (PIN, paper code) (edited 2026-09-15: this said "asked in a single step" [retired] — the decision of 2026-08-28 on two steps reached screen 2 but not the splash), as in flow 1 of the spec (`xor.ad/docs/chat-flows_EN.md`) and in the terminal client. The faces must not diverge in the order of their steps: the core is one, and a splash is no place for a registration field.
 
 ## Visual
 

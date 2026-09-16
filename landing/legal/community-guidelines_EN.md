@@ -1,6 +1,6 @@
 # Community Guidelines — sosed.place
 
-**Last updated: 14 September 2026**
+**Last updated: 15 September 2026**
 
 **These rules are published in several languages. The English version is the one that applies; translations are provided for convenience.**
 
@@ -8,7 +8,7 @@
 
 Content must stay within the norms of a calm, peaceful society. What is **published** — the feed and neighbourhood offers — is screened automatically by **AI models** before it appears, not after.
 
-A **chat is not screened.** It travels encrypted from one device to the other, and we cannot read it. A **game board is the exception, since 2026-09-09**: the board and the moves are not encrypted, we see them, and we check the moves against the rules of the game. Words are still ours to not read; a move on a board is not words. The rules below hold there all the same; what differs is how they are met — by the person you are talking to reporting a message, not by a check on our side.
+A **chat is not screened.** It travels encrypted from one device to the other, and we cannot read it. A **game board is the exception, since 2026-09-09**: the board and the moves are not encrypted, we see them, and we check the moves against the rules of the game. Words are still not ours to read, with one exception: the word set in hangman, which our server sees and checks like a published message before the other player sees it — a refused word counts towards the 15-minute pause. The rules below hold there all the same; what differs is how they are met — by the person you are talking to reporting a message, not by a check on our side.
 
 ## Be a good neighbor
 

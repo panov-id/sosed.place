@@ -1,6 +1,6 @@
 # Règles de la communauté — sosed.place
 
-**Dernière mise à jour : 14 septembre 2026**
+**Dernière mise à jour : 15 septembre 2026**
 
 **Ces règles sont publiées en plusieurs langues. La version anglaise fait foi ; les traductions sont fournies à titre de commodité.**
 
@@ -10,7 +10,7 @@
 
 Le contenu doit rester dans les normes d’une société calme et paisible. Ce qui est **publié** — le fil et les offres de quartier — est vérifié automatiquement par des **modèles d’IA** avant de paraître, et non après.
 
-**Une conversation n’est pas vérifiée.** Elle circule chiffrée d’un appareil à l’autre et nous ne pouvons pas la lire. **Le plateau de jeu fait exception depuis le 09/09/2026 :** le plateau et les coups ne sont pas chiffrés, nous les voyons et nous vérifions les coups au regard des règles du jeu. Les mots, nous ne les lisons toujours pas ; un coup sur un plateau, ce ne sont pas des mots. Les règles ci-dessous y valent tout autant ; ce qui diffère, c’est la façon dont elles s’appliquent — par le signalement de votre interlocuteur, et non par une vérification de notre côté.
+**Une conversation n’est pas vérifiée.** Elle circule chiffrée d’un appareil à l’autre et nous ne pouvons pas la lire. **Le plateau de jeu fait exception depuis le 09/09/2026 :** le plateau et les coups ne sont pas chiffrés, nous les voyons et nous vérifions les coups au regard des règles du jeu. Les mots, nous ne les lisons toujours pas, à une exception près : le mot choisi au pendu, notre serveur le voit et le vérifie comme un message publié avant que l’autre joueur ne le voie — un mot refusé compte pour la pause de 15 minutes. Les règles ci-dessous y valent tout autant ; ce qui diffère, c’est la façon dont elles s’appliquent — par le signalement de votre interlocuteur, et non par une vérification de notre côté.
 
 ## Sois un bon voisin
 

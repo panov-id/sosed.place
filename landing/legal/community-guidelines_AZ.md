@@ -1,6 +1,6 @@
 # İcma Qaydaları — sosed.place
 
-**Son yenilənmə: 14 sentyabr 2026**
+**Son yenilənmə: 15 sentyabr 2026**
 
 **Bu qaydalar bir neçə dildə dərc olunub. İngilis dilindəki versiya qüvvədədir; tərcümələr rahatlıq üçün verilib.**
 
@@ -10,7 +10,7 @@
 
 Məzmun sakit, dinc cəmiyyətin normaları çərçivəsində qalmalıdır. **Dərc olunan** — lent və qonşuluq təklifləri — görünməzdən əvvəl **süni intellekt modelləri** ilə avtomatik yoxlanılır, sonra yox.
 
-**Söhbət yoxlanılmır.** O, bir cihazdan digərinə şifrələnmiş halda gedir və biz onu oxuya bilmirik. **Oyun lövhəsi 09.09.2026-dan etibarən istisnadır:** lövhə və gedişlər şifrələnmir, biz onları görürük və gedişləri oyunun qaydaları ilə tutuşdururuq. Sözləri əvvəlki kimi oxumuruq; lövhədəki gediş söz deyil. Aşağıdakı qaydalar orada da qüvvədədir; fərq yalnız onların necə təmin olunmasındadır — bizim yoxlamamızla deyil, həmsöhbətin şikayəti ilə.
+**Söhbət yoxlanılmır.** O, bir cihazdan digərinə şifrələnmiş halda gedir və biz onu oxuya bilmirik. **Oyun lövhəsi 09.09.2026-dan etibarən istisnadır:** lövhə və gedişlər şifrələnmir, biz onları görürük və gedişləri oyunun qaydaları ilə tutuşdururuq. Sözləri əvvəlki kimi oxumuruq, bir istisna ilə: dar ağacı oyununda tapılmaq üçün seçilən sözü serverimiz görür və digər oyunçu görməzdən əvvəl onu dərc olunan mesaj kimi yoxlayır — rədd edilən söz 15 dəqiqəlik fasiləyə sayılır. Aşağıdakı qaydalar orada da qüvvədədir; fərq yalnız onların necə təmin olunmasındadır — bizim yoxlamamızla deyil, həmsöhbətin şikayəti ilə.
 
 ## Yaxşı qonşu ol
 

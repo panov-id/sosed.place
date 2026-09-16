@@ -118,8 +118,9 @@ window.__XOR_CONFIG__ = {
   legalRevision: "${LEGAL_REVISION}",
   // Per document: the date it declares, the digest of its substance, and what a
   // change to it costs a person who already accepted — "required" sends them to
-  // a consent screen before they can publish or open a chat, "silent" only
-  // re-records and marks screen 15. Decided 29.08.2026; the node reads the same
+  // a consent screen before they can publish or open a chat. Since 2026-09-15 all
+  // three documents are "required"; "silent" (re-record and only mark screen 15)
+  // was the guidelines' value from 29.08.2026 until then. The node reads the same
   // file from /legal-manifest.json.
   legalDocuments: ${LEGAL_MANIFEST},
 };

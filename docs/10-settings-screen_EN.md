@@ -58,6 +58,7 @@ They were not split for a simple reason: the bottom navigation has exactly four 
 ## Logic
 
 - **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
+- **A name change waits for the checkbox, as a publication does** (added 2026-09-15 from the screen-state matrix): others see the name, so with changed documents a new name does not go to checking until acceptance — screen 11, "A document changed".
 
 - Appearance applies immediately, no confirmation needed (screen 22).
 - **The accent lives in two places and is one state** (decided 2026-09-15): the house mark in the header cycles it with a tap, screen 22 gives an explicit choice from the storefront's set (`xor.ad/docs/chat_EN.md` §11). Two controls, one value; they must not drift apart. [retired] This said "The theme lives in two places": in the app the house mark flipped the theme while on the landing it cycled the accent, so the "shared behaviour" of §11 did not hold.

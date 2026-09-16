@@ -95,8 +95,10 @@ than offering nothing.
   which the product does not have. (Address and span corrected 2026-09-07 after a
   review panel: this pointed at "screen 13" inside `chat_EN.md`, which has no
   screens at all, and said nothing about extending.)
-- Whether the warning is shown once at signup or stays reachable afterwards — in
-  settings, say — is undecided.
+- ~~Whether the warning is shown once at signup or stays reachable afterwards — in
+  settings, say~~ — **decided 2026-09-15, screen 2** (`02-name-screen_EN.md`, "Open
+  questions"): the warning stands wherever a new paper code is on the screen — at
+  signup and on reissue in screen 12; there is no standing item in settings.
 
 ---
 
@@ -392,9 +394,11 @@ The zone gives the region, the IP narrows it to a city, the language checks both
 VPN, and it means the IP cannot be trusted.
 
 **A point obtained this way is called approximate, and it looks it.** It is labelled
-as a guess, and the default circle is drawn **wider** than it would be for a real
-fix. A person has to see the difference between "we worked it out" and "we measured
-you" — otherwise they either decide they were tracked, or trust a circle that is a
+as a guess, and the default circle is drawn **wider** than for a point placed by hand
+(the numbers are below, "How the point lives between visits"). [retired] This said
+"than it would be for a real fix" — a precise position is never requested (edited
+2026-09-15). A person has to see the difference between "we worked it out" and "you
+placed it" — otherwise they either decide they were tracked, or trust a circle that is a
 kilometre off.
 
 **There is no "where am I" button — decided 2026-08-28.** [retired] This used to read: a "where am I" button asks for precise location — on request, not on arrival. A precise position is **never** requested: the place is worked out from indirect signals and refined by hand on the diagram. A permission we never ask for is a permission that cannot leak, and declining to have the conversation removes a whole class of questions from the privacy policy.
@@ -406,6 +410,27 @@ permission of any kind, in any of its faces.
 
 Refusing breaks nothing: the approximate point remains, and so does the hand-placed
 one.
+
+### How the point lives between visits — decided 2026-09-15
+
+**A point placed by hand is remembered on the device until it is changed.** It sits in
+local storage (§9) and stays until the person moves it or clears the browser. A private
+window does not have it: there it is always a new person (§1).
+
+**An approximate point is recomputed on every visit** from the same signals (above)
+and is not remembered. When a hand-placed point exists, the approximate one is computed
+only to be compared with it.
+
+**Moved away — one line, not a silent move.** If on opening the approximate point is
+further from the hand-placed one than the viewing radius, a line stands above the feed:
+"looks like you are somewhere else — move the point?". The line does not move the point
+itself: a hand-placed point is the person's decision. Within the radius the line stays
+silent, or VPNs and mobile carriers would trigger it on every visit.
+
+**The default circle: 3 km for a point placed by hand, 5 km for an approximate one.**
+An approximate point is off by a city, not by a street (the signal table above), and a
+narrow circle around it would pass someone else's district off as yours. The handle's
+bounds are the same: from 500 m to 25 km.
 
 ### How many people are in there — in steps, not in numbers
 
@@ -489,12 +514,16 @@ fingerprint, and that is the truth.
   the steps are named earlier in this same section, the default on screen 4).
 - ~~How a zone meets a circle~~ — settled 2026-08-26: **overlap is enough**. The
   rule has moved into the body of the section.
-- Whether a hand-placed or a measured point is remembered between visits is
-  undecided.
-- What happens when a person has physically moved and the point has not is
-  undecided. An approximate point recomputes itself; a measured one does not.
-- How much wider the default circle is for an approximate point is undecided. That
-  needs a number, not the word "wider".
+- ~~Whether the point is remembered between visits~~ — **a point placed by hand is
+  remembered on the device until changed, an approximate one is recomputed on every
+  visit** (decided 2026-09-15, above). [retired] The question asked about "a
+  hand-placed or a measured" point — there has been no precise position since 2026-08-28.
+- ~~What happens when a person has physically moved and the point has not~~ — **one
+  line, "looks like you are somewhere else — move the point?"**, if the approximate point
+  is further from the hand-placed one than the viewing radius (decided 2026-09-15, above).
+  [retired] This said "an approximate point recomputes itself; a measured one does not".
+- ~~How much wider the default circle is for an approximate point~~ — **5 km against
+  3 km for a point placed by hand** (decided 2026-09-15, above).
 
 ---
 
@@ -651,6 +680,12 @@ refusal names its cause. Hiding by report is not a secret measure.
 before publication, and a report is the opinion of people, not a second run of a
 machine.
 
+**A report on a message already hidden for everyone does not count as a vote —
+decided 2026-09-15.** The threshold has fired, and there is nothing to add to it. But
+the form does not turn such a report away: it accepts an Article 16 notice of illegal
+content — with the snapshot if one has already been taken, or with `target_gone` if the
+message no longer exists (`xor.ad/docs/dsa/SPEC_EN.md` §4).
+
 ### Open
 
 - ~~The wording of the refusals is unwritten~~ — written on 2026-08-28,
@@ -691,7 +726,9 @@ machine.
   next to its own answer (removed 2026-08-27).
 - ~~Whether hiding lowers the author's ceiling~~ — **it does not, in either
   direction**, also above in this section (removed 2026-08-27).
-- What to do with reports arriving on a message that is already hidden.
+- ~~What to do with reports arriving on a message that is already hidden~~ — **they
+  do not count as votes, and an Article 16 notice of illegal content is accepted**
+  (decided 2026-09-15, above).
 **Settled, so it is not raised again:** there are no help contacts here and there
 will not be — the Service is not about that. A message saying someone feels bad
 passes as any other does: it endangers nobody, and there is nothing to erase it
@@ -724,12 +761,17 @@ lives is where the node lives — and that is our choice to make.
 
 ### What is missing
 
-- **There is no privacy notice at all.** It needs: who the controller is, what for,
-  on what basis, who receives it, how long it is kept, what rights there are.
-- **There is no EU representative**, and one is required where the operator is
-  outside the EU and the people are inside it.
-- **No record of processing and no impact assessment.** Location plus automated
-  moderation plus possible minors is the usual reason to run one.
+- ~~There is no privacy notice at all~~ — **there is**: the storefront's privacy policy [retired]
+  (`landing/legal/privacy_EN.md`) names the controller, the purposes, the bases, the
+  recipients, the periods and the rights. [retired] This said "there is no privacy
+  notice at all" (corrected 2026-09-15 after the review panel).
+- ~~There is no EU representative, and one is required~~ — **not required**: the
+  controller is established in the EU, in Cyprus, and Article 27 does not apply
+  (`xor.ad/docs/article-30-register_EN.md`, "Controller"). [retired] This said "one is
+  required where the operator is outside the EU and the people are inside it".
+- ~~No record of processing and no impact assessment~~ — **both are kept**:
+  `xor.ad/docs/article-30-register_EN.md` and `xor.ad/docs/dpia_EN.md` (checked
+  2026-09-15).
 - **Age and consent.** The age at which a person may consent for themselves ranges
   from 13 to 16 across the EU. With the wider fingerprint gone there is no consent left
   at signup at all — but the others (precise location, push) still meet that threshold.
@@ -761,7 +803,7 @@ untrue, and here they do not disagree anywhere except where it says so.
 | chat messages | **the device**, IndexedDB, Web Crypto | the conversation | the shorter of the two settings (§2) |
 | chat in transit | server | delivery | **not stored**; if the other side is offline, until delivered or until the chat's life ends, whichever comes first |
 | likes and matches | server | to open a chat | as long as the chat lives |
-| reports and blocks | server | moderation and personal hiding | a block while it holds; a report until it is reviewed |
+| reports and blocks | server | moderation and personal hiding | a block while it holds; a report until it is reviewed, an unreviewed one 1 year, like notices, then deleted (2026-09-15) |
 | the quota | server | the limit | live ones — derived from messages; moments of publications and refusals within the last hour and the date of the first publication — in the identity's counters, while the identity lives (since 2026-09-14) |
 | identity: the UID | server | recognition between visits | until the browser is lost |
 | age and name | server, on the identity row | the age band, a byline | with the identity |
@@ -781,6 +823,7 @@ untrue, and here they do not disagree anywhere except where it says so.
 | client errors | Bunny Storage | incident review | **30 days** |
 | CSP violation reports: the page, the user agent, the time | Bunny Storage | incident review | **30 days** (row added 2026-09-07: the collection had been written since the endpoint was built and swept by nothing — it got a doer on 2026-08-30, but the promise was never in this table) |
 | panel users: email, role | database | access | while the access exists |
+| the nightly database backup | off the node | recovery after an incident | **14 days**: what is deleted leaves the backups within a fortnight (2026-09-15) |
 
 ### Rules, not only durations
 
@@ -788,9 +831,11 @@ untrue, and here they do not disagree anywhere except where it says so.
 Logs exist to explain a breakage and outlive everything else — so what we promised
 not to keep must not land in them.
 
-> **Found, and needs fixing.** In `relay/node/src/routes/waitlist.ts`, when storage
-> is disabled the email is written to the log: `log("error", …, { email })`. That is
-> exactly the case — data going where it lives longer and by other rules.
+> **Found, and fixed in the code.** When storage is disabled,
+> `relay/node/src/routes/waitlist.ts` writes to the log not the email but the first
+> 12 characters of its sha256 hash: `log("error", …, { lead })` (checked against the
+> code 2026-09-15). [retired] This said "the email is written to the log: `{ email }`"
+> — exactly the case of data going where it lives longer and by other rules.
 
 **What is left when a person loses their identity.** Nothing that could be given
 back to them. Messages expire by themselves, chats lived on their device, the UID
@@ -835,9 +880,11 @@ beside its own sentence about an intention not being a doer.
   about its offers** (a year from the last offer; for one suspended over systematic complaints, one more year of the keyed address hash) and **a support message** (a
   year). Both rows stand in the table above, and none of the six jobs touches
   them (2026-09-07).
-- How long a report waits "until reviewed" if no review happens.
-- Backups: if they exist, everything we deleted lives on inside them. Their
-  lifetime is undecided.
+- ~~How long a report waits "until reviewed" if no review happens~~ — **1 year, like
+  notices, then deleted** (decided 2026-09-15; the table row above).
+- ~~Backups: their lifetime is undecided~~ — **14 days** (`xor.ad/docs/chat_EN.md`, [retired]
+  the Article 30 register, the privacy policy; carried over here 2026-09-15, the table
+  row above). [retired] This said "their lifetime is undecided".
 
 ---
 
@@ -869,6 +916,13 @@ show". That line matters: a person always knows the district is livelier than
 their feed, and never mistakes the silence of a filter for the silence of the
 district. With the filter off they see everything, each message carrying a
 language tag.
+
+**The line names a step, not a number — decided 2026-09-15:** "a few more", "dozens
+more", "hundreds more". An exact N would reveal district activity to someone who has
+published nothing, and would be the same measuring instrument as the radius counter (§4).
+
+**A message with no detectable language is shown to everyone — decided 2026-09-15.** A
+short "ok" or "👍" has no language, and the language filter does not hide it.
 
 **Interface language and feed language are different things.** The first decides
 what the labels say; the second decides whose messages are shown. Someone who
@@ -919,11 +973,12 @@ opposite end of the line and the phrase reads as broken.
   person edits the list themselves**", up to three languages. Written in the first
   paragraph of this same section, together with the very argument the question was
   asked for: the phone is in English, they write in Russian (removed 2026-09-07).
-- What to do when detection is unsure: a short "ok" or "👍" has no language at
-  all. Whether to show those to everyone or hide them is undecided.
-- The "another N in other languages" counter reveals district activity to
-  someone who has published nothing. Whether we count that as a leak is
-  undecided.
+- ~~What to do when detection is unsure: a short "ok" or "👍" has no language at
+  all~~ — **shown to everyone, the language filter does not hide it** (decided
+  2026-09-15, above).
+- ~~The "another N in other languages" counter reveals district activity to
+  someone who has published nothing~~ — **a number would, so the line names a step:
+  a few · dozens · hundreds** (decided 2026-09-15, above).
 
 ---
 
@@ -939,6 +994,7 @@ holds it for the same periods as the server**.
 |---|---|---|
 | the encrypted UID | local storage | until the person clears the browser |
 | settings: conversation lifetime, language filter, zone | local storage | same |
+| a point placed by hand (§4) | local storage | until changed or the browser is cleared (2026-09-15) |
 | closed hints (screen 24) | local storage | until the person clears the browser or starts over (2026-09-15) |
 | the consent choice and its date | **the server**, `legal_acceptances` | proof of acceptance: a date and the digest of the text's substance | edited 2026-08-31; [retired] it used to live in local storage |
 | conversations: messages, times, status | IndexedDB, encrypted with Web Crypto | until the conversation expires (§2) |
@@ -952,6 +1008,10 @@ Here it shows most plainly: for the other person the chat may still be alive at
 that moment, because their count is their own. The timer fires even when the app is closed: the next time it
 opens, the first thing it does is erase everything that expired, before anything
 is shown.
+
+**Several tabs — one leads, decided 2026-09-15.** The leader is chosen through Web
+Locks: the tab holding the lock keeps the erase timer; the others follow its timer and
+erase nothing themselves. When the leader closes, the next tab takes the lock.
 
 **The feed does not settle on the device.** It arrives from the server and lives
 in the tab's memory. Otherwise someone else's message would outlive its 4:20 on
@@ -989,7 +1049,8 @@ not for whoever changed their mind.
   is not "the conversation vanishes early" but "the closed half of the key — that is,
   the identity — vanishes from this device". Screen 2 says so before the code is
   issued (edited 2026-09-14).
-- Several tabs at once: whose timer is authoritative and how they agree.
+- ~~Several tabs at once: whose timer is authoritative and how they agree~~ — **the
+  leader is chosen through Web Locks, the others follow its timer** (decided 2026-09-15, above).
 - ~~Whether an explicit "forget this device" is needed separately from "delete
   everything"~~ — built under a different name on 2026-09-04, screen 12
   "Unlocking the tab": the lock closes when you leave the tab and after five

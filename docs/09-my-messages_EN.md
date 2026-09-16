@@ -27,6 +27,7 @@ Everything a person has put into the feed and that is still alive: **phrases, of
 ## Logic
 
 - **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
+- **While the list is being gathered — a skeleton of rows with no caption**, as the feed and the conversation have (added 2026-09-15 from the screen-state matrix; the skeleton rule is on screen 11, "Waiting for the first answer").
 
 - A message can be deleted manually at any point before its timer runs out.
 - A manually deleted message disappears from the feed immediately.

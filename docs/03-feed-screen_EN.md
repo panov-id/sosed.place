@@ -14,13 +14,13 @@ The application's main screen. Short messages from people nearby, **the newest o
 - The feed: phrases, offers and tables in one stream.
 - **A language filter in the header** — up to three languages, cleared with one tap (`00-mechanics_EN.md` §8).
 - **A line "you are at a table — return"** in the header while you are sitting at one (settled 2026-08-27). **There is exactly one such line, and since 2026-09-09 that is a guarantee rather than a coincidence:** you can sit at only one table at a time, so the question of what to show for three tables is gone by construction. A table does not appear in the conversations list — it lives by the rules of the feed — and without this line somebody who looked away for a minute would lose a game with live people without any notice (screen 7, screen 19).
-- A line under the feed: "**N more messages in other languages — show**".
+- A line under the feed: "**N more messages in other languages — show**"; N as a step, not a number: a few · dozens · hundreds (`00-mechanics_EN.md` §8, 2026-09-15).
 - A filter icon — opens a panel with the age, radius and mode filters.
 - **A tap on a phrase's text opens it full screen** (screen 23, decided 2026-09-15): like and "hide" as buttons, a swipe on a touch screen.
 
 ## Filter panel (opened via the icon)
 
-- **Age filter** — a range slider **inside your own age band**. The band is computed by the node from the number given on screen 2: up to 20 it is ±2 years, from 21 it starts two years below and runs upward with no ceiling, and the rule is symmetric — a pair sees each other only if each falls inside the other's band (`xor.ad/docs/chat_EN.md` §8.2). Narrowing is free; widening past the band is not.
+- **Age filter** — a range slider **inside your own age band**. The band is computed by the node from the number given on screen 2: up to 20 it is ±2 years, from 21 it starts two years below and runs upward with no ceiling, and the rule is symmetric — a pair sees each other only if each falls inside the other's band (`xor.ad/docs/chat_EN.md` §8.2). Widening past the band is not allowed. **Narrowing is, but in steps — decided 2026-09-15: the filter's bounds are multiples of 5 years or sit on the band's edge, and the width is at least 5 years.** Otherwise the filter would be an oracle: narrowing it a year at a time and watching which phrases drop out, one learns the exact age of every phrase's author, and by age joins up one person's phrases. The node accepts only such bounds. A band up to 20 is 5 years wide already, so there is nothing to narrow there. [retired] This said "narrowing is free".
   **The bounds are not labelled with numbers — settled 2026-08-26.** The handle simply stops: a stated bound would point out where the wall is and what number to claim in order to get past it. The stop is drawn to read as the end of the scale, not as a frozen interface.
   **For an adult the right end is "no limit", not a number.** The band has no ceiling, and an invented one such as 65+ would cut off older neighbours for no reason.
   **When the band has shifted** — the person got older and the saved filter was clamped into the new one — a single line says so on their next visit. Changing someone's feed in silence is not allowed.
@@ -59,7 +59,7 @@ covers the list.
 
 ## Logic
 
-- **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
+- **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents; "The app is out of date" is one state on every screen for any refusal on version grounds, not only in a conversation (added 2026-09-15 from the screen-state matrix).
 
 - **The feed has a size: 30 cards, then "show more" — decided 2026-09-10.** The size
   used to be named nowhere, and that silence promised more than the product can give:
@@ -75,7 +75,7 @@ covers the list.
 - **Language is a filter, not a set of shares (amended 2026-08-26).** What stood here was "about 95% in the user's language, 5% in other languages of the region, both shares configurable via environment variable". That was a [retired] different mechanic from `00-mechanics_EN.md` §8, and it loses for one reason: shares decide for the person silently. A filter is up to three languages, taken from `navigator.languages` by default, edited by hand, cleared with a tap, with the line "N more in other languages" always under the feed. A person always knows the district is livelier than their feed, and never mistakes the filter's silence for the district's.
 - **The node detects the language** with a local library, on its own machine: no text leaves in order to be identified. "AI" in the old wording was imprecise — there is no external service here and there will not be.
 - **An offer is not hidden by the language filter**: the Greek bakery across the road is just as useful to a Russian-speaking neighbour (§8 of the mechanics).
-- **Geolocation is not requested at all — edit of 2026-08-28, which retires the "where am I" button.** The point is worked out from indirect signals — time zone, address, language — labelled as approximate, with a wider default circle; it is refined **by hand**, by dragging on the diagram. There is no button asking for a precise position: a permission nobody can grant is a permission that cannot leak. This used to say "the exact position is requested by the person themselves, with the 'where am I' button".
+- **Geolocation is not requested at all — edit of 2026-08-28, which retires the "where am I" button.** The point is worked out from indirect signals — time zone, address, language — labelled as approximate, with a wider default circle — 5 km against 3 km for a point placed by hand (`00-mechanics_EN.md` §4, 2026-09-15); it is refined **by hand**, by dragging on the diagram. There is no button asking for a precise position: a permission nobody can grant is a permission that cannot leak. This used to say "the exact position is requested by the person themselves, with the 'where am I' button".
 
 ## Open questions
 

@@ -8,7 +8,7 @@ Move the identity to another device **or raise it from the paper code** (decided
 
 - A "move to another device" button — asks for the PIN first (§8.2, 2026-09-11), then shows **nine characters** in large type, in groups of three: `K7Q - M3F - 2X9`.
 - The invite's lifetime: two minutes, after which the code stops working.
-- On the new device, a field where those characters are typed by hand.
+- On the new device, a field where those characters are typed by hand, and after entry a **4-character check string** in large type (2026-09-15, below).
 - An **"extend"** button beside the timer (decided 2026-09-03, added to the
   screen's elements 2026-09-10): it **issues a new code and puts out the old
   one**, rather than extending it — a longer life would otherwise mean a longer
@@ -49,8 +49,10 @@ Move the identity to another device **or raise it from the paper code** (decided
   device), and that the local history goes nowhere but becomes unreadable for good —
   even if the identity is brought back here. The same rule as on the step-away and start-over screens: the cost
   is shown as numbers before, not as words after.
+- **When we did not answer — a line of its own, not "no connection"** (added 2026-09-15 from the screen-state matrix): no move code is shown, and the identity stays here — screen 11, "A move: this one is on us". On the new device a conversation with no history says "the history stayed on the previous device" (screens 8 and 11).
 
-- The invite is **single-use** and lives **two minutes**; entry may be wrong **five times** before it burns (`xor.ad/docs/chat_EN.md` §8.2).
+- The invite is **single-use** and lives **two minutes** (`xor.ad/docs/chat_EN.md` §8.2). **It has no attempt counter — corrected 2026-09-15 after the review panel:** a wrong entry yields a different `lookup_id`, no invite is found by it, and there is nothing to decrement — the same reason the paper code has no counter. The node cannot tell a typo from an expired code, and the new device has one line: "the code did not match or has expired" (screen 11). [retired] This said "entry may be wrong five times before it burns".
+- **A second entry of the same code cancels the move on both devices — decided 2026-09-15.** If entries for one invite arrive from two devices, the node does not pick which is genuine: the move is cancelled, the identity stays on the previous device, and both show "The move was cancelled" (screen 11). A code read over a shoulder and typed faster than the owner does not take the identity away this way; it only breaks the move.
 - **No link and no QR code — amended 2026-08-27.** A QR and a link with the key in the fragment after `#` used to stand here, and the reasoning about the fragment was sound: browsers do not send it to a server. But that construction is gone. §8.2 of the spec says it outright: "**moving an identity is a code, not a link**… the pairing lives entirely inside the clients, no separate page exists for it and no separate domain is registered." The QR existed for the sake of a long link — and left with it (`xor.ad/docs/depth-client_EN.md` §5.4).
 - **Nine characters, Crockford base32** without `I`, `L`, `O`, `U`: they get confused with one and zero. Case does not matter, the dashes need not be typed.
 - **The key does not pass through us here either:** stretching the code yields two halves — one by which the node **finds** the invitation, the other that **unwraps** the envelope, and the second never leaves for the server. The node sees a `lookup_id` and two opaque envelopes (§8.2).
@@ -59,6 +61,7 @@ Move the identity to another device **or raise it from the paper code** (decided
 - **The disk is not wiped, but the key to it is gone — rewritten 2026-09-11.** This used to read "if the identity is brought back the conversations come back with it". True, and dangerous: nothing put out the previous device's vault share, so after a move the old phone kept reading everything it had accumulated with its own PIN — including in the hands of whoever found it. Now **any move of an identity burns the previous device's share**, recovery by paper code and voluntary transfer alike. The local database stays on the disk, encrypted and unreadable for good. The cost is accepted and it is real: move to a laptop for an evening and come back, and the history on the phone is dead.
 - **On the new device the conversations are the same and the history is empty**: the messages are not in the node's database, so there is nothing to download. Older conversations stay silent there until the chat key is reissued (`xor.ad/docs/chat_EN.md` §8.13).
 - **Confirmation on the old device is mandatory.** Before the identity leaves, it shows two lines — how the new device named itself and when — and waits for "it's me". **The network line was removed on 2026-08-29**, and the price is recorded in the spec: it was the only verifiable signal here, while the device label is sent by the same side that is asking for the move. Without it no move happens (§14 of the spec). Honestly about the limit: if somebody was talked into pressing, this will not save them; the step gives a pause and a fact.
+- **A 4-character check string — decided 2026-09-15.** The new device shows it after the code is entered, the old one in the confirmation dialog above the two lines, and the question there is not "is this you?" but **"does it match the new device's screen?"**. The string is computed from the new device's public keys, so a stranger's device shows a different one: it is a verifiable signal in place of the removed network line, and the owner compares it by eye rather than trusting a label.
 - There is no grace period: leaving, you close the door at once. The insurance against theft is **the paper code issued at registration (screen 2)**. This used to point at screen 11: the code moved to registration on 2026-08-26 and the reference stayed behind. Since 2026-08-27 screen 11 is the empty and edge states, which have nothing to do with the paper code (edited 2026-09-14: this said "screen 11, which does not exist" [retired], and it stopped being true a day after it was written).
 
 ## What has to be said to the person
@@ -79,4 +82,4 @@ Move the identity to another device **or raise it from the paper code** (decided
   The price is named: one more button on the screen and one more branch in the
   transfer flow.
 - ~~What to do if a move is started and abandoned~~ — **the "moving" state is described above** (decided 2026-08-29). Closed in the Russian half that day and left open here until 2026-09-03: the halves are checked for numbers, not for which of them still calls a question open.
-- **Settled by drawing (2026-09-15).** How the two confirmation lines ("called itself", "when") are shown is not drawn.
+- **Settled by drawing (2026-09-15).** How the two confirmation lines ("called itself", "when") and the check string are shown is not drawn.

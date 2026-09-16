@@ -13,7 +13,7 @@ One phrase, large, with two actions at hand: like and "hide". The screen was cre
 
 ## What is on the screen
 
-- The phrase's text, large; its mode (solo / company / crowd) and remaining time — as a word and a number, not by fading alone (`xor.ad/docs/accessibility-and-i18n_EN.md`, rule 1).
+- The phrase's text, large, and its mode (solo / company / crowd). **Someone else's phrase shows no remaining time as a number — decided 2026-09-15:** other people's spans are not given out (`xor.ad/docs/chat_EN.md` §8.11), so in the last 65 minutes the word **"disappearing soon"** stands instead of a number, together with the fade — a word, not fading alone (`xor.ad/docs/accessibility-and-i18n_EN.md`, rule 1). **Your own phrase keeps the number:** a person already sees their own span on screen 9. [retired] This said "remaining time — as a word and a number" for any phrase.
 - **Two buttons: "like" and "hide".** Hiding is not blocking: the phrase leaves only your feed, the author learns nothing, and it can be brought back from the hidden list under "Me" (screen 5, screen 10).
 - **"…" with the two loud actions** — block and report, as on the card (screen 5). They do not become quieter because "hide" has a button of its own.
 - "Previous" and "next" buttons.
@@ -24,7 +24,7 @@ One phrase, large, with two actions at hand: like and "hide". The screen was cre
 - **The first swipe does not act, it explains** (decided 2026-09-15): over the phrase — "right is like, left is hide; you can bring hidden ones back under Me", with a "got it" button. Until it is pressed there is no like and no hide, and the phrase stays where it is. The device remembers that it was understood (screen 24).
 - **Hiding shows a "hidden · undo" line** for a few seconds, like "declined · undo" on a match (screen 6). A mis-swipe is undone with one tap, without going into settings.
 - **A like without a live phrase of your own** does not act by button or by swipe: the same "to like, say something yourself" line and the jump to the composer as for the inactive like on a card (screen 5); the phrase stays where it is.
-- **Your own phrase** also turns up in the viewer: it has no like and no "hide", it has its remaining time and "take down" (screen 9).
+- **Your own phrase** also turns up in the viewer: it has no like and no "hide", it has its remaining time as a number and "take down" (screen 9).
 - **With `prefers-reduced-motion`** the phrase does not fly off sideways: it changes without movement.
 
 ## Logic

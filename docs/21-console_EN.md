@@ -18,13 +18,14 @@ separate panel that is opened rather than kept open.
 - **Your own actions**: "put up a table", "applied to play", "application
   refused", "sent a phrase", "left the table". The line appears when the action
   happened, and describes it in the product's words rather than the code's.
-- **Errors that concern the person**: no connection, refused by quota, refused by
+- **Errors that concern the person**: no connection, we did not answer, refused by quota, refused by
   age, phrase too long, the table no longer exists.
   **"Refused by age" is only about the person's own age** (under 13, screen 2),
   clarified 2026-09-14. A table that became unavailable after its band was
   recalculated is named in the console the same way as one that vanished: "the
   table no longer exists". An age line at the moment of sitting down would confirm
   the age of whoever just sat there — the oracle screen 19 closed on 2026-09-03.
+  **"We did not answer" is separate from "no connection"** (added 2026-09-15 from the screen-state matrix): a 5xx answer from the node or a network error while the probe passes is "the node did not answer", and the line says it in the product's words (screen 11, "The console: we did not answer"). Telling these apart is what the console exists for.
 - **What the system did on the person's behalf — added 2026-09-10.** People
   remember their own actions; what was done for them looks like a breakage: "the
   move timed out, a pass was recorded", "three passes in a row — you are a

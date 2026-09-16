@@ -40,6 +40,16 @@ have destroyed their correspondence silently.
   no "something new" marker here: it would give away the rhythm of someone's
   conversations, the very metadata for which push was dropped (G8,
   `xor.ad/docs/open-work_EN.md`).
+- **At a table the lock does not stop the move window — an exception to "the PIN field and nothing else"** (added 2026-09-15 from the screen-state matrix). The five minutes for a move (screen 19) run on behind the lock, so if the move at the table was yours at the moment of locking, the lock shows one line, "your move at the table" — no board, no table lines, no table name (screen 11, "The tab is locked"). The price is named: whoever picks up the phone learns that the owner is at a table and it is their move.
+- **The PIN closes more than the history — decided 2026-09-15.** The identity's
+  signing key and the conversations' wrapping key sit on the device **wrapped under
+  the vault key**, which cannot be assembled without the PIN and the node's share; an
+  unlocked tab holds them in memory and forgets them on locking. So a locked tab
+  **does not publish, does not read new messages and holds no socket** until the PIN:
+  it has nothing to sign a request with and nothing to unwrap a conversation key with.
+  Whoever sits down at a shared computer with a locked tab gets neither the identity
+  nor new messages. [retired] Before, in the web, the signing and wrapping keys lay in
+  IndexedDB outside the vault key, and the tab lock was a lock on the interface.
 - **The counter stays quiet until the seventh attempt, and from the seventh it
   speaks plainly.** The wording is fixed by the spec (`xor.ad/docs/chat_EN.md`
   §8.2) and must not drift:
@@ -121,6 +131,8 @@ have destroyed their correspondence silently.
 ## Logic
 
 - **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
+- **Between entering the PIN and the verdict — a skeleton with no caption** (added 2026-09-15 from the screen-state matrix): the PIN field and the button stay unavailable until the answer; the skeleton rule is on screen 11, "Waiting for the first answer".
+- **When we did not answer on unlocking or a PIN change — a line of its own, not "no connection"** (added 2026-09-15 from the screen-state matrix): the tab stays locked, the old PIN works, and the line says it is not a wrong PIN — screen 11, "Locked: this one is on us" and "The PIN cannot be changed: this one is on us".
 
 - **Nothing on this screen can be undone**, and that is said out loud in the
   heading rather than implied by layout.
@@ -132,6 +144,11 @@ have destroyed their correspondence silently.
   the person.
 - **"Start over" is a new identity**, not a cleaned-up old one: the previous one is
   closed, and nothing brings it back, not even the paper code.
+- **An identity with no live session for a year is closed and deleted 30 days later —
+  decided 2026-09-15.** The node does not know the browser was cleared, and without a
+  term an abandoned identity — name, age, counters, the acceptance journal — would lie
+  there forever. The paper code will not raise it afterwards: it does not find a closed
+  identity, just as after "start over".
 
 ## Open questions
 

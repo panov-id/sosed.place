@@ -44,14 +44,15 @@ import tempfile
 
 # The three documents a person accepts, and what a change to each one costs.
 # "required": the identity must accept again before it can publish or open a
-# chat — these two are the contract itself. "silent": the accepted revision is
-# re-recorded and screen 15 marks it, with nothing blocked — the guidelines
-# describe what the product already enforces, and stopping a conversation to
-# announce a reworded sentence trains people to click through consent screens.
+# chat. Since 2026-09-15 all three are required (owner's decision after the final
+# review panel, LAW-14): the guidelines used to be "silent" — the node re-recorded
+# the new revision as accepted and only marked screen 15 — which made the
+# acceptance journal state that a person accepted a text nobody had shown them.
+# "silent" stays a value the check understands, so an old base record reads.
 DOCUMENTS = {
     "terms": ("terms_EN.md", "required"),
     "privacy": ("privacy_EN.md", "required"),
-    "guidelines": ("community-guidelines_EN.md", "silent"),
+    "guidelines": ("community-guidelines_EN.md", "required"),
 }
 
 MONTHS = {m: i for i, m in enumerate(

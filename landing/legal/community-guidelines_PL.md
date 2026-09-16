@@ -1,6 +1,6 @@
 # Zasady społeczności — sosed.place
 
-**Ostatnia aktualizacja: 14 września 2026**
+**Ostatnia aktualizacja: 15 września 2026**
 
 **Te zasady publikowane są w kilku językach. Obowiązuje wersja angielska; tłumaczenia mają charakter pomocniczy.**
 
@@ -10,7 +10,7 @@
 
 Treści muszą pozostawać w granicach norm spokojnego, pokojowego społeczeństwa. To, co jest **publikowane** — tablica i oferty sąsiedzkie — jest sprawdzane automatycznie przez **modele SI** przed pojawieniem się, a nie po.
 
-**Czat nie jest sprawdzany.** Idzie zaszyfrowany z jednego urządzenia na drugie i nie możemy go odczytać. **Od 09.09.2026 plansza do gry jest wyjątkiem:** plansza i ruchy nie są szyfrowane, widzimy je i sprawdzamy zgodność ruchów z zasadami gry. Słów nadal nie czytamy; ruch na planszy to nie słowa. Zasady poniżej obowiązują również tam; różni się tylko to, jak są egzekwowane — przez zgłoszenie rozmówcy, a nie przez sprawdzenie po naszej stronie.
+**Czat nie jest sprawdzany.** Idzie zaszyfrowany z jednego urządzenia na drugie i nie możemy go odczytać. **Od 09.09.2026 plansza do gry jest wyjątkiem:** plansza i ruchy nie są szyfrowane, widzimy je i sprawdzamy zgodność ruchów z zasadami gry. Słów nadal nie czytamy, z jednym wyjątkiem: słowo wymyślone w wisielcu nasz serwer widzi i sprawdza jak publikowaną wiadomość, zanim zobaczy je drugi gracz — odrzucone słowo liczy się do 15-minutowej pauzy. Zasady poniżej obowiązują również tam; różni się tylko to, jak są egzekwowane — przez zgłoszenie rozmówcy, a nie przez sprawdzenie po naszej stronie.
 
 ## Bądź dobrym sąsiadem
 

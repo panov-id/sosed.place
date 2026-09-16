@@ -2,11 +2,11 @@
 
 ## Purpose
 
-The one step of signing up: name, age and PIN. It ends here — the feed comes next. **Edit of 2026-08-26:** the birth year used to be asked on the splash, the name was optional, and there was no PIN at all.
+Signing up in two steps: who you are (name, age, language, consent) and what brings you back (PIN, paper code). It ends here — the feed comes next. **Edit of 2026-08-26:** the birth year used to be asked on the splash, the name was optional, and there was no PIN at all. **Edit of 2026-09-15:** this said "the one step of signing up: name, age and PIN" [retired] — the split was decided on 2026-08-28 (below), and the screen's first line did not know it.
 
 ## Two steps — decided 2026-08-28
 
-The screen is split in two. The number stays one: renumbering twenty screens for
+The screen is split in two. The number stays one: renumbering every screen for
 the sake of one fork costs more than describing it inside.
 
 | Step | What is asked | Why together |
@@ -52,6 +52,8 @@ begins.
 - **A private window is always a new person** (`00-mechanics_EN.md`, added 2026-09-15 after the review panel): in a private window this screen is passed again, and a closed window takes the identity with it — only the paper code issued here brings it back.
 
 - **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
+- **While the share exchange on step 2 runs — a skeleton with no caption** (added 2026-09-15 from the screen-state matrix): a skeleton in place of the code, and the "next" button unavailable until the answer; the skeleton rule is on screen 11, "Waiting for the first answer".
+- **When we did not answer — a state of its own, not "no connection"** (added 2026-09-15 from the screen-state matrix): the name, age and PIN stay on the screen, and the line blames us rather than the network — screen 11, "Registration step 2: this one is on us".
 
 - **The terms are accepted before the first screen, not after — recorded
   2026-08-28.** The requirement rests on DSA Article 14 and the checklist that
@@ -66,7 +68,7 @@ begins.
 - **The name is required.** It is published text: the other person sees it on the match card and in the chat, so it goes through the same moderation queue as a phrase — but **at the first publication**, not here: until then it is visible to nobody (`00-mechanics_EN.md` §5).
 - **Age is asked before the feed**, because the feed itself depends on it: it is cut by age bands, and without the number there is nothing to assemble it from. What is asked is the number of years, not a date of birth: a full date is more precise than the product needs and works against the minimisation stated in the policy.
 - **The PIN is required and asked here.** It locks an open tab and takes part in encrypting everything on disk. It cannot be deferred: the terminal client writes its key file immediately (`00-mechanics_EN.md` §1).
-- **An obvious PIN warns rather than forbids — settled 2026-08-26.** A ban would hit exactly the person who barely reached the end of the single registration screen, and the gain is smaller than it looks: a million options are no defence with or without a list — the node's share and the ten-attempt counter are.
+- **An obvious PIN warns rather than forbids — settled 2026-08-26.** A ban would hit exactly the person who barely reached the end of registration, and the gain is smaller than it looks: a million options are no defence with or without a list — the node's share and the ten-attempt counter are.
 - **The lower age bound is said out loud — settled 2026-08-26.** The database carries `CHECK (age >= 13)` — **there is no upper bound, decided 2026-08-28**: age is not capped from above at all, because an invented ceiling would cut off a living person for the sake of catching a typo, and the band's right edge already carries no number ("no limit", screen 3), and until this decision a twelve-year-old got a refusal from the node with not one word about why. The cost is accepted and known: the line does hint which number to type in order to pass — but there is no age verification here at all, the spec calls it self-declaration, and silence would add no check, only take the explanation away from the honest.
 - **The paper code is issued here — settled 2026-08-26** (overriding the move to the first chat of 2026-08-18). The reason is not that there is something to lose before the chat, but that the cost of being wrong is asymmetric: a screen that fails to convince mends itself — the person returns a day later; a device lost without a code never comes back.
 - **The code is shown once and confirmed by typing two groups.** Without the confirmation the "next" button stays inactive: "next" gets pressed unread, and recovery cannot ask afterwards.
