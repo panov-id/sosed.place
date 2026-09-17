@@ -32,6 +32,9 @@ Each new edition of the Terms, the Privacy Policy or the Community Guidelines is
 - **New editions** (§13): as in the Terms.
 - **More data named, again** (§3, §6a): the display name is required and moderated like a message; the languages you chose for the feed; the phrases you hid and the people you blocked, with the block's date; your support requests and our answers.
 - **One date** (§6a): the game-board exception is dated 2026-09-09.
+- **Age** (§3): your age is shown, with its changes, to the people you match with, as your name is.
+- **Hidden and blocked** (§3): hidden table lines are named next to hidden phrases, and blocking somebody by a phrase is said to reveal which other phrases were theirs.
+- **Names** (§6a): a display name that is refused can be edited like a message.
 
 **Community Guidelines**
 

@@ -44,7 +44,7 @@ A table is a shared board several neighbours sit around. The screen was created 
   The five minutes are **chosen, not measured**, and chosen at the upper bound:
   that is how long you may think in chess without being absent. The cost is
   named: a pass will land on someone who was thinking.
-- **The majority of the players (spectators do not decide — 2026-09-16) can ask someone to leave.** Whoever is removed sees the table as if it did not exist: the socket closes, the table does not open (2026-09-16). Two out of three say "enough" and the person stands up. Nobody owns a table: the neighbour who started the game does not become its master.
+- **The majority of the players (spectators do not decide — 2026-09-16) can ask someone to leave.** For whoever is removed the table leaves the screen and the socket closes; sitting down again is the same move, as long as nobody seated has blocked them (canon §6.1, 2026-09-08; refined 2026-09-17). Two out of three say "enough" and the person stands up. Nobody owns a table: the neighbour who started the game does not become its master.
 - **Sitting down and playing are different things (decided 2026-09-09).** Whoever
   sits down gets **the chat and the board**; to play, they apply **for the next
   round**. A game in progress is not interrupted by anyone arriving — otherwise
