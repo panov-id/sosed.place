@@ -103,6 +103,7 @@ Interface states for missing data or reached limits, rather than the normal usag
   changed documents. Reading is left alone **deliberately**: someone who came to read a
   reply should get the reply, not a legal text. Since 2026-09-15 the guidelines wait for the
   same checkbox as the terms and the policy (screen 15; [retired] this said "recorded silently").
+- **Nothing liked (added 2026-09-17).** Screen 25 is empty until something in the feed is liked, or everything liked has expired: the line points to the feed rather than explaining the mechanics.
 
 ## Wordings
 
@@ -177,6 +178,7 @@ twice, no explaining how the system is built, no "oops".
 | The current code did not match on reissue | The code did not match | A new code is issued only on the valid one. The current one still works. | Try again |
 | Appearance with no connection | — | Applied. We will save it once the connection is back. | — |
 | A phrase ended in the viewer | The phrase has ended | It is no longer here. | — |
+| Nothing liked | — | Like a phrase or a table in the feed — they gather here. | To the feed |
 | The viewer reached the end | No more phrases | New ones will appear in the feed. | To the feed |
 | Registration step 2: this one is on us | This one is on us | We did not answer — that is our side. Your name, age and PIN are still here — we will show the code as soon as we answer. | Retry |
 | Locked: this one is on us | This one is on us | The PIN is checked on our side, and we are not answering right now. It is not a wrong PIN — try again a little later. | Retry |

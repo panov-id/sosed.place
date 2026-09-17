@@ -1135,6 +1135,18 @@ author learns only that number, as they learned of the like. Once the offer has 
 the like is spent — declining is the "not now" button on the card (screen 6). The price is
 named: the count on a phrase can move up and down, and the author sees it.
 
+**What is liked leaves the feed and gathers on one screen — the owner's decision of
+2026-09-17.** The node does not deliver what this person has already liked: the card
+leaves the feed right after the tap (with a "liked · undo" line) and lives on from then on
+screen 25 "My likes" — phrases, private authors' offers and tables, as feed cards, while
+they live. A like is taken back there. The node itself serves the list (`GET /likes`), so
+after an identity transfer it is the same. The price is named: an active person's feed
+thins out, and they see "show more" more often.
+
+**A table is liked without sitting down (2026-09-17).** It is a bookmark and a sign of
+interest, not a match: the table goes to "My likes", from where one sits down at it;
+everyone seated sees the count, nobody sees who, as with a phrase.
+
 **An offer lives exactly as long as both phrases live.** Either one expires and the
 match goes with it, because the meeting of moods was what tied them together.
 

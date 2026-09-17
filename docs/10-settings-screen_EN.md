@@ -45,6 +45,7 @@ They were not split for a simple reason: the bottom navigation has exactly four 
 - **Step away** — 20 minutes, an hour, or 4 hours (screen 20). From here, because there is nowhere else.
 - **Show hints again** (screen 24, added 2026-09-15): wipes the device's memory of closed hints.
 - **A default zone and mode for new phrases** (added 2026-08-28): the composer opens with them, and changing them per phrase is no longer required. The price is named: privacy stops being a decision made for **each** phrase, while different phrases often want different things — so the default is visible in the composer and editable right there. **A second price — added 2026-09-14 after the review panel:** the same point with the same step on different phrases links them to each other, and a default makes such a repeat the norm. The composer says so in a line next to the default (screen 4).
+- **My likes** — screen 25 (the owner's decision of 2026-09-17): liked phrases, private authors' offers and tables as feed cards while they live; a like is taken back there.
 - **Hidden phrases** — a list with a way back (added 2026-08-28, screen 5). Short-lived by construction: a hidden phrase disappears with its own span, like any other.
 - **Blocked: N** — the list of blocks without names and without phrases: a line "blocked since <date> · lift", one per block (added 2026-09-16 from the API contract, `GET /blocks`, `DELETE /blocks/:id`). Lifting does not recompute the feed at once: the set of visible tables is computed on the next entry into the feed (chat spec §6.1).
 

@@ -28,6 +28,7 @@ The screen from which anything at all appears in the feed. Opened by the "Say" b
 ## Tab "table"
 
 - Pick a game — **from the launch set: dominoes, draughts, chess** (screen 18, decided 2026-09-02). The other classes — dot grid, deck and hand, dice, physics, text — arrive later and are not offered here yet (edited 2026-09-14: this listed six classes [retired], without the dot grid and without saying which exist at launch).
+- **A table name — an optional field of up to 24 graphemes** (the owner's decision of 2026-09-17): "the table by the bakery", "dominoes after work". It is published text and goes through **the same moderation queue as a phrase**; the table enters the feed at once, nameless, and the name appears on the card after the verdict (median 2.8 seconds, `00-mechanics_EN.md` §5). A refused name is the block at the top of screen 9, with the reason and a field to fix it; the table lives on without a name. The node checks the limit (`xor.ad/docs/chat_EN.md` §6.1).
 - The same stepped blur knob: a table has a zone, and it is seen by those whose viewing circle crosses it.
 - A "set it up" button.
 - From there the table lives by the rules of screen 19: anyone within the radius may sit down, bands are checked each with each, the majority removes a sitter, and whoever set it up **does not become its owner** — nobody holds sole power over a table, its founder included.

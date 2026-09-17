@@ -16,13 +16,14 @@ Helping a new person work out how things work here. Decided 2026-09-15: **not a 
 
 | When | Where | What it says |
 |---|---|---|
-| the first like | screen 5 | the author sees how many likes, not whose; an offer to talk comes if they like back; a like can be taken back until then |
+| the first like | screen 5 | the author sees how many likes, not whose; an offer to talk comes if they like back; the phrase goes to "My likes", where the like can be taken back until then |
 | the first offer to talk | screen 6 | a conversation starts only if both agree; "not now" tells the other nothing |
 | the first open conversation | screen 8 | each side has its own span of silence; a conversation fades and ends for the two at different times |
 | the first hide | screens 5 and 23 | hiding is not blocking: the author will not know, and it can be brought back under "Me" |
 | the first swipe in the viewer | screen 23 | right is like, left is hide; the gesture does not act before "got it" |
 | the first table in the feed | screen 19 | one can sit at one table; whoever sits watches and talks, and plays by applying for the next game |
 | the first offer in the feed | screen 17 | this is an advertisement with a discount, marked with a word; a venue's "save" keeps the discount until its term, a private author's like offers to talk at once |
+| the first like on a table | screens 19 and 23 | a like does not seat you: the table goes to "My likes", and you can sit down from there; those seated see the count, not the names |
 
 The "first visit with no phrase of your own" line is not a hint but a screen 11 state: it stays while there is no phrase of one's own and is not closed by a tap (`11-empty-and-edge-states_EN.md`).
 

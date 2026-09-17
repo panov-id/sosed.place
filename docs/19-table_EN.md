@@ -8,7 +8,8 @@ A table is a shared board several neighbours sit around. The screen was created 
 
 ## How it looks and how to join
 
-- A table shows up **in the feed**, among the phrases, to those whose viewing circle caught its zone — marked as a table, with the name of the game and two numbers: playing and watching (below).
+- A table shows up **in the feed**, among the phrases, to those whose viewing circle caught its zone — marked as a table, with the game, its name if one was given when it was set (screen 4, through the moderation queue, 2026-09-17), two numbers: playing and watching (below) — and a like count.
+- **A table can be liked without sitting down — the owner's decision of 2026-09-17.** The like is a bookmark and a sign of interest: the table goes to "My likes" (screen 25), from where one sits down at it; everyone seated sees the count, nobody sees who. A table like makes neither a match nor an offer to talk; it is taken back there while the table lives.
 - **The games at a table are the same classes as for two** (screen 18): dominoes and cards gather a group best, a grid board usually stays pairwise, and flick-draughts takes two to four (`xor.ad/docs/chat_EN.md` §6; edited 2026-09-14: this said "any number of players").
 - **A table is set up from the composer** (screen 4, the "table" tab): the game, the zone, a "set it up" button. Until 2026-08-27 that path did not exist — this screen described pulling up a chair to a table nobody could put there.
 - **Getting back to a table goes through the line in the feed header** (settled 2026-08-27). A table is not in the conversations list: it is not a conversation. The cost is named: narrow the circle or leave the radius and the line still returns you, but finding the table in the feed again will not work.
