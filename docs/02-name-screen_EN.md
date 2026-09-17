@@ -65,7 +65,7 @@ begins.
   2026-08-29, screen 15; the schema is in `xor.ad/docs/migrations-step1_EN.md`) — on a new revision the documents are shown
   again, and "new" is decided by the hash rather than by the memory of whoever
   edited the file.
-- **The name is required.** It is published text: the other person sees it on the match card and in the chat, so it goes through the same moderation queue as a phrase — but **at the first publication**, not here: until then it is visible to nobody (`00-mechanics_EN.md` §5).
+- **The name is required.** It is published text: the other person sees it on the match card and in the chat — **and the age next to it** (said here 2026-09-17: the age is seen by whoever you talk to, not by the feed) — so the name goes through the same moderation queue as a phrase — but **at the first publication**, not here: until then it is visible to nobody (`00-mechanics_EN.md` §5).
 - **Age is asked before the feed**, because the feed itself depends on it: it is cut by age bands, and without the number there is nothing to assemble it from. What is asked is the number of years, not a date of birth: a full date is more precise than the product needs and works against the minimisation stated in the policy.
 - **The PIN is required and asked here.** It locks an open tab and takes part in encrypting everything on disk. It cannot be deferred: the terminal client writes its key file immediately (`00-mechanics_EN.md` §1).
 - **An obvious PIN warns rather than forbids — settled 2026-08-26.** A ban would hit exactly the person who barely reached the end of registration, and the gain is smaller than it looks: a million options are no defence with or without a list — the node's share and the ten-attempt counter are.
