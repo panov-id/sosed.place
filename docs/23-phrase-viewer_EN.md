@@ -9,7 +9,7 @@ One phrase, large, with two actions at hand: like and "hide". The screen was cre
 - **A tap on a phrase's text in the feed** (screen 3). The card's buttons — the like and "…" — work as before and do not open the viewer.
 - It pages through **every card of the feed — neighbours' phrases and your own, offers and tables** — in feed order: newest on top, so the next one is older (the owner's decision of 2026-09-17; [retired] this said "the viewer also skips offers and tables"). Your own phrase still waiting for its check is skipped: on screen 9 it stands apart. **What is already liked is skipped too** — it is not in the feed, it lives on screen 25 "My likes", and that is where a like is taken back.
 - The end of the loaded batch is the same "show more" button as under the feed (screen 3, 30 cards).
-- Closing is a "close" button or `Esc`; the feed opens on the phrase that was viewed last.
+- Closing is a "close" button or `Esc`; the feed opens on the card that was viewed last.
 
 ## What is on the screen
 
@@ -22,8 +22,10 @@ One phrase, large, with two actions at hand: like and "hide". The screen was cre
 
 ## Gestures and keys
 
-- **Swiping works only on a touch screen** (`pointer: coarse`, `00-mechanics_EN.md` §4): right is like, left is hide; after either, the next card (decided 2026-09-15). **The swipe acts only on a phrase; on an offer or a table it only pages (2026-09-17):** a private author's like makes the offer at once, and "sit down" stands you up from your previous table — a mis-gesture here is irreversible, so those actions stay on buttons. What is liked leaves the viewer as it leaves the feed; the like is taken back on screen 25. With a mouse or a keyboard the same results come from the buttons; the left and right arrow keys only page and do nothing to the phrase, so that a mistyped key does not hide a neighbour.
-- **The first swipe does not act, it explains** (decided 2026-09-15): over the phrase — "right is like, left is hide; you can bring hidden ones back under Me", with a "got it" button. Until it is pressed there is no like and no hide, and the phrase stays where it is. The device remembers that it was understood (screen 24).
+- **Swiping works only on a touch screen** (`pointer: coarse`, `00-mechanics_EN.md` §4): right is like, left is hide; after either, the next card (decided 2026-09-15). That is how every card-paging gesture works elsewhere, and the habit is kept.
+- **Left is "hide" on any card; right is whatever reversible thing the card has (the owner's decision of 2026-09-17):** a like on a phrase, a bookmark like on a table (screen 19), "Save" on a venue's offer (screen 17). **On a private author's offer, right does not act** — it only pages: that like makes an offer to talk at once and cannot be taken back (`00-mechanics_EN.md` §11), and a mis-gesture must be undoable. "Sit down" is never done by a gesture: it stands you up from your previous table. What is liked leaves the viewer as it leaves the feed; the like is taken back on screen 25. [retired] This said "on an offer or a table the swipe only pages".
+- **The keyboard repeats the gesture (the owner's decision of 2026-09-17):** → is the swipe right, ← is "hide"; ↓ and Space page forward, ↑ and Shift+Space back; `Esc` closes. A mistyped key is undone by the same "hidden · undo" line as a mis-swipe, so the argument "arrows only page" is dropped. [retired] This said "the left and right arrow keys only page and do nothing to the phrase". With a mouse — the buttons.
+- **The first swipe does not act, it explains** (decided 2026-09-15; since 2026-09-17 the same for the first ← or → key): over the card — "right is like, left is hide; you can bring hidden ones back under Me", with a "got it" button. Until it is pressed there is no like and no hide, and the phrase stays where it is. The device remembers that it was understood (screen 24).
 - **Hiding shows a "hidden · undo" line** for a few seconds, like "declined · undo" on a match (screen 6). A mis-swipe is undone with one tap, without going into settings.
 - **A like without a live phrase of your own** does not act by button or by swipe: the same "to like, say something yourself" line and the jump to the composer as for the inactive like on a card (screen 5); the phrase stays where it is.
 - **Your own phrase** also turns up in the viewer: it has no like and no "hide", it has its remaining time as a number and "take down" (screen 9).
@@ -43,5 +45,6 @@ One phrase, large, with two actions at hand: like and "hide". The screen was cre
 - ~~Should there be a full-screen view~~ — **yes, with like and "hide"** (decided 2026-09-15).
 - ~~What a swipe does~~ — **right like, left hide, touch screens only, the first swipe explains** (decided 2026-09-15).
 - The text size, where the buttons sit and how the "hidden · undo" line looks — settled by the drawing (2026-09-15).
-- ~~Whether to skip offers and tables~~ — **no, every feed card is paged; the swipe on them only pages** (the owner's decision of 2026-09-17, above).
+- ~~Whether to skip offers and tables~~ — **no, every feed card is paged** (the owner's decision of 2026-09-17, above).
+- ~~What the arrow keys do~~ — **the same as the swipe; paging is ↑/↓ and Space** (the owner's decision of 2026-09-17, above).
 - How the offer and table cards lie in the viewer, large and with their buttons — settled by the drawing (2026-09-17).
