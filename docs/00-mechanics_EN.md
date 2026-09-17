@@ -995,6 +995,7 @@ holds it for the same periods as the server**.
 | the encrypted UID | local storage | until the person clears the browser |
 | settings: conversation lifetime, language filter, zone | local storage | same |
 | a point placed by hand (§4) | local storage | until changed or the browser is cleared (2026-09-15) |
+| which lines of a conversation were already shown — for the "new" dot (screen 7) | IndexedDB, encrypted, next to the conversation | until the conversation expires; empty after an identity transfer (2026-09-17) |
 | closed hints (screen 24) | local storage | until the person clears the browser or starts over (2026-09-15) |
 | the consent choice and its date | **the server**, `legal_acceptances` | proof of acceptance: a date and the digest of the text's substance | edited 2026-08-31; [retired] it used to live in local storage |
 | conversations: messages, times, status | IndexedDB, encrypted with Web Crypto | until the conversation expires (§2) |

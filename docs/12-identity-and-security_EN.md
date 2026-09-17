@@ -37,7 +37,7 @@ have destroyed their correspondence silently.
   table does not even learn the name — and the name is what neighbours find a
   person by in the feed (screen 6). The price is accepted: the owner cannot see
   whether anything new arrived until they enter six digits. There is deliberately
-  no "something new" marker here: it would give away the rhythm of someone's
+  no "something new" marker here (the "new" dot of screen 7 lives only behind the lock, 2026-09-17): it would give away the rhythm of someone's
   conversations, the very metadata for which push was dropped (G8,
   `xor.ad/docs/open-work_EN.md`).
 - **At a table the lock does not stop the move window — an exception to "the PIN field and nothing else"** (added 2026-09-15 from the screen-state matrix). The five minutes for a move (screen 19) run on behind the lock, so if the move at the table was yours at the moment of locking, the lock shows one line, "your move at the table" — no board, no table lines, no table name (screen 11, "The tab is locked"). The price is named: whoever picks up the phone learns that the owner is at a table and it is their move.

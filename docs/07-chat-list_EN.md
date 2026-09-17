@@ -9,7 +9,8 @@ The section holding everything to do with talking: offers waiting for an answer,
 - **Two tabs: "Offers" and "Conversations".** The counter is **on the first one only** (settled 2026-08-27), and it counts offers waiting for your answer. There is no number on "Conversations": an offer has a hard deadline and somebody else waiting, while a conversation is your own — when to return to it is not the product's call. The cost is named: someone dropping in for a minute will not learn that a conversation opened somewhere, and it may fade before they do.
 - A list: one entry per offer or per conversation. A conversation's entry carries **the name, a fragment of the last line, and what is left of your own timer** (settled 2026-08-26): the timer matters more than an unread count, because a conversation dies of silence and that is the only thing requiring action.
 - **A "waiting for your reply" mark** on a conversation row when the last line is theirs (added 2026-08-28). This is not a report of someone else's action: the line is already on your device, and the mark is computed there.
-- **A dot on the "Conversations" tab** when a new conversation has opened since you last looked (added 2026-08-28). Not a counter and not "unread": **which conversations you have already seen is remembered by the device**, and the node neither knows nor will know about your visits. The price is accepted: the dot clears when you open the tab rather than when you read anything — and that is all it can do.
+- **A "new" dot on a conversation's entry — the owner's decision of 2026-09-17.** It stands while the conversation holds lines screen 8 has not shown yet; it clears when the conversation is opened. The device counts it: the catch-up delivery (`xor.ad/docs/chat_EN.md` §8.12) brings the lines here, and only the device knows which of them were shown — the node learns nothing about reading. No number on purpose: a number is a metric, and the timer in the entry matters more. The price is named: after an identity transfer the device's memory is empty, and everything that arrived shows as new once.
+- **A dot on the "Conversations" tab and on the "Conversations" item of the bottom navigation** (on a wide screen — in the feed header) while at least one conversation carries a dot or a new conversation has opened (2026-08-28; since 2026-09-17 a new line too). Not a counter and not "unread": **which conversations you have seen and what was shown in them is remembered by the device**, and the node neither knows nor will know about your visits. [retired] This said "the dot clears when you open the tab rather than when you read anything" — now a conversation's dot clears when it is opened.
 - Tap to go inside.
 
 ## Logic
@@ -35,7 +36,7 @@ The section holding everything to do with talking: offers waiting for an answer,
 
 ## Open questions
 
-- ~~What an entry shows~~ — settled 2026-08-26 (above). There is no unread counter: it would mean the node knows who opened a conversation and when.
+- ~~What an entry shows~~ — settled 2026-08-26 (above). There is no unread counter: it would mean the node knows who opened a conversation and when. The "new" dot (2026-09-17) means no such thing — the device counts it.
 - ~~Sorting~~ — **by the time of the last line** (settled 2026-08-26): the list answers the question "where are people talking right now".
 - ~~The counter on the offers tab~~ — it counts offers **waiting for your answer** and clears as they are answered, not by visiting the tab (settled 2026-08-26). Otherwise one visits, does not answer, and the offer quietly expires with the phrases.
 - ~~A counter on the conversations tab~~ — **there is none** (2026-08-27).
