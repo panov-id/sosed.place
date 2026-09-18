@@ -19,7 +19,7 @@ Everything a person liked in the feed that is still alive: neighbours' phrases, 
 - **A phrase expired or was taken down by its author** — the card disappears, as in the feed: someone else's span is not given out, there is no number here, in the last 65 minutes — "disappearing soon" (screen 23).
 - **A table closed** — the card disappears; the table you sit at is visible here too while it lives.
 - **The author is blocked** — their phrases leave here along with the feed (screen 5).
-- **Your own step-away** removes likes along with phrases (screen 20): coming back, a person finds this empty.
+- **Your own step-away also removes the likes you gave** — on phrases and tables — along with your phrases (the owner's decision of 2026-09-18, screen 20): coming back, a person finds this empty.
 
 ## Logic
 

@@ -63,7 +63,7 @@ Interface states for missing data or reached limits, rather than the normal usag
 - **That move is not allowed (added 2026-09-15).** The engine stopped a move the game's rules do not let through (screen 18). The move is not counted and the turn has not passed.
 - **A decision on your notice (added 2026-09-15).** The device asked by the receipt, and there is a decision (`xor.ad/docs/dsa/SPEC_EN.md` §6): a dot on "Me" → "My notices", the decision's text only after a tap.
 - **An offer's link is switched off (added 2026-09-15).** After reports the link of this offer no longer opens; the offer itself is live (screen 17). A line stands in place of the jump rather than silence.
-- **Your own table with nobody sitting at it (added 2026-09-10).** An empty table does not reach the selection and goes out on silence; only its author sees it, in the list of their own (screen 9). The line explains why it is not in the feed — otherwise the author reads it as a fault.
+- **Your own table closed (was "your own table with nobody sitting at it", 2026-09-10; rewritten 2026-09-18 by the owner's decision).** A table closes when the last one stands up — there is no empty table of one's own; the line says the table is closed and can be set again — otherwise the author looks for it in the list.
 - **Nothing in "Offers" (added 2026-09-15).** Nobody is waiting for your answer. The line says where offers come from and invites nowhere: an offer cannot be summoned, only received (screen 7).
 - **Nothing in "Conversations" (added 2026-09-15).** Not a single open conversation; the line says how one opens and leads to the feed (screen 7).
 - **Nothing in "My messages" (added 2026-09-15).** No live phrases — there were none, or stepping away took them down (screens 9 and 20). The line names the free slots and leads to the composer.
@@ -148,7 +148,7 @@ twice, no explaining how the system is built, no "oops".
 | The move timed out | A pass was recorded | Five minutes went by without a move, and a pass was made for you. | — |
 | Three passes | You are watching now | Three moves went by without you. You can apply once a seat frees up. | Watch |
 | A report is being moved | This looks like something illegal | Your text is now in the notice form. Confirm and send. The decision will appear under "Me" → "My notices"; clear your browser data and you will not see it — leave an email. | Review and send |
-| Your own table with nobody at it | Nobody at the table | An empty table is not shown in the feed. Sit down at it and it will be seen again — you will have to stand up from your current table. | Sit down |
+| Your own table closed | The table closed | The last one stood up — the table is closed. Set a new one if you like. | Set a table |
 | You missed a message | You missed a message | The text is neither here nor with us — ask them to send it again. | — |
 | Nothing in "Offers" | Nobody is calling yet | An offer comes when someone likes a live phrase of yours. | — |
 | Nothing in "Conversations" | No conversations yet | A conversation opens once an offer is accepted. | To the feed |

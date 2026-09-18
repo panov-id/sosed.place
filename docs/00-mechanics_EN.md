@@ -1131,7 +1131,7 @@ sees that there is no answer yet. When the other person was last online is not
 shown: that is about them, not about the conversation.
 
 **A like can be taken back at any time until an offer to talk has come of it — decided
-2026-09-15.** A second tap removes the like: the count on the phrase goes down, and the
+2026-09-15.** It is taken back on screen 25 "My likes", where what is liked leaves the feed for (2026-09-17; [retired] this said "a second tap removes the like"): the count on the phrase goes down, and the
 author learns only that number, as they learned of the like. Once the offer has opened,
 the like is spent — declining is the "not now" button on the card (screen 6). The price is
 named: the count on a phrase can move up and down, and the author sees it.
@@ -1233,7 +1233,7 @@ touch either for the sake of playing together (settled 2026-08-26).
 
 **What happens at the moment of leaving:**
 
-- **Your own phrases are deleted for good**, along with the likes they collected. The quota slots free up at once: come back and you write anew, with all four available (edited 2026-09-07: this said "five" — a relic of the old quota, marked [retired] in §3 back on 2026-08-28). **What frees is the slots, and only the slots**: the hourly limit of four publications, the refusal counter and whatever is left of the fifteen-minute pause all survive the departure (§3, added 2026-09-07). Otherwise the button meant to help you break off would double as a way to speak twice as fast.
+- **Your own phrases are deleted for good**, along with the likes they collected; **the likes you gave** on others' phrases and tables are taken back too — "My likes" (screen 25) empties (the owner's decision of 2026-09-18). The quota slots free up at once: come back and you write anew, with all four available (edited 2026-09-07: this said "five" — a relic of the old quota, marked [retired] in §3 back on 2026-08-28). **What frees is the slots, and only the slots**: the hourly limit of four publications, the refusal counter and whatever is left of the fifteen-minute pause all survive the departure (§3, added 2026-09-07). Otherwise the button meant to help you break off would double as a way to speak twice as fast.
 - **Matches burn.** For whoever was waiting on an answer, the offer simply disappears — with no explanation of who left or why.
 - **Conversations run on their own timers** and are not frozen: your silence keeps counting. So a four-hour departure is survived only by a 260-minute conversation where you wrote shortly before leaving, and the rest are gone (edited 2026-09-14: "eight hours" [retired] was survived by none). This is said **before** the press, on the screen where the span is chosen, not after.
 - **The screen goes empty**: no feed, no conversations, no counters — one line and the time remaining.

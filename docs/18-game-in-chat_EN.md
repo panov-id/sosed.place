@@ -83,6 +83,8 @@ The four operations on a piece — **take, place, rotate, flip** — cover the f
 
 ## Open questions
 
+- ~~The board over the conversation or split on 375 px~~ — **as at a table: collapsed into a strip, opening as a sheet over the lines** (the owner's decision of 2026-09-18 from the night sheets `panel/design/screen-14-15-18.svg` frame 18A and `screen-19.svg`).
+
 - ~~The set of boards at launch~~ — **all three at once: dominoes, draughts, chess** (decided 2026-09-02). The engine is one, and the rules are a row of the class table (§6 of the canon), so a third board costs a third set of pieces, a board's markings and its row of rules, not a third engine (edited 2026-09-14: this said "knows no rules" [retired]). The price is named: three times the artwork of starting with one.
 - ~~What happens to the board on a lost connection~~ — **whoever returns takes the state from the peer** (settled 2026-08-27): the node carries and, since 2026-09-10, holds the position in a game cache. This used to read "there is no board in the database and there will not be" and "if both drop at once, the game is lost for good": with the cache it is not lost, and whoever returns takes the position from the node.
 - ~~Whether an undo is needed at all~~ — **there is one, but as a request rather than a button (decided 2026-08-29).** "Put it back" sends a proposal to the others; once **everyone** agrees, the board steps back once. There is no unilateral undo for the same reason there is no table owner: nobody holds power over a shared board.

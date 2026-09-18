@@ -18,7 +18,7 @@ Helping a new person work out how things work here. Decided 2026-09-15: **not a 
 |---|---|---|
 | the first like | screen 5 | the author sees how many likes, not whose; an offer to talk comes if they like back; the phrase goes to "My likes", where the like can be taken back until then |
 | the first offer to talk | screen 6 | a conversation starts only if both agree; "not now" tells the other nothing |
-| the first open conversation | screen 8 | each side has its own span of silence; a conversation fades and ends for the two at different times |
+| the first open conversation | screen 8 | each side has its own span of silence; a conversation fades and ends for the two at different times; the product introduces you, what follows is yours: you exchange contacts yourselves (2026-09-18 after the UX panel, screen 8) |
 | the first hide | screens 5 and 23 | hiding is not blocking: the author will not know, and it can be brought back under "Me" |
 | the first swipe or arrow key in the viewer | screen 23 | right is like, left is hide; neither the gesture nor the key acts before "got it" |
 | the first table in the feed | screen 19 | one can sit at one table; whoever sits watches and talks, and plays by applying for the next game |

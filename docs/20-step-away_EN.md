@@ -7,12 +7,12 @@ A temporary departure for someone who has been sitting here too long. Not "a pau
 ## The choice screen
 
 - Three buttons: **20 minutes**, **an hour**, **4 hours** (decided 2026-09-14; "8 hours" [retired] the same day: longer than any conversation, review panel; the third used to be "until morning" [retired] — it had no end hour, so the price "2 conversations out of 7 will not survive" could not be counted).
-- Beneath them, the cost of the choice, plainly and in advance: how many live phrases will vanish and how many conversations will not survive that span. The numbers are computed on the spot rather than described in general terms.
+- Beneath them, the cost of the choice, plainly and in advance: how many live phrases will vanish, how many of your likes will be taken back (the owner's decision of 2026-09-18: stepping away also removes the likes you gave on phrases and tables — "My likes" empties) and how many conversations will not survive that span. The numbers are computed on the spot rather than described in general terms.
 - A cancel button — a departure must not happen by a misplaced tap.
 
 ## What has to be said to the person
 
-> Your phrases will vanish along with their likes, and offers to talk will burn. Conversations run on their own timers: this break is survived only by those whose span outlasts it, counting from your last message — how many, it says beneath the buttons. If you are sitting at a table, you will stand up from it — the game goes on without you. A phrase still waiting for its check will vanish with the rest. The hourly posting limit and the pause after refusals outlast the break: when you come back you get four free places, not a fresh hour.
+> Your phrases will vanish along with their likes, your likes on others' phrases and tables will be taken back, and offers to talk will burn. Conversations run on their own timers: this break is survived only by those whose span outlasts it, counting from your last message — how many, it says beneath the buttons. If you are sitting at a table, you will stand up from it — the game goes on without you. A phrase still waiting for its check will vanish with the rest. The hourly posting limit and the pause after refusals outlast the break: when you come back you get four free places, not a fresh hour.
 
 The last two sentences were added on 2026-09-14: the rule "say it before the tap" stood below since 2026-09-07, and the quote itself did not follow it.
 
