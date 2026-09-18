@@ -64,7 +64,7 @@ deliberate.
   process and disappears with it, like everything else on the device
   (`00-mechanics_EN.md` §9). No copy goes to the node: what the platform needs,
   the platform already writes in its own logs.
-- **No more than two hundred lines**, then the oldest are dropped. A console is
+- **No more than 200 lines**, then the oldest are dropped. A console is
   "what just happened", not a journal.
 - **An open console changes no behaviour** and is not a developer mode: it enables
   no hidden actions and shows nothing belonging to anybody else.
