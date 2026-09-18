@@ -1128,9 +1128,11 @@ publishing takes the name through the queue (§5) — an unchecked name never re
 the other person.
 
 **A match is not a chat but an offer to talk, accepted by both.** Mutual likes open
-a card: on it are the two phrases that caused it, and a button. The chat appears
-when both have pressed; while only one has, the other sees an offer and the first
-sees that there is no answer yet. When the other person was last online is not
+a card: on it are the two phrases that caused it, and a button. The chat opens for
+the one who pressed at once and waits for the second: what is written before their
+consent sits in a queue and goes out the moment they press "talk", the conversation's
+lifespan starts at the second press (the owner's decision of 2026-09-18); until they
+agree the second person sees the offer. When the other person was last online is not
 shown: that is about them, not about the conversation.
 
 **A like can be taken back at any time until an offer to talk has come of it — decided

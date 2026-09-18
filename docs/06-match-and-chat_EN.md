@@ -8,7 +8,7 @@ What happens on a mutual like and how a conversation opens. **Edit of 2026-08-26
 
 - **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.
 
-- **A match is not a chat.** A mutual like opens a card: on it are **both phrases** that caused it, and a "talk" button. The conversation appears when both have pressed.
+- **A match is not a chat.** A mutual like opens a card: on it are **both phrases** that caused it, and a "talk" button. The conversation opens for the one who pressed at once and waits for the second (the owner's decision of 2026-09-18).
 - **What else is on the card (written down 2026-08-27).** The other phrase's mode (`alone` / `company` / `party`), the peer's **name and age**, and **the remainders of both phrases** — one per phrase, and the match dies with the first (edited 2026-09-14: this was a single timer `match expires · Nh Nm` [retired], while below it was decided on 2026-08-28 that two numbers are more honest than one). The name and age are not decoration here: the feed carries neither and never will, and this is the **first place** where the other person becomes somebody in particular (`xor.ad/docs/chat_EN.md` §8.11). Disclosure is stepwise and irreversible — which is why "talk" stays a deliberate press rather than automation.
 - **This same screen carries the only warning about what a person is stepping into:**
 
@@ -30,14 +30,14 @@ What happens on a mutual like and how a conversation opens. **Edit of 2026-08-26
 - **A like taken back before a match makes no match** (decided 2026-09-15, screen 5): mutuality counts the likes that stand at the moment of the answering one.
 - **A match counts only while both have live phrases**, which is why only someone with a phrase of their own in the feed can like (`00-mechanics_EN.md` §11).
 - **Likes after a match.** If a matched person likes another of the other's phrases, no new match appears: the like shows up in the open conversation as a line saying which phrase was liked.
-- **When the second person agrees (the lens quorum's decision of 2026-09-18).** The conversation does not open by itself: for the one who pressed first the button "no answer yet" becomes "open the conversation", the item moves from "Offers" to "Conversations" with a dot, and the tab gets a dot. The offer's card in a match carries the discount and the term as in the feed: "−20 % · until 21:00".
+- **When the first person presses (the owner's decision of 2026-09-18; overrides the lens quorum's decision of the same day).** The conversation opens for them at once in the state "waiting for <name>": writing is allowed, replies carry no ✓ until the second person agrees; the item stands in "Conversations" with the status "awaiting an answer"; the second person's refusal turns the open conversation into the tombstone "the offer is gone". The offer's card in a match carries the discount and the term as in the feed: "−20 % · until 21:00".
 - **A match from an offer is one-sided** (`xor.ad/docs/chat-flows_EN.md`, flow 10). A like on a phrase with a discount creates a match at once, without waiting for one back: otherwise, to collect the stools somebody is giving away, you would have to wait for them to like something of yours. From there it is the same machinery — the card, the notice, the double consent — and **the offer's author may decline**. **There is one phrase on such a card — the offer itself** (clarified 2026-09-14): whoever came for the offer may have no phrase of their own, so the author sees their own announcement and a line saying "interested in your offer", not "both phrases" (`xor.ad/docs/chat_EN.md`, a match from an offer).
 - **While a name stands rejected by moderation, no match opens** (§8.2). A name is visible to a stranger only from a match, so the match is the last point at which a rejected one can still be kept out of sight. The phrase itself lives on: it passed on its own merits.
 
 ## Next step
 
 → [Screen 7 — Conversations](./07-chat-list_EN.md): the match waits for an answer on the "Offers" tab.
-→ [Screen 8 — Conversation](./08-chat-screen_EN.md): once both have pressed.
+→ [Screen 8 — Conversation](./08-chat-screen_EN.md): at once on one's own "talk", waiting until the second person agrees.
 
 ## Open questions
 
