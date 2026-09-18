@@ -10,7 +10,7 @@ Helping a new person work out how things work here. Decided 2026-09-15: **not a 
 - **No more than one at a time.** Meeting two mechanics at once, the second waits until the first is closed.
 - **Shown once.** Which hints are closed is remembered by the device, not by the identity and not by the node: the node has no need to know "this person liked something for the first time". A private window is a new person (`00-mechanics_EN.md` §1), and the hints show there again. **"Start over" wipes this memory** together with the identity (added 2026-09-15 after the review panel): a new identity is a new person, and the old flags would remain a trace of what was done here.
 - **One requires confirmation — the swipe** (screen 23): a gesture that hides a neighbour does not act until the person has said they understood. The others close with a tap or go by themselves once the person has done what they describe.
-- **"Show hints again"** — an item under "Me" (screen 10): it wipes the device's memory of closed hints.
+- **"Show hints again"** — an item under "Me" (screen 10): it wipes the device's memory of closed hints; the confirmation reads "hints will show again one at a time" (2026-09-18).
 
 ## The list
 
