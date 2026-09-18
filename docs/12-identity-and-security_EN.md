@@ -162,3 +162,5 @@ have destroyed their correspondence silently.
   there is nothing and nobody to work out: a person is looking at **their own** device
   and their own conversations, and the only question they are answering is "is this
   worth the room on my phone". A band of "a little / noticeable" does not answer it.
+
+- **The line before the PIN on a transfer — the lens quorum's decision of 2026-09-18:** "A transfer cannot be undone — confirm with the PIN that it is you." The counter on the lock: after the seventh error "Attempts left: 3", after the eighth — an hour's wait and "2".

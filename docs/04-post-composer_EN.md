@@ -53,3 +53,5 @@ The screen from which anything at all appears in the feed. Opened by the "Say" b
 - **Settled by drawing (2026-09-15).** How switching between the "phrase" and "table" tabs looks — a toggle, segments or two buttons — is not drawn.
 - ~~What happens to a half-set-up table if the person leaves the screen~~ — **the draft stays, decided 2026-08-28**, and the rule is one for both tabs. What was typed lives **on the device**, in the same encrypted storage as conversations (§9 of the mechanics), and disappears with it: on moving an identity, on recovery, and when the share burns. A draft never reaches the node — otherwise unchecked text would sit with us, which the whole construction avoids.
 - **Settled by drawing (2026-09-15).** How the quota remainder is shown — a number, dots or a line — is not drawn.
+
+- **The composer's texts — the lens quorum's decision of 2026-09-18:** the field's label "phrase"; the hint under the field "links are cut out" with nothing after; the zone line — "the same point and step will link your phrases to each other".

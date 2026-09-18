@@ -83,3 +83,5 @@ Move the identity to another device **or raise it from the paper code** (decided
   transfer flow.
 - ~~What to do if a move is started and abandoned~~ — **the "moving" state is described above** (decided 2026-08-29). Closed in the Russian half that day and left open here until 2026-09-03: the halves are checked for numbers, not for which of them still calls a question open.
 - **Settled by drawing (2026-09-15).** How the two confirmation lines ("called itself", "when") and the check string are shown is not drawn.
+
+- **The transfer's texts — the lens quorum's decision of 2026-09-18:** the refusal under "it is me" — "does not match" (a button of the same size); the hint for choosing the path — "A code from another device — if the identity still lives there. The paper one — if the device is gone."; the button — "restore the identity"; the line for the receiving device at the check — "Show this to the previous device: it will check and press 'it is me'."

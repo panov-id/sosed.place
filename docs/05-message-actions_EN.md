@@ -47,3 +47,5 @@ The set of actions available on a message card in the feed: like, hide, block, r
 - ~~The report's category~~ — **there is none; a free-text justification instead** (2026-08-27, per the legal spec).
 - ~~How hiding differs from reporting~~ — **said in the report form rather than in the menu** (decided 2026-08-28, above).
 - **Settled by drawing (2026-09-15).** How the list of hidden phrases looks in the settings — a line per phrase or a number that expands — is not drawn.
+
+- **The block confirmation's texts — the lens quorum's decision of 2026-09-18:** the heading "Block this person", the decline button "leave it"; the report's reason field has no placeholder (the label stands above the field).

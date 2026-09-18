@@ -69,3 +69,5 @@ An animation themed around neighbourliness, friendship and shared activities —
 - **Settled by drawing (2026-09-15).** The exact set of icons for the animation is not defined yet.
 - ~~The exact icon for the "next" button~~ — the splash no longer has that button (removed
   2026-09-15, above); the "next" icon remains on screen 2.
+
+- **The splash promise line — the lens quorum's decision of 2026-09-18:** "What neighbours nearby are saying. What is said disappears." — at body size, not as a caption.
