@@ -480,8 +480,9 @@ answered:
 
 - `prefers-color-scheme` — the theme is right immediately, with no flash and no
   toggle-hunting on the first visit.
-- `prefers-reduced-motion` — fades and the splash animation switch off for people
-  they make ill.
+- `prefers-reduced-motion` — the splash animation and entry motion switch off for
+  people they make ill; the lifespan fade is not motion but a step of tone with a
+  number, and it stays (`xor.ad/docs/design-system-app_EN.md`, "Motion").
 - `pointer` and `hover` — a finger or a mouse; hover and the swipe in the phrase viewer
   depend on it — the swipe exists only on a touch screen (screen 23; feed cards have no swipe, screen 5).
 - screen size, pixel density, window size — layout, and which images to fetch.
