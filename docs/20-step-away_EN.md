@@ -33,7 +33,7 @@ The last two sentences were added on 2026-09-14: the rule "say it before the tap
 ## The screen while away
 
 - Emptiness: no feed, no conversations, no counters.
-- One line and the time remaining.
+- One line and the time remaining. The line — "You have stepped away. Phrases are down, conversations are waiting." (the lens quorum's decision of 2026-09-18).
 - A "come back" button — with a confirmation: "you wanted a break; are you sure?".
 
 ## How it looks to others

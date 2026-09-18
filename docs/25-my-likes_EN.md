@@ -8,9 +8,9 @@ Everything a person liked in the feed that is still alive: neighbours' phrases, 
 
 - **The liked cards, newest on top** — in the order of liking, not of the feed. The shape is the feed's: a phrase has its text, mode and like count; a table has its name, the game, "playing N, watching M" and a like count; a private author's offer has its discount and term (screen 17).
 - **On every card the like is filled in**, and a tap on it takes the like back: the card leaves here and returns to the feed (screen 5). A "taken back · undo" line for a few seconds, like "hidden · undo".
-- **A phrase that an offer to talk has come of** stands here already as the offer's card: its like cannot be taken back (it is spent, `00-mechanics_EN.md` §11), the button leads to screen 6.
+- **A phrase that an offer to talk has come of** stands here already as the offer's card: its like cannot be taken back (it is spent, `00-mechanics_EN.md` §11), the button "to the offer" leads to screen 6 (the label — the lens quorum's decision of 2026-09-18).
 - **A private author's offer** always lies here as an offer to talk: its match is one-sided and is made by the like at once (screen 17).
-- **A table has a "sit down" button** (screen 19): the like does not seat you, sitting down happens from here. One table at a time, and the button warns that it will stand you up from the current one.
+- **A table has a "sit down" button** (screen 19): the like does not seat you, sitting down happens from here. One table at a time, and the button warns: "sit down here — you will stand up from your current table" (the lens quorum's decision of 2026-09-18).
 - A tap on the text opens the card full screen (screen 23); only the liked ones are paged here.
 - The list comes from the node (`GET /likes`, `xor.ad/docs/protocol_EN.md` §4.3) in pages of 30, then "show more", as in the feed.
 
