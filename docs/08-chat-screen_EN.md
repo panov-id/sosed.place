@@ -65,6 +65,7 @@ A private conversation between two people, opened after both accepted the match 
   second line, and it will be empty here.
 - **The reply limit is 256 characters and it comes from the server** (`max_message_length`), not baked into the client. The counter is the client's; the node is what refuses.
   The second limit, **2048 bytes of ciphertext** (`max_ciphertext_bytes`), is not shown to the person: with an honest 256 characters it is unreachable — even a string of nothing but emoji comes to 1404 bytes, and hitting 2048 takes 378 characters. It guards against a forged client, not against a real conversation.
+- **The caption under an unsent reply is "not sent · retry"** (the lens quorum's decision of 2026-09-18): the reply's state, not an apology.
 - **Two statuses: accepted and error (rewritten 2026-09-12).** "✓" means "the node took it and answers for delivery": if the other person is offline, the message waits for them while the conversation lives. An error gives a line with a retry and means only that the node refused. **There is no "delivered" and no "read"** and will not be: either would tell you whether the other person is online and when they opened the conversation.
 - **The silence timer is chosen here**, not when accepting the match, and can be changed at any moment. An hour by default. Each side has their own count and cannot see the other's (`00-mechanics_EN.md` §2).
 - **Expiry is announced in advance**: for the last quarter of its span the conversation is shown fading (clarified 2026-09-15 by the screen cross-check: this said "last minutes" [retired], while the 2026-08-26 decision below is a quarter). When it has ended for the other person, one line says so — **when you open the conversation or try to write**, not at the moment their span runs out (the 2026-09-10 rule, screen 7) — otherwise an expired timer is indistinguishable from being snubbed.
@@ -88,7 +89,7 @@ A private conversation between two people, opened after both accepted the match 
     2026-09-14): otherwise an open tab on a lost phone would keep reading the
     history with a key derived earlier.
   - **The conversation ended** (code `4003`) — not a connection error but the
-    tombstone described above.
+    tombstone described above. What was typed stays in the closed field until "close" is touched — the person sees what is being lost (the lens quorum's decision of 2026-09-18).
   - **The app is out of date** (code `4004`) — the node does not support this
     version; a line asks to update and no reconnect is attempted.
   Telling these four apart is mandatory: a client that does not either hammers a
