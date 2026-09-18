@@ -4,7 +4,7 @@
 
 The screen behind the **"Me"** item in the bottom navigation. It is also screen 9: what is alive on top (your own phrases, offers and tables with their timers), settings and everything a person can change about themselves below (settled 2026-08-27).
 
-They were not split for a simple reason: the bottom navigation has exactly four items, and a fifth does not fit 375px (`xor.ad/docs/chat_EN.md` §9). The cost is accepted and named: the screen is heterogeneous — urgent above, rare and partly irreversible below — so the dangerous part is separated and labelled.
+They were not split for a simple reason: the bottom navigation has exactly four items, and a fifth does not fit 375px (since 2026-09-18 there are three — "Say" moved into the feed's floating composer, the "spark" decision; the argument stands) (`xor.ad/docs/chat_EN.md` §9). The cost is accepted and named: the screen is heterogeneous — urgent above, rare and partly irreversible below — so the dangerous part is separated and labelled.
 
 ## Screen elements
 
