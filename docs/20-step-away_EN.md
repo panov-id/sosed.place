@@ -9,6 +9,7 @@ A temporary departure for someone who has been sitting here too long. Not "a pau
 - Three buttons: **20 minutes**, **an hour**, **4 hours** (decided 2026-09-14; "8 hours" [retired] the same day: longer than any conversation, review panel; the third used to be "until morning" [retired] — it had no end hour, so the price "2 conversations out of 7 will not survive" could not be counted).
 - Beneath them, the cost of the choice, plainly and in advance: how many live phrases will vanish, how many of your likes will be taken back (the owner's decision of 2026-09-18: stepping away also removes the likes you gave on phrases and tables — "My likes" empties) and how many conversations will not survive that span. The numbers are computed on the spot rather than described in general terms.
 - A cancel button — a departure must not happen by a misplaced tap.
+- **No duration is preselected — the owner's decision of 2026-09-18.** The screen opens with three outlined buttons and the line "choose a duration — we will count what it costs"; "Step away" is inactive until a duration is chosen. The cost figures appear after the tap. So a double tap does not send the person away for an hour without a choice.
 
 ## What has to be said to the person
 
@@ -33,7 +34,7 @@ The last two sentences were added on 2026-09-14: the rule "say it before the tap
 ## The screen while away
 
 - Emptiness: no feed, no conversations, no counters.
-- One line and the time remaining. The line — "You have stepped away. Phrases are down, conversations are waiting." (the lens quorum's decision of 2026-09-18).
+- One line and the time remaining. The line — "You have stepped away. Phrases are down, conversations are waiting." (the lens quorum's decision of 2026-09-18). The time is the absolute hour and the remainder, "until 15:02 · 41 min left" (the owner's decision of 2026-09-18: the deadline never leaves the device, and an unlocked tab shows more than that anyway).
 - A "come back" button — with a confirmation: "you wanted a break; are you sure?".
 
 ## How it looks to others
