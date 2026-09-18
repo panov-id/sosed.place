@@ -145,6 +145,8 @@ twice, no explaining how the system is built, no "oops".
 | You were not taken into the game | Not taken in | The reason is in the table's conversation. You can apply again. | To the table |
 | A line at the table did not pass | This will not go out | *(the class of reason)* No application was made, the text is still here. | Edit |
 | You did not confirm in time | You are watching now | The confirmation waited 30 seconds. There are no seats in this game — you can apply for the next one. | Watch |
+| Confirming the line-up, 30 s | Play again? | 2 of 4 confirmed · 0:21 · if you do not press within 30 s you stay a watcher | I am here |
+| The game is over: an ordinary finish | the game is over — the table stays | — | play again |
 | The move timed out | A pass was recorded | Five minutes went by without a move, and a pass was made for you. | — |
 | Three passes | You are watching now | Three moves went by without you. You can apply once a seat frees up. | Watch |
 | A report is being moved | This looks like something illegal | Your text is now in the notice form. Confirm and send. The decision will appear under "Me" → "My notices"; clear your browser data and you will not see it — leave an email. | Review and send |
