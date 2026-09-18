@@ -39,4 +39,4 @@ The "first visit with no phrase of your own" line is not a hint but a screen 11 
 ## Open questions
 
 - ~~A separate walk-through or in place~~ — **in place, at the first encounter** (decided 2026-09-15).
-- What each of the seven hints looks like — a line or a card — settled by the drawing (2026-09-15).
+- What each of the eight hints looks like — a line or a card — settled by the drawing (2026-09-15).
