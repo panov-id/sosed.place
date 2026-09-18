@@ -70,6 +70,15 @@ const PAIRS = [
   // than a threshold — it prints the number and names the token to use instead.
   ["muted on a nested plate — use --muted-2 there", "muted", "panel-2", null],
   ["secondary muted on a nested plate", "muted-2", "panel-2", 4.5],
+  // Status colours are text too — the delivery tick, "applied", the silence
+  // counter, a send error — and until 2026-09-18 nobody counted them: --ok stayed
+  // the dark value in the light theme and sat at 1.48:1 there, and this file
+  // printed "every pair passes". The border is a component edge, so 3:1 (1.4.11).
+  ["status ok on the page", "ok", "bg", 4.5],
+  ["status ok on a panel", "ok", "panel", 4.5],
+  ["status err on the page", "err", "bg", 4.5],
+  ["status err on a panel", "err", "panel", 4.5],
+  ["the border on the page", "border", "bg", 3.0],
 ];
 
 let failed = 0;
