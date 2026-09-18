@@ -527,6 +527,8 @@ fingerprint, and that is the truth.
 
 ---
 
+**A poster point (QR) — the owner's decision of 2026-09-18.** The poster's link carries a 1 km grid cell (the one the node delivers in the feed anyway), the wave's word and the language — no coordinates, no poster number, nothing that would glue the people of one bus stop together. Screen 2 offers to accept the point ("a point from a poster: <district>, roughly") or to adjust it on the diagram; once accepted it counts as placed by hand. The viewing circle of such a point is 5 km, as for an approximate one; **the phrase's default zone is 1 km, not 300 m**, until the person moves the point themselves: otherwise a 300 m cell at a poster on an entrance would name the entrance. For someone already registered the point does not move by itself — a line above the feed says "a poster from <district> — move the point there?". The study and the risks — `xor.ad/docs/reviews/NIGHT_2026-09-18_marketing-posters.md`.
+
 ## 5. Moderation
 
 What is judged is **the behaviour of a message, not the belonging of its author**.
@@ -1211,7 +1213,7 @@ chat's:
   moment they sat down. The same rule as moving an identity.
 - **Bands are checked everyone with everyone**: you may join only if you are inside
   every sitter's band and all of them are inside yours.
-- **The majority of those sitting can ask someone to leave.** A table does not belong
+- **A majority of the players, at least two votes, can remove someone** (spectators do not decide — 2026-09-16; the threshold — 2026-09-18; [retired] this said "the majority of those sitting") A table does not belong
   to whoever started it.
 - **A block separates at the seat rather than breaking up a game** (rewritten
   2026-09-14 after screen 19): a table with the blocked person is not shown to you,

@@ -49,6 +49,8 @@ begins.
 
 ## Logic
 
+- **Entering from a poster (QR) — the owner's decision of 2026-09-18:** if the link brought a poster's cell, a line above step 1 says "a point from a poster: <district>, roughly" with two actions — "accept" and "adjust on the diagram"; an accepted point counts as placed by hand, the circle is 5 km, the phrase's default zone is 1 km (`00-mechanics_EN.md` §4). Without the link there is no line.
+
 - **A private window is always a new person** (`00-mechanics_EN.md`, added 2026-09-15 after the review panel): in a private window this screen is passed again, and a closed window takes the identity with it — only the paper code issued here brings it back.
 
 - **This screen's edge states and their wordings — screen 11** (`11-empty-and-edge-states_EN.md`, pointer added 2026-09-15 after the review panel): empty, refusals, connection, frozen, pause, stepping away, changed documents.

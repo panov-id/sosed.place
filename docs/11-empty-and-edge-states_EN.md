@@ -161,6 +161,7 @@ twice, no explaining how the system is built, no "oops".
 | The PIN cannot be changed offline | No connection | A new PIN has to be agreed with us. The old PIN keeps working meanwhile. | Retry |
 | This device was not used for a year | It has been a while | Sign in with your paper code. The old correspondence on this device will not open again. | Enter the code |
 | You were asked to leave the table | You were asked to leave | Most of those sitting asked. You can sit down again if the table is visible. | To the feed |
+| Game over: the opponent left | Game over | Your opponent stood up — nobody to play with. The table stays; "play again" once somebody sits down. | Play again |
 | The table is gone | The table went out | It fell silent, and the table is no more. | To the feed |
 | A game for two ended | The game ended | The other person stepped away, and there is no game for two without them. | — |
 | That move is not allowed | Not like that | The rules do not let this move through. It is still your turn. | — |

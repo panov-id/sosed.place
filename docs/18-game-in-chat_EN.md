@@ -83,6 +83,8 @@ The four operations on a piece — **take, place, rotate, flip** — cover the f
 
 ## Open questions
 
+- ~~A move timer for two~~ — **there is none: the five minutes and the pass apply only at a table (screen 19); a two-player game lives on the conversation's span** (the owner's decision of 2026-09-18; the countdown is removed from the night sheet `screen-14-15-18.svg`).
+
 - ~~The board over the conversation or split on 375 px~~ — **as at a table: collapsed into a strip, opening as a sheet over the lines** (the owner's decision of 2026-09-18 from the night sheets `panel/design/screen-14-15-18.svg` frame 18A and `screen-19.svg`).
 
 - ~~The set of boards at launch~~ — **all three at once: dominoes, draughts, chess** (decided 2026-09-02). The engine is one, and the rules are a row of the class table (§6 of the canon), so a third board costs a third set of pieces, a board's markings and its row of rules, not a third engine (edited 2026-09-14: this said "knows no rules" [retired]). The price is named: three times the artwork of starting with one.
