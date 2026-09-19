@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The screen from which anything at all appears in the feed. Opened by the "Say" button in the bottom navigation.
+The screen from which anything at all appears in the feed. Opened from the floating composer over the feed — a pill with the line "say to your neighbours…" and a send circle (the "spark" decision of 2026-09-18; before that, the "Say" button in the bottom navigation).
 
 **Two tabs: "phrase" and "table" (settled 2026-08-27).** Until this decision there was nowhere to set a table up: screen 19 described in detail how to **sit down** at somebody's table, who removes whom and how the bands are checked — and the person who sets one up existed on no screen at all. You can only sit down at what somebody has put there, and that somebody did not exist.
 
