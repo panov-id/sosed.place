@@ -530,6 +530,8 @@ fingerprint, and that is the truth.
 
 **A poster point (QR) — the owner's decision of 2026-09-18.** The poster's link carries a 1 km grid cell (the one the node delivers in the feed anyway), the wave's word and the language — no coordinates, no poster number, nothing that would glue the people of one bus stop together. Screen 2 offers to accept the point ("a point from a poster: <district>, roughly") or to adjust it on the diagram; once accepted it counts as placed by hand. The viewing circle of such a point is 5 km, as for an approximate one; **the phrase's default zone is 1 km, not 300 m**, until the person moves the point themselves: otherwise a 300 m cell at a poster on an entrance would name the entrance. For someone already registered the point does not move by itself — a line above the feed says "a poster from <district> — move the point there?". The study and the risks — `xor.ad/docs/reviews/NIGHT_2026-09-18_marketing-posters.md`.
 
+**A place QR — the owner's decision of 2026-09-19.** Any neighbour can make such a link in the app, at any of the five zone steps: `#p=<cell>&s=<step>` in the fragment, which never goes to a server. The node knows nothing about the QR; a point accepted from it is manual, and a new phrase's default zone is the larger of the QR's step and 300 m until the point is moved. Screen 26 (`26-place-qr_EN.md`).
+
 ## 5. Moderation
 
 What is judged is **the behaviour of a message, not the belonging of its author**.
