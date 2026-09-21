@@ -11,6 +11,7 @@ A support contact button, reachable from the app at any time.
 - A message input for the support request.
 - **A line about where the answer will arrive** (added 2026-08-29): "the answer comes here, into this application; leave an email if you might lose access to your identity". The warning belongs **here** rather than on the start-over screen: there the decision is already made, here the person is still choosing what to pay.
 - **Your own tickets as a list** (added 2026-08-29): number, date, answer. Today the number is shown once and never again. The price is accepted: a product that erases everything gains a list that lives a year — which is honest, because the ticket is kept for a year anyway (`00-mechanics_EN.md` §7).
+- **A request from an Article 17 statement (2026-09-21).** The "ask a person" button on a threshold hiding (screen 9) opens this screen with the statement in the request: what was hidden, when, and the ground. The person does not have to retell it, and support sees that an automatic decision is being asked to be reviewed by a person.
 - A send button.
 
 ## Logic
