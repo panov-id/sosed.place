@@ -5,6 +5,7 @@
 #   PT Serif            dictionary pages, field-guide plates
 #   Oswald              film-poster credits
 # All have Cyrillic. Run once; the files are committed.
+# Every family is OFL 1.1: a new one goes into licenses.sh too, and its OFL-*.txt is committed with it.
 set -euo pipefail
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
