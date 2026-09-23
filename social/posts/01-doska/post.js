@@ -1,0 +1,63 @@
+window.POST = {
+  rubric: { ru: "Доска у подъезда", en: "The door board" },
+  slides: [
+    {
+      type: "notice",
+      facade: 1,
+      object: true,
+      stamp: false,
+      rot: -3,
+      eyebrow: { ru: "Доска у подъезда · 01", en: "The door board · 01" },
+      head: { ru: "Жильцам дома 14!", en: "" },
+      text: { ru: "Нас тут, оказывается, много.\nХОЙ 👋", en: "To the residents of no. 14! Turns out there are lots of us. Hoy 👋" },
+      sign: { ru: "— кв. 7", en: "" },
+      tabs: { n: 6, text: { ru: "ХОЙ", en: "HOY" }, torn: [1, 4] },
+    },
+    {
+      type: "notice",
+      tone: "dark",
+      rot: 1.5,
+      eyebrow: { ru: "Через три дня", en: "Three days later" },
+      head: { ru: "Жильцам дома 14!", en: "" },
+      text: { ru: "Нас тут, оказывается, много.\nХОЙ 👋", en: "Then the neighbours started writing back. On the same sheet." },
+      sign: { ru: "— кв. 7", en: "" },
+      replies: [
+        { x: 440, y: -4, r: -6, ink: "#b3261e", text: { ru: "а ты кто?? — кв. 12", en: "" } },
+        { x: 80, y: 520, r: 3, ink: "#1d6b3a", text: { ru: "мы тоже тут! 3 эт.", en: "" } },
+        { x: 170, y: 610, r: -2, ink: "#6b2d8a", text: { ru: "кто паркует самокат у лифта??", en: "" } },
+        { x: 90, y: 700, r: 2, ink: "#b3261e", text: { ru: "хой. рыжий кот с 5-го — мой", en: "" } },
+      ],
+    },
+    {
+      type: "statement",
+      tone: "accent",
+      eyebrow: { ru: "Поворот", en: "The twist" },
+      text: {
+        ru: "Бумажку сорвут\nчерез день.\nФразу в «соседе» —\nникто. Она *исчезнет\nсама* через 4:20.",
+        en: "The note gets torn down in a day. A line on sosed — never. It fades on its own after 4 h 20 min.",
+      },
+      size: "m",
+    },
+    {
+      type: "notice",
+      tone: "dark",
+      rot: -1,
+      small: true,
+      eyebrow: { ru: "Как это работает", en: "How it works" },
+      head: { ru: "Инструкция", en: "" },
+      text: {
+        ru: "① Кинь пару строк в район —\nувидят соседи рядом, анонимно.\n② Взаимный плюс — и вы в личке.\nВ одну сторону — тишина.\n③ Через 4:20 фраза растворится.",
+        en: "① Drop a couple of lines — neighbours nearby see them, anonymously. ② A mutual plus and you're in DMs. One-way — silence. ③ After 4:20 the line dissolves.",
+      },
+    },
+    {
+      type: "notice",
+      tone: "accent",
+      rot: 2,
+      eyebrow: { ru: "Объявление", en: "Notice" },
+      head: { ru: "Собрание жильцов района", en: "" },
+      text: { ru: "Повестка: познакомиться.\nЗапись — по ссылке\nв шапке профиля.", en: "Residents' meeting of the area. Agenda: meet each other. Sign up — link in bio." },
+      tabs: { n: 5, text: { ru: "sosed.place", en: "sosed.place" }, torn: [2] },
+    },
+  ],
+};

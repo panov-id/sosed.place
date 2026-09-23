@@ -1,0 +1,50 @@
+window.POST = {
+  rubric: { ru: "Окна", en: "Windows" },
+  slides: [
+    {
+      type: "viewfinder",
+      facade: 3,
+      stamp: false,
+      clock: "23:40",
+      title: { ru: "ОКНА", en: "Windows" },
+      meta: { ru: "Лимассол · октябрь · дом 14", en: "" },
+    },
+    {
+      type: "window",
+      scene: "frappe",
+      label: "2 эт.",
+      tag: { ru: "дом · 30 м", en: "" },
+      line: { ru: "Пью фраппе, не с кем обсудить сериал. Кто смотрит?", en: "Drinking frappé, no one to talk the series over with. Who's watching?" },
+      time: "4:02",
+    },
+    {
+      type: "window",
+      scene: "pomegranates",
+      label: "3 эт.",
+      tag: { ru: "дом · 30 м", en: "" },
+      line: { ru: "Гранатов девать некуда. Забирайте, я на третьем.", en: "Too many pomegranates. Come take some, I'm on the third floor." },
+      time: "2:47",
+    },
+    {
+      type: "window",
+      scene: "boiler",
+      label: "крыша",
+      tag: { ru: "дом · 30 м", en: "" },
+      line: { ru: "Бойлер опять не греет. Кто шарит в солнечных?", en: "The water heater is cold again. Anyone good with solar ones?" },
+      time: "0:38",
+    },
+    {
+      type: "whole",
+      eyebrow: { ru: "Отъезжаем", en: "Pulling back" },
+      pins: [[1, 1], [2, 4], [0, 3]],
+      text: { ru: "Все они в одном доме.\nПросто не знают\nдруг о друге.", en: "They all live in one building. They just don't know about each other." },
+    },
+    {
+      type: "cta",
+      eyebrow: { ru: "Скоро во дворе", en: "Coming to your yard" },
+      title: { ru: "Зажги\nсвоё окно", en: "Light up your window" },
+      action: { ru: "Лист ожидания — ссылка в шапке профиля", en: "Waitlist — link in bio" },
+      chip: { ru: "по приглашению · скоро", en: "by invitation · soon" },
+    },
+  ],
+};

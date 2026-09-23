@@ -1,0 +1,56 @@
+/* sosed.place — tokens from design/DESIGN_SPEC_*.md §1–2.
+   Warm charcoal, clay, terracotta brick; Golos Text at poster weight. */
+
+.slide {
+  --bg: #0d0b0a; --panel: #17130f; --panel-2: #241c14; --border: #3a2e20;
+  --fg: #f0e7dc; --muted: #9a8d7c; --muted-2: #ab9d88;
+  --accent: #d6552f; --accent-ink: #1c0e07; --accent-text: #e2683f; --accent-deep: #b8461f;
+  --chrome: #ab9d88; --line: #3a2e20; --line-strong: #5a4834;
+  --on-accent-muted: rgba(28, 14, 7, .8); --on-accent-line: rgba(28, 14, 7, .28);
+
+  --l-bg: #ece4d8; --l-panel: #f5efe4; --l-panel-2: #ddd0bd; --l-border: #221a12;
+  --l-fg: #1c140d; --l-muted: #6b5f4c; --l-muted-2: #655847; --l-accent-text: #b8431f; --l-line: rgba(34, 26, 18, .22);
+
+  --sans: "Golos Text", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --disp: "Golos Text", -apple-system, sans-serif;
+  --disp-w: 900; --disp-track: -.045em; --disp-lh: .9;
+  --h1: 172px; --h2: 112px; --h3: 80px; --st: 118px; --site: 128px;
+
+  --shade-a: rgba(13, 11, 10, .62); --shade-b: rgba(13, 11, 10, .15);
+  --shade-c: rgba(13, 11, 10, .78); --shade-d: rgba(13, 11, 10, .97);
+  --photo-filter: saturate(.9) contrast(1.04);
+  --phone-body: #050403; --phone-edge: #2a2118; --phone-tilt: -3deg;
+  --grain: .18;
+}
+
+.mark { font: 800 34px/1 var(--sans); letter-spacing: -.02em; text-transform: none; color: var(--fg); }
+.mark .dot { color: var(--accent); font-size: .62em; vertical-align: .18em; margin-left: 2px; }
+.tone-accent .mark .dot { color: var(--accent-ink); }
+
+/* brick stripe on the bottom edge: the facade line under every slide */
+.slide::before { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 14px; background: var(--accent); z-index: 7; }
+.tone-accent::before { background: var(--accent-ink); }
+.f-square::before, .t-highlight::before, .has-facade::before { display: none; }
+
+/* round courtyard stamp on covers */
+.stamp { position: absolute; right: 70px; top: 168px; width: 230px; height: 230px; z-index: 6; transform: rotate(-12deg); color: var(--accent); }
+.stamp text { font: 700 17.5px var(--mono); letter-spacing: .32em; fill: currentColor; }
+.stamp .c1 { fill: none; stroke: currentColor; stroke-width: 3; }
+.stamp .c2 { fill: none; stroke: currentColor; stroke-width: 1.5; }
+.stamp .core { font: 900 58px var(--sans); letter-spacing: -.04em; text-anchor: middle; }
+.tone-accent .stamp { color: var(--accent-ink); }
+
+/* avatar and highlights */
+.t-avatar { background: var(--accent); }
+.av-word { font: 900 380px/1 var(--sans); letter-spacing: -.06em; color: var(--accent-ink); }
+.av-dot { position: absolute; right: 190px; bottom: 300px; width: 90px; height: 90px; border-radius: 50%; background: var(--fg); }
+.t-highlight { background: var(--accent); }
+
+/* editorial: a city magazine about your own yard */
+.slide {
+  --e-head-font: "Golos Text", sans-serif; --e-head-w: 900; --e-head-size: 150px; --e-head-track: -.045em; --e-head-case: uppercase;
+  --e-head-color: #fbf4e6; --e-accent-on-photo: #ff8a5c; --e-cta-size: 170px;
+  --e-paper: #efe4d2; --e-ink: #1c140d; --e-muted: #6b5f4c; --e-accent: #c24a26;
+}
+.t-bleed::before, .t-sticker::before { display: none; }

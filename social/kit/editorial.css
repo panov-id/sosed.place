@@ -1,0 +1,51 @@
+/* Editorial slides. Brand faces and colours come from brand.css through
+   --e-* tokens: --e-head-font, --e-head-w, --e-head-color, --e-paper, --e-ink. */
+
+.slide.tone-paper { --bg: var(--e-paper); --fg: var(--e-ink); --muted: var(--e-muted); --muted-2: var(--e-muted);
+  --chrome: var(--e-muted); --accent-text: var(--e-accent); background: var(--e-paper); }
+
+/* secondary lines never under 24 px: a slide is shown at ~0.36 on a phone */
+.e-sub { display: flex; gap: 12px; align-items: baseline; font: 400 26px/1.35 var(--sans); color: var(--muted-2); margin-top: 16px; max-width: 900px; }
+.e-sub .lang { font-size: 18px; }
+.e-kicker { font: 500 24px/1.3 var(--mono); letter-spacing: .2em; text-transform: uppercase; color: var(--accent-text); margin-bottom: 22px; }
+.e-cap { font: 500 24px/1.4 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted-2); margin-top: 26px; }
+
+/* ---------- bleed ---------- */
+.t-bleed .body, .t-sticker .body { inset: 0; }
+.t-bleed .shade, .t-sticker .shade { display: none; }
+.e-bleed { position: absolute; left: var(--pad); right: var(--pad); }
+.e-bleed.at-bottom { bottom: 150px; }
+.e-bleed.at-top { top: 150px; }
+.t-bleed.tone-photo::before { content: ""; position: absolute; left: 0; right: 0; z-index: 2; height: 62%; pointer-events: none; }
+.t-bleed .bgphoto::after { content: ""; position: absolute; inset: 0; }
+.shade-bottom .bgphoto::after { background: linear-gradient(180deg, rgba(0,0,0,.28) 0%, rgba(0,0,0,0) 18%, rgba(0,0,0,0) 45%, rgba(0,0,0,.72) 100%); }
+.shade-top .bgphoto::after { background: linear-gradient(180deg, rgba(0,0,0,.72) 0%, rgba(0,0,0,0) 55%, rgba(0,0,0,0) 82%, rgba(0,0,0,.35) 100%); }
+.e-head { font-family: var(--e-head-font); font-weight: var(--e-head-w); font-size: var(--e-head-size); line-height: .9; letter-spacing: var(--e-head-track); text-transform: var(--e-head-case); color: var(--e-head-color); text-shadow: 0 4px 30px rgba(0,0,0,.35); }
+.e-head .hl, .e-serif .hl { color: var(--e-accent-on-photo, var(--accent)); }
+.e-bleed .e-sub, .e-bleed .e-cap { color: rgba(255,255,255,.9); text-shadow: 0 2px 12px rgba(0,0,0,.7); }
+
+/* ---------- sticker ---------- */
+.e-sticker { position: absolute; left: var(--pad); right: 180px; bottom: 150px; background: var(--accent); color: var(--accent-ink); padding: 40px 44px 36px; transform: rotate(-1.5deg); box-shadow: 0 30px 70px rgba(0,0,0,.45); }
+.e-st-p { font: var(--e-head-w) 54px/1.04 var(--e-head-font); letter-spacing: -.02em; text-transform: var(--e-head-case); }
+.e-sub.on-sticker { color: var(--accent-ink); opacity: .85; }
+.e-cap.corner { position: absolute; right: var(--pad); top: 150px; margin: 0; color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,.8); }
+
+/* ---------- frame (magazine page) ---------- */
+.t-frame .body, .t-note .body { inset: 0; }
+.e-photo { position: absolute; left: 84px; right: 84px; top: 140px; height: 760px; background-size: cover; box-shadow: 0 1px 0 rgba(0,0,0,.08); }
+.e-text { position: absolute; left: 84px; right: 84px; top: 940px; bottom: 120px; display: flex; flex-direction: column; }
+.e-serif { font: italic 400 58px/1.12 "PT Serif", serif; color: var(--e-ink); letter-spacing: -.01em; }
+.e-serif.big { font-size: 76px; line-height: 1.1; }
+.e-rule { width: 90px; height: 3px; background: var(--e-accent); margin: 26px 0 0; }
+.e-text .e-cap { margin-top: 18px; color: var(--e-muted); }
+
+/* ---------- note ---------- */
+.e-note { position: absolute; left: 110px; right: 110px; top: 0; bottom: 0; display: flex; flex-direction: column; justify-content: center; }
+.e-foot { font: 400 32px/1.35 var(--sans); color: var(--e-ink); margin-top: 22px; }
+
+/* ---------- cta ---------- */
+.t-ecta .body { justify-content: center; }
+.e-cta { display: flex; flex-direction: column; }
+.e-word { font-family: var(--e-head-font); font-weight: var(--e-head-w); font-size: var(--e-cta-size); line-height: .92; letter-spacing: var(--e-head-track); text-transform: var(--e-head-case); color: var(--fg); }
+.e-site { font: var(--disp-w) var(--site)/1 var(--disp); letter-spacing: -.04em; color: var(--accent-text); margin: 56px 0 18px; white-space: nowrap; }
+.e-action { font: 500 34px/1.3 var(--sans); color: var(--fg); }
