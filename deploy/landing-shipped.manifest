@@ -29,6 +29,7 @@ fonts.css
 fonts-georgian.css
 fonts-armenian.css
 fonts/*.woff2
+fonts/OFL-*.txt     # the fonts' licences, fetched by scripts/font-licenses.sh
 
 # pictures: the shared assets and one social sheet per language
 img/*.jpg
